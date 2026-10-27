@@ -1,0 +1,5 @@
+set,meals,onset_ge_180_share,events,events_with_onset_ge_180_share,auroc_B_onset_lt_180_glucosl_kan,auroc_B_onset_lt_180_xgboost,auroc_B_onset_lt_180_glucosl_kan_us,B_meals_onset_lt_180,B_event_rate_onset_lt_180
+Shanghai A,1952,0.154,965,0.311,0.627,0.629,0.702,577,0.411
+Shanghai B,670,0.139,330,0.282,0.627,0.629,0.702,577,0.411
+"CGMacros, HbA1c >=6.5%",353,0.088,185,0.168,0.627,0.629,0.702,577,0.411
+"CGMacros, all",1147,0.031,266,0.135,0.627,0.629,0.702,577,0.411

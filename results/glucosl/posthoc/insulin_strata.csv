@@ -1,0 +1,17 @@
+task,metric,insulin_use,patients,meals,model,value
+regression,macro_mae,False,10,304,glucosl_kan,43.519
+regression,macro_mae,False,10,304,xgboost,44.786
+regression,macro_mae,False,10,304,constant,49.846
+regression,macro_mae,False,10,304,glucosl_kan_us,44.36
+regression,macro_mae,True,23,366,glucosl_kan,44.603
+regression,macro_mae,True,23,366,xgboost,44.156
+regression,macro_mae,True,23,366,constant,48.168
+regression,macro_mae,True,23,366,glucosl_kan_us,52.014
+binary,auroc,False,10,304,glucosl_kan,0.663
+binary,auroc,False,10,304,xgboost,0.698
+binary,auroc,False,10,304,constant,
+binary,auroc,False,10,304,glucosl_kan_us,0.698
+binary,auroc,True,23,366,glucosl_kan,0.537
+binary,auroc,True,23,366,xgboost,0.524
+binary,auroc,True,23,366,constant,
+binary,auroc,True,23,366,glucosl_kan_us,0.615

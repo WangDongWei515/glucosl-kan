@@ -1,0 +1,15 @@
+set,task,model,pooled_unweighted,between_patient_spearman,within_patient_median,patients_within
+shanghai_B,regression,glucosl_kan,0.381,0.297,0.297,27
+shanghai_B,regression,xgboost,0.376,0.244,0.427,27
+shanghai_B,regression,unconstrained_kan,0.376,0.363,0.333,27
+shanghai_B,regression,glucosl_kan_us,0.296,0.101,0.343,27
+shanghai_B,binary,glucosl_kan,0.659,0.105,0.667,23
+shanghai_B,binary,xgboost,0.686,0.312,0.641,23
+shanghai_B,binary,unconstrained_kan,0.672,0.16,0.626,23
+shanghai_B,binary,glucosl_kan_us,0.693,0.483,0.655,23
+cgmacros_diabetes_range,regression,glucosl_kan,0.546,0.248,0.642,14
+cgmacros_diabetes_range,regression,xgboost,0.502,0.253,0.574,14
+cgmacros_diabetes_range,regression,unconstrained_kan,0.517,0.345,0.562,14
+cgmacros_diabetes_range,binary,glucosl_kan,0.798,0.462,0.843,14
+cgmacros_diabetes_range,binary,xgboost,0.758,0.42,0.862,14
+cgmacros_diabetes_range,binary,unconstrained_kan,0.795,0.46,0.788,14

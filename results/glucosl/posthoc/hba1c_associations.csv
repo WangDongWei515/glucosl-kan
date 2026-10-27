@@ -1,0 +1,5 @@
+set,patients,spearman_hba1c_mean_iauc,spearman_hba1c_event_rate,spearman_fpg_mean_iauc,Shanghai-trained: relative sensitivity at HbA1c p95 vs p5,US-trained: relative sensitivity at HbA1c p95 vs p5
+Shanghai A,61,0.086,0.595,0.242,1.191,2.134
+Shanghai B,31,-0.184,0.318,-0.111,1.191,2.134
+"CGMacros, HbA1c >=6.5%",14,0.219,0.47,0.31,1.191,2.134
+"CGMacros, all",44,0.672,0.824,0.686,1.191,2.134

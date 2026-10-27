@@ -1,0 +1,4 @@
+set,comparison,estimate,low,high,patients
+shanghai_B,unconstrained_kan minus glucosl_mlp,-1.738,-3.124,-0.505,33
+cgmacros_diabetes_range,unconstrained_kan minus glucosl_mlp,-0.936,-2.255,0.513,14
+cgmacros_all,unconstrained_kan minus glucosl_mlp,-0.417,-1.468,0.576,44

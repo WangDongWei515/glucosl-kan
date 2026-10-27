@@ -1,0 +1,33 @@
+,Shanghai A (training),Shanghai B (temporal validation),"CGMacros, HbA1c >=6.5%"
+patients,67,33,14
+recordings,74,35,14
+meals,1952,670,353
+meals per patient,31.0 (17.0–37.0),15.0 (9.0–30.0),26.0 (23.2–27.0)
+first recording,2020-09-07 to 2021-06-29,2021-07-03 to 2022-01-26,
+age,63.0 (53.0–68.0),59.0 (51.0–71.0),52.5 (51.0–59.0)
+female %,43,45,57
+BMI,23.5 (22.0–25.3),24.2 (22.8–25.7),30.6 (28.2–34.3)
+HbA1c %,7.6 (6.9–9.5),10.6 (8.7–11.7),7.1 (6.9–7.4)
+HbA1c missing,6,2,0
+fasting glucose,140.4 (120.6–167.4),185.4 (158.4–248.0),149.0 (142.5–157.0)
+diabetes years,7.0 (1.5–15.0),7.0 (0.2–12.0),
+insulin use % (patients),54,70,
+metformin %,46,39,
+alpha_glucosidase_inhibitor %,28,27,
+sulfonylurea %,16,9,
+glinide %,3,3,
+dpp4_inhibitor %,16,15,
+sglt2_inhibitor %,4,3,
+thiazolidinedione %,3,6,
+glp1_receptor_agonist %,0,6,
+carbohydrate g,47.0 (27.9–68.5),51.0 (35.3–74.8),66.0 (36.0–76.0)
+protein g,17.9 (11.2–24.0),20.0 (14.2–26.4),22.0 (22.0–66.0)
+fat g,12.2 (7.4–21.0),13.5 (7.7–24.8),17.0 (10.5–42.0)
+fiber g,3.5 (2.0–5.7),4.2 (2.0–6.4),4.0 (0.0–10.0)
+energy kcal,397.0 (265.9–529.7),443.5 (323.3–596.4),
+specific mapping share,0.9 (0.5–1.0),1.0 (0.7–1.0),
+onset glucose,127.8 (102.6–158.4),122.4 (100.8–156.6),
+iAUC median,40.3 (10.8–83.7),47.1 (11.1–95.5),55.5 (19.1–105.3)
+iAUC mean,54.1,59.9,69.1
+peak >=180 %,49,49,52
+breakfast/lunch/dinner %,34/33/33,34/33/33,

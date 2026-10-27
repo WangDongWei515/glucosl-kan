@@ -1,0 +1,15 @@
+set,meal_type,meals,mean_onset,mean_iauc,median_carbohydrate,coefficient,ci_low,ci_high
+Shanghai A,breakfast,659.0,133.06,76.02,49.02,,,
+Shanghai A,lunch,647.0,133.58,46.5,47.3,,,
+Shanghai A,dinner,646.0,142.25,39.42,45.66,,,
+Shanghai A,adjusted: breakfast vs dinner,,,,,32.98,22.68,43.28
+Shanghai A,adjusted: lunch vs dinner,,,,,3.7,-3.16,10.56
+Shanghai A,adjusted: onset per mg/dL,,,,,-0.47,-0.58,-0.36
+Shanghai A,adjusted: carbohydrate per g,,,,,0.15,0.04,0.25
+Shanghai B,breakfast,230.0,130.91,84.8,62.26,,,
+Shanghai B,lunch,220.0,130.39,45.45,51.62,,,
+Shanghai B,dinner,220.0,133.91,48.32,47.4,,,
+Shanghai B,adjusted: breakfast vs dinner,,,,,30.25,19.76,40.74
+Shanghai B,adjusted: lunch vs dinner,,,,,-6.82,-13.16,-0.48
+Shanghai B,adjusted: onset per mg/dL,,,,,-0.29,-0.41,-0.18
+Shanghai B,adjusted: carbohydrate per g,,,,,0.33,0.2,0.46

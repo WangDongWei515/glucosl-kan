@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+data/raw/
+data/interim/
+data/processed/
+*.joblib
+*.pt
+*.pth
+*.safetensors
+*.log
+paper/review/
+paper/submission/

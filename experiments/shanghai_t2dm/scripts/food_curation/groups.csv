@@ -1,0 +1,96 @@
+group_id,group_zh,group_en,recipe,rationale
+rice,米饭,Cooked white rice,287:1,米饭(蒸)(均值)，熟重
+grain_rice,杂粮饭/糙米饭/黑米饭,Mixed-grain rice (cooked),287:0.50;301:0.04;1286:0.04;351:0.03;309:0.04;286:0.03;W0:0.32,成分表无杂粮饭；按一半白米饭加小米、燕麦片、赤小豆、荞麦、血糯米（干重共18%）并补水，使含水量约70%（同米饭）
+porridge,粥/稀饭/泡饭/杂粮粥,Porridge and rice in water,288:0.5;303:0.3;1281:0.2,粳米粥、小米粥与无糖八宝粥的混合
+noodles,面条/荞麦面/意面（熟）,Cooked wheat noodles,264:0.49;W0:0.51,面条(均值)为生鲜切面（含水28.5%）；煮熟吸水至约65%，按0.49份生面加0.51份水
+starch_noodles,粉丝/粉皮/米粉/米线（熟）,Cooked starch or rice noodles,324:0.15;290:0.15;W0:0.70,干粉丝与干米粉各半，泡/煮后约含水70%
+steamed_bread,馒头/花卷/杂粮馒头/窝头,Steamed bread without filling,272:1,馒头(均值)
+bread_flatbread,面包/吐司/烙饼/大饼,Bread and unfried flatbread,1316:0.6;271:0.4,面包(均值)与烙饼(标准粉)
+fried_wheat,油条/油饼/葱油饼/春卷/方便面,Fried wheat foods,277:0.4;276:0.3;1199:0.3,成分表油炸制品（油已含在条目内，不另加油）
+filled_meat,肉包/饺子/馄饨/烧麦/小笼,Meat-filled buns and dumplings,1339:0.4;1330:0.4;1311:0.2,包子(猪肉馅)、水饺(猪肉白菜馅)、冬菜虾仁馄饨
+filled_veg,菜包/素包/素饺/豆沙包,Vegetable- or bean-filled buns,272:0.6;452:0.3;346:0.07;584:0.03,成分表无菜包；按面皮（馒头）60%、馅（小白菜、豆腐干、香菇）40%；蒸制不加油
+fried_dumpling,生煎/锅贴/煎饺,Pan-fried buns and dumplings,1339:0.95;OIL:0.05,包子(猪肉馅)加煎制用油
+glutinous_ricecake,粽子/年糕/糯米/粢饭/米糕,Glutinous rice and rice cakes,1211:0.5;285:0.21;W0:0.29,年糕与熟糯米（糯米加水，含水约60%）各半
+dry_cereal_powder,麦片/燕麦/代餐粉/芝麻糊粉/奶粉（干）,Dry cereals and powders,1273:0.4;1286:0.2;1283:0.2;1182:0.2,干重；麦片(1273)、燕麦片、黑芝麻糊粉、豆奶粉
+starchy_veg,土豆/红薯/芋头/山药/藕/玉米,Starchy vegetables (boiled/steamed/unspecified),313:0.2;316:0.2;526:0.2;525:0.2;292:0.2,常见薯类与鲜玉米等量混合
+starchy_veg_fried,炒/红烧土豆等,Starchy vegetables (fried/braised),@starchy_veg:0.95;OIL:0.05,薯类加炒菜用油
+egg,鸡蛋/鸭蛋/咸蛋/皮蛋/蒸蛋,Eggs (boiled/steamed/unspecified),978:1,鸡蛋(均值)；鸭蛋、咸蛋、皮蛋组内近似
+egg_fried,炒蛋/煎蛋,Fried or scrambled eggs,978:0.95;OIL:0.05,鸡蛋加炒菜用油
+egg_veg_stirfry,番茄炒蛋/丝瓜炒蛋/韭菜炒蛋,Egg and vegetable stir-fries,978:0.40;405:0.20;429:0.15;445:0.10;422:0.10;OIL:0.05,鸡蛋40%、常见配菜55%、油5%
+milk,牛奶,Milk,917:1,牛乳(光明牌)：上海本地主要品牌，乳糖含量较均值条目合理（见README）
+yogurt,酸奶,Yogurt,958:1,酸奶(均值)，含糖
+milk_mixed,牛奶咖啡/拿铁/奶茶/牛奶麦片,Milk-based mixed drinks,917:0.65;1273:0.05;W0:0.30,牛奶65%，少量麦片，其余为水/咖啡；不加糖
+soy_milk,豆浆/豆奶,Soy milk,339:1,豆奶[豆乳]（338豆浆过稀，按审核意见改用339）；不加糖
+tofu,豆腐/豆花,Tofu (boiled/steamed/cold/unspecified),333:1,豆腐(均值)
+soy_dried,豆干/香干/素鸡/百叶/腐竹/烤麸,Pressed or dried soy products and gluten,346:0.4;347:0.2;345:0.3;349:0.1,豆腐干、素鸡、千张、烤麸
+soy_fried,炒/红烧豆制品/油豆腐/油面筋,Fried or braised soy products,333:0.4;346:0.2;345:0.2;343:0.15;OIL:0.05,豆制品混合加炒菜用油
+pork,猪肉（蒸煮/未注明）,Pork (boiled/steamed/unspecified),789:1,猪肉(腿)：肉丝、肉片、肉糜常用部位，脂肪居中
+pork_fried,猪肉（炒/煎/炸）,Pork (stir-fried or fried),789:0.95;OIL:0.05,猪肉(腿)加炒菜用油
+pork_belly_braised,红烧肉/五花肉/烧肉,Braised fatty pork,779:0.92;OIL:0.05;1448:0.03,猪肉(肥瘦)(均值)加烧制用油5%和冰糖3%（本帮红烧）
+pork_rib,排骨/大排/小排/猪蹄,Pork ribs/chops/trotters (unspecified or steamed),791:0.4;794:0.4;810:0.2,猪大排、猪小排、猪蹄(熟)
+pork_rib_fried,红烧/煎/炸排骨,Pork ribs or chops (fried/braised),791:0.475;794:0.475;OIL:0.05,大排、小排加烧制用油
+meatball,肉圆/肉丸/狮子头/肉饼,Pork meatballs and patties,789:0.45;779:0.45;320:0.05;W0:0.05,肉糜按腿肉与肥瘦肉各半，加淀粉5%和水5%
+meatball_fried,肉圆/狮子头（红烧/煎/炸）,Pork meatballs (fried/braised),@meatball:0.95;OIL:0.05,肉圆加烧制用油
+pork_processed,香肠/火腿/午餐肉/咸肉/培根/肉松,Processed pork,815:0.3;818:0.2;807:0.2;808:0.15;805:0.15,火腿肠、香肠、午餐肉、咸肉、培根混合
+offal,内脏/血制品,Offal and blood,797:0.25;795:0.25;887:0.25;803:0.25,猪肝、猪肚、鸡肫、猪血
+beef_mutton,牛羊肉（蒸煮/酱/未注明）,Beef and mutton (unspecified or boiled),823:0.7;844:0.3,牛肉(肥瘦)(均值)与羊肉(肥瘦)(均值)
+beef_mutton_fried,牛羊肉（炒/红烧/煎）,Beef and mutton (fried/braised),823:0.665;844:0.285;OIL:0.05,牛羊肉加炒菜用油
+chicken,鸡/鸽/其他禽（白切/蒸煮/未注明）,Chicken and other poultry,876:1,鸡(均值)
+chicken_fried,鸡（炒/红烧/炸）,Chicken (fried/braised),876:0.95;OIL:0.05,鸡(均值)加炒菜用油
+duck_goose,鸭/鹅（白切/盐水/未注明）,Duck and goose,891:1,鸭(均值)
+duck_fried,鸭/鹅（炒/红烧）,Duck (fried/braised),891:0.95;OIL:0.05,鸭(均值)加炒菜用油
+fish,鱼（清蒸/煮/未注明）,Fish (steamed/boiled/unspecified),1021:0.2;1050:0.2;1030:0.2;1038:0.2;1014:0.2,上海常见鱼：鲫鱼、鲈鱼、带鱼、小黄鱼、青鱼等量
+fish_fried,鱼（红烧/煎/炸/熏）,Fish (fried/braised),@fish:0.95;OIL:0.05,鱼加烧制用油
+fish_processed,鱼丸/虾丸/鱼排,Fish balls and processed seafood,1067:1,鱼丸
+shrimp,虾（白灼/煮/未注明）,Shrimp (boiled/unspecified),1092:0.5;1093:0.5,河虾与基围虾
+seafood_fried,虾/贝/鱿鱼（炒/爆/椒盐）,Shrimp and shellfish (fried),1092:0.3;1093:0.3;1120:0.15;1129:0.2;OIL:0.05,虾、蛤蜊、鱿鱼加炒菜用油
+crab,蟹,Crab,1103:1,河蟹（大闸蟹）
+shellfish,贝类/软体（蛤蜊/蛏子/鲍鱼/海参/鱿鱼）,Shellfish and molluscs,1120:0.25;1108:0.15;1106:0.15;1123:0.2;1129:0.25,蛤蜊、蛏子、鲍鱼、海参、乌贼
+leafy_veg,叶菜与甘蓝类（青菜/菠菜/白菜/卷心菜/花菜）,Leafy and brassica vegetables (boiled/cold/unspecified),452:0.25;457:0.15;473:0.1;483:0.1;488:0.05;463:0.15;450:0.1;464:0.05;465:0.05,小白菜、油菜（即上海青菜）为主，含菠菜、生菜、茼蒿、卷心菜、大白菜、花菜、西兰花
+leafy_veg_fried,叶菜与甘蓝类（炒）,Leafy and brassica vegetables (stir-fried),@leafy_veg:0.95;OIL:0.05,叶菜加炒菜用油
+fruit_veg,瓜茄豆荚芽菜类,"Gourds and fruit-type vegetables, pods and sprouts",422:0.15;419:0.15;405:0.15;402:0.1;429:0.1;431:0.05;410:0.05;397:0.1;392:0.05;400:0.1,黄瓜、冬瓜、番茄、茄子、丝瓜、西葫芦、青椒、豇豆、四季豆、绿豆芽
+fruit_veg_fried,瓜茄豆荚芽菜类（炒）,Gourds and fruit-type vegetables (stir-fried),@fruit_veg:0.95;OIL:0.05,瓜茄类加炒菜用油
+root_stem_veg,根茎/茎/笋/葱蒜类,"Root, stem and shoot vegetables",371:0.25;380:0.15;491:0.15;519:0.15;480:0.15;499:0.1;444:0.05,白萝卜、胡萝卜、莴笋、茭白、芹菜、竹笋、洋葱
+root_stem_veg_fried,根茎/茎/笋类（炒/红烧）,"Root, stem and shoot vegetables (stir-fried)",@root_stem_veg:0.95;OIL:0.05,根茎类加炒菜用油
+fresh_legume,毛豆/蚕豆/豌豆/煮豆,Fresh legumes and cooked pulses,391:0.5;393:0.5,毛豆与鲜豌豆；成分表无鲜蚕豆
+fresh_legume_fried,毛豆/蚕豆/豌豆（炒/烧）,Fresh legumes (stir-fried),@fresh_legume:0.95;OIL:0.05,鲜豆类加炒菜用油
+fungi_algae,菌菇/木耳/海带/紫菜（鲜或水发）,"Mushrooms, fungi and seaweed",584:0.3;575:0.2;602:0.15;580:0.2;581:0.05;607:0.1,香菇、金针菇、杏鲍菇、水发木耳、平菇、海带
+fungi_algae_fried,菌菇木耳类（炒）,Mushrooms and fungi (stir-fried),@fungi_algae:0.95;OIL:0.05,菌菇加炒菜用油
+mixed_veg,蔬菜/素菜（混合或未注明）,Mixed vegetables (unspecified),@leafy_veg:0.4;@fruit_veg:0.3;@root_stem_veg:0.3,三类蔬菜组合
+mixed_veg_fried,素炒/炒素菜/多种蔬菜合炒,Mixed vegetables (stir-fried),@mixed_veg:0.95;OIL:0.05,混合蔬菜加炒菜用油
+salad,蔬菜色拉/沙拉,Vegetable salad with dressing,483:0.4;422:0.2;405:0.2;380:0.12;1536:0.08,生菜、黄瓜、番茄、胡萝卜加8%沙拉酱
+pickled_veg,榨菜/咸菜/酱菜/萝卜干,Pickled vegetables,1551:0.3;1553:0.3;1550:0.2;1555:0.2,榨菜、腌雪里红、萝卜干、酱八宝菜
+meat_veg_stirfry,荤素炒菜（肉丝/肉片/肉糜/鸡丝+蔬菜）,Meat and vegetable stir-fries,789:0.25;@fruit_veg:0.25;@root_stem_veg:0.30;@leafy_veg:0.15;OIL:0.05,医院荤素小炒：蔬菜70%、猪肉25%、油5%
+meat_veg_steamed,荤素蒸/炖/烩（不加油）,Meat and vegetable steamed or stewed dishes,789:0.30;@fruit_veg:0.25;@root_stem_veg:0.30;@leafy_veg:0.15,蔬菜70%、猪肉30%，不加油（火锅、冒菜、麻辣烫改入荤素炒菜）
+soy_veg_stirfry,豆制品炒蔬菜（芹菜香干等）,Soy product and vegetable stir-fries,346:0.30;@fruit_veg:0.20;@root_stem_veg:0.30;@leafy_veg:0.15;OIL:0.05,蔬菜65%、豆腐干30%、油5%
+fried_rice_noodles,炒饭/炒面/炒米粉/炒年糕,Fried rice and noodles,1314:1,什锦炒饭（条目已含油）
+noodle_meal,汤面/拌面/菜肉面,Noodle dishes with toppings,@noodles:0.75;@leafy_veg:0.15;789:0.10,熟面75%、青菜15%、肉10%
+western_fastfood,汉堡/披萨/三明治,Western fast food,1271:0.4;1260:0.3;1261:0.3,汉堡包、比萨饼、三明治
+broth,清汤/肉汤/鸡汤/鱼汤/骨头汤,Clear meat or fish broth,W0:0.90;876:0.06;779:0.04,汤水90%，含少量鸡肉与猪肉
+veg_soup,菜汤/蛋汤/豆腐汤/紫菜汤,Vegetable/egg/tofu soup,W0:0.85;@leafy_veg:0.05;405:0.04;333:0.03;978:0.03,汤水85%，含少量蔬菜、番茄、豆腐、鸡蛋
+meat_veg_soup,带料荤汤（排骨萝卜汤/冬瓜小排汤/腌笃鲜）,Meat and vegetable soup with solids,W0:0.70;794:0.10;@root_stem_veg:0.10;@fruit_veg:0.10,汤水70%，小排10%，蔬菜20%
+sweet_soup,甜汤/羹/糊（赤豆/绿豆/银耳/红枣）,Sweet soups (no added sugar assumed),W0:0.88;351:0.04;350:0.03;587:0.01;675:0.02;768:0.02,假设不加糖（糖尿病患者）；赤小豆、绿豆、银耳、红枣、莲子
+fruit_temperate,苹果/梨/桃/李/葡萄/猕猴桃/草莓,Temperate fruits,613:0.3;630:0.2;660:0.15;666:0.05;684:0.1;700:0.1;701:0.1,常见温带水果
+fruit_citrus,橙/橘/柚,Citrus fruits,704:0.4;705:0.4;711:0.2,橙、柑桔、柚
+fruit_melon,西瓜/甜瓜/哈密瓜,Melons,739:0.6;738:0.4,西瓜与甜瓜
+fruit_tropical,香蕉/芒果/荔枝/菠萝/火龙果,Tropical fruits,726:0.3;723:0.15;722:0.15;716:0.2;734:0.2,常见热带水果
+dried_fruit,红枣/葡萄干/枸杞/果干,Dried fruits,675:0.5;689:0.3;1571:0.2,干枣、葡萄干、枸杞子
+nuts_seeds,核桃/花生/瓜子/杏仁/芝麻,Nuts and seeds,743:0.3;764:0.3;766:0.2;752:0.1;756:0.1,按可食部记录（如带壳称重会高估）
+cake_pastry,蛋糕/糕点/月饼/酥饼,Cakes and pastries,1224:0.4;1243:0.3;1227:0.3,蛋糕(均值)、酥皮糕点、豆沙月饼
+biscuit_snack,饼干/苏打饼干/薯片/锅巴,Biscuits and packaged snacks,1322:0.4;1323:0.4;1353:0.2,饼干、苏打饼干、薯片
+sugar_sweets,糖/糖果/巧克力/蜂蜜/果酱,Sugar and confectionery,1448:0.5;1454:0.2;1453:0.15;1487:0.15,白砂糖、巧克力、奶糖、蜂蜜
+ice_cream,冰淇淋/雪糕/布丁/果冻,Ice cream and chilled desserts,1393:1,冰淇淋
+glutinous_sweet,汤圆/酒酿圆子/麻薯/青团,Sweet glutinous desserts,1220:0.6;1221:0.4,黑芝麻汤圆与醪糟
+water_tea,水/茶/黑咖啡/草本饮,"Water, tea, black coffee and herbal drinks",W0:1,按能量与宏量营养素为零处理
+sweet_drink,可乐/果汁/椰汁/糖水,Sugar-sweetened beverages and juices,1367:0.3;1576:0.3;1369:0.2;1376:0.2,可乐、橙汁饮料、苹果汁饮料、椰子汁饮料
+beer,啤酒,Beer,1407:1,啤酒(4.3%，青岛牌)，碳水已扣除乙醇（见README）
+wine,葡萄酒/白酒,Wine and spirits,1412:1,红葡萄酒，碳水已扣除乙醇（见README）
+rice_wine,黄酒/米酒,Chinese rice wine,1421:1,黄酒，按成分表原值
+condiment,调味品/酱/腐乳,Condiments and sauces,1518:0.3;1520:0.2;1523:0.2;1539:0.15;1547:0.15,酱油、醋、豆瓣酱、番茄酱、红腐乳
+starchy_mixed_dish,含淀粉荤素菜（土豆/山药/藕/玉米/芋/南瓜/粉丝/毛豆/栗子）,Mixed dishes with starchy vegetables (fried),@starchy_veg:0.40;@mixed_veg:0.30;789:0.25;OIL:0.05,审核意见：含淀粉类食材的荤素菜，薯类40%、混合蔬菜30%、猪肉25%、油5%
+starchy_mixed_steamed,含淀粉荤素菜（蒸/炖，不加油）,Mixed dishes with starchy vegetables (steamed/stewed),@starchy_veg:0.42;@mixed_veg:0.32;789:0.26,同上配比去掉油（如南瓜蒸小排）
+starchy_soup,含淀粉的汤（土豆汤/山芋汤/南瓜汤/玉米汤/藕汤/粉丝汤）,Soups with starchy vegetables,W0:0.75;@starchy_veg:0.20;789:0.05,审核意见：汤水75%、薯类20%、猪肉5%（碳水约3.8 g/100 g）
+offal_fried,内脏/血制品（炒/爆）,Offal and blood (stir-fried),@offal:0.95;OIL:0.05,内脏加炒菜用油
+egg_custard,蒸蛋/炖蛋/蛋羹,Steamed egg custard,978:0.5;W0:0.5,蛋液与水1:1
+protein_powder,蛋白粉,Protein powder,U174276:1,成分表无条目；USDA大豆分离蛋白（伪条目）
+unmappable,无法映射,Unmappable,,无重量、非食物、空腹检查或成分表无对应条目

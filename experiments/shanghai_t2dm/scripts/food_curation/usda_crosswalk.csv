@@ -1,0 +1,232 @@
+entry_id,cn_name,fdc_id,usda_description,scale_to_cn_water,fiber_fdc_id,fiber_usda_description,confidence,rationale
+259,小麦粉(标准粉),168936,"Wheat flour, white, all-purpose, enriched, unbleached",,,,medium,标准粉（出粉率约85%）介于白面粉与全麦粉之间，取通用白面粉
+261,挂面(均值),168908,"Noodles, japanese, somen, dry",,,,medium,挂面（干小麦面条）≈日式素面（干）
+264,面条(均值),168927,"Pasta, dry, unenriched",yes,,,medium,生鲜切面＝面粉加水；用干意面按含水量折算（无鸡蛋）
+269,花卷,168936,"Wheat flour, white, all-purpose, enriched, unbleached",yes,,,medium,花卷≈面粉加水蒸制；用面粉按含水量折算
+271,烙饼(标准粉),174915,"Bread, pita, white, enriched",,,,medium,烙饼与皮塔饼同为未油炸的发面/死面饼，含水相近
+272,馒头(均值),168936,"Wheat flour, white, all-purpose, enriched, unbleached",yes,,,medium,馒头＝面粉加水蒸制，USDA无馒头；用面粉按含水量折算
+273,馒头(标准粉),168936,"Wheat flour, white, all-purpose, enriched, unbleached",yes,,,medium,同馒头（标准粉）
+276,油饼,174990,"Doughnuts, cake-type, plain (includes unsugared, old-fashioned)",,,,low,油饼：USDA无，取未加糖的油炸面食（cake-type doughnut）
+277,油条,174990,"Doughnuts, cake-type, plain (includes unsugared, old-fashioned)",,,,low,油条：USDA无，取未加糖的油炸面食（cake-type doughnut）
+280,稻米(均值),168879,"Rice, white, medium-grain, raw, enriched",,,,high,生白米（中粒）
+285,糯米[江米](均值),168883,"Rice, white, glutinous, unenriched, uncooked",,,,high,糯米生米
+286,紫红糯米[血糯米],169706,"Rice, brown, medium-grain, raw (Includes foods for USDA's Food Distribution Program)",,,,low,血糯米（紫黑糯米）USDA无，取糙米（中粒，生）
+287,米饭(蒸)(均值),168880,"Rice, white, medium-grain, enriched, cooked",,,,high,熟白米饭，中粒（上海以粳米为主）
+288,粳米粥,173914,"Cereals, CREAM OF RICE, cooked with water, with salt",,,,medium,粳米粥≈米粉糊加水煮（Cream of rice，含水87.5%）
+290,籼米粉(干，细),169742,"Rice noodles, dry",,,,high,干米粉
+292,玉米(鲜),169998,"Corn, sweet, yellow, raw",,,,high,鲜甜玉米（黄），生
+296,玉米面(黄),169697,"Cornmeal, whole-grain, yellow",,,,high,全粒玉米面（黄）
+301,小米,169702,"Millet, raw",,,,high,小米，生
+303,小米粥,168871,"Millet, cooked",yes,,,medium,小米粥：用熟小米按含水量折算
+308,苦荞麦粉,170687,"Buckwheat flour, whole-groat",,,,high,全粒荞麦粉
+309,荞麦,170286,Buckwheat,,,,high,荞麦籽粒
+313,马铃薯[土豆，洋芋],170026,"Potatoes, flesh and skin, raw",,,,high,马铃薯（带皮），生
+316,甘薯(红心)[山芋，红薯],168482,"Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)",,,,high,甘薯，生
+320,玉米淀粉,169698,Cornstarch,,,,high,玉米淀粉
+323,魔芋精粉[鬼芋粉，南星粉],,,,,,none,魔芋精粉USDA无；数据库变体保留中国值
+324,粉丝,174258,"Noodles, chinese, cellophane or long rice (mung beans), dehydrated",,,,high,绿豆粉丝（干）
+333,豆腐(均值),172476,"Tofu, raw, regular, prepared with calcium sulfate",,,,high,普通豆腐（石膏）
+336,豆腐(内酯),172449,"Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",,,,medium,内酯豆腐≈嫩豆腐
+339,豆奶[豆乳],173768,"Soymilk, original and vanilla, light, unsweetened, with added calcium, vitamins A and D",,,,medium,豆奶≈低脂无糖豆奶
+343,油豆腐,172451,"Tofu, fried",,,,high,油炸豆腐
+345,千张[百页],172475,"Tofu, raw, firm, prepared with calcium sulfate",yes,,,low,千张USDA无，用老豆腐按含水量折算
+346,豆腐干(均值),172475,"Tofu, raw, firm, prepared with calcium sulfate",yes,,,low,豆腐干USDA无，用老豆腐按含水量折算
+347,素鸡,172475,"Tofu, raw, firm, prepared with calcium sulfate",,,,low,素鸡USDA无，取老豆腐
+349,烤麸,168147,Vital wheat gluten,yes,,,medium,烤麸为湿面筋，用谷朊粉按含水量折算
+350,绿豆(干),174256,"Mung beans, mature seeds, raw",,,,high,绿豆，生
+351,赤小豆[小豆，红小豆](干),173727,"Beans, adzuki, mature seeds, raw",,,,high,赤小豆，生
+354,红豆沙,173730,"Yokan, prepared from adzuki beans and sugar",,173728,"Beans, adzuki, mature seeds, cooked, boiled, without salt",medium,红豆沙≈羊羹（豆沙加糖）；USDA羊羹无纤维值，纤维取煮红小豆
+371,白萝卜[莱菔](鲜),168451,"Radishes, oriental, raw",,,,high,白萝卜（东方萝卜），生
+380,胡萝卜(红)[金笋，丁香萝卜],170393,"Carrots, raw",,,,high,胡萝卜，生
+386,刀豆(鲜),169961,"Beans, snap, green, raw",,,,medium,刀豆（鲜荚）USDA无，取青刀豆荚
+387,豆角,169961,"Beans, snap, green, raw",,,,high,豆角（鲜荚）
+389,荷兰豆,170010,"Peas, edible-podded, raw",,,,high,荷兰豆（食荚豌豆）
+391,毛豆[青豆，菜用大豆](鲜),169282,"Soybeans, green, raw",,,,high,毛豆（青大豆），生
+392,四季豆[菜豆],169961,"Beans, snap, green, raw",,,,high,四季豆（菜豆荚）
+393,"豌豆(带荚,鲜)[回回豆]",170419,"Peas, green, raw",,,,medium,鲜豌豆
+397,豇豆,169222,"Yardlong bean, raw",,169961,"Beans, snap, green, raw",medium,豇豆（长豇豆）；USDA豇豆无纤维值，纤维取四季豆
+399,黄豆芽,169284,"Soybeans, mature seeds, sprouted, raw",yes,,,medium,USDA大豆芽含水69%，远低于中国黄豆芽（89%），按含水量折算
+400,绿豆芽,169957,"Mung beans, mature seeds, sprouted, raw",,,,high,绿豆芽
+402,茄子(均值),169228,"Eggplant, raw",,,,high,茄子
+405,番茄[西红柿],170457,"Tomatoes, red, ripe, raw, year round average",,,,high,番茄
+410,甜椒[灯笼椒，柿子椒],170427,"Peppers, sweet, green, raw",,,,high,青甜椒
+419,冬瓜,170069,"Waxgourd, (chinese preserving melon), raw",,,,high,冬瓜
+422,黄瓜[胡瓜](鲜),168409,"Cucumber, with peel, raw",,,,high,黄瓜（带皮）
+425,苦瓜[凉瓜，癞瓜](鲜),168393,"Balsam-pear (bitter gourd), pods, raw",,,,high,苦瓜
+426,南瓜[倭瓜，番瓜](鲜),168448,"Pumpkin, raw",,,,high,南瓜
+429,丝瓜,168414,"Gourd, dishcloth (towelgourd), raw",,,,high,丝瓜
+431,西葫芦,169291,"Squash, summer, zucchini, includes skin, raw",,,,high,西葫芦（带皮）
+437,青蒜,169246,"Leeks, (bulb and lower leaf-portion), raw",,,,medium,青蒜USDA无，取韭葱（leeks）
+441,大葱,170007,"Onions, welsh, raw",,,,high,大葱（Welsh onion）
+444,洋葱[葱头](鲜),170000,"Onions, raw",,,,high,洋葱
+445,韭菜,169994,"Chives, raw",,,,medium,韭菜USDA无，取细香葱（chives）
+446,韭黄[韭芽],169994,"Chives, raw",,,,low,韭黄（软化韭菜）USDA无，取细香葱
+450,大白菜(均值),169979,"Cabbage, chinese (pe-tsai), raw",,,,high,大白菜（pe-tsai）
+452,小白菜,170390,"Cabbage, chinese (pak-choi), raw",,,,high,小白菜（pak-choi）
+457,油菜,170390,"Cabbage, chinese (pak-choi), raw",,,,high,油菜（上海青，pak-choi类）
+460,鸡毛菜,170390,"Cabbage, chinese (pak-choi), raw",,,,medium,鸡毛菜（小白菜幼苗）
+463,甘蓝[圆白菜，卷心菜],169975,"Cabbage, raw",,,,high,结球甘蓝
+464,菜花[花椰菜],169986,"Cauliflower, raw",,,,high,菜花
+465,西兰花[绿菜花],170379,"Broccoli, raw",,,,high,西兰花
+473,菠菜[赤根菜](鲜),168462,"Spinach, raw",,,,high,菠菜
+480,芹菜茎,169988,"Celery, raw",,,,high,芹菜
+482,生菜(牛俐)[油麦菜],169247,"Lettuce, cos or romaine, raw",,,,medium,油麦菜（长叶莴苣类）≈罗马生菜
+483,生菜(叶用莴苣),169249,"Lettuce, green leaf, raw",,,,high,叶用莴苣
+486,苋菜(绿，鲜),168385,"Amaranth leaves, raw",,168462,"Spinach, raw",medium,苋菜；USDA苋菜叶无纤维值，纤维取菠菜
+487,"苋菜(紫,鲜)[红苋]",168385,"Amaranth leaves, raw",,168462,"Spinach, raw",medium,红苋菜；纤维取菠菜
+488,茼蒿[蓬蒿菜，艾菜](鲜),169995,"Chrysanthemum, garland, raw",,,,high,茼蒿
+490,荠菜[蓟菜，菱角菜](鲜),169256,"Mustard greens, raw",,,,low,荠菜USDA无，取同科芥菜叶
+491,莴笋[莴苣](鲜),169990,"Celtuce, raw",,,,high,莴笋（celtuce）
+493,蕹菜[空心菜，藤藤菜],169301,"Water convolvulus,raw",,,,high,空心菜（water convolvulus）
+499,竹笋(鲜),169210,"Bamboo shoots, raw",,,,high,竹笋
+510,芦笋[石刁柏，龙须菜],168389,"Asparagus, raw",,,,high,芦笋
+513,慈菇[乌芋，白地果](鲜),169203,"Arrowhead, raw",,,,high,慈菇（arrowhead），生；USDA无纤维值
+516,藕[莲藕],169250,"Lotus root, raw",,,,high,藕
+518,水芹菜,169988,"Celery, raw",,,,medium,水芹USDA无，取芹菜
+519,茭白[茭笋，茭粑](鲜),169210,"Bamboo shoots, raw",,,,low,茭白USDA无，取质地与成分相近的竹笋
+525,山药[薯蓣，大薯](鲜),168432,"Mountain yam, hawaii, raw",,,,medium,山药（薯蓣属）≈夏威夷山药（mountain yam）
+526,芋头[芋艿，毛芋],169308,"Taro, raw",,,,high,芋头
+528,姜[黄姜](鲜),169231,"Ginger root, raw",,,,high,生姜
+536,白薯叶[甘薯叶](鲜),169303,"Sweet potato leaves, raw",,,,high,甘薯叶
+564,苜蓿[草头，金花菜],169244,"Lambsquarters, raw",,,,low,草头（南苜蓿）USDA无，取藜（lambsquarters）叶
+575,金针菇[智力菇](鲜),169382,"Mushrooms, enoki, raw",,,,high,金针菇
+577,蘑菇(鲜蘑),169251,"Mushrooms, white, raw",,,,high,白蘑菇
+580,木耳(水发)[黑木耳，云耳],168581,"Fungi, Cloud ears, dried",yes,,,medium,水发木耳：用干木耳（cloud ears）按含水量折算
+581,平菇[糙皮侧耳，青蘑],168580,"Mushrooms, oyster, raw",,,,high,平菇
+584,香菇[香蕈，冬菇](鲜),169242,"Mushrooms, shiitake, raw",,168435,"Mushrooms, shiitake, stir-fried",medium,鲜香菇；USDA生香菇无纤维值，纤维取炒香菇（未加油，含水相近）
+587,银耳(干)[白木耳],168581,"Fungi, Cloud ears, dried",,,,low,干银耳USDA无，取干木耳（同为胶质菌）
+602,杏鲍菇,168580,"Mushrooms, oyster, raw",,,,medium,杏鲍菇与平菇同属侧耳属
+607,海带(浸)[江白菜，昆布],168457,"Seaweed, kelp, raw",yes,,,medium,水发海带：用鲜海带按含水量折算
+611,紫菜(干),168458,"Seaweed, laver, raw",yes,167602,"Seaweed, Canadian Cultivated EMI-TSUNOMATA, dry",low,干紫菜：用鲜紫菜按含水量折算；USDA紫菜纤维值异常低（0.3），纤维取干红藻（EMI-TSUNOMATA）
+613,苹果(均值),171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",,,,high,苹果（带皮）
+630,梨(均值),168177,"Pears, asian, raw",,,,high,梨（亚洲梨）
+652,梨(鳄梨),171705,"Avocados, raw, all commercial varieties",,,,high,牛油果
+660,桃(均值),169928,"Peaches, yellow, raw",,,,high,桃
+666,李子,169949,"Plums, raw",,,,high,李子
+675,枣(干),168152,"Jujube, Chinese, fresh, dried",,,,high,干枣（中国枣）
+684,葡萄(均值),174683,"Grapes, red or green (European type, such as Thompson seedless), raw",,,,high,葡萄
+689,葡萄干,168165,"Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",,,,high,葡萄干
+700,中华猕猴桃[毛叶猕猴桃],168153,"Kiwifruit, green, raw",,,,high,猕猴桃
+701,草莓[洋莓，凤阳草莓],167762,"Strawberries, raw",,,,high,草莓
+704,橙,169097,"Oranges, raw, all commercial varieties",,,,high,橙
+705,柑桔(均值),169105,"Tangerines, (mandarin oranges), raw",,,,high,柑橘
+711,柚[文旦],167754,"Pummelo, raw",,,,high,柚
+716,菠萝[凤梨，地菠萝],169124,"Pineapple, raw, all varieties",,,,high,菠萝
+722,荔枝,169086,"Litchis, raw",,,,high,荔枝
+723,芒果[抹猛果，望果],169910,"Mangos, raw",,,,high,芒果
+726,香蕉[甘蕉],173944,"Bananas, raw",,,,high,香蕉
+734,火龙果[仙蜜果、红龙果],,,,,,none,火龙果USDA无；数据库变体保留中国值（纤维为成分表报告值）
+738,甜瓜[香瓜],169911,"Melons, honeydew, raw",,,,medium,甜瓜≈蜜瓜（honeydew）
+739,西瓜(均值),167765,"Watermelon, raw",,,,high,西瓜
+743,核桃(干)[胡桃],170187,"Nuts, walnuts, english",,,,high,核桃
+752,杏仁,170567,"Nuts, almonds",,,,medium,杏仁（中国杏仁可能为杏核仁），取扁桃仁
+756,腰果,170162,"Nuts, cashew nuts, raw",,,,high,腰果
+760,胡麻籽,169414,"Seeds, flaxseed",,,,high,胡麻籽即亚麻籽
+761,花生(鲜)[落花生，长生果],174260,"Peanuts, all types, cooked, boiled, with salt",,,,medium,鲜花生（盐水花生）≈煮花生（含盐）
+764,花生仁(炒),173806,"Peanuts, all types, dry-roasted, without salt",,,,high,花生仁（干炒）
+766,葵花子(炒),170563,"Seeds, sunflower seed kernels, dry roasted, without salt",,,,high,葵花子仁（干炒）
+768,莲子(干),170149,"Seeds, lotus seeds, dried",,,,medium,干莲子；USDA无纤维值，纤维按原比例法补
+774,芝麻籽(黑),170150,"Seeds, sesame seeds, whole, dried",,,,high,芝麻
+778,花生仁(油炸),175258,"Peanuts, all types, oil-roasted, without salt",,,,high,油炸花生
+779,猪肉(肥瘦)(均值),167812,"Pork, fresh, belly, raw",,,,low,肥瘦猪肉（脂肪37%）介于猪五花与猪绞肉之间，取五花肉
+789,猪肉(腿),168226,"Pork, fresh, leg (ham), shank half, separable lean and fat, raw",,,,high,猪腿肉（后腿下段，肥瘦）
+791,猪大排,168238,"Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw",,,,high,大排（带骨里脊排，肥瘦）
+794,猪小排,167853,"Pork, fresh, spareribs, separable lean and fat, raw",,,,high,小排（肋排）
+795,猪肚,167867,"Pork, fresh, variety meats and by-products, stomach, raw",,,,high,猪肚
+797,猪肝,167862,"Pork, fresh, variety meats and by-products, liver, raw",,,,high,猪肝
+803,猪血,,,,,,none,猪血USDA无；数据库变体保留中国值
+805,腊肉(培根),167869,"Canadian bacon, unprepared",,,,medium,中国“腊肉(培根)”条目脂肪仅9%，接近加拿大培根
+807,午餐肉,172951,"Luncheon meat, pork with ham, minced, canned, includes Spam (Hormel)",,,,low,午餐肉；中国午餐肉含淀粉（碳水12%），USDA为4.6%
+808,咸肉,168277,"Pork, cured, bacon, unprepared",,,,medium,咸肉≈未烹调培根（肥瘦相近）
+810,猪蹄(熟),168290,"Pork, fresh, variety meats and by-products, feet, cooked, simmered",,,,high,熟猪蹄
+811,猪肉松(均值),,,,,,none,肉松USDA无；数据库变体保留中国值
+815,火腿肠,169866,"Frankfurter, meat and poultry, low fat",,,,low,火腿肠含淀粉，取低脂肉禽混合法兰克福香肠（碳水8.4%）
+818,香肠,172938,"Salami, dry or hard, pork",,,,low,中式香肠（含糖、风干）≈干硬猪肉萨拉米
+823,牛肉(肥瘦)(均值),171777,"Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0"" fat, select, raw",,,,medium,牛肉（肥瘦）均值较瘦，取零修整零售切块组合（select）
+844,羊肉(肥瘦)(均值),172545,"Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8"" fat, choice, raw",,,,medium,羊肉（肥瘦）组合切块
+876,鸡(均值),171447,"Chicken, broilers or fryers, meat and skin, raw",,,,medium,鸡（均值）含皮；美国肉鸡脂肪较高
+880,鸡胸脯肉,171077,"Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",,,,high,鸡胸肉
+882,鸡腿,172378,"Chicken, broilers or fryers, leg, meat and skin, raw",,,,high,鸡腿（带皮）
+883,鸡爪,171119,"Chicken, feet, boiled",,,,high,鸡爪（煮）
+887,鸡肫[鸡胗],171456,"Chicken, gizzard, all classes, raw",,,,high,鸡胗
+891,鸭(均值),172408,"Duck, domesticated, meat and skin, raw",,,,low,鸭（均值）含皮；美国北京鸭脂肪（39%）远高于中国均值（20%）
+912,鸽,174475,"Squab, (pigeon), meat and skin, raw",,,,medium,鸽（带皮）
+917,牛乳(光明牌),171265,"Milk, whole, 3.25% milkfat, with added vitamin D",,,,high,全脂牛奶
+958,乳品（酸奶，均值),170888,"Yogurt, vanilla, low fat.",,,,medium,中国酸奶多加糖，取低脂香草酸奶
+978,蛋（鸡蛋，均值),171287,"Egg, whole, raw, fresh",,,,high,鸡蛋
+982,鸡蛋白,172183,"Egg, white, raw, fresh",,,,high,鸡蛋白
+989,荷包蛋(煮),172186,"Egg, whole, cooked, poached",,,,high,水煮荷包蛋（poached egg）
+990,蛋（鸭蛋）,172189,"Egg, duck, whole, fresh, raw",,,,high,鸭蛋
+994,蛋（松花蛋，鸭蛋)[皮蛋],172189,"Egg, duck, whole, fresh, raw",,,,low,皮蛋USDA无，取鸭蛋
+995,咸鸭蛋,172189,"Egg, duck, whole, fresh, raw",,,,low,咸鸭蛋USDA无，取鸭蛋
+1008,鱼（黄鳝）[鳝鱼],174193,"Fish, eel, mixed species, raw",,,,low,黄鳝（亚洲黄鳝很瘦）USDA仅有鳗鱼（脂肪12%）
+1014,青鱼[青皮鱼，青鳞鱼，青混],171952,"Fish, carp, raw",,,,medium,青鱼与鲤鱼同科
+1021,鲫鱼[喜头鱼，海附鱼],171952,"Fish, carp, raw",,,,medium,鲫鱼与鲤鱼同科
+1030,带鱼[白带鱼，刀鱼],174192,"Fish, croaker, Atlantic, raw",,,,low,带鱼USDA无，取脂肪相近的大西洋黄花鱼
+1038,黄鱼(小黄花鱼),174192,"Fish, croaker, Atlantic, raw",,,,high,小黄鱼（石首鱼科）≈大西洋黄花鱼
+1050,鲈鱼[鲈花],175142,"Fish, sea bass, mixed species, raw",,,,medium,鲈鱼（花鲈）≈海鲈
+1056,鲳鱼[平鱼，银鲳，刺鲳],171951,"Fish, butterfish, raw",,,,medium,鲳鱼与butterfish同属鲳科
+1067,鱼丸,173702,"Fish, surimi",,,,medium,鱼丸≈鱼糜（surimi）
+1092,虾（河虾）,175179,"Crustaceans, shrimp, raw",,,,medium,河虾，生
+1093,虾（基围虾）,175179,"Crustaceans, shrimp, raw",,,,high,基围虾，生
+1103,蟹（河蟹）,174204,"Crustaceans, crab, blue, raw",,,,medium,河蟹（大闸蟹）USDA无，取蓝蟹
+1106,鲍鱼[杂色鲍],174212,"Mollusks, abalone, mixed species, raw",,,,high,鲍鱼
+1108,蛏子,174214,"Mollusks, clam, mixed species, raw",,,,medium,蛏子≈蛤类
+1120,蛤蜊(均值),174214,"Mollusks, clam, mixed species, raw",,,,high,蛤蜊
+1123,海参,167618,"Sea cucumber, yane (Alaska Native)",,,,medium,海参（阿拉斯加原住民食物条目）
+1125,海蜇皮,168129,"Jellyfish, dried, salted",,,,medium,海蜇（干腌）
+1129,乌贼(鲜)[鱿鱼，台湾枪乌贼，枪,174223,"Mollusks, squid, mixed species, raw",,,,high,鱿鱼（乌贼）
+1182,豆奶粉,,,,,,none,豆奶粉（含糖）USDA无；数据库变体保留中国值，纤维按原比例法补
+1199,春卷,167667,"Restaurant, Chinese, egg rolls, assorted",,,,low,中式餐馆春卷/蛋卷；中国条目脂肪33.7%远高于USDA（11.9%）
+1211,年糕,168880,"Rice, white, medium-grain, enriched, cooked",yes,,,medium,上海年糕为粳米制品：用熟白米饭按含水量折算
+1220,黑芝麻汤圆,,,,,,none,黑芝麻汤圆USDA无；数据库变体保留中国值
+1221,醪糟,,,,,,none,醪糟USDA无；数据库变体保留中国值
+1224,蛋糕(均值),172706,"Cake, sponge, commercially prepared",,,,medium,蛋糕（均值）≈海绵蛋糕
+1227,月饼(豆沙),172721,"Cookies, fig bars",,,,low,豆沙月饼USDA无，取同为有馅烘焙点心的无花果夹心饼
+1243,酥皮糕点,174950,"Cookies, butter, commercially prepared, enriched",,,,low,酥皮糕点（含水10.7%，脂肪15.5%）≈黄油饼干
+1260,比萨饼(夹奶酪、肉和蔬菜),170715,"Pizza, meat and vegetable topping, regular crust, frozen, cooked",,,,high,肉菜比萨
+1261,三明治(夹火腿、干酪),,,,,,none,三明治（火腿干酪）USDA无对应；数据库变体保留中国值，纤维按原比例法补
+1271,汉堡包(普通型，夹肉饼，加调料酱和蔬菜),170694,"Fast foods, hamburger; single, regular patty; with condiments",,,,medium,汉堡（单层肉饼，含调味酱）
+1273,麦片,171661,"Cereals, oats, instant, fortified, plain, dry",,,,medium,麦片（原味）≈速溶燕麦片（原味，干）
+1281,八宝粥(无糖，娃哈哈牌),,,,,,none,无糖八宝粥USDA无；数据库变体保留中国值
+1283,黑芝麻糊粉,,,,,,none,黑芝麻糊粉（含糖）USDA无；数据库变体保留中国值
+1286,燕麦片,173904,"Cereals, oats, regular and quick, not fortified, dry",,,,high,燕麦片
+1288,苦荞麦片(无糖),170685,"Buckwheat groats, roasted, dry",,,,medium,苦荞麦片≈烤荞麦粒（干）
+1291,方便面,171177,"Soup, ramen noodle, any flavor, dry",,,,high,方便面（干面块，含调料）
+1311,冬菜虾仁馄饨,169773,"Potsticker or wonton, pork and vegetable, frozen, unprepared",,,,low,馄饨≈USDA锅贴/馄饨（猪肉蔬菜馅，冷冻未烹）
+1313,糯米饭团,,,,,,none,糯米饭团USDA无；数据库变体保留中国值
+1314,什锦炒饭,167668,"Restaurant, Chinese, fried rice, without meat",,,,medium,什锦炒饭≈中式餐馆炒饭（无肉）
+1316,面包(均值),174924,"Bread, white, commercially prepared (includes soft bread crumbs)",,,,high,白面包
+1322,饼干(均值),174973,"Cookies, vanilla wafers, lower fat",,,,medium,饼干（均值）≈香草威化饼干（低脂）
+1323,苏打饼干,172746,"Crackers, saltines (includes oyster, soda, soup)",,,,high,苏打饼干
+1330,水饺(猪肉白菜馅),169773,"Potsticker or wonton, pork and vegetable, frozen, unprepared",,,,low,水饺≈USDA锅贴/馄饨（猪肉蔬菜馅）；USDA碳水仅13%，中国26%
+1339,包子(猪肉馅),,,,,,none,猪肉包子USDA无；数据库变体保留中国值
+1353,薯片(烧烤味),169677,"Snacks, potato chips, plain, salted",,,,high,薯片
+1367,可口可乐,174852,"Beverages, carbonated, cola, regular",,,,high,可乐
+1369,苹果汁饮料(光明牌),173933,"Apple juice, canned or bottled, unsweetened, without added ascorbic acid",,,,medium,苹果汁饮料≈无糖苹果汁
+1376,椰子汁饮料,174831,"Beverages, Coconut water, ready-to-drink, unsweetened",,,,low,椰子汁饮料USDA无，取即饮椰子水（纤维0）
+1393,冰淇淋,167575,"Ice creams, vanilla",,,,high,香草冰淇淋
+1407,啤酒(4.3％，青岛牌),168746,"Alcoholic beverage, beer, regular, all",,,,high,啤酒；USDA碳水不含乙醇，能量含乙醇（乙醇3.9 g/100 g）
+1412,红葡萄酒,173190,"Alcoholic beverage, wine, table, red",,,,high,红葡萄酒；USDA碳水不含乙醇（乙醇10.6 g/100 g）
+1421,黄酒,167723,"Alcoholic beverage, rice (sake)",,,,low,黄酒USDA无，取清酒（米酒，乙醇16 g/100 g）
+1448,糖（白砂糖）,169655,"Sugars, granulated",,,,high,白砂糖
+1453,奶糖,167974,"Candies, caramels",,,,medium,奶糖≈焦糖奶糖
+1454,巧克力,167587,"Candies, milk chocolate",,,,high,牛奶巧克力
+1487,蜂蜜,169640,Honey,,,,high,蜂蜜
+1516,大豆色拉油,171411,"Oil, soybean, salad or cooking",,,,high,大豆色拉油
+1518,酱油(均值),174277,Soy sauce made from soy and wheat (shoyu),,,,high,酱油（大豆小麦酿造）
+1520,醋(均值),173469,"Vinegar, cider",,,,low,中国酿造醋（碳水4.9%）USDA无，取苹果醋
+1523,豆瓣酱,172442,Miso,,,,medium,豆瓣酱≈味噌（发酵豆酱）
+1527,甜面酱,172886,"Sauce, hoisin, ready-to-serve",,,,medium,甜面酱≈海鲜酱（hoisin）
+1536,沙拉酱,171009,"Salad dressing, mayonnaise, regular",,,,high,蛋黄沙拉酱
+1539,番茄酱,170459,"Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",,,,high,番茄酱（浓缩番茄膏）
+1545,腐乳(白)[酱豆腐],174305,"Tofu, salted and fermented (fuyu), prepared with calcium sulfate",,172476,"Tofu, raw, regular, prepared with calcium sulfate",medium,白腐乳≈fuyu；USDA无纤维值，纤维取普通豆腐
+1547,腐乳(红)[酱豆腐],174305,"Tofu, salted and fermented (fuyu), prepared with calcium sulfate",,172476,"Tofu, raw, regular, prepared with calcium sulfate",medium,红腐乳≈fuyu；纤维取普通豆腐
+1550,萝卜干,168453,"Radishes, oriental, dried",yes,,,low,萝卜干：用干萝卜按含水量折算（中国萝卜干含盐多，折算会高估）
+1551,榨菜,170392,"Cabbage, kimchi",,,,low,榨菜USDA无，取泡菜（kimchi）
+1553,腌雪里红,170392,"Cabbage, kimchi",,,,low,腌雪里红USDA无，取泡菜（kimchi）
+1555,酱八宝菜,169378,"Pickles, cucumber, sweet (includes bread and butter pickles)",,,,low,酱八宝菜（甜咸酱菜）≈甜腌黄瓜
+1571,枸杞子,173032,"Goji berries, dried",,,,high,枸杞干
+1576,橙汁饮料(光明牌),169044,"Beverages, Orange juice drink",,,,high,橙汁饮料
+U174276,大豆分离蛋白（USDA；成分表无条目）,174276,Soy protein isolate,,,,high,蛋白粉：成分表无条目，主分析与数据库变体均用USDA大豆分离蛋白（伪条目）
+W0,水（冲调/烹煮加水；非成分表条目）,173647,"Beverages, water, tap, drinking",,,,high,水

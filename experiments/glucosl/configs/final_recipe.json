@@ -1,0 +1,38 @@
+{
+  "protocol": "G1, Section 4.2, final recipe fixed 2026-10-21 after development round 5",
+  "person_inputs": ["age", "sex", "bmi", "hba1c_pct", "fasting_glucose_mgdl"],
+  "meal_inputs": ["carbohydrate_g", "protein_g", "fat_g", "fiber_g", "hour_sin", "hour_cos"],
+  "glucosl_kan": {
+    "structure": "two_part", "kind": "kan", "hidden": [], "grid": 3, "penalty": 0.01, "smoothness": 0.1,
+    "meal_monotone": {"carbohydrate_g": 1, "fiber_g": -1},
+    "learning_rate": 0.01, "epochs": 3000, "patience": 150, "weighting": "meal",
+    "seeds": [20261021, 20261022, 20261023, 20261024, 20261025], "bootstrap": false
+  },
+  "ablation_single_kan": {
+    "structure": "single", "kind": "kan", "hidden": [], "grid": 3, "penalty": 0.01, "smoothness": 0.1,
+    "meal_monotone": {"carbohydrate_g": 1, "fiber_g": -1},
+    "learning_rate": 0.01, "epochs": 3000, "patience": 150, "weighting": "meal",
+    "seeds": [20261021, 20261022, 20261023, 20261024, 20261025], "bootstrap": false
+  },
+  "ablation_unconstrained_kan": {
+    "structure": "two_part", "kind": "kan", "hidden": [], "grid": 3, "penalty": 0.01, "smoothness": 0.0,
+    "meal_monotone": null,
+    "learning_rate": 0.01, "epochs": 3000, "patience": 150, "weighting": "meal",
+    "seeds": [20261021, 20261022, 20261023, 20261024, 20261025], "bootstrap": false
+  },
+  "ablation_mlp": {
+    "structure": "two_part", "kind": "mlp", "grid_search": {"hidden": [[8], [16], [32], [8, 8], [16, 16], [32, 32]], "weight_decay": [0.0, 0.0001, 0.001]},
+    "learning_rate": 0.01, "epochs": 3000, "patience": 150, "weighting": "meal",
+    "seeds": [20261021, 20261022, 20261023, 20261024, 20261025], "bootstrap": false,
+    "tuning": "5-fold patient-grouped CV in set A, fold seed 20261021; patient-macro MAE (regression) or patient-averaged log loss (binary)"
+  },
+  "comparators": {
+    "constant": "training median iAUC / training event rate",
+    "linear": {"regression": "QuantileRegressor(quantile=0.5, solver=highs), alpha in [0, 0.001, 0.01, 0.1]", "binary": "LogisticRegression(L2), C in [0.01, 0.1, 1, 10]"},
+    "xgboost": {"objective": {"regression": "reg:absoluteerror", "binary": "binary:logistic"}, "grid": {"max_depth": [2, 3, 4], "learning_rate": [0.03, 0.1], "n_estimators": [100, 300], "min_child_weight": [5, 20]}, "subsample": 0.8, "colsample_bytree": 0.8},
+    "tabpfn": "v2 weights via create_default_for_version(ModelVersion.V2), CPU, median output for regression, no tuning",
+    "tuning": "5-fold patient-grouped CV in set A, fold seed 20261021"
+  },
+  "us_trained_glucosl_kan": "same as glucosl_kan, trained on all 44 CGMacros participants with CGMacros preprocessing statistics",
+  "sensitivity_staples_cooked": "glucosl_kan and xgboost (regression) refit with staples_cooked_* nutrients in set A"
+}

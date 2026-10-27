@@ -1,0 +1,133 @@
+rank,key,item_zh,group_id,recipe,cooking,confidence,notes
+304,stuffed sticky rice ball,粢饭糕,fried_wheat,,fried_in_entry,low,粢饭糕为油炸糯米糕，按油炸面食组近似
+307,lotus nut,粒莲心,dried_fruit,768:1,na,low,干莲子；“10粒莲心”逐行按约12 g计（重量修正），“莲心100g”行重量不可靠，判为不可用
+311,mapo tofu,麻婆豆腐,soy_fried,,fried_dish_type,medium,麻婆豆腐：豆腐、肉末、油
+314,staple food,主食,rice,,na,low,“主食”未注明种类，按米饭
+317,garlic and bean curd,,soy_veg_stirfry,,fried_dish_type,low,无中文名；蒜与豆制品合烧，按豆制品炒蔬菜
+319,shrimp fried with vegetable,三色虾仁,seafood_fried,,fried_dish_type,medium,三色虾仁：虾仁炒青豆、玉米、胡萝卜
+373,duck feet,鸭爪,chicken,,unspecified,low,禽爪按鸡组（鸭爪脂肪远低于鸭肉）
+415,glucose,葡萄糖,sugar_sweets,,na,medium,葡萄糖；组内含巧克力等，碳水约低估15%
+425,laver,紫菜,fungi_algae,,na,low,干紫菜（中位8 g）按鲜/水发菌藻组，营养素被低估
+452,"stir fried pork, bamboo shoot, peanut with sauce",炒酱,meat_veg_stirfry,,fried_named,medium,上海炒酱：肉丁、笋丁、花生、酱
+481,konjak cold noodles,面包,fungi_algae,W0:0.97;323:0.03,na,medium,魔芋凉皮/魔芋丝：约3%魔芋精粉加水（审核意见），近乎无碳水
+485,kung pao chicken,宫保鸡丁,chicken_fried,,fried_dish_type,medium,宫保鸡丁：鸡丁、花生、油炒
+491,"lotus nut, red bean, poria coco and orange peel",莲子红豆茯苓陈皮,sweet_soup,,nonfried_named,low,同第222项莲子红豆茯苓陈皮汤
+504,meat rice dumpling,肉粽,glutinous_ricecake,W0:0.50;285:0.50,na,medium,粽子：糯米与水1:1（审核意见，熟粽子碳水约39 g/100 g）；馅料未计
+507,shredded pork with chinese cabbage,黄芽菜和肉,meat_veg_stirfry,,fried_dish_type,medium,黄芽菜肉丝（炒）
+508,shredded pork with garlic sauce,鱼香肉丝,meat_veg_stirfry,,fried_dish_type,medium,鱼香肉丝：肉丝、木耳、胡萝卜、笋丝
+519,shrimp skin,虾皮,shrimp,,unspecified,low,虾皮为干制品，按鲜虾组蛋白被低估
+521,shepherd's purse pork stuffed dumpling,,filled_meat,,nonfried_named,medium,无中文名；荠菜肉饺子
+523,ginger soaked in sugar and vinegar,糖醋浸姜,pickled_veg,,na,medium,糖醋浸姜，按腌菜
+552,milk and egg,牛奶加鸡蛋,milk,,na,low,牛奶加鸡蛋；鸡蛋未单独计
+564,mixed fried vegetables,混合烩菜,mixed_veg_fried,,fried_dish_type,low,混合烩菜（英文为fried）
+565,6 red dates,红枣只,dried_fruit,675:1,na,medium,红枣6只：按每只5 g，共30 g（逐行重量修正）
+568,sour and spicy lemon chicken feet,酸辣柠檬凤爪,chicken,,nonfried_named,medium,酸辣柠檬凤爪（凉拌鸡爪）
+569,shepherd’s purse and minced pork stuffed tofu skin,荠菜肉糜百叶包,meat_veg_steamed,,unspecified,medium,荠菜肉糜百叶包，同第109项百叶包
+572,shrimp and vegetable,三色虾仁,seafood_fried,,fried_dish_type,medium,三色虾仁：虾仁炒青豆、玉米、胡萝卜
+591,buckwheat noodles with green vegetable,青菜荞麦面,noodle_meal,264:0.165;308:0.066;W0:0.619;452:0.15,unspecified,medium,青菜荞麦面：同第145项青菜汤面，面改为荞麦面；中文重量120 g
+599,braised pork with tofu skin,百叶结烧肉,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,百叶结烧肉：同第276项配方（审核意见）
+609,sweet and sour ginger,糖醋姜,pickled_veg,,na,medium,糖醋姜，按腌菜
+610,sweet and sour spare ribs,糖醋小排,pork_rib_fried,,fried_dish_type,medium,糖醋小排（先炸后烧），糖未计
+620,rye flour bread,黑麦蛋糕,bread_flatbread,,na,medium,黑麦面包
+665,pork stuffed tofu skin,豆腐衣包肉,meat_veg_steamed,,unspecified,medium,豆腐衣包肉，同百叶包
+683,wax gourd and egg roll,冬瓜蛋卷,egg_veg_stirfry,,fried_dish_type,low,冬瓜烧蛋卷（蛋皮卷肉）
+690,stewed pork with preserved bean curd,腐乳肉,pork_belly_braised,,fried_dish_type,medium,腐乳肉：腐乳烧五花肉
+712,scallion oil noodles,葱油拌面,fried_rice_noodles,,fried_in_entry,low,葱油拌面：面条加葱油，按炒面饭组（条目含油）
+716,egg dumpling,蛋饺,egg_fried,,fried_dish_type,medium,蛋饺：煎蛋皮包肉糜
+721,dried fruits and nuts,果干和坚果,dried_fruit,@dried_fruit:0.5;@nuts_seeds:0.5,na,medium,果干和坚果各半（审核意见）
+728,stir-fried pork with egg and fungus,木须肉,meat_veg_stirfry,,fried_dish_type,medium,木须肉：肉片、鸡蛋、木耳炒
+731,dried shrimp skin and cabbage,虾皮白菜,leafy_veg_fried,,fried_dish_type,medium,虾皮白菜：以白菜为主，少量虾皮
+738,cookie,饼,biscuit_snack,,na,medium,英文为cookie，中文“饼干/饼”
+791,shepherd's purse and pork in tofu skin 4,腐皮包荠菜肉,meat_veg_steamed,345:0.40;789:0.25;779:0.25;W0:0.10,unspecified,medium,腐皮包荠菜肉：同第109项百叶包配方；中文重量40 g
+807,salt and pepper shrimp,椒盐大虾,seafood_fried,,fried_dish_type,medium,椒盐大虾：油炸
+823,rice noodles in sour soup,酸汤米粉,noodle_meal,,nonfried_named,low,酸汤米粉，按汤面组
+824,rice roll,饭团,glutinous_ricecake,1313:1,na,high,饭团：直接用1313糯米饭团（审核意见）
+825,shanghai smoked pomfret,本帮熏鲳鱼,fish_fried,,fried_dish_type,medium,本帮熏鲳鱼：油炸后浸汁，同第181项熏鱼
+827,salted peanut,盐水花生,nuts_seeds,761:1,na,medium,盐水花生：鲜花生煮制，用761花生(鲜)（审核意见）；是否带壳称重未知，未乘可食部
+853,tofu skin wrap pork,豆腐衣包肉,meat_veg_steamed,,unspecified,medium,豆腐衣包肉，同百叶包
+854,tofu skin roll with minced pork,百叶包,meat_veg_steamed,,unspecified,medium,百叶包（含肉糜），同第109项
+855,tofu knot,豆腐结,soy_dried,,unspecified,medium,豆腐结即百叶结
+868,tomato and fish ball,番茄鱼丸,fish_processed,,unspecified,low,番茄鱼丸（汤汁烩），未加油
+896,stir-fried pork with tofu skin,百叶结烧肉,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,百叶结烧肉：同第276项配方（审核意见）
+917,sweet and sour pork rib,,pork_rib_fried,,fried_dish_type,medium,无中文名；糖醋排骨（先炸后烧），糖未计
+921,sugar-fried chestnuts,糖炒栗子,starchy_veg,,unspecified,low,糖炒栗子为砂炒，不加油；栗子碳水（约46 g/100 g）高于组均值，被低估
+925,shredded golden melon,黄金瓜丝,fruit_veg,,unspecified,low,黄金瓜丝（疑为金瓜丝，作蔬菜）
+956,yam and fungus porridge,山药木耳羹,sweet_soup,,nonfried_named,low,山药木耳羹，同第257项银耳山药羹
+967,"vegetable, fish, shrimp and vegetable",菜、鱼、虾、蔬菜,meat_veg_steamed,,unspecified,low,多种食物合计重量，按荤素（不加油）组
+1011,sliced pork with beijing sauce,京酱肉丝,pork_fried,,fried_dish_type,medium,京酱肉丝
+1026,soup of sea food,本帮三鲜,meat_veg_soup,,nonfried_named,low,本帮三鲜（汤）：肉圆、蛋饺、笋片等
+1031,smoked tofu,熏豆腐,soy_dried,,unspecified,medium,熏豆腐（干豆制品）
+1033,smoked pomfret,本帮熏鲳鱼,fish_fried,,fried_dish_type,medium,本帮熏鲳鱼：油炸后浸汁，同第181项熏鱼
+1039,skimmed milk,,milk,,na,medium,无中文名；脱脂奶按全脂牛奶组计，脂肪约高估3 g/100 ml
+1040,shrimp with pepper and salt,椒盐围基虾,seafood_fried,,fried_dish_type,medium,椒盐基围虾：油炸
+1064,shrimp fried with vegetables,三色虾仁,seafood_fried,,fried_dish_type,medium,三色虾仁
+1065,shrimp fired with vegetable,三色虾仁,seafood_fried,,fried_dish_type,medium,三色虾仁
+1120,"spinach, king oyster mushroom, pine nut",菠菜杏鲍菇松仁,mixed_veg_fried,,fried_dish_type,medium,菠菜、杏鲍菇炒松仁，以蔬菜为主
+1123,red bean rice dumpling,赤豆粽,glutinous_ricecake,W0:0.50;285:0.50,na,medium,粽子：糯米与水1:1（审核意见，熟粽子碳水约39 g/100 g）；馅料未计
+1156,"coix seed, red bean and lotus nut",薏仁、红豆、莲子,sweet_soup,,nonfried_named,low,薏仁红豆莲子（300 g），按甜汤
+1157,corase grain steamed bread,杂粮馒头,steamed_bread,273:0.70;296:0.09;308:0.09;W0:0.12,na,medium,杂粮馒头（中文有制表符导致未解析）：同第6项配方；中文重量140 g
+1161,colored bean rice dumpling,彩豆棕,glutinous_ricecake,W0:0.50;285:0.50,na,medium,粽子：糯米与水1:1（审核意见，熟粽子碳水约39 g/100 g）；馅料未计
+1164,coke,,sweet_drink,,na,high,无中文名；可乐
+1169,coffee 100 ml with 9 g sugar,咖啡加糖,sweet_drink,W0:0.917431;1448:0.082569,na,high,咖啡100 ml加糖9 g：共109 g
+1171,coconut,椰浆,unmappable,,,low,椰浆（高脂，约20 g/100 g）无合适组
+1187,crispy chicken,香酥鸡,chicken_fried,,fried_dish_type,medium,香酥鸡（油炸）
+1193,"corn, green bean, carrot, and pine nut",玉米青豆胡萝卜松仁,mixed_veg_fried,,fried_dish_type,medium,松仁玉米类素炒
+1199,coarse grain noodles,杂粮面,noodles,,na,medium,杂粮面，按熟面组
+1231,chinese herbal medicine,中药水,water_tea,,na,medium,中药水：按零营养素饮品计（审核意见），不再判为无法映射
+1238,chinese cabbage and sliced carrot,,mixed_veg_fried,,fried_dish_type,medium,无中文名；白菜胡萝卜片（素炒）
+1243,"egg yolk, chicken wing and fish",蛋黄鸡翅鱼,chicken,,unspecified,low,蛋黄、鸡翅、鱼合计重量，按鸡组
+1248,eight treasures in hot sauce,八宝辣酱,meat_veg_stirfry,,fried_dish_type,medium,上海八宝辣酱：肉丁、豆干、笋、花生、虾等炒制
+1275,fried asparagus,,root_stem_veg_fried,,fried_named,medium,无中文名；炒芦笋
+1292,double cooked pork,回锅肉,pork_belly_braised,,fried_dish_type,medium,回锅肉：五花肉煸炒
+1302,deep-fried spare ribs with spicy salt,椒盐排条,pork_rib_fried,,fried_dish_type,medium,椒盐排条（油炸）
+1315,dry-fried cauliflower,干锅花菜,leafy_veg_fried,,fried_dish_type,medium,干锅花菜（多油）
+1321,dried sweet potato,红薯干,dried_fruit,,na,low,红薯干（干制），按干果组碳水近似
+1323,dried shrimps with white gourd,冬瓜虾米,fruit_veg_fried,,fried_dish_type,medium,冬瓜虾米：以冬瓜为主
+1338,black carp,,fish,,unspecified,medium,无中文名；青鱼
+1351,boiled chicken and pumpkin pie,鸡肉南瓜派,meat_veg_steamed,,unspecified,low,鸡肉与南瓜派合计重量
+1353,braised beef noodles,红烧牛肉面,noodle_meal,,nonfried_named,medium,红烧牛肉面（汤面，红烧牛肉为浇头）
+1370,beef jerky,牛肉干,pork_processed,,na,low,牛肉干为干制品（蛋白约46 g/100 g），按加工肉组被低估
+1372,avocados,牛油果,fruit_tropical,652:1,na,high,牛油果：直接用652梨(鳄梨)（审核意见）
+1381,avocado,牛油果,fruit_tropical,652:1,na,high,牛油果：直接用652梨(鳄梨)（审核意见）
+1391,bamboo shoot soup with fresh and pickled streaky pork,腌笃鲜,meat_veg_soup,,nonfried_named,medium,腌笃鲜（汤）
+1392,basa fish in sour soup,酸汤巴沙鱼,fish,,nonfried_named,low,酸汤巴沙鱼，按鱼计
+1429,cabbage and radish and bean sprouts and chicken meatball,白菜、萝卜、豆芽、鸡肉圆子共,meat_veg_steamed,,unspecified,low,多种食物合计重量（以蔬菜为主）
+1431,cabbage and bacon,包菜培根,meat_veg_stirfry,,fried_dish_type,medium,包菜培根：中文重量50 g
+1438,cereal vegetable,麦片菜,leafy_veg,,unspecified,low,“麦片菜”疑为莜麦菜（油麦菜类叶菜），非麦片
+1458,braised meat with quail egg,鹌鹑蛋红烧肉,pork_belly_braised,,fried_named,medium,鹌鹑蛋红烧肉
+1461,braised pork in brown sauce  with quail egg,鹌鹑蛋红烧肉,pork_belly_braised,,fried_named,medium,鹌鹑蛋红烧肉
+1464,braised pork and tofu skin knot,百叶结烧肉,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,百叶结烧肉：同第276项配方（审核意见）
+1471,braised fish belly,红烧肚裆,fish_fried,,fried_named,medium,红烧肚裆（青鱼腹部）
+1496,braised pork with preserved vegetable in soya sauce,,pork_belly_braised,,fried_named,medium,无中文名；梅菜烧肉/扣肉类
+1514,"mung bean sprouts, egg dumpling, pork, pleurotus eryngii and shredded dry bean curd",绿豆芽、蛋饺、肉、杏鲍菇、烧干丝（合计）,meat_veg_stirfry,,fried_dish_type,low,多种菜合计重量（含烧干丝）
+1535,noodles with beef and scallion oil,牛肉粒葱油拌面,fried_rice_noodles,,fried_in_entry,low,葱油拌面加牛肉粒，按炒面饭组（条目含油）
+1536,noodles mixed with  butter,黄油拌面,fried_rice_noodles,,fried_in_entry,low,黄油拌面，按炒面饭组（条目含油）
+1546,milk cake,牛奶饼,cake_pastry,,na,medium,牛奶饼（糕点）
+1548,milk and bread,牛奶面包,bread_flatbread,,na,low,牛奶面包（面包）
+1565,milk pudding and strawberry jam,牛奶布丁草莓酱,ice_cream,,na,medium,牛奶布丁加草莓酱
+1566,milk sugar,牛奶糖,sugar_sweets,,na,medium,牛奶糖
+1578,minced garlic,蒜蓉,root_stem_veg,,unspecified,low,蒜蓉（记录50 g），按蒜类蔬菜
+1593,pork omelette,木须肉,meat_veg_stirfry,,fried_dish_type,medium,木须肉：肉片、鸡蛋、木耳炒
+1599,pork dumpling,,filled_meat,,nonfried_named,medium,无中文名；猪肉饺子
+1608,potato and green pepper,土豆青椒,starchy_veg_fried,,fried_dish_type,medium,土豆青椒：以土豆为主（审核意见）
+1611,raised pork with tofu skin knot,百叶结烧肉,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,百叶结烧肉：同第276项配方（审核意见）
+1614,radish and jellyfish,萝卜海蜇,root_stem_veg,371:0.5;1125:0.5,nonfried_named,medium,萝卜海蜇：萝卜与海蜇各半（审核意见），通常凉拌
+1623,protein,蛋白,egg,,unspecified,low,“蛋白”按鸡蛋组；若为蛋清则脂肪被高估
+1625,preserved egg and tofu,皮蛋豆腐,tofu,,nonfried_named,low,皮蛋豆腐（凉拌），按豆腐
+1641,orchid,兰花,unmappable,,,low,“兰花”含义不明（兰花豆、兰花干或花卉），无法判断
+1666,pickled and pork floss,酱菜肉松,pickled_veg,,na,low,酱菜肉松（佐餐小菜，5 g）
+1672,"fried chinese cabbage, black fungus and bean curd",,soy_veg_stirfry,,fried_named,medium,无中文名；白菜木耳豆腐（炒）
+1679,fried shredded pork,烂糊肉丝,meat_veg_stirfry,,fried_dish_type,medium,烂糊肉丝：黄芽菜、肉丝、勾芡
+1697,fried tasty snail,香螺,seafood_fried,,fried_named,medium,炒香螺（英文为fried）
+1721,fried egg-and starch coated chicken slices,芙蓉鸡块,chicken_fried,,fried_named,medium,芙蓉鸡块（蛋清裹粉油煎）
+1729,fried duck breast with chinese wolfberry,枸杞炒鸭脯肉,duck_fried,,fried_named,medium,枸杞炒鸭脯肉
+1740,fried pork rib in ketchup,茄汁排条,pork_rib_fried,,fried_dish_type,medium,茄汁排条（油炸后裹番茄酱）
+1741,fried pomfret,鲳鱼,fish_fried,,fried_named,medium,英文为fried，中文“鲳鱼”
+1749,fried mushroom and asparagus,,mixed_veg_fried,,fried_named,medium,无中文名；菌菇炒芦笋
+1760,latte 200ml with 7 g sugar,一杯加了糖的拿铁,milk_mixed,@milk_mixed:0.966184;1448:0.033816,na,high,拿铁200 ml加糖7 g：共207 g
+1761,latte 200ml with 6.5 g sugar,加糖的拿铁,milk_mixed,@milk_mixed:0.968523;1448:0.031477,na,high,拿铁200 ml加糖6.5 g：共206.5 g
+1763,konjak silk,魔芋丝,fungi_algae,W0:0.97;323:0.03,na,medium,魔芋凉皮/魔芋丝：约3%魔芋精粉加水（审核意见），近乎无碳水
+1764,konjak cold noodles mixed with peanut butter,花生酱拌魔芋凉皮,fungi_algae,W0:0.873;323:0.027;@nuts_seeds:0.10,na,low,花生酱拌魔芋凉皮：魔芋凉皮90%、花生酱约10%
+1776,homemade tofu,家常豆腐,soy_fried,,fried_dish_type,medium,家常豆腐（煎后烧）
+1804,goose feet,鹅掌,chicken,,unspecified,low,禽爪按鸡组
+1828,green vegetable and tofu skin knot and fungus,青菜、百叶、木耳,mixed_veg,,unspecified,low,青菜、百叶、木耳合计
