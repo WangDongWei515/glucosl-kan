@@ -1,10 +1,7 @@
-"""Protocol G1, Section 9, step 6: the one-time evaluation on the validation sets.
-
-Refuses to run unless every hash in the freeze record matches, and refuses to run a second time. This is the first
-script that loads ShanghaiT2DM set B. Metrics follow Section 5.2; estimands follow Section 5.3.
-"""
+"""Reproduce validation metrics in an independent output directory."""
 from datetime import datetime, timezone
 from pathlib import Path
+import os
 import hashlib
 import json
 import subprocess
@@ -24,13 +21,13 @@ STAGE = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(STAGE))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comparators  # noqa: F401  (the saved comparator classes live there; it does not import PyTorch)
-from freeze_protocol import RECORD, verify
 from src.external_metrics import logit, patient_weights
 from src.glucosl_data import cgmacros, shanghai_validation
 
-MODELS = STAGE / 'results/glucosl/models'
-OUTPUT = STAGE / 'results/glucosl/evaluation'
-DRAWS, SEED = 2000, 20261021
+RUN = Path(os.environ.get('GLUCOSL_RUN_DIR', str(STAGE / 'reproduction/default'))).resolve()
+MODELS = RUN / 'models'
+OUTPUT = RUN / 'evaluation'
+DRAWS, SEED = int(os.environ.get("GLUCOSL_BOOTSTRAP_DRAWS", "2000")), 20261021
 SHANGHAI_TRAINED = ['glucosl_kan', 'glucosl_mlp', 'single_kan', 'unconstrained_kan', 'constant', 'linear', 'xgboost', 'tabpfn']
 TARGET = {'regression': 'iauc', 'binary': 'peak_ge_180'}
 
@@ -118,39 +115,36 @@ def bootstrap_chunk(frame, predictions, task, draws, seed):
 def evaluate_set(label, frame, task, models, reference='glucosl_kan'):
     predictions = {name: np.asarray(model.predict(frame), float) for name, model in models.items()}
     point = {name: METRICS[task](frame, prediction) for name, prediction in predictions.items()}
-    chunks = Parallel(n_jobs=-2)(delayed(bootstrap_chunk)(frame, predictions, task, DRAWS // 10, SEED + chunk) for chunk in range(10))
+    chunks = Parallel(n_jobs=int(os.environ.get("GLUCOSL_JOBS", "1")))(delayed(bootstrap_chunk)(frame, predictions, task, DRAWS // 10, SEED + chunk) for chunk in range(10))
     draws = [draw for chunk in chunks for draw in chunk]
     metric_rows, difference_rows = [], []
     for name in predictions:
         for metric, value in point[name].items():
             values = np.array([draw[name][metric] for draw in draws], float)
             metric_rows.append({'set': label, 'task': task, 'model': name, 'metric': metric, 'estimate': value,
-                               'low': np.nanpercentile(values, 2.5), 'high': np.nanpercentile(values, 97.5), 'draws_defined': int(np.isfinite(values).sum())})
+                               'low': np.nanpercentile(values, 2.5) if len(values) else np.nan, 'high': np.nanpercentile(values, 97.5) if len(values) else np.nan, 'draws_defined': int(np.isfinite(values).sum())})
         if name != reference and reference in predictions:
             metric = HEADLINE[task]
             values = np.array([draw[reference][metric] - draw[name][metric] for draw in draws], float)
             difference_rows.append({'set': label, 'task': task, 'metric': metric, 'comparison': f'{reference} minus {name}',
                                     'estimate': point[reference][metric] - point[name][metric],
-                                    'low': np.nanpercentile(values, 2.5), 'high': np.nanpercentile(values, 97.5),
+                                    'low': np.nanpercentile(values, 2.5) if len(values) else np.nan, 'high': np.nanpercentile(values, 97.5) if len(values) else np.nan,
                                     'patients': int(frame.patient_id.nunique()), 'meals': len(frame)})
     table = pd.DataFrame({'set': label, 'task': task, 'record_id': frame.record_id.to_numpy(), 'patient_id': frame.patient_id.to_numpy(), 'observed': frame[TARGET[task]].to_numpy(), **predictions})
     return pd.DataFrame(metric_rows), pd.DataFrame(difference_rows), table
 
 
 def main():
-    record = json.loads(RECORD.read_text())
-    assert 'models' in record, 'the model stage has not been frozen'
-    mismatched = verify(record)
-    assert not mismatched, 'frozen files changed; refusing to evaluate: ' + ', '.join(mismatched)
+    assert DRAWS == 0 or (DRAWS >= 10 and DRAWS % 10 == 0), 'bootstrap draws must be zero or a positive multiple of 10'
     receipt_path = OUTPUT / 'run_receipt.json'
-    assert not receipt_path.exists(), f'{receipt_path} exists: the evaluation has already been run'
     OUTPUT.mkdir(parents=True, exist_ok=True)
     shanghai_b = shanghai_validation()
     us = cgmacros()
     sets = {'shanghai_B': shanghai_b, 'cgmacros_diabetes_range': us.loc[us.diabetes_range].reset_index(drop=True), 'cgmacros_all': us}
     metrics, differences, predictions = [], [], []
     for task in ['regression', 'binary']:
-        models = {name: load(task, name) for name in SHANGHAI_TRAINED}
+        names = SHANGHAI_TRAINED if os.environ.get('GLUCOSL_MODEL_SET', 'all') == 'all' else ['glucosl_kan', 'xgboost', 'constant']
+        models = {name: load(task, name) for name in names}
         for label, frame in sets.items():
             evaluated = {**models, 'glucosl_kan_us': load(task, 'glucosl_kan_us')} if label == 'shanghai_B' else models
             m, d, p = evaluate_set(label, frame, task, evaluated)
@@ -169,7 +163,7 @@ def main():
     pd.concat(differences, ignore_index=True).to_csv(OUTPUT / 'differences.csv', index=False)
     pd.concat(predictions, ignore_index=True).to_csv(OUTPUT / 'predictions.csv', index=False)
     receipt = {'run_at_utc': datetime.now(timezone.utc).isoformat(), 'script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-               'freeze_verified': True, 'freeze_record_sha256': hashlib.sha256(RECORD.read_bytes()).hexdigest(), 'bootstrap_draws': DRAWS, 'seed': SEED,
+               'bootstrap_draws': DRAWS, 'seed': SEED, 'model_set': os.environ.get('GLUCOSL_MODEL_SET', 'all'),
                'sets': {label: {'patients': int(frame.patient_id.nunique()), 'meals': len(frame)} for label, frame in sets.items()},
                'well_mapped_meals': len(well_mapped), 'note': 'Calibration and mean values are patient-weighted; Spearman over all meals is unweighted.'}
     receipt_path.write_text(json.dumps(receipt, indent=2))

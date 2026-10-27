@@ -9,6 +9,7 @@ has pyGAM (which pins an older SciPy), with only numpy and pandas from this repo
 """
 from itertools import product
 from pathlib import Path
+import os
 import argparse
 import json
 import sys
@@ -22,7 +23,8 @@ sys.path.insert(0, str(STAGE))
 from src.glucosl_data import MEAL, PERSON, cgmacros, shanghai_training, shanghai_validation
 from src.glucosl_preprocess import Preprocessor
 
-OUTPUT = STAGE / 'results/glucosl/posthoc'
+RUN = Path(os.environ.get('GLUCOSL_RUN_DIR', str(STAGE / 'reproduction/default'))).resolve()
+OUTPUT = RUN / 'posthoc'
 FOLD_SEED, SEED, DRAWS = 20261021, 20261021, 2000
 TARGET = {'regression': 'iauc', 'binary': 'peak_ge_180'}
 COLUMNS = PERSON + MEAL
@@ -101,7 +103,7 @@ def xgboost_part():
                 testing = training.patient_id.isin(held).to_numpy()
                 prediction[testing] = make(task, monotone)(config, training.loc[~testing])(training.loc[testing])
             return patient_score(training, prediction, task)
-        scores = Parallel(n_jobs=-2)(delayed(score)(config) for config in grid)
+        scores = Parallel(n_jobs=int(os.environ.get("GLUCOSL_JOBS", "1")))(delayed(score)(config) for config in grid)
         best = grid[int(np.argmin(scores))]
         fitted = make(task, monotone)(best, training)
         return name, task, best, float(min(scores)), {label: fitted(frame) for label, frame in validation_sets.items()}
@@ -171,7 +173,7 @@ def gam_part():
 
 def evaluate_part():
     from sklearn.metrics import roc_auc_score
-    frozen = pd.read_csv(STAGE / 'results/glucosl/evaluation/predictions.csv')
+    frozen = pd.read_csv(RUN / 'evaluation/predictions.csv')
     new = pd.concat([pd.read_csv(OUTPUT / 'comparator_predictions_xgboost.csv'), pd.read_csv(OUTPUT / 'comparator_predictions_gam.csv')], ignore_index=True)
     rows = []
     for (set_, task), part in new.groupby(['set', 'task']):

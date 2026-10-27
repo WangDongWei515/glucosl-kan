@@ -14,3 +14,15 @@ data/processed/
 *.log
 paper/review/
 paper/submission/
+
+reproduction/
+.pytest_cache/
+data/metadata/
+results/cgmacros/
+results/shanghai_t2dm/
+results/glucosl/final_fit/
+results/glucosl/models/
+results/glucosl/evaluation/predictions.csv
+results/glucosl/posthoc/comparator_predictions*.csv
+
+/data/

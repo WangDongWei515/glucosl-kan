@@ -7,6 +7,7 @@
 5. Calendar trend of responses across recording start dates, and the recruiting-period note.
 """
 from pathlib import Path
+import os
 import json
 import sys
 
@@ -21,8 +22,9 @@ sys.path.insert(0, str(STAGE))
 from src.glucosl_data import cgmacros
 from src.shanghai_t2dm import drug_classes
 
-OUTPUT = STAGE / 'results/glucosl/posthoc'
-EVALUATION = STAGE / 'results/glucosl/evaluation'
+RUN = Path(os.environ.get('GLUCOSL_RUN_DIR', str(STAGE / 'reproduction/default'))).resolve()
+OUTPUT = RUN / 'posthoc'
+EVALUATION = RUN / 'evaluation'
 CLASSES = ['metformin', 'alpha_glucosidase_inhibitor', 'sulfonylurea', 'glinide', 'dpp4_inhibitor', 'sglt2_inhibitor', 'thiazolidinedione', 'glp1_receptor_agonist']
 
 
@@ -200,8 +202,8 @@ def model_checks(cohort_b):
     import joblib
     import torch
     from src.glucosl_data import MEAL, PERSON
-    model = joblib.load(STAGE / 'results/glucosl/models/regression/glucosl_kan.joblib')
-    parameters = sum(p.numel() for p in model.members[0].network.parameters()) + 1
+    model = joblib.load(RUN / 'models/regression/glucosl_kan.joblib')
+    parameters = sum(p.numel() for p in model.members[0].network.parameters())
     frame = cohort_b.rename(columns={'primary_carbohydrate_g': 'carbohydrate_g', 'primary_protein_g': 'protein_g', 'primary_fat_g': 'fat_g', 'primary_fiber_g': 'fiber_g'})[PERSON + MEAL].reset_index(drop=True)
     checks = {}
     for column, sign in [('carbohydrate_g', 1), ('fiber_g', -1)]:

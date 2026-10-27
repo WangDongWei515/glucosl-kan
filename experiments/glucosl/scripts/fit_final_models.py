@@ -8,6 +8,7 @@ with PyTorch on this platform.
 from datetime import datetime, timezone
 from itertools import product
 from pathlib import Path
+import os
 import hashlib
 import json
 import subprocess
@@ -26,8 +27,9 @@ from src.models.glucosl import GlucoSLEnsemble
 
 RECIPE = json.loads((STAGE / 'experiments/glucosl/configs/final_recipe.json').read_text())
 FOLD_SEED = 20261021
-MODELS = STAGE / 'results/glucosl/models'
-REPORTS = STAGE / 'results/glucosl/final_fit'
+RUN = Path(os.environ.get('GLUCOSL_RUN_DIR', str(STAGE / 'reproduction/default'))).resolve()
+MODELS = RUN / 'models'
+REPORTS = RUN / 'final_fit'
 TARGET = {'regression': 'iauc', 'binary': 'peak_ge_180'}
 MLP_GRID = [{'hidden': hidden, 'weight_decay': decay} for hidden, decay in product(RECIPE['ablation_mlp']['grid_search']['hidden'], RECIPE['ablation_mlp']['grid_search']['weight_decay'])]
 
@@ -75,36 +77,38 @@ def save(model, task, name):
 
 def main():
     import torch
-    # Single-threaded, deterministic CPU training so that a re-run reproduces the model files byte for byte.
     torch.set_num_threads(1)
     torch.use_deterministic_algorithms(True)
+    full = os.environ.get('GLUCOSL_MODEL_SET', 'all') == 'all'
+    jobs = int(os.environ.get('GLUCOSL_JOBS', '1'))
     training = shanghai_training()
     folds = patient_folds(training.patient_id, 5, FOLD_SEED)
-    receipt = {'fitted_at_utc': datetime.now(timezone.utc).isoformat(), 'fold_seed': FOLD_SEED,
-               'protocol_sha256': sha256(STAGE / 'docs/protocol_glucosl_v1.md'),
+    receipt = {'fold_seed': FOLD_SEED, 'model_set': 'all' if full else 'core',
                'recipe_sha256': sha256(STAGE / 'experiments/glucosl/configs/final_recipe.json'),
-               'training_patients': int(training.patient_id.nunique()), 'training_meals': len(training), 'selected': {}, 'models': {}}
+               'training_patients': int(training.patient_id.nunique()), 'training_meals': len(training),
+               'selected': {}, 'models': {}}
     tables = []
     for task in ['regression', 'binary']:
         target = training[TARGET[task]]
-        for name, spec in [('glucosl_kan', RECIPE['glucosl_kan']), ('single_kan', RECIPE['ablation_single_kan']), ('unconstrained_kan', RECIPE['ablation_unconstrained_kan'])]:
+        specs = [('glucosl_kan', RECIPE['glucosl_kan'])]
+        if full:
+            specs += [('single_kan', RECIPE['ablation_single_kan']), ('unconstrained_kan', RECIPE['ablation_unconstrained_kan'])]
+        for name, spec in specs:
             receipt['models'][f'{task}/{name}'] = save(glucosl(spec, task).fit(training, target, training.patient_id), task, name)
             print(task, name, 'fitted', flush=True)
-        scores = Parallel(n_jobs=-2)(delayed(cross_validated_mlp)(config, training, task, folds) for config in MLP_GRID)
-        table = pd.DataFrame([{'task': task, 'family': 'glucosl_mlp', 'config': json.dumps(config), 'cv_score': score} for config, score in zip(MLP_GRID, scores)])
-        tables.append(table)
-        best = MLP_GRID[int(table.cv_score.idxmin())]
-        receipt['selected'][f'{task}/glucosl_mlp'] = best
-        receipt['models'][f'{task}/glucosl_mlp'] = save(glucosl(RECIPE['ablation_mlp'], task, **best).fit(training, target, training.patient_id), task, 'glucosl_mlp')
-        print(task, 'glucosl_mlp', best, flush=True)
-    # US-trained GlucoSL-KAN (protocol 4.6): frozen recipe, CGMacros statistics.
+        if full:
+            scores = Parallel(n_jobs=jobs)(delayed(cross_validated_mlp)(config, training, task, folds) for config in MLP_GRID)
+            table = pd.DataFrame([{'task': task, 'family': 'glucosl_mlp', 'config': json.dumps(config), 'cv_score': score} for config, score in zip(MLP_GRID, scores)])
+            tables.append(table)
+            best = MLP_GRID[int(table.cv_score.idxmin())]
+            receipt['selected'][f'{task}/glucosl_mlp'] = best
+            receipt['models'][f'{task}/glucosl_mlp'] = save(glucosl(RECIPE['ablation_mlp'], task, **best).fit(training, target, training.patient_id), task, 'glucosl_mlp')
     us = cgmacros()
     for task in ['regression', 'binary']:
         receipt['models'][f'{task}/glucosl_kan_us'] = save(glucosl(RECIPE['glucosl_kan'], task).fit(us, us[TARGET[task]], us.patient_id), task, 'glucosl_kan_us')
-    # Sensitivity analysis 1 (protocol 5.4): staples as cooked weight, regression only.
     cooked = shanghai_training(variant='staples_cooked')
     receipt['models']['regression/glucosl_kan_staples_cooked'] = save(glucosl(RECIPE['glucosl_kan'], 'regression').fit(cooked, cooked.iauc, cooked.patient_id), 'regression', 'glucosl_kan_staples_cooked')
-    print('KAN and MLP models fitted; fitting comparators in a separate process', flush=True)
+    print('KAN models fitted; fitting comparators in a separate process', flush=True)
     subprocess.run([sys.executable, str(Path(__file__).resolve().parent / 'comparators.py'), 'fit'], check=True)
     comparators = json.loads((REPORTS / 'comparators_receipt.json').read_text())
     receipt['selected'].update(comparators['selected'])
@@ -113,7 +117,7 @@ def main():
     pd.concat(tables + [pd.read_csv(REPORTS / 'comparators_tuning.csv')], ignore_index=True).to_csv(REPORTS / 'tuning.csv', index=False)
     receipt['model_sha256'] = {key: sha256(STAGE / path) for key, path in receipt['models'].items()}
     (REPORTS / 'fit_receipt.json').write_text(json.dumps(receipt, indent=2))
-    print(json.dumps(receipt['selected'], indent=2))
+    print('Final model fitting complete.', flush=True)
 
 
 if __name__ == '__main__':

@@ -118,7 +118,6 @@ def main():
         'primary_participant_ranges': cohort.drop_duplicates('subject').hba1c_range.value_counts().to_dict(),
         'zero_iauc': {sensor: int(cohort[sensor + '_iauc'].eq(0).sum()) for sensor in CONFIG['sensors']},
         'outcome_summary': cohort[[sensor + '_iauc' for sensor in CONFIG['sensors']]].describe().to_dict(),
-        'protocol_sha256': hashlib.sha256((STAGE / 'docs/protocol_glucosl_v1.md').read_bytes()).hexdigest(),
         'config_sha256': hashlib.sha256((STAGE / 'experiments/cgmacros/configs/protocol_v1.json').read_bytes()).hexdigest(),
         'source_csv_sha256': source_hashes,
     }

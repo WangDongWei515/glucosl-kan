@@ -77,7 +77,6 @@ def main():
     summary = {
         'built_at_utc': datetime.now(timezone.utc).isoformat(),
         'meal_type_counts': events.meal_type.value_counts().to_dict(),
-        'protocol_sha256': hashlib.sha256((STAGE / 'docs/protocol_glucosl_v1.md').read_bytes()).hexdigest(),
         'note': 'Flow only. Outcome values are stored for the frozen analysis but deliberately not summarized here; nutrient completeness is applied after the food mapping is fixed.',
     }
     (output / 'cohort_build_pre_nutrients.json').write_text(json.dumps(summary, indent=2, ensure_ascii=False))

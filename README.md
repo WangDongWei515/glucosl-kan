@@ -1,44 +1,116 @@
 # GlucoSL-KAN
-Research code and aggregate results for interpretable postprandial glucose-response prediction without CGM predictor inputs.
 
-## Status
-Private research code and aggregate-results repository for the GlucoSL-KAN study. The author approved the initial 58-file scope on 28 October 2026. Repository: https://github.com/WangDongWei515/glucosl-kan .
+Public research code for predicting postprandial glucose response from routine clinical information, meal nutrients and meal time, without CGM predictor inputs.
 
-## Included
-Core KAN and sensitivity--load models, preprocessing and evaluation implementations; public-data download/build scripts and reusable food-mapping rules; final model configuration and the original environment record; aggregate evaluation, post hoc and interpretability outputs.
+Repository: https://github.com/WangDongWei515/glucosl-kan
 
-## Inspect the primary result without participant-level data
-From the repository root, run:
-    python3 scripts/summarize_results.py
-This reads supplied aggregate CSVs without retraining or reevaluating models.
+The numerical reproduction covers the main model comparisons, ablations, cross-cohort evaluation and the two nutritional sensitivity analyses. The workflow is data preparation, model fitting and evaluation. Figure rendering is not part of this entry point.
 
-## Data and execution
-The primary outcome is positive 2-h iAUC, in mg/dL*h; classification concerns any scheduled glucose reading reaching 180 mg/dL within 0--120 minutes. CGM contributes labels, not predictor inputs.
+## 1 Install
 
-Obtain source data separately:
-- ShanghaiT2DM v3: https://doi.org/10.6084/m9.figshare.20444397.v3 (CC BY 4.0).
-- CGMacros v1.0.0: https://physionet.org/content/cgmacros/1.0.0/ (CC BY-NC-SA 4.0).
-- USDA SR Legacy: see experiments/shanghai_t2dm/scripts/download_usda.py.
-- Chinese food-composition lookup: https://nlc.chinanutri.cn/fq/ .
+Python 3.12 matches the study environment. Create an environment, activate it and install the numerical dependencies:
 
-This candidate omits raw datasets, participant- and meal-level tables, record-specific portion corrections, downloaded food-composition values, fitted models and private development records. It is NOT a self-contained, one-command reproduction of the complete study. Analysis scripts are preserved implementations requiring local inputs, including:
-- data/processed/shanghai_t2dm/external_cohort.csv
-- data/processed/glucosl/split.csv
-- data/processed/cgmacros/primary_cohort.csv
-- data/processed/cgmacros/harmonized_outcomes_15min.csv
-- data/metadata/shanghai_t2dm_food_mapping.csv
-- data/interim/shanghai_t2dm/intake_line_nutrients.csv
-- experiments/shanghai_t2dm/scripts/food_curation/amount_overrides.csv
+    python3.12 -m venv .venv
+    source .venv/bin/activate
+    python -m pip install -r requirements.txt
 
-The original evaluation script checks an integrity manifest and refuses repeated execution. The manifest and underlying development files are not included. That script cannot execute the validation directly from this candidate package. A complete data-and-workflow reproduction release requires separate review.
+For the complete comparator set, including the explicitly selected TabPFN v2 weights:
 
-requirements.lock.txt records the original macOS environment and includes platform-specific packages; it is not a universal installation recipe. pyGAM post hoc analyses used a separate environment, as explained in their script.
+    python -m pip install -r requirements-tabpfn.txt
+    python scripts/reproduce.py check --models all
 
-## Interpretation
-The ensemble averages member-level sensitivity--load products, rather than multiplying averaged branches. Curves describe model behavior, not independently validated causal effects or physiology. Intervals containing zero indicate uncertain differences, not equivalence.
+The model code requests ModelVersion.V2 explicitly; installing a newer default TabPFN model does not replace the study model. TabPFN downloads its own weights when used. We do not redistribute those checkpoints.
 
-## Availability and license
-No new license is assigned by this candidate package. Source data and pretrained weights retain their respective terms. Code licensing and public availability will be decided before public release.
+requirements.lock.txt preserves the original macOS environment record. Use requirements.txt rather than installing that platform-specific record on another system.
+
+## 2 Prepare data
+
+Download the pinned ShanghaiT2DM v3, CGMacros v1.0.0 and USDA SR Legacy archives from their official sources, then build the meal tables and temporal split:
+
+    python scripts/reproduce.py prepare --download
+
+The food-composition step queries the Chinese food-composition platform and caches responses locally. It respects a delay between requests and stops on retrieval errors. Source nutrient database values are not included in this repository. See DATA_SOURCES.md for sources, attribution and access details.
+
+If source datasets and a food-composition cache are already available:
+
+    python scripts/reproduce.py prepare --raw-dir /path/to/data/raw --cn-cache-dir /path/to/cncdc_query_cache --offline
+
+The required raw-directory layout is:
+
+    cgmacros/1.0.0/extracted/CGMacros/
+    shanghai_t2dm/v3/extracted/
+    usda_fdc/sr_legacy_2018-04/extracted/FoodData_Central_sr_legacy_food_csv_2018-04/
+
+The prepared-data checks require:
+
+| Sample | Participants | Meals |
+| --- | ---: | ---: |
+| Shanghai training A | 67 | 1,952 |
+| Shanghai validation B | 33 | 670 |
+| CGMacros, all eligible participants | 44 | 1,147 |
+| CGMacros, HbA1c at least 6.5% | 14 | 353 |
+
+The more specifically mapped Shanghai validation subset must contain 347 meals. No patient may occur in both A and B.
+
+## 3 Fit and evaluate
+
+Complete comparator set, using 2,000 patient-level bootstrap resamples:
+
+    python scripts/reproduce.py fit --models all --jobs 4 --run-dir reproduction/full
+    python scripts/reproduce.py evaluate --models all --jobs 4 --bootstrap-draws 2000 --run-dir reproduction/full
+    python scripts/reproduce.py verify --run-dir reproduction/full
+
+A single command performs preparation, fitting, evaluation and verification:
+
+    python scripts/reproduce.py all --download --models all --jobs 4 --run-dir reproduction/full
+
+The complete set includes GlucoSL-KAN, GlucoSL-MLP, single-branch KAN, unconstrained GlucoSL-KAN, constant, median/logistic regression and XGBoost, plus the US-trained and cooked-weight variants. MLP and comparator selection repeat the original patient-grouped cross-validation within A.
+
+A faster core check uses GlucoSL-KAN, XGBoost and the constant model, retaining US-trained and cooked-weight variants:
+
+    python scripts/reproduce.py fit --models core --jobs 4 --run-dir reproduction/core
+    python scripts/reproduce.py evaluate --models core --bootstrap-draws 0 --run-dir reproduction/core
+    python scripts/reproduce.py verify --run-dir reproduction/core
+
+Zero bootstrap draws evaluate point estimates only; they do not reproduce confidence intervals. Use 2,000 to obtain the study uncertainty procedure.
+
+All newly fitted models, predictions and metrics are written below the chosen reproduction directory. The supplied study reference CSVs in results/glucosl are never overwritten by the entry point. Each reproduction uses a separate output directory and does not need unpublished study-development files.
+
+## 4 Additional numerical analyses
+
+After fitting and evaluating all models, run the descriptive post hoc analyses:
+
+    python scripts/reproduce.py posthoc --models all --run-dir reproduction/full
+
+Expanded-search XGBoost and shape-constrained GAM comparators are implemented separately:
+
+    GLUCOSL_RUN_DIR="$PWD/reproduction/full" python experiments/glucosl/scripts/posthoc_comparators.py --part xgboost
+    GLUCOSL_RUN_DIR="$PWD/reproduction/full" python experiments/glucosl/scripts/posthoc_comparators.py --part gam
+    GLUCOSL_RUN_DIR="$PWD/reproduction/full" python experiments/glucosl/scripts/posthoc_comparators.py --part evaluate
+
+For the GAM step, create a separate Python 3.12 environment and install requirements-gam.txt. That file supplies a compatible environment rather than an exact record of the original GAM environment, whose versions were not retained. Run --part gam with that interpreter, and use the main environment for --part evaluate. Its smoothing search, constraints and transformations are specified in the script. These are additional post hoc analyses rather than part of the primary model comparison.
+
+## 5 Check the implementation and view supplied results
+
+    python -m unittest discover -s tests -v
+    python scripts/summarize_results.py
+
+The tests check positive incremental integration, baseline crossing, patient averaging, patient-cluster resampling and training-only preprocessing.
+
+See REPRODUCTION_CHECK.md for what was executed to check this release, including the distinction between point-estimate checks and full bootstrap reproduction.
+
+## Data and model interpretation
+
+CGM is used for outcomes, not predictors. Regression predicts positive 2-h iAUC in mg/dL*h; classification predicts whether any scheduled reading reaches 180 mg/dL within 0--120 minutes, including meal onset.
+
+The ensemble averages member-level sensitivity--load products. It does not multiply averaged branches. Personal sensitivity is an internal response coefficient, not measured insulin sensitivity. Response curves describe model behavior; monotonicity constraints are modeling assumptions. An interval containing zero is an uncertain difference, not evidence of equivalence.
+
+## Availability
+
+Raw datasets, source food-composition values, participant-level derived tables, fitted models and third-party pretrained weights are not committed. The scripts obtain or generate required inputs locally. Source datasets and weights retain their original terms; no blanket code-reuse license is assigned by this repository.
+
+No manuscript draft, author information document, private conversation or development-history file is included.
 
 ## Funding and declarations
+
 Supported by the West China Hospital High-level Talents Support Program (No. ZYGD24008). The author confirmed no other funding and no competing interests.

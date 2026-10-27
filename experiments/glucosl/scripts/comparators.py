@@ -27,8 +27,9 @@ from src.glucosl_data import MEAL, PERSON, shanghai_training
 from src.glucosl_preprocess import Preprocessor
 
 FOLD_SEED = 20261021
-MODELS = STAGE / 'results/glucosl/models'
-REPORTS = STAGE / 'results/glucosl/final_fit'
+RUN = Path(os.environ.get('GLUCOSL_RUN_DIR', str(STAGE / 'reproduction/default'))).resolve()
+MODELS = RUN / 'models'
+REPORTS = RUN / 'final_fit'
 TARGET = {'regression': 'iauc', 'binary': 'peak_ge_180'}
 XGBOOST_GRID = [dict(zip(['max_depth', 'learning_rate', 'n_estimators', 'min_child_weight'], values))
                 for values in product([2, 3, 4], [0.03, 0.1], [100, 300], [5, 20])]
@@ -118,7 +119,7 @@ def cross_validated(family, config, frame, task, folds):
 
 
 def tune(family, grid, frame, task, folds):
-    scores = Parallel(n_jobs=-2)(delayed(cross_validated)(family, config, frame, task, folds) for config in grid)
+    scores = Parallel(n_jobs=int(os.environ.get("GLUCOSL_JOBS", "1")))(delayed(cross_validated)(family, config, frame, task, folds) for config in grid)
     table = pd.DataFrame([{'task': task, 'family': family, 'config': json.dumps(config), 'cv_score': score} for config, score in zip(grid, scores)])
     return grid[int(table.cv_score.idxmin())], table
 
@@ -137,14 +138,15 @@ def fit_stage():
     tables = []
     for task in ['regression', 'binary']:
         target = training[TARGET[task]]
-        for family, grid in [('xgboost', XGBOOST_GRID), ('linear', LINEAR_GRID[task])]:
+        for family, grid in ([('xgboost', XGBOOST_GRID), ('linear', LINEAR_GRID[task])] if os.environ.get('GLUCOSL_MODEL_SET', 'all') == 'all' else [('xgboost', XGBOOST_GRID)]):
             best, table = tune(family, grid, training, task, folds)
             tables.append(table)
             receipt['selected'][f'{task}/{family}'] = best
             receipt['models'][f'{task}/{family}'] = save(make_comparator(family, best, task).fit(training, target, training.patient_id), task, family)
             print(task, family, best, flush=True)
         receipt['models'][f'{task}/constant'] = save(Constant(task).fit(training, target, training.patient_id), task, 'constant')
-        receipt['models'][f'{task}/tabpfn'] = save(TabPFNStore(task).fit(training, target, training.patient_id), task, 'tabpfn')
+        if os.environ.get('GLUCOSL_MODEL_SET', 'all') == 'all':
+            receipt['models'][f'{task}/tabpfn'] = save(TabPFNStore(task).fit(training, target, training.patient_id), task, 'tabpfn')
     # Sensitivity analysis 1 (protocol 5.4): XGBoost retrained with staples as cooked weight, regression only.
     cooked = shanghai_training(variant='staples_cooked')
     best, table = tune('xgboost', XGBOOST_GRID, cooked, 'regression', folds)

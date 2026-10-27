@@ -1,0 +1,22 @@
+{
+  "dataset": "CGMacros v1.0.0",
+  "primary_sensor": "libre",
+  "sensors": [
+    "libre",
+    "dexcom"
+  ],
+  "primary_meal_types": [
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+  "window_minutes": 120,
+  "require_paired_complete_targets": true,
+  "nutrient_features": [
+    "energy_kcal",
+    "carbohydrate_g",
+    "protein_g",
+    "fat_g",
+    "fiber_g"
+  ]
+}

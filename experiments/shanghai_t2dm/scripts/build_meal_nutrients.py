@@ -55,7 +55,6 @@ def main():
         'built_at_utc': datetime.now(timezone.utc).isoformat(),
         'mapping_sha256': hashlib.sha256((METADATA / 'shanghai_t2dm_food_mapping.csv').read_bytes()).hexdigest(),
         'line_nutrients_sha256': hashlib.sha256((INTERIM / 'intake_line_nutrients.csv').read_bytes()).hexdigest(),
-        'protocol_sha256': hashlib.sha256((STAGE / 'docs/protocol_glucosl_v1.md').read_bytes()).hexdigest(),
         'primary_meals': len(primary), 'primary_patients': int(primary.patient_id.nunique()),
         'primary_specific_weight_share_median': float(primary.specific_weight_share.median()),
         'primary_meals_specific_share_ge_90pct': int((primary.specific_weight_share >= .9).sum()),

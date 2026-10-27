@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 import html
+import os
 import json
 import re
 import sys
@@ -27,6 +28,8 @@ REQUESTS = {'count': 0, 'last': 0.0}
 
 
 def fetch(url, data=None):
+    if os.environ.get('GLUCOSL_OFFLINE') == '1':
+        raise RuntimeError('Food-composition cache is incomplete. Run prepare with network access or provide --cn-cache-dir.')
     wait = REQUESTS['last'] + PAUSE_SECONDS - time.monotonic()
     if wait > 0:
         time.sleep(wait)
