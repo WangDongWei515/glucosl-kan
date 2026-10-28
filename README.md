@@ -113,4 +113,4 @@ No manuscript draft, author information document, private conversation or develo
 
 ## Funding and declarations
 
-Supported by the West China Hospital High-level Talents Support Program (No. ZYGD24008). The author confirmed no other funding and no competing interests.
+This study was supported by the Special Fund of the Capacity Building and Continuing Education Center of the National Health Commission (Party School of the National Health Commission of China) (Grant No. JJDJ20260002-6). The author confirmed no other funding and no competing interests.
