@@ -18,10 +18,10 @@ DETAIL_URL = 'https://nlc.chinanutri.cn/fq/foodinfo/{}.html'
 COLUMNS = ['entry_id', 'image', 'name', 'alias', 'name_en', 'edible', 'water', 'energy', 'protein', 'fat', 'cholesterol', 'ash', 'carbohydrate', 'fiber',
            'carotene', 'vitamin_a', 'vitamin_e', 'thiamin', 'riboflavin', 'niacin', 'vitamin_c', 'ca', 'p', 'k', 'na', 'mg', 'fe', 'zn', 'se', 'cu', 'mn', 'i',
            'sfa', 'mufa', 'pufa', 'fatty_acid_total']
-DETAIL_LABELS = {'食部(Edible)': 'edible', '水分(Water)': 'water', '能量(Energy)': 'energy', '蛋白质(Protein)': 'protein', '脂肪(Fat)': 'fat',
-                 '胆固醇(Cholesterol)': 'cholesterol', '灰分(Ash)': 'ash', '碳水化合物(CHO)': 'carbohydrate', '总膳食纤维(Dietary fiber)': 'fiber',
-                 '硫胺素(Thiamin)': 'thiamin', '核黄素(Riboflavin)': 'riboflavin', '烟酸(Niacin)': 'niacin', '钙(Ca)': 'ca', '磷(P)': 'p', '钾(K)': 'k',
-                 '钠(Na)': 'na', '镁(Mg)': 'mg', '铁(Fe)': 'fe', '锌(Zn)': 'zn', '硒(Se)': 'se', '铜(Cu)': 'cu', '锰(Mn)': 'mn'}
+DETAIL_LABELS = {'\u98df\u90e8(Edible)': 'edible', '\u6c34\u5206(Water)': 'water', '\u80fd\u91cf(Energy)': 'energy', '\u86cb\u767d\u8d28(Protein)': 'protein', '\u8102\u80aa(Fat)': 'fat',
+                 '\u80c6\u56fa\u9187(Cholesterol)': 'cholesterol', '\u7070\u5206(Ash)': 'ash', '\u78b3\u6c34\u5316\u5408\u7269(CHO)': 'carbohydrate', '\u603b\u81b3\u98df\u7ea4\u7ef4(Dietary fiber)': 'fiber',
+                 '\u786b\u80fa\u7d20(Thiamin)': 'thiamin', '\u6838\u9ec4\u7d20(Riboflavin)': 'riboflavin', '\u70df\u9178(Niacin)': 'niacin', '\u9499(Ca)': 'ca', '\u78f7(P)': 'p', '\u94be(K)': 'k',
+                 '\u94a0(Na)': 'na', '\u9541(Mg)': 'mg', '\u94c1(Fe)': 'fe', '\u950c(Zn)': 'zn', '\u7852(Se)': 'se', '\u94dc(Cu)': 'cu', '\u9530(Mn)': 'mn'}
 VERIFY_IDS = [287, 1313, 1339, 988]
 PAUSE_SECONDS = 1.5
 REQUESTS = {'count': 0, 'last': 0.0}
@@ -95,7 +95,7 @@ def verify_columns(rows):
     report = []
     for entry_id in VERIFY_IDS:
         page = detail(entry_id)['html']
-        name = html.unescape(re.search(r'<title>(.*?)-食物营养成分查询平台', page).group(1)).strip()
+        name = html.unescape(re.search('<title>(.*?)-\u98df\u7269\u8425\u517b\u6210\u5206\u67e5\u8be2\u5e73\u53f0', page).group(1)).strip()
         values = {DETAIL_LABELS[label]: html.unescape(value).strip() for label, value in
                   re.findall(r'class="td_left">\s*([^<]+?)\s*</td>\s*<td>([^<]*)</td>', page) if label in DETAIL_LABELS}
         row = rows[entry_id]

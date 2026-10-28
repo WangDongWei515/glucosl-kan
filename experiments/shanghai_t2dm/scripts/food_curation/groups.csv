@@ -1,96 +1,96 @@
 group_id,group_zh,group_en,recipe,rationale
-rice,米饭,Cooked white rice,287:1,米饭(蒸)(均值)，熟重
-grain_rice,杂粮饭/糙米饭/黑米饭,Mixed-grain rice (cooked),287:0.50;301:0.04;1286:0.04;351:0.03;309:0.04;286:0.03;W0:0.32,成分表无杂粮饭；按一半白米饭加小米、燕麦片、赤小豆、荞麦、血糯米（干重共18%）并补水，使含水量约70%（同米饭）
-porridge,粥/稀饭/泡饭/杂粮粥,Porridge and rice in water,288:0.5;303:0.3;1281:0.2,粳米粥、小米粥与无糖八宝粥的混合
-noodles,面条/荞麦面/意面（熟）,Cooked wheat noodles,264:0.49;W0:0.51,面条(均值)为生鲜切面（含水28.5%）；煮熟吸水至约65%，按0.49份生面加0.51份水
-starch_noodles,粉丝/粉皮/米粉/米线（熟）,Cooked starch or rice noodles,324:0.15;290:0.15;W0:0.70,干粉丝与干米粉各半，泡/煮后约含水70%
-steamed_bread,馒头/花卷/杂粮馒头/窝头,Steamed bread without filling,272:1,馒头(均值)
-bread_flatbread,面包/吐司/烙饼/大饼,Bread and unfried flatbread,1316:0.6;271:0.4,面包(均值)与烙饼(标准粉)
-fried_wheat,油条/油饼/葱油饼/春卷/方便面,Fried wheat foods,277:0.4;276:0.3;1199:0.3,成分表油炸制品（油已含在条目内，不另加油）
-filled_meat,肉包/饺子/馄饨/烧麦/小笼,Meat-filled buns and dumplings,1339:0.4;1330:0.4;1311:0.2,包子(猪肉馅)、水饺(猪肉白菜馅)、冬菜虾仁馄饨
-filled_veg,菜包/素包/素饺/豆沙包,Vegetable- or bean-filled buns,272:0.6;452:0.3;346:0.07;584:0.03,成分表无菜包；按面皮（馒头）60%、馅（小白菜、豆腐干、香菇）40%；蒸制不加油
-fried_dumpling,生煎/锅贴/煎饺,Pan-fried buns and dumplings,1339:0.95;OIL:0.05,包子(猪肉馅)加煎制用油
-glutinous_ricecake,粽子/年糕/糯米/粢饭/米糕,Glutinous rice and rice cakes,1211:0.5;285:0.21;W0:0.29,年糕与熟糯米（糯米加水，含水约60%）各半
-dry_cereal_powder,麦片/燕麦/代餐粉/芝麻糊粉/奶粉（干）,Dry cereals and powders,1273:0.4;1286:0.2;1283:0.2;1182:0.2,干重；麦片(1273)、燕麦片、黑芝麻糊粉、豆奶粉
-starchy_veg,土豆/红薯/芋头/山药/藕/玉米,Starchy vegetables (boiled/steamed/unspecified),313:0.2;316:0.2;526:0.2;525:0.2;292:0.2,常见薯类与鲜玉米等量混合
-starchy_veg_fried,炒/红烧土豆等,Starchy vegetables (fried/braised),@starchy_veg:0.95;OIL:0.05,薯类加炒菜用油
-egg,鸡蛋/鸭蛋/咸蛋/皮蛋/蒸蛋,Eggs (boiled/steamed/unspecified),978:1,鸡蛋(均值)；鸭蛋、咸蛋、皮蛋组内近似
-egg_fried,炒蛋/煎蛋,Fried or scrambled eggs,978:0.95;OIL:0.05,鸡蛋加炒菜用油
-egg_veg_stirfry,番茄炒蛋/丝瓜炒蛋/韭菜炒蛋,Egg and vegetable stir-fries,978:0.40;405:0.20;429:0.15;445:0.10;422:0.10;OIL:0.05,鸡蛋40%、常见配菜55%、油5%
-milk,牛奶,Milk,917:1,牛乳(光明牌)：上海本地主要品牌，乳糖含量较均值条目合理（见README）
-yogurt,酸奶,Yogurt,958:1,酸奶(均值)，含糖
-milk_mixed,牛奶咖啡/拿铁/奶茶/牛奶麦片,Milk-based mixed drinks,917:0.65;1273:0.05;W0:0.30,牛奶65%，少量麦片，其余为水/咖啡；不加糖
-soy_milk,豆浆/豆奶,Soy milk,339:1,豆奶[豆乳]（338豆浆过稀，按审核意见改用339）；不加糖
-tofu,豆腐/豆花,Tofu (boiled/steamed/cold/unspecified),333:1,豆腐(均值)
-soy_dried,豆干/香干/素鸡/百叶/腐竹/烤麸,Pressed or dried soy products and gluten,346:0.4;347:0.2;345:0.3;349:0.1,豆腐干、素鸡、千张、烤麸
-soy_fried,炒/红烧豆制品/油豆腐/油面筋,Fried or braised soy products,333:0.4;346:0.2;345:0.2;343:0.15;OIL:0.05,豆制品混合加炒菜用油
-pork,猪肉（蒸煮/未注明）,Pork (boiled/steamed/unspecified),789:1,猪肉(腿)：肉丝、肉片、肉糜常用部位，脂肪居中
-pork_fried,猪肉（炒/煎/炸）,Pork (stir-fried or fried),789:0.95;OIL:0.05,猪肉(腿)加炒菜用油
-pork_belly_braised,红烧肉/五花肉/烧肉,Braised fatty pork,779:0.92;OIL:0.05;1448:0.03,猪肉(肥瘦)(均值)加烧制用油5%和冰糖3%（本帮红烧）
-pork_rib,排骨/大排/小排/猪蹄,Pork ribs/chops/trotters (unspecified or steamed),791:0.4;794:0.4;810:0.2,猪大排、猪小排、猪蹄(熟)
-pork_rib_fried,红烧/煎/炸排骨,Pork ribs or chops (fried/braised),791:0.475;794:0.475;OIL:0.05,大排、小排加烧制用油
-meatball,肉圆/肉丸/狮子头/肉饼,Pork meatballs and patties,789:0.45;779:0.45;320:0.05;W0:0.05,肉糜按腿肉与肥瘦肉各半，加淀粉5%和水5%
-meatball_fried,肉圆/狮子头（红烧/煎/炸）,Pork meatballs (fried/braised),@meatball:0.95;OIL:0.05,肉圆加烧制用油
-pork_processed,香肠/火腿/午餐肉/咸肉/培根/肉松,Processed pork,815:0.3;818:0.2;807:0.2;808:0.15;805:0.15,火腿肠、香肠、午餐肉、咸肉、培根混合
-offal,内脏/血制品,Offal and blood,797:0.25;795:0.25;887:0.25;803:0.25,猪肝、猪肚、鸡肫、猪血
-beef_mutton,牛羊肉（蒸煮/酱/未注明）,Beef and mutton (unspecified or boiled),823:0.7;844:0.3,牛肉(肥瘦)(均值)与羊肉(肥瘦)(均值)
-beef_mutton_fried,牛羊肉（炒/红烧/煎）,Beef and mutton (fried/braised),823:0.665;844:0.285;OIL:0.05,牛羊肉加炒菜用油
-chicken,鸡/鸽/其他禽（白切/蒸煮/未注明）,Chicken and other poultry,876:1,鸡(均值)
-chicken_fried,鸡（炒/红烧/炸）,Chicken (fried/braised),876:0.95;OIL:0.05,鸡(均值)加炒菜用油
-duck_goose,鸭/鹅（白切/盐水/未注明）,Duck and goose,891:1,鸭(均值)
-duck_fried,鸭/鹅（炒/红烧）,Duck (fried/braised),891:0.95;OIL:0.05,鸭(均值)加炒菜用油
-fish,鱼（清蒸/煮/未注明）,Fish (steamed/boiled/unspecified),1021:0.2;1050:0.2;1030:0.2;1038:0.2;1014:0.2,上海常见鱼：鲫鱼、鲈鱼、带鱼、小黄鱼、青鱼等量
-fish_fried,鱼（红烧/煎/炸/熏）,Fish (fried/braised),@fish:0.95;OIL:0.05,鱼加烧制用油
-fish_processed,鱼丸/虾丸/鱼排,Fish balls and processed seafood,1067:1,鱼丸
-shrimp,虾（白灼/煮/未注明）,Shrimp (boiled/unspecified),1092:0.5;1093:0.5,河虾与基围虾
-seafood_fried,虾/贝/鱿鱼（炒/爆/椒盐）,Shrimp and shellfish (fried),1092:0.3;1093:0.3;1120:0.15;1129:0.2;OIL:0.05,虾、蛤蜊、鱿鱼加炒菜用油
-crab,蟹,Crab,1103:1,河蟹（大闸蟹）
-shellfish,贝类/软体（蛤蜊/蛏子/鲍鱼/海参/鱿鱼）,Shellfish and molluscs,1120:0.25;1108:0.15;1106:0.15;1123:0.2;1129:0.25,蛤蜊、蛏子、鲍鱼、海参、乌贼
-leafy_veg,叶菜与甘蓝类（青菜/菠菜/白菜/卷心菜/花菜）,Leafy and brassica vegetables (boiled/cold/unspecified),452:0.25;457:0.15;473:0.1;483:0.1;488:0.05;463:0.15;450:0.1;464:0.05;465:0.05,小白菜、油菜（即上海青菜）为主，含菠菜、生菜、茼蒿、卷心菜、大白菜、花菜、西兰花
-leafy_veg_fried,叶菜与甘蓝类（炒）,Leafy and brassica vegetables (stir-fried),@leafy_veg:0.95;OIL:0.05,叶菜加炒菜用油
-fruit_veg,瓜茄豆荚芽菜类,"Gourds and fruit-type vegetables, pods and sprouts",422:0.15;419:0.15;405:0.15;402:0.1;429:0.1;431:0.05;410:0.05;397:0.1;392:0.05;400:0.1,黄瓜、冬瓜、番茄、茄子、丝瓜、西葫芦、青椒、豇豆、四季豆、绿豆芽
-fruit_veg_fried,瓜茄豆荚芽菜类（炒）,Gourds and fruit-type vegetables (stir-fried),@fruit_veg:0.95;OIL:0.05,瓜茄类加炒菜用油
-root_stem_veg,根茎/茎/笋/葱蒜类,"Root, stem and shoot vegetables",371:0.25;380:0.15;491:0.15;519:0.15;480:0.15;499:0.1;444:0.05,白萝卜、胡萝卜、莴笋、茭白、芹菜、竹笋、洋葱
-root_stem_veg_fried,根茎/茎/笋类（炒/红烧）,"Root, stem and shoot vegetables (stir-fried)",@root_stem_veg:0.95;OIL:0.05,根茎类加炒菜用油
-fresh_legume,毛豆/蚕豆/豌豆/煮豆,Fresh legumes and cooked pulses,391:0.5;393:0.5,毛豆与鲜豌豆；成分表无鲜蚕豆
-fresh_legume_fried,毛豆/蚕豆/豌豆（炒/烧）,Fresh legumes (stir-fried),@fresh_legume:0.95;OIL:0.05,鲜豆类加炒菜用油
-fungi_algae,菌菇/木耳/海带/紫菜（鲜或水发）,"Mushrooms, fungi and seaweed",584:0.3;575:0.2;602:0.15;580:0.2;581:0.05;607:0.1,香菇、金针菇、杏鲍菇、水发木耳、平菇、海带
-fungi_algae_fried,菌菇木耳类（炒）,Mushrooms and fungi (stir-fried),@fungi_algae:0.95;OIL:0.05,菌菇加炒菜用油
-mixed_veg,蔬菜/素菜（混合或未注明）,Mixed vegetables (unspecified),@leafy_veg:0.4;@fruit_veg:0.3;@root_stem_veg:0.3,三类蔬菜组合
-mixed_veg_fried,素炒/炒素菜/多种蔬菜合炒,Mixed vegetables (stir-fried),@mixed_veg:0.95;OIL:0.05,混合蔬菜加炒菜用油
-salad,蔬菜色拉/沙拉,Vegetable salad with dressing,483:0.4;422:0.2;405:0.2;380:0.12;1536:0.08,生菜、黄瓜、番茄、胡萝卜加8%沙拉酱
-pickled_veg,榨菜/咸菜/酱菜/萝卜干,Pickled vegetables,1551:0.3;1553:0.3;1550:0.2;1555:0.2,榨菜、腌雪里红、萝卜干、酱八宝菜
-meat_veg_stirfry,荤素炒菜（肉丝/肉片/肉糜/鸡丝+蔬菜）,Meat and vegetable stir-fries,789:0.25;@fruit_veg:0.25;@root_stem_veg:0.30;@leafy_veg:0.15;OIL:0.05,医院荤素小炒：蔬菜70%、猪肉25%、油5%
-meat_veg_steamed,荤素蒸/炖/烩（不加油）,Meat and vegetable steamed or stewed dishes,789:0.30;@fruit_veg:0.25;@root_stem_veg:0.30;@leafy_veg:0.15,蔬菜70%、猪肉30%，不加油（火锅、冒菜、麻辣烫改入荤素炒菜）
-soy_veg_stirfry,豆制品炒蔬菜（芹菜香干等）,Soy product and vegetable stir-fries,346:0.30;@fruit_veg:0.20;@root_stem_veg:0.30;@leafy_veg:0.15;OIL:0.05,蔬菜65%、豆腐干30%、油5%
-fried_rice_noodles,炒饭/炒面/炒米粉/炒年糕,Fried rice and noodles,1314:1,什锦炒饭（条目已含油）
-noodle_meal,汤面/拌面/菜肉面,Noodle dishes with toppings,@noodles:0.75;@leafy_veg:0.15;789:0.10,熟面75%、青菜15%、肉10%
-western_fastfood,汉堡/披萨/三明治,Western fast food,1271:0.4;1260:0.3;1261:0.3,汉堡包、比萨饼、三明治
-broth,清汤/肉汤/鸡汤/鱼汤/骨头汤,Clear meat or fish broth,W0:0.90;876:0.06;779:0.04,汤水90%，含少量鸡肉与猪肉
-veg_soup,菜汤/蛋汤/豆腐汤/紫菜汤,Vegetable/egg/tofu soup,W0:0.85;@leafy_veg:0.05;405:0.04;333:0.03;978:0.03,汤水85%，含少量蔬菜、番茄、豆腐、鸡蛋
-meat_veg_soup,带料荤汤（排骨萝卜汤/冬瓜小排汤/腌笃鲜）,Meat and vegetable soup with solids,W0:0.70;794:0.10;@root_stem_veg:0.10;@fruit_veg:0.10,汤水70%，小排10%，蔬菜20%
-sweet_soup,甜汤/羹/糊（赤豆/绿豆/银耳/红枣）,Sweet soups (no added sugar assumed),W0:0.88;351:0.04;350:0.03;587:0.01;675:0.02;768:0.02,假设不加糖（糖尿病患者）；赤小豆、绿豆、银耳、红枣、莲子
-fruit_temperate,苹果/梨/桃/李/葡萄/猕猴桃/草莓,Temperate fruits,613:0.3;630:0.2;660:0.15;666:0.05;684:0.1;700:0.1;701:0.1,常见温带水果
-fruit_citrus,橙/橘/柚,Citrus fruits,704:0.4;705:0.4;711:0.2,橙、柑桔、柚
-fruit_melon,西瓜/甜瓜/哈密瓜,Melons,739:0.6;738:0.4,西瓜与甜瓜
-fruit_tropical,香蕉/芒果/荔枝/菠萝/火龙果,Tropical fruits,726:0.3;723:0.15;722:0.15;716:0.2;734:0.2,常见热带水果
-dried_fruit,红枣/葡萄干/枸杞/果干,Dried fruits,675:0.5;689:0.3;1571:0.2,干枣、葡萄干、枸杞子
-nuts_seeds,核桃/花生/瓜子/杏仁/芝麻,Nuts and seeds,743:0.3;764:0.3;766:0.2;752:0.1;756:0.1,按可食部记录（如带壳称重会高估）
-cake_pastry,蛋糕/糕点/月饼/酥饼,Cakes and pastries,1224:0.4;1243:0.3;1227:0.3,蛋糕(均值)、酥皮糕点、豆沙月饼
-biscuit_snack,饼干/苏打饼干/薯片/锅巴,Biscuits and packaged snacks,1322:0.4;1323:0.4;1353:0.2,饼干、苏打饼干、薯片
-sugar_sweets,糖/糖果/巧克力/蜂蜜/果酱,Sugar and confectionery,1448:0.5;1454:0.2;1453:0.15;1487:0.15,白砂糖、巧克力、奶糖、蜂蜜
-ice_cream,冰淇淋/雪糕/布丁/果冻,Ice cream and chilled desserts,1393:1,冰淇淋
-glutinous_sweet,汤圆/酒酿圆子/麻薯/青团,Sweet glutinous desserts,1220:0.6;1221:0.4,黑芝麻汤圆与醪糟
-water_tea,水/茶/黑咖啡/草本饮,"Water, tea, black coffee and herbal drinks",W0:1,按能量与宏量营养素为零处理
-sweet_drink,可乐/果汁/椰汁/糖水,Sugar-sweetened beverages and juices,1367:0.3;1576:0.3;1369:0.2;1376:0.2,可乐、橙汁饮料、苹果汁饮料、椰子汁饮料
-beer,啤酒,Beer,1407:1,啤酒(4.3%，青岛牌)，碳水已扣除乙醇（见README）
-wine,葡萄酒/白酒,Wine and spirits,1412:1,红葡萄酒，碳水已扣除乙醇（见README）
-rice_wine,黄酒/米酒,Chinese rice wine,1421:1,黄酒，按成分表原值
-condiment,调味品/酱/腐乳,Condiments and sauces,1518:0.3;1520:0.2;1523:0.2;1539:0.15;1547:0.15,酱油、醋、豆瓣酱、番茄酱、红腐乳
-starchy_mixed_dish,含淀粉荤素菜（土豆/山药/藕/玉米/芋/南瓜/粉丝/毛豆/栗子）,Mixed dishes with starchy vegetables (fried),@starchy_veg:0.40;@mixed_veg:0.30;789:0.25;OIL:0.05,审核意见：含淀粉类食材的荤素菜，薯类40%、混合蔬菜30%、猪肉25%、油5%
-starchy_mixed_steamed,含淀粉荤素菜（蒸/炖，不加油）,Mixed dishes with starchy vegetables (steamed/stewed),@starchy_veg:0.42;@mixed_veg:0.32;789:0.26,同上配比去掉油（如南瓜蒸小排）
-starchy_soup,含淀粉的汤（土豆汤/山芋汤/南瓜汤/玉米汤/藕汤/粉丝汤）,Soups with starchy vegetables,W0:0.75;@starchy_veg:0.20;789:0.05,审核意见：汤水75%、薯类20%、猪肉5%（碳水约3.8 g/100 g）
-offal_fried,内脏/血制品（炒/爆）,Offal and blood (stir-fried),@offal:0.95;OIL:0.05,内脏加炒菜用油
-egg_custard,蒸蛋/炖蛋/蛋羹,Steamed egg custard,978:0.5;W0:0.5,蛋液与水1:1
-protein_powder,蛋白粉,Protein powder,U174276:1,成分表无条目；USDA大豆分离蛋白（伪条目）
-unmappable,无法映射,Unmappable,,无重量、非食物、空腹检查或成分表无对应条目
+rice,\u7c73\u996d,Cooked white rice,287:1,"Steamed white rice, mean entry; cooked weight."
+grain_rice,\u6742\u7cae\u996d/\u7cd9\u7c73\u996d/\u9ed1\u7c73\u996d,Mixed-grain rice (cooked),287:0.50;301:0.04;1286:0.04;351:0.03;309:0.04;286:0.03;W0:0.32,"No mixed-grain rice entry; combine 50% cooked white rice with millet, oats, adzuki beans, buckwheat and dark glutinous rice (18% total dry grains), plus water to approximately 70% moisture, matching cooked rice."
+porridge,\u7ca5/\u7a00\u996d/\u6ce1\u996d/\u6742\u7cae\u7ca5,Porridge and rice in water,288:0.5;303:0.3;1281:0.2,"Mixture of japonica rice porridge, millet porridge and unsweetened mixed-grain porridge."
+noodles,\u9762\u6761/\u835e\u9ea6\u9762/\u610f\u9762\uff08\u719f\uff09,Cooked wheat noodles,264:0.49;W0:0.51,Mean noodle entry is fresh uncooked cut noodles (28.5% water); approximate cooked noodles at 65% water using 0.49 parts noodles and 0.51 parts water.
+starch_noodles,\u7c89\u4e1d/\u7c89\u76ae/\u7c73\u7c89/\u7c73\u7ebf\uff08\u719f\uff09,Cooked starch or rice noodles,324:0.15;290:0.15;W0:0.70,"Equal parts dry starch noodles and dry rice noodles, rehydrated to approximately 70% water."
+steamed_bread,\u9992\u5934/\u82b1\u5377/\u6742\u7cae\u9992\u5934/\u7a9d\u5934,Steamed bread without filling,272:1,Mean steamed wheat-bread entry.
+bread_flatbread,\u9762\u5305/\u5410\u53f8/\u70d9\u997c/\u5927\u997c,Bread and unfried flatbread,1316:0.6;271:0.4,Mean bread entry and flatbread made from standard flour.
+fried_wheat,\u6cb9\u6761/\u6cb9\u997c/\u8471\u6cb9\u997c/\u6625\u5377/\u65b9\u4fbf\u9762,Fried wheat foods,277:0.4;276:0.3;1199:0.3,Fried products already contain oil in the source entry; do not add oil again.
+filled_meat,\u8089\u5305/\u997a\u5b50/\u9984\u9968/\u70e7\u9ea6/\u5c0f\u7b3c,Meat-filled buns and dumplings,1339:0.4;1330:0.4;1311:0.2,"Pork-filled steamed buns, pork-and-cabbage dumplings, and preserved-vegetable-and-shrimp wontons."
+filled_veg,\u83dc\u5305/\u7d20\u5305/\u7d20\u997a/\u8c46\u6c99\u5305,Vegetable- or bean-filled buns,272:0.6;452:0.3;346:0.07;584:0.03,"No vegetable-filled bun entry; use 60% wrapper (steamed bread) and 40% filling (pak choi, dried tofu and shiitake), without added oil for steaming."
+fried_dumpling,\u751f\u714e/\u9505\u8d34/\u714e\u997a,Pan-fried buns and dumplings,1339:0.95;OIL:0.05,Pork-filled bun plus pan-frying oil.
+glutinous_ricecake,\u7cbd\u5b50/\u5e74\u7cd5/\u7cef\u7c73/\u7ca2\u996d/\u7c73\u7cd5,Glutinous rice and rice cakes,1211:0.5;285:0.21;W0:0.29,"Equal parts rice cake and cooked glutinous rice (rice plus water, approximately 60% moisture)."
+dry_cereal_powder,\u9ea6\u7247/\u71d5\u9ea6/\u4ee3\u9910\u7c89/\u829d\u9ebb\u7cca\u7c89/\u5976\u7c89\uff08\u5e72\uff09,Dry cereals and powders,1273:0.4;1286:0.2;1283:0.2;1182:0.2,"Dry weight; cereal flakes (1273), oats, black-sesame paste powder and soy-milk powder."
+starchy_veg,\u571f\u8c46/\u7ea2\u85af/\u828b\u5934/\u5c71\u836f/\u85d5/\u7389\u7c73,Starchy vegetables (boiled/steamed/unspecified),313:0.2;316:0.2;526:0.2;525:0.2;292:0.2,Equal mixture of common tubers and fresh maize.
+starchy_veg_fried,\u7092/\u7ea2\u70e7\u571f\u8c46\u7b49,Starchy vegetables (fried/braised),@starchy_veg:0.95;OIL:0.05,Tubers plus stir-frying oil.
+egg,\u9e21\u86cb/\u9e2d\u86cb/\u54b8\u86cb/\u76ae\u86cb/\u84b8\u86cb,Eggs (boiled/steamed/unspecified),978:1,"Mean chicken-egg entry; also approximates duck, salted and preserved eggs within this group."
+egg_fried,\u7092\u86cb/\u714e\u86cb,Fried or scrambled eggs,978:0.95;OIL:0.05,Egg plus stir-frying oil.
+egg_veg_stirfry,\u756a\u8304\u7092\u86cb/\u4e1d\u74dc\u7092\u86cb/\u97ed\u83dc\u7092\u86cb,Egg and vegetable stir-fries,978:0.40;405:0.20;429:0.15;445:0.10;422:0.10;OIL:0.05,"40% egg, 55% common vegetable accompaniments and 5% oil."
+milk,\u725b\u5976,Milk,917:1,"Bright-brand milk, a common Shanghai brand; its lactose content is more plausible than that of the mean milk entry."
+yogurt,\u9178\u5976,Yogurt,958:1,"Mean yogurt entry, sweetened."
+milk_mixed,\u725b\u5976\u5496\u5561/\u62ff\u94c1/\u5976\u8336/\u725b\u5976\u9ea6\u7247,Milk-based mixed drinks,917:0.65;1273:0.05;W0:0.30,"65% milk, a small amount of cereal, and water or coffee for the remainder; no added sugar."
+soy_milk,\u8c46\u6d46/\u8c46\u5976,Soy milk,339:1,Soy milk entry 339 replaces the excessively dilute entry 338 after review; no added sugar.
+tofu,\u8c46\u8150/\u8c46\u82b1,Tofu (boiled/steamed/cold/unspecified),333:1,Mean tofu entry.
+soy_dried,\u8c46\u5e72/\u9999\u5e72/\u7d20\u9e21/\u767e\u53f6/\u8150\u7af9/\u70e4\u9eb8,Pressed or dried soy products and gluten,346:0.4;347:0.2;345:0.3;349:0.1,"Dried tofu, pressed tofu rolls, tofu sheets and wheat gluten."
+soy_fried,\u7092/\u7ea2\u70e7\u8c46\u5236\u54c1/\u6cb9\u8c46\u8150/\u6cb9\u9762\u7b4b,Fried or braised soy products,333:0.4;346:0.2;345:0.2;343:0.15;OIL:0.05,Mixed soy products plus stir-frying oil.
+pork,\u732a\u8089\uff08\u84b8\u716e/\u672a\u6ce8\u660e\uff09,Pork (boiled/steamed/unspecified),789:1,"Pork leg, commonly used for shredded, sliced and minced pork; intermediate fat content."
+pork_fried,\u732a\u8089\uff08\u7092/\u714e/\u70b8\uff09,Pork (stir-fried or fried),789:0.95;OIL:0.05,Pork leg plus stir-frying oil.
+pork_belly_braised,\u7ea2\u70e7\u8089/\u4e94\u82b1\u8089/\u70e7\u8089,Braised fatty pork,779:0.92;OIL:0.05;1448:0.03,"Mean lean-and-fat pork entry plus 5% braising oil and 3% rock sugar, approximating Shanghai-style braised pork."
+pork_rib,\u6392\u9aa8/\u5927\u6392/\u5c0f\u6392/\u732a\u8e44,Pork ribs/chops/trotters (unspecified or steamed),791:0.4;794:0.4;810:0.2,"Pork loin chops, spare ribs and cooked pork feet."
+pork_rib_fried,\u7ea2\u70e7/\u714e/\u70b8\u6392\u9aa8,Pork ribs or chops (fried/braised),791:0.475;794:0.475;OIL:0.05,Pork chops and spare ribs plus braising oil.
+meatball,\u8089\u5706/\u8089\u4e38/\u72ee\u5b50\u5934/\u8089\u997c,Pork meatballs and patties,789:0.45;779:0.45;320:0.05;W0:0.05,"Minced pork from equal parts leg and lean-and-fat pork, plus 5% starch and 5% water."
+meatball_fried,\u8089\u5706/\u72ee\u5b50\u5934\uff08\u7ea2\u70e7/\u714e/\u70b8\uff09,Pork meatballs (fried/braised),@meatball:0.95;OIL:0.05,Pork meatballs plus braising oil.
+pork_processed,\u9999\u80a0/\u706b\u817f/\u5348\u9910\u8089/\u54b8\u8089/\u57f9\u6839/\u8089\u677e,Processed pork,815:0.3;818:0.2;807:0.2;808:0.15;805:0.15,"Mixture of frankfurters, Chinese sausage, luncheon meat, salted pork and bacon."
+offal,\u5185\u810f/\u8840\u5236\u54c1,Offal and blood,797:0.25;795:0.25;887:0.25;803:0.25,"Pork liver, pork stomach, chicken gizzard and pork blood."
+beef_mutton,\u725b\u7f8a\u8089\uff08\u84b8\u716e/\u9171/\u672a\u6ce8\u660e\uff09,Beef and mutton (unspecified or boiled),823:0.7;844:0.3,Mean lean-and-fat beef and mutton entries.
+beef_mutton_fried,\u725b\u7f8a\u8089\uff08\u7092/\u7ea2\u70e7/\u714e\uff09,Beef and mutton (fried/braised),823:0.665;844:0.285;OIL:0.05,Beef and mutton plus stir-frying oil.
+chicken,\u9e21/\u9e3d/\u5176\u4ed6\u79bd\uff08\u767d\u5207/\u84b8\u716e/\u672a\u6ce8\u660e\uff09,Chicken and other poultry,876:1,Mean chicken entry.
+chicken_fried,\u9e21\uff08\u7092/\u7ea2\u70e7/\u70b8\uff09,Chicken (fried/braised),876:0.95;OIL:0.05,Mean chicken entry plus stir-frying oil.
+duck_goose,\u9e2d/\u9e45\uff08\u767d\u5207/\u76d0\u6c34/\u672a\u6ce8\u660e\uff09,Duck and goose,891:1,Mean duck entry.
+duck_fried,\u9e2d/\u9e45\uff08\u7092/\u7ea2\u70e7\uff09,Duck (fried/braised),891:0.95;OIL:0.05,Mean duck entry plus stir-frying oil.
+fish,\u9c7c\uff08\u6e05\u84b8/\u716e/\u672a\u6ce8\u660e\uff09,Fish (steamed/boiled/unspecified),1021:0.2;1050:0.2;1030:0.2;1038:0.2;1014:0.2,"Equal mixture of common Shanghai fish: crucian carp, perch, hairtail, small yellow croaker and black carp."
+fish_fried,\u9c7c\uff08\u7ea2\u70e7/\u714e/\u70b8/\u718f\uff09,Fish (fried/braised),@fish:0.95;OIL:0.05,Fish plus braising oil.
+fish_processed,\u9c7c\u4e38/\u867e\u4e38/\u9c7c\u6392,Fish balls and processed seafood,1067:1,Fish balls.
+shrimp,\u867e\uff08\u767d\u707c/\u716e/\u672a\u6ce8\u660e\uff09,Shrimp (boiled/unspecified),1092:0.5;1093:0.5,River shrimp and greasyback shrimp.
+seafood_fried,\u867e/\u8d1d/\u9c7f\u9c7c\uff08\u7092/\u7206/\u6912\u76d0\uff09,Shrimp and shellfish (fried),1092:0.3;1093:0.3;1120:0.15;1129:0.2;OIL:0.05,"Shrimp, clams and squid plus stir-frying oil."
+crab,\u87f9,Crab,1103:1,Chinese mitten crab.
+shellfish,\u8d1d\u7c7b/\u8f6f\u4f53\uff08\u86e4\u870a/\u86cf\u5b50/\u9c8d\u9c7c/\u6d77\u53c2/\u9c7f\u9c7c\uff09,Shellfish and molluscs,1120:0.25;1108:0.15;1106:0.15;1123:0.2;1129:0.25,"Clams, razor clams, abalone, sea cucumber and cuttlefish."
+leafy_veg,\u53f6\u83dc\u4e0e\u7518\u84dd\u7c7b\uff08\u9752\u83dc/\u83e0\u83dc/\u767d\u83dc/\u5377\u5fc3\u83dc/\u82b1\u83dc\uff09,Leafy and brassica vegetables (boiled/cold/unspecified),452:0.25;457:0.15;473:0.1;483:0.1;488:0.05;463:0.15;450:0.1;464:0.05;465:0.05,"Mainly pak choi and Shanghai bok choy, with spinach, lettuce, crown daisy, cabbage, Chinese cabbage, cauliflower and broccoli."
+leafy_veg_fried,\u53f6\u83dc\u4e0e\u7518\u84dd\u7c7b\uff08\u7092\uff09,Leafy and brassica vegetables (stir-fried),@leafy_veg:0.95;OIL:0.05,Leafy vegetables plus stir-frying oil.
+fruit_veg,\u74dc\u8304\u8c46\u835a\u82bd\u83dc\u7c7b,"Gourds and fruit-type vegetables, pods and sprouts",422:0.15;419:0.15;405:0.15;402:0.1;429:0.1;431:0.05;410:0.05;397:0.1;392:0.05;400:0.1,"Cucumber, winter melon, tomato, eggplant, loofah, zucchini, green pepper, yardlong beans, green beans and mung-bean sprouts."
+fruit_veg_fried,\u74dc\u8304\u8c46\u835a\u82bd\u83dc\u7c7b\uff08\u7092\uff09,Gourds and fruit-type vegetables (stir-fried),@fruit_veg:0.95;OIL:0.05,Fruit vegetables plus stir-frying oil.
+root_stem_veg,\u6839\u830e/\u830e/\u7b0b/\u8471\u849c\u7c7b,"Root, stem and shoot vegetables",371:0.25;380:0.15;491:0.15;519:0.15;480:0.15;499:0.1;444:0.05,"Daikon, carrot, stem lettuce, water bamboo, celery, bamboo shoots and onion."
+root_stem_veg_fried,\u6839\u830e/\u830e/\u7b0b\u7c7b\uff08\u7092/\u7ea2\u70e7\uff09,"Root, stem and shoot vegetables (stir-fried)",@root_stem_veg:0.95;OIL:0.05,Root and stem vegetables plus stir-frying oil.
+fresh_legume,\u6bdb\u8c46/\u8695\u8c46/\u8c4c\u8c46/\u716e\u8c46,Fresh legumes and cooked pulses,391:0.5;393:0.5,Edamame and fresh peas; no fresh broad-bean entry in the source table.
+fresh_legume_fried,\u6bdb\u8c46/\u8695\u8c46/\u8c4c\u8c46\uff08\u7092/\u70e7\uff09,Fresh legumes (stir-fried),@fresh_legume:0.95;OIL:0.05,Fresh legumes plus stir-frying oil.
+fungi_algae,\u83cc\u83c7/\u6728\u8033/\u6d77\u5e26/\u7d2b\u83dc\uff08\u9c9c\u6216\u6c34\u53d1\uff09,"Mushrooms, fungi and seaweed",584:0.3;575:0.2;602:0.15;580:0.2;581:0.05;607:0.1,"Shiitake, enoki, king oyster mushrooms, rehydrated wood-ear mushrooms, oyster mushrooms and kelp."
+fungi_algae_fried,\u83cc\u83c7\u6728\u8033\u7c7b\uff08\u7092\uff09,Mushrooms and fungi (stir-fried),@fungi_algae:0.95;OIL:0.05,Mushrooms plus stir-frying oil.
+mixed_veg,\u852c\u83dc/\u7d20\u83dc\uff08\u6df7\u5408\u6216\u672a\u6ce8\u660e\uff09,Mixed vegetables (unspecified),@leafy_veg:0.4;@fruit_veg:0.3;@root_stem_veg:0.3,Combination of the three vegetable groups.
+mixed_veg_fried,\u7d20\u7092/\u7092\u7d20\u83dc/\u591a\u79cd\u852c\u83dc\u5408\u7092,Mixed vegetables (stir-fried),@mixed_veg:0.95;OIL:0.05,Mixed vegetables plus stir-frying oil.
+salad,\u852c\u83dc\u8272\u62c9/\u6c99\u62c9,Vegetable salad with dressing,483:0.4;422:0.2;405:0.2;380:0.12;1536:0.08,"Lettuce, cucumber, tomato and carrot with 8% salad dressing."
+pickled_veg,\u69a8\u83dc/\u54b8\u83dc/\u9171\u83dc/\u841d\u535c\u5e72,Pickled vegetables,1551:0.3;1553:0.3;1550:0.2;1555:0.2,"Pickled mustard stem, preserved mustard greens, dried radish and mixed pickles."
+meat_veg_stirfry,\u8364\u7d20\u7092\u83dc\uff08\u8089\u4e1d/\u8089\u7247/\u8089\u7cdc/\u9e21\u4e1d+\u852c\u83dc\uff09,Meat and vegetable stir-fries,789:0.25;@fruit_veg:0.25;@root_stem_veg:0.30;@leafy_veg:0.15;OIL:0.05,"Hospital-style meat-and-vegetable stir-fry: 70% vegetables, 25% pork and 5% oil."
+meat_veg_steamed,\u8364\u7d20\u84b8/\u7096/\u70e9\uff08\u4e0d\u52a0\u6cb9\uff09,Meat and vegetable steamed or stewed dishes,789:0.30;@fruit_veg:0.25;@root_stem_veg:0.30;@leafy_veg:0.15,70% vegetables and 30% pork without added oil; hotpot and similar mixed dishes are assigned to the stir-fried meat-and-vegetable group instead.
+soy_veg_stirfry,\u8c46\u5236\u54c1\u7092\u852c\u83dc\uff08\u82b9\u83dc\u9999\u5e72\u7b49\uff09,Soy product and vegetable stir-fries,346:0.30;@fruit_veg:0.20;@root_stem_veg:0.30;@leafy_veg:0.15;OIL:0.05,"65% vegetables, 30% dried tofu and 5% oil."
+fried_rice_noodles,\u7092\u996d/\u7092\u9762/\u7092\u7c73\u7c89/\u7092\u5e74\u7cd5,Fried rice and noodles,1314:1,Mixed fried rice; oil is already included in the source entry.
+noodle_meal,\u6c64\u9762/\u62cc\u9762/\u83dc\u8089\u9762,Noodle dishes with toppings,@noodles:0.75;@leafy_veg:0.15;789:0.10,"75% cooked noodles, 15% leafy vegetables and 10% meat."
+western_fastfood,\u6c49\u5821/\u62ab\u8428/\u4e09\u660e\u6cbb,Western fast food,1271:0.4;1260:0.3;1261:0.3,"Hamburgers, pizza and sandwiches."
+broth,\u6e05\u6c64/\u8089\u6c64/\u9e21\u6c64/\u9c7c\u6c64/\u9aa8\u5934\u6c64,Clear meat or fish broth,W0:0.90;876:0.06;779:0.04,"90% broth, with small amounts of chicken and pork."
+veg_soup,\u83dc\u6c64/\u86cb\u6c64/\u8c46\u8150\u6c64/\u7d2b\u83dc\u6c64,Vegetable/egg/tofu soup,W0:0.85;@leafy_veg:0.05;405:0.04;333:0.03;978:0.03,"85% broth, with small amounts of vegetables, tomato, tofu and egg."
+meat_veg_soup,\u5e26\u6599\u8364\u6c64\uff08\u6392\u9aa8\u841d\u535c\u6c64/\u51ac\u74dc\u5c0f\u6392\u6c64/\u814c\u7b03\u9c9c\uff09,Meat and vegetable soup with solids,W0:0.70;794:0.10;@root_stem_veg:0.10;@fruit_veg:0.10,"70% broth, 10% pork spare ribs and 20% vegetables."
+sweet_soup,\u751c\u6c64/\u7fb9/\u7cca\uff08\u8d64\u8c46/\u7eff\u8c46/\u94f6\u8033/\u7ea2\u67a3\uff09,Sweet soups (no added sugar assumed),W0:0.88;351:0.04;350:0.03;587:0.01;675:0.02;768:0.02,"Assume no added sugar for participants with diabetes; adzuki beans, mung beans, white fungus, red dates and lotus seeds."
+fruit_temperate,\u82f9\u679c/\u68a8/\u6843/\u674e/\u8461\u8404/\u7315\u7334\u6843/\u8349\u8393,Temperate fruits,613:0.3;630:0.2;660:0.15;666:0.05;684:0.1;700:0.1;701:0.1,Common temperate fruits.
+fruit_citrus,\u6a59/\u6a58/\u67da,Citrus fruits,704:0.4;705:0.4;711:0.2,"Oranges, mandarins and pomelos."
+fruit_melon,\u897f\u74dc/\u751c\u74dc/\u54c8\u5bc6\u74dc,Melons,739:0.6;738:0.4,Watermelon and melon.
+fruit_tropical,\u9999\u8549/\u8292\u679c/\u8354\u679d/\u83e0\u841d/\u706b\u9f99\u679c,Tropical fruits,726:0.3;723:0.15;722:0.15;716:0.2;734:0.2,Common tropical fruits.
+dried_fruit,\u7ea2\u67a3/\u8461\u8404\u5e72/\u67b8\u675e/\u679c\u5e72,Dried fruits,675:0.5;689:0.3;1571:0.2,"Dried red dates, raisins and goji berries."
+nuts_seeds,\u6838\u6843/\u82b1\u751f/\u74dc\u5b50/\u674f\u4ec1/\u829d\u9ebb,Nuts and seeds,743:0.3;764:0.3;766:0.2;752:0.1;756:0.1,Assume recorded edible weight; shell-in weights would cause overestimation.
+cake_pastry,\u86cb\u7cd5/\u7cd5\u70b9/\u6708\u997c/\u9165\u997c,Cakes and pastries,1224:0.4;1243:0.3;1227:0.3,"Mean cake entry, flaky pastries and bean-paste mooncakes."
+biscuit_snack,\u997c\u5e72/\u82cf\u6253\u997c\u5e72/\u85af\u7247/\u9505\u5df4,Biscuits and packaged snacks,1322:0.4;1323:0.4;1353:0.2,"Biscuits, soda crackers and potato chips."
+sugar_sweets,\u7cd6/\u7cd6\u679c/\u5de7\u514b\u529b/\u8702\u871c/\u679c\u9171,Sugar and confectionery,1448:0.5;1454:0.2;1453:0.15;1487:0.15,"White sugar, chocolate, milk candy and honey."
+ice_cream,\u51b0\u6dc7\u6dcb/\u96ea\u7cd5/\u5e03\u4e01/\u679c\u51bb,Ice cream and chilled desserts,1393:1,Ice cream.
+glutinous_sweet,\u6c64\u5706/\u9152\u917f\u5706\u5b50/\u9ebb\u85af/\u9752\u56e2,Sweet glutinous desserts,1220:0.6;1221:0.4,Black-sesame glutinous rice balls and fermented glutinous rice.
+water_tea,\u6c34/\u8336/\u9ed1\u5496\u5561/\u8349\u672c\u996e,"Water, tea, black coffee and herbal drinks",W0:1,Treat energy and macronutrient contents as zero.
+sweet_drink,\u53ef\u4e50/\u679c\u6c41/\u6930\u6c41/\u7cd6\u6c34,Sugar-sweetened beverages and juices,1367:0.3;1576:0.3;1369:0.2;1376:0.2,"Cola, orange-juice drinks, apple-juice drinks and coconut-juice drinks."
+beer,\u5564\u9152,Beer,1407:1,"Tsingtao beer, 4.3% alcohol by volume; ethanol has been subtracted from carbohydrate."
+wine,\u8461\u8404\u9152/\u767d\u9152,Wine and spirits,1412:1,Red wine; ethanol has been subtracted from carbohydrate.
+rice_wine,\u9ec4\u9152/\u7c73\u9152,Chinese rice wine,1421:1,Yellow rice wine; retain the original source-table values.
+condiment,\u8c03\u5473\u54c1/\u9171/\u8150\u4e73,Condiments and sauces,1518:0.3;1520:0.2;1523:0.2;1539:0.15;1547:0.15,"Soy sauce, vinegar, fermented bean paste, tomato paste and red fermented tofu."
+starchy_mixed_dish,\u542b\u6dc0\u7c89\u8364\u7d20\u83dc\uff08\u571f\u8c46/\u5c71\u836f/\u85d5/\u7389\u7c73/\u828b/\u5357\u74dc/\u7c89\u4e1d/\u6bdb\u8c46/\u6817\u5b50\uff09,Mixed dishes with starchy vegetables (fried),@starchy_veg:0.40;@mixed_veg:0.30;789:0.25;OIL:0.05,"Reviewed starchy mixed dish: 40% tubers, 30% mixed vegetables, 25% pork and 5% oil."
+starchy_mixed_steamed,\u542b\u6dc0\u7c89\u8364\u7d20\u83dc\uff08\u84b8/\u7096\uff0c\u4e0d\u52a0\u6cb9\uff09,Mixed dishes with starchy vegetables (steamed/stewed),@starchy_veg:0.42;@mixed_veg:0.32;789:0.26,"Same starchy mixed-dish proportions without oil, for example steamed pumpkin with spare ribs."
+starchy_soup,\u542b\u6dc0\u7c89\u7684\u6c64\uff08\u571f\u8c46\u6c64/\u5c71\u828b\u6c64/\u5357\u74dc\u6c64/\u7389\u7c73\u6c64/\u85d5\u6c64/\u7c89\u4e1d\u6c64\uff09,Soups with starchy vegetables,W0:0.75;@starchy_veg:0.20;789:0.05,"Reviewed starchy soup: 75% broth, 20% tubers and 5% pork; approximately 3.8 g carbohydrate per 100 g."
+offal_fried,\u5185\u810f/\u8840\u5236\u54c1\uff08\u7092/\u7206\uff09,Offal and blood (stir-fried),@offal:0.95;OIL:0.05,Offal plus stir-frying oil.
+egg_custard,\u84b8\u86cb/\u7096\u86cb/\u86cb\u7fb9,Steamed egg custard,978:0.5;W0:0.5,Egg and water in a 1:1 ratio.
+protein_powder,\u86cb\u767d\u7c89,Protein powder,U174276:1,No source-table entry; use a synthetic entry linked to USDA soy protein isolate.
+unmappable,\u65e0\u6cd5\u6620\u5c04,Unmappable,,"No weight, non-food item, fasting examination or no corresponding food-composition entry."

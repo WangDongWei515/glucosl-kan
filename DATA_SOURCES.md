@@ -28,6 +28,7 @@ Use CGMacros version 1.0.0, described by Das et al., CGMacros: a pilot scientifi
 - Provider information: https://www.chinanutri.cn/yyzyxxpt/sjzx/swcfsjk/201911/t20191128_207183.html
 - The provider states that the data copyright and interpretation rights belong to the institute.
 - The repository distributes food-name matches, source entry identifiers and recipe rules, not a copied nutrient database.
+- Documentation and curation annotations are in English. Source-language food names and parser literals are stored as Unicode escapes to preserve exact matching without displaying source-language text in the repository. The mapping loader decodes escaped CSV values before applying the rules; identifiers, portions and recipe coefficients are unchanged.
 - Preparation retrieves source values into a local cache. Users must obtain access under the source terms. The cache is excluded from Git.
 - This platform is updated over time and has no versioned dataset archive linked by this code. Changes in source values can alter nutrient estimates. The verification command reports differences from the study's reference estimates rather than silently updating those references.
 - If network access is unavailable, provide a locally obtained cache through --cn-cache-dir and use --offline.

@@ -1,7 +1,7 @@
 key,item_zh,route_key,route_recipe,route_group,note
-coarse grain,杂粮馒头,coarse grain steamed bread,,,杂粮饭键下实为杂粮馒头的行（审核意见）
-coarse grain,杂粮包,coarse grain steamed bread,,,杂粮饭键下实为杂粮包的行（审核意见）
-steamed bun,包子,steamed stuffed bun,,,馒头键下实为包子的行（审核意见）
-steamed bun,小包子,steamed stuffed bun,,,馒头键下实为小包子的行（审核意见）
-mushroom,茨菇,,513:1,starchy_veg,香菇键下实为茨菇（慈菇，块茎）的行（审核意见）
-steak,大排,pork chop,,,牛排键下实为大排（猪排）的行（审核意见）
+coarse grain,\u6742\u7cae\u9992\u5934,coarse grain steamed bread,,,Reviewed line recorded under mixed-grain rice actually describes mixed-grain steamed bread.
+coarse grain,\u6742\u7cae\u5305,coarse grain steamed bread,,,Reviewed line recorded under mixed-grain rice actually describes a mixed-grain bun.
+steamed bun,\u5305\u5b50,steamed stuffed bun,,,Reviewed line recorded under plain steamed bread actually describes a filled bun.
+steamed bun,\u5c0f\u5305\u5b50,steamed stuffed bun,,,Reviewed line recorded under plain steamed bread actually describes a small filled bun.
+mushroom,\u8328\u83c7,,513:1,starchy_veg,"Reviewed mushroom line actually describes arrowhead, a tuber."
+steak,\u5927\u6392,pork chop,,,Reviewed beef-steak line actually describes a pork loin chop.

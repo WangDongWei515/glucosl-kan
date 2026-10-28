@@ -1,19 +1,19 @@
 fiber_class,proxy_entry_ids,description
-zero,,结构性0：肉、禽、鱼、蛋、乳、油脂、糖、酒；其余类别仅在成分表与USDA均无纤维值时按“纤维/碳水”中位比例兜底
-rice,291,稻米制品：籼米粥（熟制品，报告总膳食纤维）
-wheat,1303,小麦制品：铁板牛肉炒面面饼（以小麦粉为主，报告总膳食纤维）
-coarse_grain,1286;1284;1281,杂粮全谷：燕麦片、麦片、无糖八宝粥
-maize,1360;1289,玉米：玉米花（全谷）与玉米片
-tuber,1353;1354;1355,薯类：薯片与薯圈（马铃薯制品）
-leafy,459;460;461;462;472;494;495;496;497;511;512,叶菜：奶白菜、鸡毛菜、娃娃菜、乌塌菜、盖菜等
-brassica,469;470;471,结球及花类甘蓝：紫甘蓝、抱子甘蓝、羽衣甘蓝
-fruit_veg,413;414;415;416;432;434;435,瓜茄豆荚类：樱桃番茄、甜椒、彩椒、秋葵、飞碟瓜、秋黄瓜、南瓜(栗面)
-root_stem,1557;1558;1560;1181,根茎类：腌大头菜、腌芥菜头、腌萝卜条、胡萝卜泥
-legume,1356;1357,豆类：怪味胡豆、奶油五香豆（蚕豆制品）
-mushroom,591;592;593;594;597;600,菌菇：茶树菇、黄伞菇、鸡腿菇、鸡枞、牛肝菌（干）
-seaweed,612;1351,藻类：裙带菜（干）、海苔
-fruit,659;672;673;681;702;713;714;733;734;735,鲜果：蛇果、布朗、西梅、冬枣、红提、葡萄柚、红毛丹、火龙果、榴莲
-dried_fruit,703;1578;1483,干果：无花果干、荔枝干、黑贡枣
-nut,759,坚果种子：开心果（熟）
-bakery,1324;1325;1327;1230;1231;1232;1247;1342,含糖焙烤食品：饼干、月饼、沙琪玛、巧克力派
-chocolate,1465,巧克力：黑巧克力
+zero,,"Structural zero for meat, poultry, fish, eggs, dairy, oils, sugar and alcohol; other classes use the median fiber-to-carbohydrate ratio only when both source tables lack fiber values."
+rice,291,Rice products: cooked indica-rice porridge with reported total dietary fiber.
+wheat,1303,"Wheat products: the wheat-based noodle cake from sizzling beef noodles, with reported total dietary fiber."
+coarse_grain,1286;1284;1281,"Whole and coarse grains: oats, cereal flakes and unsweetened mixed-grain porridge."
+maize,1360;1289,Maize: whole-grain popcorn and cornflakes.
+tuber,1353;1354;1355,Tubers: potato chips and potato rings.
+leafy,459;460;461;462;472;494;495;496;497;511;512,"Leafy vegetables: pak choi, young pak choi, baby Chinese cabbage, tatsoi and mustard greens."
+brassica,469;470;471,"Brassica vegetables: red cabbage, Brussels sprouts and kale."
+fruit_veg,413;414;415;416;432;434;435,"Fruit vegetables and pods: cherry tomato, sweet pepper, multicolored pepper, okra, pattypan squash, autumn cucumber and chestnut pumpkin."
+root_stem,1557;1558;1560;1181,"Root and stem vegetables: pickled turnip, pickled mustard root, pickled radish strips and carrot puree."
+legume,1356;1357,Legumes: seasoned and spiced broad-bean products.
+mushroom,591;592;593;594;597;600,"Mushrooms: dried tea-tree, golden-cap, shaggy-mane, termite and porcini mushrooms."
+seaweed,612;1351,Algae: dried wakame and nori.
+fruit,659;672;673;681;702;713;714;733;734;735,"Fresh fruits: red apple, plum, prune, winter jujube, red grape, grapefruit, rambutan, dragon fruit and durian."
+dried_fruit,703;1578;1483,"Dried fruits: dried figs, dried lychees and dried black dates."
+nut,759,Nuts and seeds: roasted pistachios.
+bakery,1324;1325;1327;1230;1231;1232;1247;1342,"Sweet baked foods: biscuits, mooncakes, sachima and chocolate pies."
+chocolate,1465,Chocolate: dark chocolate.

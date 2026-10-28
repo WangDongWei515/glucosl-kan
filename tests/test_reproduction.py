@@ -13,6 +13,9 @@ from build_dataset import positive_area
 sys.path.insert(0, str(ROOT / 'experiments/glucosl/scripts'))
 from evaluate_glucosl import regression_metrics, resample
 from src.glucosl_preprocess import Preprocessor
+from src.shanghai_t2dm import parse_intake
+sys.path.insert(0, str(ROOT / 'experiments/shanghai_t2dm/scripts'))
+from build_food_mapping import read_curation
 
 
 class ReproductionChecks(unittest.TestCase):
@@ -48,6 +51,13 @@ class ReproductionChecks(unittest.TestCase):
         preprocessor.transform(pd.DataFrame({'age': [1000.0], 'carbs': [1000.0]}), clip=True)
         pd.testing.assert_series_equal(preprocessor.person_mean, before)
         self.assertEqual(float(preprocessor.person_mean['age']), 50.0)
+
+    def test_source_food_route_survives_escaped_storage(self):
+        item = parse_intake('Coarse grain 100 g', '\u6742\u7cae\u9992\u5934100g')[0]
+        routes = read_curation('line_routes.csv', keep_default_na=False).set_index(['key', 'item_zh'])
+        route = routes.loc[('coarse grain', item['item_zh'])]
+        self.assertEqual(item['amount'], 100.0)
+        self.assertEqual(route.route_key, 'coarse grain steamed bread')
 
 
 if __name__ == '__main__':

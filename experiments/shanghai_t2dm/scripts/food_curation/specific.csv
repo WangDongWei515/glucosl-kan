@@ -1,301 +1,301 @@
 rank,key,item_zh,recipe,group_id,confidence,cooking,notes
-1,rice,米饭,287:1,rice,high,na,
-2,egg,鸡蛋,978:1,egg,high,unspecified,烹调方式未注明，按鸡蛋本身计
-3,coarse grain,杂粮饭,@grain_rice:1,grain_rice,medium,na,成分表无杂粮饭，按组配方；该键另有7行为杂粮馒头
-4,vegetable,青菜,452:0.5;457:0.5,leafy_veg,medium,unspecified,青菜占61%，其余为“蔬菜/菜/素菜”泛称；按上海青菜（小白菜与油菜各半）；未注明烹调，未加油
-5,milk,牛奶,917:1,milk,high,na,光明牌牛乳（上海常见品牌；均值条目碳水3.4g偏低）
-6,coarse grain steamed bread,杂粮馒头,273:0.70;296:0.09;308:0.09;W0:0.12,steamed_bread,medium,na,成分表无杂粮馒头；标准粉馒头70%、黄玉米面9%、苦荞麦粉9%并补水
-7,boiled vegetable,水煮菜,@leafy_veg:1,leafy_veg,high,nonfried_named,水煮青菜类
-8,fish,鱼,@fish:1,fish,medium,unspecified,鱼种未注明，用上海常见鱼混合
-9,shrimp,虾,1092:0.5;1093:0.5,shrimp,medium,unspecified,河虾与基围虾
-10,cucumber,黄瓜,422:1,fruit_veg,high,unspecified,
-11,cereal,麦片,1273:1,dry_cereal_powder,medium,na,审核后改用1273麦片（1284为加糖速溶麦片）；按干麦片；冲好的（ml或≥150 g）逐行按燕麦粥计
-12,boiled egg,白煮蛋,978:1,egg,high,nonfried_named,
-13,steamed bun,馒头,272:1,steamed_bread,medium,na,16%行为“包子”，按馒头计
-14,cabbage,卷心菜,463:1,leafy_veg,high,unspecified,卷心菜/包菜；少数为白菜
-15,buckwheat bread,荞麦馒头,273:0.70;308:0.18;W0:0.12,steamed_bread,medium,na,荞麦馒头：标准粉馒头70%、苦荞麦粉18%并补水
-16,bread,面包,1316:1,bread_flatbread,high,na,
-17,noodles,面条,264:0.49;W0:0.51,noodles,medium,na,按熟面（假设记录为熟重）
-18,lettuce,生菜,483:1,leafy_veg,high,unspecified,9行为莴笋（茎用），按生菜计
-19,beef,牛肉,823:1,beef_mutton,medium,unspecified,生肉成分；若记录为熟重则低估
-20,soybean milk,豆浆,339:1,soy_milk,high,na,审核后改用339豆奶[豆乳]（338豆浆过稀）；假设不加糖
-21,apple,苹果,613:1,fruit_temperate,high,na,
-22,chinese cabbage,毛菜,460:0.5;450:0.5,leafy_veg,medium,unspecified,毛菜/鸡毛菜与大白菜/黄芽菜约各半
-23,corn,玉米,292:1,starchy_veg,medium,na,鲜玉米可食部；若带芯称重会高估
-24,taro,芋艿,526:1,starchy_veg,high,na,
-25,steamed vegetable bun,菜包,@filled_veg:1,filled_veg,medium,nonfried_named,成分表无菜包，按组配方
-26,steamed pork bun,肉包,1339:1,filled_meat,high,nonfried_named,
-27,pork,肉,789:1,pork,medium,unspecified,“肉”多指猪肉，用猪腿肉
-28,spinach,菠菜,473:1,leafy_veg,high,unspecified,
-29,chicken,鸡肉,876:1,chicken,medium,unspecified,
-30,wonton,馄饨,1311:1,filled_meat,medium,na,用冬菜虾仁馄饨；上海小馄饨馅少、大馄饨为菜肉馅
-31,sweet potato,红薯,316:1,starchy_veg,high,na,
-32,hairtail,带鱼,1030:1,fish,high,unspecified,未注明烹调（实际常红烧或煎）
-33,orange,橙子,704:0.6;705:0.4,fruit_citrus,high,na,橙与橘
-34,steamed bread,馒头,272:1,steamed_bread,high,na,
-35,cauliflower,花菜,464:1,leafy_veg,high,unspecified,少数为西兰花
-36,buckwheat noodles,荞麦面,264:0.30;308:0.12;W0:0.58,noodles,medium,na,荞麦面：小麦面与苦荞麦粉约7:3（干重），按熟面
-37,hangzhou cabbage,杭白菜,452:1,leafy_veg,high,unspecified,杭白菜属小白菜类
-38,yogurt,酸奶,958:1,yogurt,high,na,
-39,beer,啤酒,1407:1,beer,high,na,碳水已扣除乙醇
-40,steamed bean curd roll,素鸡,347:1,soy_dried,high,unspecified,素鸡
-41,biscuit,饼干,1322:1,biscuit_snack,high,na,
-42,braised pork in brown sauce,红烧肉,779:0.92;OIL:0.05;1448:0.03,pork_belly_braised,medium,fried_named,红烧；糖未计；审核后加冰糖3%（本帮红烧）
-43,meatball,肉丸,@meatball:1,meatball,medium,unspecified,
-44,coffee,咖啡,W0:1,water_tea,medium,na,按清咖啡≈0；若加奶或糖则低估
-45,tomato,番茄,405:1,fruit_veg,high,unspecified,
-46,rice in soup,泡饭,287:0.5;W0:0.5,porridge,medium,na,泡饭：米饭与水1:1
-47,duck egg,鸭蛋,990:1,egg,high,unspecified,
-48,millet porridge,小米粥,303:1,porridge,high,na,
-49,radish,萝卜,371:1,root_stem_veg,high,unspecified,
-50,scrambled egg with tomato,番茄炒蛋,405:0.55;978:0.40;OIL:0.05,egg_veg_stirfry,medium,fried_named,
-51,pork rib,大排,791:0.6;794:0.4,pork_rib,medium,unspecified,大排为主；未注明烹调（实际常煎或红烧）
-52,soup,汤,@broth:1,broth,low,nonfried_named,汤的种类未注明
-53,tofu,豆腐,333:1,tofu,high,unspecified,
-54,wax gourd,冬瓜,419:1,fruit_veg,high,unspecified,
-55,cake,蛋糕,1224:1,cake_pastry,medium,na,部分为“饼/糕”
-56,dumpling,饺子,1330:1,filled_meat,high,nonfried_named,
-57,bitter gourd,苦瓜,425:1,fruit_veg,high,unspecified,
-58,crown daisy,蓬蒿菜,488:1,leafy_veg,high,unspecified,
-59,duck,鸭子,891:1,duck_goose,medium,unspecified,
-60,celery,芹菜,480:0.75;518:0.25,root_stem_veg,high,unspecified,芹菜茎与水芹
-61,pumpkin,南瓜,426:1,fruit_veg,high,unspecified,
-62,boiled shrimp,白灼虾,1092:0.5;1093:0.5,shrimp,high,nonfried_named,
-63,eggplant,茄子,402:1,fruit_veg,high,unspecified,未注明烹调（茄子实际常吸油）
-64,sea cucumber,海参,1123:1,shellfish,high,unspecified,鲜/水发海参
-65,peach,桃子,660:1,fruit_temperate,high,na,
-66,chicken leg,鸡腿,882:1,chicken,high,unspecified,
-67,red date,红枣,675:1,dried_fruit,medium,na,干枣；1行为冬枣（鲜）
-68,water spinach,空心菜,493:1,leafy_veg,high,unspecified,
-69,braised shredded pork and cabbage,烂糊肉丝,450:0.62;789:0.28;320:0.05;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,烂糊肉丝：黄芽菜、肉丝、勾芡
-70,grapefruit,柚子,711:1,fruit_citrus,high,na,
-71,fungus,黑木耳,580:1,fungi_algae,medium,unspecified,黑木耳/白木耳按水发木耳；3行“木耳菜”实为叶菜
-72,peanut,花生,764:1,nuts_seeds,high,na,花生仁(炒)
-73,rice cake,年糕,1211:1,glutinous_ricecake,medium,na,年糕；部分为米糕/米饼
-74,potato,土豆,313:1,starchy_veg,high,unspecified,
-75,yellow rice wine,黄酒,1421:1,rice_wine,medium,na,成分表能量似未计乙醇能量
-76,braised radish,红烧萝卜,371:0.95;OIL:0.05,root_stem_veg_fried,high,fried_named,
-77,pear,梨子,630:1,fruit_temperate,high,na,
-78,fried vegetable,炒青菜,452:0.475;457:0.475;OIL:0.05,leafy_veg_fried,high,fried_named,炒青菜
-79,meal replacement powder,代餐粉,1288:0.5;1182:0.5,dry_cereal_powder,low,na,成分表无代餐粉；按无糖苦荞麦片与豆奶粉各半，品牌未知
-80,mushroom,香菇,584:0.6;577:0.4,fungi_algae,medium,unspecified,香菇/蘑菇；3行为“茨菇”（慈菇，块茎）
-81,kiwi fruit,猕猴桃,700:1,fruit_temperate,high,na,
-82,yam,山药,525:1,starchy_veg,high,unspecified,
-83,milk cereal with notoginseng powder,牛奶麦片三七粉,917:0.85;1273:0.15,milk_mixed,medium,na,牛奶85%、麦片(1273)15%；三七粉忽略
-84,vegetable soup,菜汤,@veg_soup:1,veg_soup,medium,nonfried_named,
-85,walnut,核桃,743:1,nuts_seeds,high,na,
-86,steamed pork dumplings,烧麦,285:0.2375;789:0.095;779:0.0475;259:0.114;1518:0.0285;W0:0.4275;OIL:0.05,filled_meat,low,oil_in_recipe,上海糯米烧卖：熟糯米馅、猪肉、酱油、面皮；审核后加5%油（馅料以油/猪油炒制）
-87,leaf lettuce,油麦菜,482:1,leafy_veg,high,unspecified,油麦菜（“油”非烹调词）
-88,coffee and milk,咖啡牛奶,917:0.6;W0:0.4,milk_mixed,medium,na,牛奶60%，不加糖
-89,minced pork with cauliflower and carrot,花菜胡卜肉糜,464:0.42;380:0.28;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-90,sweet potato leaves,地瓜叶,536:1,leafy_veg,high,unspecified,
-91,water bamboo,茭白,519:1,root_stem_veg,high,unspecified,
-92,watermelon,西瓜,739:1,fruit_melon,high,na,
-93,pickle,榨菜,1551:1,pickled_veg,high,na,
-94,pancake,煎饼,271:0.95;OIL:0.05,fried_wheat,medium,fried_named,煎饼/饼按烙饼加煎制用油；成分表“煎饼”条目为干煎饼（含水7–16%），不适用
-95,yellow croaker,小黄鱼,1038:1,fish,high,unspecified,
-96,steamed gluten,烤麸,349:1,soy_dried,high,unspecified,烤麸（上海常做四喜烤麸，所含油糖未计）
-97,ham sausage,火腿肠,815:1,pork_processed,high,na,
-98,tomato and egg soup,番茄蛋汤,405:0.10;978:0.08;W0:0.82,veg_soup,medium,nonfried_named,
-99,green pepper with green bean sprouts,绿豆芽青椒,400:0.60;410:0.35;OIL:0.05,fruit_veg_fried,medium,fried_dish_type,
-100,amaranth,米苋,486:0.5;487:0.5,leafy_veg,high,unspecified,米苋；1行“米线”疑为笔误
-101,crab,蟹,1103:1,crab,medium,unspecified,未注明河蟹或海蟹；按可食部
-102,green vegetable,青菜,452:0.5;457:0.5,leafy_veg,high,unspecified,
-103,broccoli,西蓝花,465:1,leafy_veg,high,unspecified,
-104,egg soup,蛋汤,978:0.10;W0:0.90,veg_soup,medium,nonfried_named,
-105,peanuts with vinegar,醋花生,778:0.85;1520:0.10;1448:0.05,nuts_seeds,medium,fried_in_entry,醋花生：油炸花生仁、醋、糖
-106,whole wheat bread,全麦面包,1316:0.55;273:0.45,bread_flatbread,medium,na,全麦面包与全麦馒头混合；成分表无全麦条目，用面包(均值)与标准粉馒头
-107,pigeon soup,鸽子汤,912:0.12;W0:0.88,broth,low,nonfried_named,汤中含肉量未知
-108,mutton,羊肉,844:1,beef_mutton,high,unspecified,
-109,tofu skin rolls with minced pork,百叶包,345:0.40;789:0.25;779:0.25;W0:0.10,meat_veg_steamed,medium,unspecified,百叶包：千张包肉糜，汤中煮或烧
-110,shredded pork with cucumber,黄瓜肉丝,422:0.70;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-111,black rice,黑米饭,287:0.60;286:0.12;W0:0.28,grain_rice,medium,na,黑米饭：白米饭加血糯米（黑米）
-112,sausage,香肠,818:1,pork_processed,high,na,中式香肠
-113,chicken nugget,鸡块,876:1,chicken,medium,unspecified,中文“鸡块”指带骨鸡肉块，非鸡块零食
-114,steamed corn bread,窝头,296:0.55;W0:0.45,steamed_bread,medium,na,窝头：黄玉米面加水
-115,porridge,粥,288:1,porridge,high,na,
-116,plum,李子,666:1,fruit_temperate,high,na,
-117,poached egg,荷包蛋,989:1,egg,medium,unspecified,荷包蛋未注明煎或煮，按荷包蛋(煮)
-118,broad bean,蚕豆,393:1,fresh_legume,medium,unspecified,成分表无鲜蚕豆，用鲜豌豆近似
-119,vegetable and rice,菜饭,287:0.77;452:0.20;OIL:0.03,rice,medium,oil_in_recipe,菜饭：米饭与青菜；审核后加3%油（上海菜饭以猪油/油焖）
-120,steamed fish,清蒸鱼,@fish:1,fish,high,nonfried_named,
-121,black sesame and walnut cereal paste,黑芝麻核桃麦片糊,1283:0.06;1273:0.03;743:0.01;W0:0.90,sweet_soup,low,na,冲调糊：粉约10%（按300ml冲调估计）
-122,rye bread,黑麦面包,1316:1,bread_flatbread,medium,na,成分表无黑麦面包
-123,pig feet,猪蹄,810:1,pork_rib,high,unspecified,猪蹄(熟)
-124,wax gourd soup,冬瓜汤,419:0.30;W0:0.70,veg_soup,medium,nonfried_named,
-125,shredded pork in beijing sauce,京酱肉丝,789:0.65;1527:0.10;441:0.20;OIL:0.05,pork_fried,medium,fried_dish_type,京酱肉丝：肉丝、甜面酱、大葱
-126,steamed coarse grain bread,杂粮包,273:0.70;296:0.09;308:0.09;W0:0.12,steamed_bread,medium,na,同杂粮馒头
-127,steamed minced pork with eggplant,肉糜蒸茄子,402:0.70;789:0.15;779:0.15,meat_veg_steamed,medium,nonfried_named,
-128,bean sprout,豆芽,400:0.5;399:0.5,fruit_veg,high,unspecified,
-129,steamed salted pork in wine,糟肉,779:1,pork,medium,nonfried_named,糟肉：五花肉糟制后蒸，按肥瘦猪肉
-130,protein powder,蛋白粉,U174276:1,protein_powder,medium,na,成分表无蛋白粉；按审核意见用USDA大豆分离蛋白（174276），来源为USDA
-131,sword bean,刀豆,386:1,fruit_veg,high,unspecified,
-132,pomfret,鲳鱼,1056:1,fish,high,unspecified,
-133,fish soup,鱼汤,@fish:0.10;W0:0.90,broth,low,nonfried_named,
-134,sliced pork with king oyster mushroom and fungus,杏鲍菇木耳肉片,602:0.40;580:0.30;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-135,minced pork with white gourd and carrot,冬瓜胡卜肉糜,419:0.42;380:0.28;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-136,shepherd's purse meatball,荠菜肉圆,490:0.25;789:0.33;779:0.33;320:0.05;W0:0.04,meatball,medium,unspecified,
-137,clam,蛤蜊,1120:1,shellfish,high,unspecified,
-138,cowpea,豇豆,397:1,fruit_veg,high,unspecified,
-139,steamed twisted roll,花卷,269:1,steamed_bread,high,na,
-140,fried egg,炒鸡蛋,978:0.95;OIL:0.05,egg_fried,high,fried_named,
-141,sliced boiled duck,白切鸭块,891:1,duck_goose,medium,nonfried_named,
-142,loach soup,泥鳅汤,@fish:0.15;W0:0.85,broth,low,nonfried_named,成分表无泥鳅，用鱼混合
-143,red date stuffed with walnut,核桃夹枣,675:0.6;743:0.4,dried_fruit,medium,na,
-144,chicken feet,鸡爪,883:1,chicken,high,unspecified,鸡爪可食部；若含骨称重会高估
-145,vegetable noodles,青菜面条,@noodles:0.55;452:0.15;W0:0.30,noodle_meal,medium,unspecified,青菜汤面，含汤
-146,oats porridge,燕麦粥,1286:0.14;W0:0.86,porridge,medium,na,
-147,asparagus,芦笋,510:1,root_stem_veg,high,unspecified,
-148,ginger juice,温姜汁,528:0.10;W0:0.90,water_tea,low,na,温姜汁；是否加红糖未知
-149,sugar free cereal,无糖麦片,1286:1,dry_cereal_powder,medium,na,无糖麦片按燕麦片（干）
-150,vermicelli,粉丝,324:0.25;W0:0.75,starch_noodles,medium,na,按泡发粉丝（干:水=1:3）
-151,minced pork with eggplant,肉糜茄子,402:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-152,red bean and red date,赤豆红枣,351:0.10;675:0.05;W0:0.85,sweet_soup,low,na,按赤豆红枣汤（不加糖）
-153,fruit and vegetable pulp,果蔬浆,613:0.35;380:0.25;405:0.15;483:0.10;W0:0.15,sweet_drink,low,na,果蔬浆：苹果、胡萝卜、番茄、生菜打浆
-154,chia seed,亚奇籽,760:1,nuts_seeds,medium,na,成分表无奇亚籽，用胡麻籽（亚麻籽）近似
-155,water,水,W0:1,water_tea,high,na,
-156,steak,牛排,823:1,beef_mutton,medium,unspecified,3行为“大排”（猪排）
-157,sliced boiled chicken,白斩鸡,876:1,chicken,high,nonfried_named,
-158,dried bean curd,豆干,346:1,soy_dried,high,unspecified,
-159,sliced bread,切片面包,1316:1,bread_flatbread,high,na,
-160,carrot,胡萝卜,380:1,root_stem_veg,high,unspecified,
-161,salted egg,咸蛋,995:1,egg,high,na,
-162,grape,葡萄,684:1,fruit_temperate,high,na,
-163,vegetable salad,蔬菜色拉,@salad:1,salad,medium,na,
-164,fried shrimp,清炒基围虾,1092:0.475;1093:0.475;OIL:0.05,seafood_fried,high,fried_named,
-165,pigeon,鸽子,912:1,chicken,high,unspecified,
-166,shredded pork with water bamboo and carrot,茭白胡卜肉丝,519:0.42;380:0.28;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-167,deep-fried dough stick,油条,277:1,fried_wheat,high,fried_in_entry,
-168,sesame and walnut powder,芝麻核桃粉,774:0.5;743:0.5,nuts_seeds,medium,na,黑芝麻与核桃各半（是否含糖或谷粉未知）
-169,minced pork with tomato and cabbage,番茄卷心菜肉糜,405:0.35;463:0.35;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-170,nut,坚果,@nuts_seeds:1,nuts_seeds,medium,na,
-171,shepherd's purse and pork stuffed dumpling,荠菜肉水饺,1330:1,filled_meat,high,nonfried_named,用猪肉白菜馅水饺近似荠菜肉
-172,braised pork,红烧肉,779:0.92;OIL:0.05;1448:0.03,pork_belly_braised,medium,fried_named,审核后加冰糖3%（本帮红烧）
-173,melon seed,瓜子,766:1,nuts_seeds,medium,na,葵花子(炒)可食部；若带壳称重约高估一倍
-174,steamed egg,蒸蛋,978:0.5;W0:0.5,egg_custard,medium,nonfried_named,蒸蛋/炖蛋：蛋液与水1:1
-175,shredded pork with broccoli,西兰花肉丝,465:0.70;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-176,steamed corn bun,玉米馒头,273:0.70;296:0.18;W0:0.12,steamed_bread,medium,na,玉米馒头：标准粉馒头70%、黄玉米面18%并补水
-177,mung bean sprouts,绿豆芽,400:1,fruit_veg,high,unspecified,
-178,abalone,鲍鱼,1106:1,shellfish,high,unspecified,
-179,shredded carrot,胡萝卜丝,380:1,root_stem_veg,high,unspecified,
-180,mushroom and vegetable,香菇青菜,584:0.25;452:0.35;457:0.35;OIL:0.05,leafy_veg_fried,medium,fried_dish_type,香菇青菜（常规素炒）
-181,smoked fish,熏鱼,1014:0.70;1448:0.12;1518:0.06;OIL:0.12,fish_fried,low,oil_in_recipe,上海熏鱼：青鱼油炸后浸重糖酱汁；审核后为糖12%、酱油6%、油12%（约250 kcal/100 g）
-182,minced pork with zucchini,西葫芦肉糜,431:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-183,spring roll,春卷,1199:1,fried_wheat,medium,fried_in_entry,油炸春卷（条目含油）
-184,beef and onion,牛肉洋葱,823:0.35;444:0.60;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-185,shredded potato,土豆丝,313:1,starchy_veg,medium,unspecified,土豆丝常炒或凉拌；名称未注明，未加油
-186,shredded pork with celery,芹菜肉丝,480:0.70;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-187,fried vegetables,炒素菜,@mixed_veg:0.95;OIL:0.05,mixed_veg_fried,high,fried_named,
-188,duck meat,鸭肉,891:1,duck_goose,medium,unspecified,
-189,needle mushroom,金针菇,575:1,fungi_algae,high,unspecified,
-190,pan fried bun,生煎,1339:0.95;OIL:0.05,fried_dumpling,medium,fried_named,生煎
-191,pork floss,肉松,811:1,pork_processed,high,na,
-192,chinese wolfberry,枸杞,1571:1,dried_fruit,high,na,
-193,banana,香蕉,726:1,fruit_tropical,high,na,
-194,celery and smoked bean curd,芹菜香干,480:0.60;346:0.35;OIL:0.05,soy_veg_stirfry,medium,fried_dish_type,
-195,fried rice,炒饭,1314:1,fried_rice_noodles,medium,fried_in_entry,什锦炒饭（条目含油）
-196,shredded pork with green pepper and carrot,青椒胡卜肉丝,410:0.42;380:0.28;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-197,bean,豆子,387:1,fruit_veg,low,unspecified,豆子/刀豆/豆角/青豆混杂，按豆角
-198,pork stuffed green pepper,青椒塞肉,410:0.55;789:0.20;779:0.20;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,青椒塞肉常煎后烧
-199,braised pork with radish,萝卜烧肉,371:0.55;779:0.40;OIL:0.05,meat_veg_stirfry,medium,fried_named,萝卜烧肉
-200,shredded chicken with green pepper and yam,青椒山药鸡丝,410:0.40;525:0.30;880:0.25;OIL:0.05,starchy_mixed_dish,medium,fried_dish_type,
-201,shredded pork with tomato and cabbage,番茄卷心菜肉丝,405:0.35;463:0.35;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-202,minced pork with hangzhou cabbage,杭白菜肉糜,452:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-203,oats,燕麦,1286:1,dry_cereal_powder,high,na,干燕麦片
-204,vegetable ball,蔬菜丸子,452:0.35;380:0.20;259:0.15;978:0.10;320:0.10;W0:0.10,mixed_veg,low,unspecified,素丸子：蔬菜、面粉、鸡蛋、淀粉；若油炸则低估
-205,steamed chicken nuggets with mushrooms,香菇蒸鸡块,876:0.65;584:0.35,meat_veg_steamed,medium,nonfried_named,
-206,steamed corn meatball,清蒸玉米肉圆,292:0.25;789:0.33;779:0.33;320:0.05;W0:0.04,meatball,medium,nonfried_named,
-207,tofu pudding,豆花,336:1,tofu,medium,unspecified,豆花按内酯豆腐；调料或糖未计
-208,fried lettuce,炒生菜,483:0.95;OIL:0.05,leafy_veg_fried,high,fried_named,
-209,chocolate,巧克力,1454:1,sugar_sweets,high,na,
-210,shredded pork with cucumber and carrot,黄瓜胡卜肉丝,422:0.42;380:0.28;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-211,eel,黄鳝,1008:1,fish,high,unspecified,
-212,luncheon meat,午餐肉,807:1,pork_processed,high,na,
-213,red bean and red date soup,赤豆红枣汤,351:0.06;675:0.04;W0:0.90,sweet_soup,medium,nonfried_named,不加糖假设
-214,scrambled egg,炒鸡蛋,978:0.95;OIL:0.05,egg_fried,high,fried_named,
-215,green bean,四季豆,392:1,fruit_veg,high,unspecified,
-216,winter melon with scallion oil,葱油冬瓜,419:0.95;OIL:0.05,fruit_veg_fried,high,fried_named,
-217,lotus root,藕,516:1,starchy_veg,high,unspecified,
-218,minced pork with cowpea,肉糜豇豆,397:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-219,chinese cabbage and carrot,大白菜胡卜,450:0.60;380:0.35;OIL:0.05,mixed_veg_fried,medium,fried_dish_type,
-220,coarase grain,杂粮饭,@grain_rice:1,grain_rice,medium,na,同杂粮饭
-221,fermented bean curd,腐乳,1545:0.5;1547:0.5,condiment,high,na,白腐乳与红腐乳
-222,"lotus nut, red bean, poria cocos and orange peel",莲子红豆茯苓陈皮,768:0.04;351:0.04;W0:0.92,sweet_soup,low,nonfried_named,莲子红豆茯苓陈皮汤；茯苓、陈皮无条目
-223,soymilk,豆浆,339:1,soy_milk,high,na,同第20项，用339豆奶[豆乳]
-224,pork chop,大排,791:1,pork_rib,medium,unspecified,大排；未注明烹调
-225,shepherd's purse and pork stuffed wonton,荠菜肉馄饨,1330:1,filled_meat,medium,na,荠菜肉大馄饨，用猪肉白菜馅水饺近似
-226,scallion pancake,葱油饼,271:0.95;OIL:0.05,fried_wheat,medium,fried_named,葱油饼：烙饼加油
-227,rice dumpling,粽子,W0:0.50;285:0.50,glutinous_ricecake,medium,na,白粽：糯米与水1:1（熟粽子碳水约39 g/100 g，审核意见）；馅料未知
-228,hairy crab,大闸蟹,1103:1,crab,high,unspecified,大闸蟹即河蟹
-229,pickles,酱菜,1555:1,pickled_veg,medium,na,酱菜按酱八宝菜
-230,pork soup,肉汤,789:0.06;779:0.04;W0:0.90,broth,low,nonfried_named,
-231,chicken soup,鸡汤,876:0.10;W0:0.90,broth,low,nonfried_named,
-232,fried cabbage,炒白菜,450:0.95;OIL:0.05,leafy_veg_fried,high,fried_named,
-233,steamed chicken with mushroom,香菇蒸鸡,876:0.65;584:0.35,meat_veg_steamed,medium,nonfried_named,
-234,steamed stuffed bun,包子,1339:1,filled_meat,medium,nonfried_named,包子馅料未注明，按猪肉馅
-235,"cauliflower, fungus and shredded pork",花菜木耳肉丝,464:0.45;580:0.25;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-236,pigeon meat,鸽子肉,912:1,chicken,high,unspecified,
-237,green pepper,青椒,410:1,fruit_veg,high,unspecified,
-238,red wine,红酒,1412:1,wine,high,na,碳水已扣除乙醇
-239,steamed chicken with mushrooms,香菇蒸鸡块,876:0.65;584:0.35,meat_veg_steamed,medium,nonfried_named,
-240,fried celery with dried bean curd,芹菜香干,480:0.60;346:0.35;OIL:0.05,soy_veg_stirfry,medium,fried_named,
-241,shredded cabbage and carrot,白菜胡卜丝,450:0.60;380:0.35;OIL:0.05,mixed_veg_fried,medium,fried_dish_type,
-242,ginger,姜,528:1,root_stem_veg,high,unspecified,
-243,tofu soup,豆腐汤,333:0.15;452:0.05;W0:0.80,veg_soup,medium,nonfried_named,
-244,steamed pomfret,清蒸小鲳鱼,1056:1,fish,high,nonfried_named,
-245,shredded chicken,鸡丝,880:1,chicken,medium,unspecified,鸡丝按鸡胸肉
-246,mung bean soup,绿豆汤,350:0.05;W0:0.95,sweet_soup,medium,nonfried_named,不加糖假设
-247,scrambled egg with towel gourd,丝瓜炒蛋,429:0.55;978:0.40;OIL:0.05,egg_veg_stirfry,medium,fried_named,
-248,chicken nuggets with green pepper,青椒鸡块,876:0.55;410:0.40;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,青椒鸡块（带骨鸡块）
-249,dried radish,萝卜干,1550:1,pickled_veg,high,na,
-250,boiled celery,白灼西芹,480:1,root_stem_veg,high,nonfried_named,
-251,preserved egg,松花蛋,994:1,egg,high,na,
-252,boiled  vegetable,水煮菜,@leafy_veg:1,leafy_veg,high,nonfried_named,同水煮菜
-253,black fungus,黑木耳,580:1,fungi_algae,high,unspecified,按水发木耳
-254,braised pork chops with carrot,胡卜烩小排,380:0.40;794:0.55;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,胡卜烩小排
-255,minced pork with yam and corn,山药玉米肉糜,525:0.40;292:0.30;789:0.125;779:0.125;OIL:0.05,starchy_mixed_dish,medium,fried_dish_type,
-256,laver soup,紫菜汤,611:0.01;978:0.03;W0:0.96,veg_soup,medium,nonfried_named,紫菜蛋汤
-257,fungus and yam porridge,银耳山药羹,525:0.15;587:0.02;W0:0.83,sweet_soup,low,nonfried_named,银耳山药羹；是否加冰糖未知
-258,garlic,大蒜,437:1,root_stem_veg,medium,unspecified,上海话“大蒜”作蔬菜指青蒜（审核意见）；用437青蒜
-259,fried egg with leek,韭黄炒蛋,446:0.30;445:0.25;978:0.40;OIL:0.05,egg_veg_stirfry,medium,fried_named,
-260,cow tail soup,牛尾巴汤,823:0.15;W0:0.85,broth,low,nonfried_named,成分表无牛尾
-261,sliced lotus root,藕片,516:1,starchy_veg,high,unspecified,
-262,eggs,鸡蛋,978:1,egg,high,unspecified,
-263,pork stuffed mooncake,鲜肉月饼,1243:0.55;789:0.20;779:0.25,cake_pastry,low,na,鲜肉月饼：酥皮加肉馅
-264,medicago polymorpha,草头,564:1,leafy_veg,high,unspecified,草头（苜蓿）
-265,duck soup,鸭汤,891:0.12;W0:0.88,broth,low,nonfried_named,
-266,minced pork and eggplant,肉糜茄子,402:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-267,instant noodles,方便面,1291:1,fried_wheat,medium,fried_in_entry,按干面块（含油）；若记录为泡后重量则高估
-268,braised fish,红烧鱼,@fish:0.95;OIL:0.05,fish_fried,high,fried_named,
-269,cabbage and carrot,卷心菜胡萝卜,463:0.60;380:0.35;OIL:0.05,mixed_veg_fried,medium,fried_dish_type,
-270,vegetable and pork stuffed wonton,菜肉馄饨,1330:1,filled_meat,medium,na,菜肉大馄饨；记录量较大，可能含汤
-271,marinated egg,卤蛋,978:1,egg,high,nonfried_named,
-272,egg white,鸡蛋白,982:1,egg,high,na,
-273,pork meatball,肉圆,@meatball:1,meatball,medium,unspecified,
-274,braised mutton,红烧羊肉,844:0.95;OIL:0.05,beef_mutton_fried,high,fried_named,
-275,sliced pork with asparagus and fungus,芦笋木耳肉片,510:0.45;580:0.25;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-276,braised pork with tofu skin knot,百叶结烧肉,345:0.40;779:0.55;OIL:0.05,pork_belly_braised,medium,fried_named,
-277,towel gourd,丝瓜,429:1,fruit_veg,high,unspecified,
-278,shredded radish,萝卜丝,371:1,root_stem_veg,high,unspecified,
-279,kelp,海带,607:1,fungi_algae,high,unspecified,
-280,meat,肉,789:1,pork,medium,unspecified,
-281,melon,甜瓜,738:1,fruit_melon,high,na,
-282,shredded bamboo shoot,笋丝,499:0.6;491:0.4,root_stem_veg,medium,unspecified,笋丝与莴笋丝
-283,fruit,水果,@fruit_temperate:1,fruit_temperate,low,na,水果种类未注明
-284,fruit and vegetable,果蔬,@fruit_temperate:0.5;@mixed_veg:0.5,fruit_temperate,low,na,
-285,minced pork with celery and carrot,美芹胡卜肉糜,480:0.42;380:0.28;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-286,sliced pork with snow pea and yam,荷兰豆山药肉片,389:0.40;525:0.30;789:0.25;OIL:0.05,starchy_mixed_dish,medium,fried_dish_type,
-287,green soybean,毛豆,391:1,fresh_legume,high,unspecified,
-288,pan-fried dumplings,锅贴,1330:0.95;OIL:0.05,fried_dumpling,medium,fried_dish_type,锅贴（煎饺）
-289,stewed pork with cauliflower,花菜烧肉,464:0.55;779:0.40;OIL:0.05,meat_veg_stirfry,medium,fried_named,花菜烧肉
-290,red bean,红豆,351:0.40;W0:0.60,fresh_legume,low,unspecified,按煮熟赤小豆（干:水=4:6）
-291,salted chicken,咸鸡,876:1,chicken,medium,unspecified,咸鸡
-292,sliced beef,三片牛肉,823:1,beef_mutton,medium,unspecified,
-293,fried rice with egg,蛋炒饭,1314:1,fried_rice_noodles,medium,fried_in_entry,
-294,seafood,海鲜,@shellfish:0.5;@shrimp:0.5,shellfish,low,unspecified,
-295,steamed small meat dumpling in basket,小笼包,1339:1,filled_meat,high,nonfried_named,
-296,sticky rice cake,麻薯,1211:0.7;354:0.3,glutinous_sweet,low,na,麻薯：糯米制品加豆沙馅
-297,white fungus soup,银耳汤,587:0.02;W0:0.98,sweet_soup,low,nonfried_named,银耳汤；是否加冰糖未知
-298,zucchini,西葫芦,431:1,fruit_veg,high,unspecified,
-299,sliced pork with lettuce and water bamboo,莴笋茭白肉片,491:0.40;519:0.30;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
-300,sugar,糖,1448:1,sugar_sweets,high,na,
+1,rice,\u7c73\u996d,287:1,rice,high,na,
+2,egg,\u9e21\u86cb,978:1,egg,high,unspecified,Cooking method unspecified; use the egg entry itself.
+3,coarse grain,\u6742\u7cae\u996d,@grain_rice:1,grain_rice,medium,na,No mixed-grain rice entry; use the group recipe. Seven lines under this key actually describe mixed-grain steamed bread.
+4,vegetable,\u9752\u83dc,452:0.5;457:0.5,leafy_veg,medium,unspecified,61% of lines name leafy greens; the rest use generic vegetable labels. Approximate Shanghai greens with equal parts pak choi and bok choy; cooking is unspecified and no oil is added at this mapping stage.
+5,milk,\u725b\u5976,917:1,milk,high,na,"Bright-brand milk, common in Shanghai; the mean entry's 3.4 g carbohydrate is considered too low."
+6,coarse grain steamed bread,\u6742\u7cae\u9992\u5934,273:0.70;296:0.09;308:0.09;W0:0.12,steamed_bread,medium,na,"No mixed-grain steamed-bread entry; use 70% standard-flour steamed bread, 9% yellow cornmeal, 9% tartary-buckwheat flour and added water."
+7,boiled vegetable,\u6c34\u716e\u83dc,@leafy_veg:1,leafy_veg,high,nonfried_named,Boiled leafy vegetables.
+8,fish,\u9c7c,@fish:1,fish,medium,unspecified,Fish species unspecified; use a mixture of common Shanghai fish.
+9,shrimp,\u867e,1092:0.5;1093:0.5,shrimp,medium,unspecified,River shrimp and greasyback shrimp.
+10,cucumber,\u9ec4\u74dc,422:1,fruit_veg,high,unspecified,
+11,cereal,\u9ea6\u7247,1273:1,dry_cereal_powder,medium,na,"After review, use cereal entry 1273 instead of sweetened instant cereal 1284; assume dry cereal. Prepared portions in ml or at least 150 g are handled line by line as oat porridge."
+12,boiled egg,\u767d\u716e\u86cb,978:1,egg,high,nonfried_named,
+13,steamed bun,\u9992\u5934,272:1,steamed_bread,medium,na,16% of lines describe filled buns; map this key to plain steamed bread.
+14,cabbage,\u5377\u5fc3\u83dc,463:1,leafy_veg,high,unspecified,"Mainly round cabbage, with a few Chinese-cabbage entries."
+15,buckwheat bread,\u835e\u9ea6\u9992\u5934,273:0.70;308:0.18;W0:0.12,steamed_bread,medium,na,"Buckwheat steamed bread: 70% standard-flour steamed bread, 18% tartary-buckwheat flour and added water."
+16,bread,\u9762\u5305,1316:1,bread_flatbread,high,na,
+17,noodles,\u9762\u6761,264:0.49;W0:0.51,noodles,medium,na,Assume cooked noodles and cooked recorded weight.
+18,lettuce,\u751f\u83dc,483:1,leafy_veg,high,unspecified,Nine lines actually describe stem lettuce; map this key to leaf lettuce.
+19,beef,\u725b\u8089,823:1,beef_mutton,medium,unspecified,Raw-meat composition; cooked recorded weight would cause underestimation.
+20,soybean milk,\u8c46\u6d46,339:1,soy_milk,high,na,"After review, use soy-milk entry 339 instead of excessively dilute entry 338; assume no added sugar."
+21,apple,\u82f9\u679c,613:1,fruit_temperate,high,na,
+22,chinese cabbage,\u6bdb\u83dc,460:0.5;450:0.5,leafy_veg,medium,unspecified,Approximately equal parts young pak choi and Chinese cabbage.
+23,corn,\u7389\u7c73,292:1,starchy_veg,medium,na,Edible fresh-maize portion; cob-in weight would cause overestimation.
+24,taro,\u828b\u827f,526:1,starchy_veg,high,na,
+25,steamed vegetable bun,\u83dc\u5305,@filled_veg:1,filled_veg,medium,nonfried_named,No vegetable-filled bun entry; use the group recipe.
+26,steamed pork bun,\u8089\u5305,1339:1,filled_meat,high,nonfried_named,
+27,pork,\u8089,789:1,pork,medium,unspecified,Generic meat labels usually mean pork; use pork leg.
+28,spinach,\u83e0\u83dc,473:1,leafy_veg,high,unspecified,
+29,chicken,\u9e21\u8089,876:1,chicken,medium,unspecified,
+30,wonton,\u9984\u9968,1311:1,filled_meat,medium,na,"Use preserved-vegetable-and-shrimp wontons; small Shanghai wontons have little filling, whereas large wontons contain vegetable-and-meat filling."
+31,sweet potato,\u7ea2\u85af,316:1,starchy_veg,high,na,
+32,hairtail,\u5e26\u9c7c,1030:1,fish,high,unspecified,Cooking unspecified; this fish is commonly braised or pan-fried.
+33,orange,\u6a59\u5b50,704:0.6;705:0.4,fruit_citrus,high,na,Oranges and mandarins.
+34,steamed bread,\u9992\u5934,272:1,steamed_bread,high,na,
+35,cauliflower,\u82b1\u83dc,464:1,leafy_veg,high,unspecified,A few lines describe broccoli.
+36,buckwheat noodles,\u835e\u9ea6\u9762,264:0.30;308:0.12;W0:0.58,noodles,medium,na,Buckwheat noodles: wheat noodles and tartary-buckwheat flour in an approximately 7:3 dry-weight ratio; use cooked noodles.
+37,hangzhou cabbage,\u676d\u767d\u83dc,452:1,leafy_veg,high,unspecified,Hangzhou cabbage belongs to the pak-choi group.
+38,yogurt,\u9178\u5976,958:1,yogurt,high,na,
+39,beer,\u5564\u9152,1407:1,beer,high,na,Ethanol has been subtracted from carbohydrate.
+40,steamed bean curd roll,\u7d20\u9e21,347:1,soy_dried,high,unspecified,Pressed tofu roll.
+41,biscuit,\u997c\u5e72,1322:1,biscuit_snack,high,na,
+42,braised pork in brown sauce,\u7ea2\u70e7\u8089,779:0.92;OIL:0.05;1448:0.03,pork_belly_braised,medium,fried_named,"Braised pork; sugar was initially omitted, then 3% rock sugar was added after review to approximate Shanghai-style braising."
+43,meatball,\u8089\u4e38,@meatball:1,meatball,medium,unspecified,
+44,coffee,\u5496\u5561,W0:1,water_tea,medium,na,"Assume black coffee, approximately zero nutrients; added milk or sugar would be underestimated."
+45,tomato,\u756a\u8304,405:1,fruit_veg,high,unspecified,
+46,rice in soup,\u6ce1\u996d,287:0.5;W0:0.5,porridge,medium,na,Rice in water: cooked rice and water in a 1:1 ratio.
+47,duck egg,\u9e2d\u86cb,990:1,egg,high,unspecified,
+48,millet porridge,\u5c0f\u7c73\u7ca5,303:1,porridge,high,na,
+49,radish,\u841d\u535c,371:1,root_stem_veg,high,unspecified,
+50,scrambled egg with tomato,\u756a\u8304\u7092\u86cb,405:0.55;978:0.40;OIL:0.05,egg_veg_stirfry,medium,fried_named,
+51,pork rib,\u5927\u6392,791:0.6;794:0.4,pork_rib,medium,unspecified,"Mainly pork loin chops; cooking unspecified, although commonly fried or braised."
+52,soup,\u6c64,@broth:1,broth,low,nonfried_named,Soup type unspecified.
+53,tofu,\u8c46\u8150,333:1,tofu,high,unspecified,
+54,wax gourd,\u51ac\u74dc,419:1,fruit_veg,high,unspecified,
+55,cake,\u86cb\u7cd5,1224:1,cake_pastry,medium,na,Some records describe pastries or flat cakes.
+56,dumpling,\u997a\u5b50,1330:1,filled_meat,high,nonfried_named,
+57,bitter gourd,\u82e6\u74dc,425:1,fruit_veg,high,unspecified,
+58,crown daisy,\u84ec\u84bf\u83dc,488:1,leafy_veg,high,unspecified,
+59,duck,\u9e2d\u5b50,891:1,duck_goose,medium,unspecified,
+60,celery,\u82b9\u83dc,480:0.75;518:0.25,root_stem_veg,high,unspecified,Celery stems and water celery.
+61,pumpkin,\u5357\u74dc,426:1,fruit_veg,high,unspecified,
+62,boiled shrimp,\u767d\u707c\u867e,1092:0.5;1093:0.5,shrimp,high,nonfried_named,
+63,eggplant,\u8304\u5b50,402:1,fruit_veg,high,unspecified,Cooking unspecified; eggplant commonly absorbs substantial oil.
+64,sea cucumber,\u6d77\u53c2,1123:1,shellfish,high,unspecified,Fresh or rehydrated sea cucumber.
+65,peach,\u6843\u5b50,660:1,fruit_temperate,high,na,
+66,chicken leg,\u9e21\u817f,882:1,chicken,high,unspecified,
+67,red date,\u7ea2\u67a3,675:1,dried_fruit,medium,na,Dried red dates; one line describes fresh winter jujubes.
+68,water spinach,\u7a7a\u5fc3\u83dc,493:1,leafy_veg,high,unspecified,
+69,braised shredded pork and cabbage,\u70c2\u7cca\u8089\u4e1d,450:0.62;789:0.28;320:0.05;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,Shanghai-style thickened shredded pork with Chinese cabbage and starch.
+70,grapefruit,\u67da\u5b50,711:1,fruit_citrus,high,na,
+71,fungus,\u9ed1\u6728\u8033,580:1,fungi_algae,medium,unspecified,"Approximate black and white fungus with rehydrated wood-ear mushrooms; three lines actually describe Malabar spinach, a leafy vegetable."
+72,peanut,\u82b1\u751f,764:1,nuts_seeds,high,na,Roasted shelled peanuts.
+73,rice cake,\u5e74\u7cd5,1211:1,glutinous_ricecake,medium,na,Rice cake; some records describe rice pastries or rice crackers.
+74,potato,\u571f\u8c46,313:1,starchy_veg,high,unspecified,
+75,yellow rice wine,\u9ec4\u9152,1421:1,rice_wine,medium,na,The source-table energy value appears to omit ethanol energy.
+76,braised radish,\u7ea2\u70e7\u841d\u535c,371:0.95;OIL:0.05,root_stem_veg_fried,high,fried_named,
+77,pear,\u68a8\u5b50,630:1,fruit_temperate,high,na,
+78,fried vegetable,\u7092\u9752\u83dc,452:0.475;457:0.475;OIL:0.05,leafy_veg_fried,high,fried_named,Stir-fried leafy greens.
+79,meal replacement powder,\u4ee3\u9910\u7c89,1288:0.5;1182:0.5,dry_cereal_powder,low,na,No meal-replacement-powder entry and brand unknown; use equal parts unsweetened tartary-buckwheat flakes and soy-milk powder.
+80,mushroom,\u9999\u83c7,584:0.6;577:0.4,fungi_algae,medium,unspecified,"Shiitake and other mushrooms; three lines actually describe arrowhead, a tuber."
+81,kiwi fruit,\u7315\u7334\u6843,700:1,fruit_temperate,high,na,
+82,yam,\u5c71\u836f,525:1,starchy_veg,high,unspecified,
+83,milk cereal with notoginseng powder,\u725b\u5976\u9ea6\u7247\u4e09\u4e03\u7c89,917:0.85;1273:0.15,milk_mixed,medium,na,85% milk and 15% cereal entry 1273; omit notoginseng powder.
+84,vegetable soup,\u83dc\u6c64,@veg_soup:1,veg_soup,medium,nonfried_named,
+85,walnut,\u6838\u6843,743:1,nuts_seeds,high,na,
+86,steamed pork dumplings,\u70e7\u9ea6,285:0.2375;789:0.095;779:0.0475;259:0.114;1518:0.0285;W0:0.4275;OIL:0.05,filled_meat,low,oil_in_recipe,"Shanghai glutinous-rice shaomai: cooked glutinous-rice filling, pork, soy sauce and wrapper; add 5% oil after review because the filling is stir-fried with oil or lard."
+87,leaf lettuce,\u6cb9\u9ea6\u83dc,482:1,leafy_veg,high,unspecified,A leafy lettuce variety; the character meaning oil in its name does not describe cooking.
+88,coffee and milk,\u5496\u5561\u725b\u5976,917:0.6;W0:0.4,milk_mixed,medium,na,"60% milk, without added sugar."
+89,minced pork with cauliflower and carrot,\u82b1\u83dc\u80e1\u535c\u8089\u7cdc,464:0.42;380:0.28;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+90,sweet potato leaves,\u5730\u74dc\u53f6,536:1,leafy_veg,high,unspecified,
+91,water bamboo,\u832d\u767d,519:1,root_stem_veg,high,unspecified,
+92,watermelon,\u897f\u74dc,739:1,fruit_melon,high,na,
+93,pickle,\u69a8\u83dc,1551:1,pickled_veg,high,na,
+94,pancake,\u714e\u997c,271:0.95;OIL:0.05,fried_wheat,medium,fried_named,Approximate pancakes using flatbread plus pan-frying oil. The source pancake entry is a dry product with 7-16% water and is unsuitable.
+95,yellow croaker,\u5c0f\u9ec4\u9c7c,1038:1,fish,high,unspecified,
+96,steamed gluten,\u70e4\u9eb8,349:1,soy_dried,high,unspecified,"Wheat gluten; the usual Shanghai preparation includes oil and sugar, which are not counted here."
+97,ham sausage,\u706b\u817f\u80a0,815:1,pork_processed,high,na,
+98,tomato and egg soup,\u756a\u8304\u86cb\u6c64,405:0.10;978:0.08;W0:0.82,veg_soup,medium,nonfried_named,
+99,green pepper with green bean sprouts,\u7eff\u8c46\u82bd\u9752\u6912,400:0.60;410:0.35;OIL:0.05,fruit_veg_fried,medium,fried_dish_type,
+100,amaranth,\u7c73\u82cb,486:0.5;487:0.5,leafy_veg,high,unspecified,Amaranth; one line resembling rice noodles may be a transcription error.
+101,crab,\u87f9,1103:1,crab,medium,unspecified,Freshwater or marine crab unspecified; use edible weight.
+102,green vegetable,\u9752\u83dc,452:0.5;457:0.5,leafy_veg,high,unspecified,
+103,broccoli,\u897f\u84dd\u82b1,465:1,leafy_veg,high,unspecified,
+104,egg soup,\u86cb\u6c64,978:0.10;W0:0.90,veg_soup,medium,nonfried_named,
+105,peanuts with vinegar,\u918b\u82b1\u751f,778:0.85;1520:0.10;1448:0.05,nuts_seeds,medium,fried_in_entry,"Peanuts in vinegar: fried peanuts, vinegar and sugar."
+106,whole wheat bread,\u5168\u9ea6\u9762\u5305,1316:0.55;273:0.45,bread_flatbread,medium,na,"Mixed whole-wheat bread and steamed bread; no whole-wheat entry, so use mean bread and standard-flour steamed bread."
+107,pigeon soup,\u9e3d\u5b50\u6c64,912:0.12;W0:0.88,broth,low,nonfried_named,Unknown meat fraction in the soup.
+108,mutton,\u7f8a\u8089,844:1,beef_mutton,high,unspecified,
+109,tofu skin rolls with minced pork,\u767e\u53f6\u5305,345:0.40;789:0.25;779:0.25;W0:0.10,meat_veg_steamed,medium,unspecified,"Minced pork wrapped in tofu sheets, simmered or braised."
+110,shredded pork with cucumber,\u9ec4\u74dc\u8089\u4e1d,422:0.70;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+111,black rice,\u9ed1\u7c73\u996d,287:0.60;286:0.12;W0:0.28,grain_rice,medium,na,Black rice: white rice combined with dark glutinous rice.
+112,sausage,\u9999\u80a0,818:1,pork_processed,high,na,Chinese sausage.
+113,chicken nugget,\u9e21\u5757,876:1,chicken,medium,unspecified,The source-language term describes bone-in chicken pieces rather than processed chicken nuggets.
+114,steamed corn bread,\u7a9d\u5934,296:0.55;W0:0.45,steamed_bread,medium,na,Steamed maize bread: yellow cornmeal and water.
+115,porridge,\u7ca5,288:1,porridge,high,na,
+116,plum,\u674e\u5b50,666:1,fruit_temperate,high,na,
+117,poached egg,\u8377\u5305\u86cb,989:1,egg,medium,unspecified,Cooking method unspecified for the egg; use the poached-egg entry.
+118,broad bean,\u8695\u8c46,393:1,fresh_legume,medium,unspecified,No fresh broad-bean entry; approximate with fresh peas.
+119,vegetable and rice,\u83dc\u996d,287:0.77;452:0.20;OIL:0.03,rice,medium,oil_in_recipe,Rice with leafy greens; add 3% oil after review because Shanghai-style vegetable rice is cooked with oil or lard.
+120,steamed fish,\u6e05\u84b8\u9c7c,@fish:1,fish,high,nonfried_named,
+121,black sesame and walnut cereal paste,\u9ed1\u829d\u9ebb\u6838\u6843\u9ea6\u7247\u7cca,1283:0.06;1273:0.03;743:0.01;W0:0.90,sweet_soup,low,na,"Prepared paste with approximately 10% powder, assuming a 300 ml serving."
+122,rye bread,\u9ed1\u9ea6\u9762\u5305,1316:1,bread_flatbread,medium,na,No rye-bread entry in the source table.
+123,pig feet,\u732a\u8e44,810:1,pork_rib,high,unspecified,Cooked pork feet.
+124,wax gourd soup,\u51ac\u74dc\u6c64,419:0.30;W0:0.70,veg_soup,medium,nonfried_named,
+125,shredded pork in beijing sauce,\u4eac\u9171\u8089\u4e1d,789:0.65;1527:0.10;441:0.20;OIL:0.05,pork_fried,medium,fried_dish_type,"Beijing-style shredded pork: pork, sweet fermented sauce and scallion."
+126,steamed coarse grain bread,\u6742\u7cae\u5305,273:0.70;296:0.09;308:0.09;W0:0.12,steamed_bread,medium,na,Same recipe as mixed-grain steamed bread.
+127,steamed minced pork with eggplant,\u8089\u7cdc\u84b8\u8304\u5b50,402:0.70;789:0.15;779:0.15,meat_veg_steamed,medium,nonfried_named,
+128,bean sprout,\u8c46\u82bd,400:0.5;399:0.5,fruit_veg,high,unspecified,
+129,steamed salted pork in wine,\u7cdf\u8089,779:1,pork,medium,nonfried_named,"Wine-marinated pork belly, steamed; use the lean-and-fat pork entry."
+130,protein powder,\u86cb\u767d\u7c89,U174276:1,protein_powder,medium,na,"No protein-powder entry; use USDA soy protein isolate 174276 after review, with USDA as the source."
+131,sword bean,\u5200\u8c46,386:1,fruit_veg,high,unspecified,
+132,pomfret,\u9cb3\u9c7c,1056:1,fish,high,unspecified,
+133,fish soup,\u9c7c\u6c64,@fish:0.10;W0:0.90,broth,low,nonfried_named,
+134,sliced pork with king oyster mushroom and fungus,\u674f\u9c8d\u83c7\u6728\u8033\u8089\u7247,602:0.40;580:0.30;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+135,minced pork with white gourd and carrot,\u51ac\u74dc\u80e1\u535c\u8089\u7cdc,419:0.42;380:0.28;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+136,shepherd's purse meatball,\u8360\u83dc\u8089\u5706,490:0.25;789:0.33;779:0.33;320:0.05;W0:0.04,meatball,medium,unspecified,
+137,clam,\u86e4\u870a,1120:1,shellfish,high,unspecified,
+138,cowpea,\u8c47\u8c46,397:1,fruit_veg,high,unspecified,
+139,steamed twisted roll,\u82b1\u5377,269:1,steamed_bread,high,na,
+140,fried egg,\u7092\u9e21\u86cb,978:0.95;OIL:0.05,egg_fried,high,fried_named,
+141,sliced boiled duck,\u767d\u5207\u9e2d\u5757,891:1,duck_goose,medium,nonfried_named,
+142,loach soup,\u6ce5\u9cc5\u6c64,@fish:0.15;W0:0.85,broth,low,nonfried_named,No loach entry; use the fish mixture.
+143,red date stuffed with walnut,\u6838\u6843\u5939\u67a3,675:0.6;743:0.4,dried_fruit,medium,na,
+144,chicken feet,\u9e21\u722a,883:1,chicken,high,unspecified,Edible chicken feet; bone-in recorded weight would cause overestimation.
+145,vegetable noodles,\u9752\u83dc\u9762\u6761,@noodles:0.55;452:0.15;W0:0.30,noodle_meal,medium,unspecified,"Leafy-vegetable noodle soup, including broth."
+146,oats porridge,\u71d5\u9ea6\u7ca5,1286:0.14;W0:0.86,porridge,medium,na,
+147,asparagus,\u82a6\u7b0b,510:1,root_stem_veg,high,unspecified,
+148,ginger juice,\u6e29\u59dc\u6c41,528:0.10;W0:0.90,water_tea,low,na,Warm ginger juice; addition of brown sugar is unknown.
+149,sugar free cereal,\u65e0\u7cd6\u9ea6\u7247,1286:1,dry_cereal_powder,medium,na,Use dry oats for unsweetened cereal.
+150,vermicelli,\u7c89\u4e1d,324:0.25;W0:0.75,starch_noodles,medium,na,"Rehydrated starch noodles, with dry noodles and water in a 1:3 ratio."
+151,minced pork with eggplant,\u8089\u7cdc\u8304\u5b50,402:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+152,red bean and red date,\u8d64\u8c46\u7ea2\u67a3,351:0.10;675:0.05;W0:0.85,sweet_soup,low,na,Assume unsweetened adzuki-bean and red-date soup.
+153,fruit and vegetable pulp,\u679c\u852c\u6d46,613:0.35;380:0.25;405:0.15;483:0.10;W0:0.15,sweet_drink,low,na,"Fruit-and-vegetable pulp: blended apple, carrot, tomato and lettuce."
+154,chia seed,\u4e9a\u5947\u7c7d,760:1,nuts_seeds,medium,na,No chia-seed entry; approximate with flaxseed.
+155,water,\u6c34,W0:1,water_tea,high,na,
+156,steak,\u725b\u6392,823:1,beef_mutton,medium,unspecified,Three lines actually describe pork loin chops.
+157,sliced boiled chicken,\u767d\u65a9\u9e21,876:1,chicken,high,nonfried_named,
+158,dried bean curd,\u8c46\u5e72,346:1,soy_dried,high,unspecified,
+159,sliced bread,\u5207\u7247\u9762\u5305,1316:1,bread_flatbread,high,na,
+160,carrot,\u80e1\u841d\u535c,380:1,root_stem_veg,high,unspecified,
+161,salted egg,\u54b8\u86cb,995:1,egg,high,na,
+162,grape,\u8461\u8404,684:1,fruit_temperate,high,na,
+163,vegetable salad,\u852c\u83dc\u8272\u62c9,@salad:1,salad,medium,na,
+164,fried shrimp,\u6e05\u7092\u57fa\u56f4\u867e,1092:0.475;1093:0.475;OIL:0.05,seafood_fried,high,fried_named,
+165,pigeon,\u9e3d\u5b50,912:1,chicken,high,unspecified,
+166,shredded pork with water bamboo and carrot,\u832d\u767d\u80e1\u535c\u8089\u4e1d,519:0.42;380:0.28;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+167,deep-fried dough stick,\u6cb9\u6761,277:1,fried_wheat,high,fried_in_entry,
+168,sesame and walnut powder,\u829d\u9ebb\u6838\u6843\u7c89,774:0.5;743:0.5,nuts_seeds,medium,na,Equal parts black sesame and walnut; added sugar or grain flour is unknown.
+169,minced pork with tomato and cabbage,\u756a\u8304\u5377\u5fc3\u83dc\u8089\u7cdc,405:0.35;463:0.35;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+170,nut,\u575a\u679c,@nuts_seeds:1,nuts_seeds,medium,na,
+171,shepherd's purse and pork stuffed dumpling,\u8360\u83dc\u8089\u6c34\u997a,1330:1,filled_meat,high,nonfried_named,Approximate shepherd's-purse-and-pork dumplings with pork-and-cabbage dumplings.
+172,braised pork,\u7ea2\u70e7\u8089,779:0.92;OIL:0.05;1448:0.03,pork_belly_braised,medium,fried_named,Add 3% rock sugar after review for Shanghai-style braised pork.
+173,melon seed,\u74dc\u5b50,766:1,nuts_seeds,medium,na,Edible roasted sunflower kernels; shell-in weight would approximately double the estimate.
+174,steamed egg,\u84b8\u86cb,978:0.5;W0:0.5,egg_custard,medium,nonfried_named,Steamed egg custard: egg and water in a 1:1 ratio.
+175,shredded pork with broccoli,\u897f\u5170\u82b1\u8089\u4e1d,465:0.70;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+176,steamed corn bun,\u7389\u7c73\u9992\u5934,273:0.70;296:0.18;W0:0.12,steamed_bread,medium,na,"Maize steamed bread: 70% standard-flour steamed bread, 18% yellow cornmeal and added water."
+177,mung bean sprouts,\u7eff\u8c46\u82bd,400:1,fruit_veg,high,unspecified,
+178,abalone,\u9c8d\u9c7c,1106:1,shellfish,high,unspecified,
+179,shredded carrot,\u80e1\u841d\u535c\u4e1d,380:1,root_stem_veg,high,unspecified,
+180,mushroom and vegetable,\u9999\u83c7\u9752\u83dc,584:0.25;452:0.35;457:0.35;OIL:0.05,leafy_veg_fried,medium,fried_dish_type,"Shiitake and leafy greens, conventionally stir-fried."
+181,smoked fish,\u718f\u9c7c,1014:0.70;1448:0.12;1518:0.06;OIL:0.12,fish_fried,low,oil_in_recipe,"Shanghai-style smoked fish is deep-fried black carp soaked in sweet sauce; reviewed recipe includes 12% sugar, 6% soy sauce and 12% oil, approximately 250 kcal/100 g."
+182,minced pork with zucchini,\u897f\u846b\u82a6\u8089\u7cdc,431:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+183,spring roll,\u6625\u5377,1199:1,fried_wheat,medium,fried_in_entry,Fried spring rolls; oil is already included in the source entry.
+184,beef and onion,\u725b\u8089\u6d0b\u8471,823:0.35;444:0.60;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+185,shredded potato,\u571f\u8c46\u4e1d,313:1,starchy_veg,medium,unspecified,"Shredded potato may be stir-fried or served cold; cooking unspecified, with no oil added at this mapping stage."
+186,shredded pork with celery,\u82b9\u83dc\u8089\u4e1d,480:0.70;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+187,fried vegetables,\u7092\u7d20\u83dc,@mixed_veg:0.95;OIL:0.05,mixed_veg_fried,high,fried_named,
+188,duck meat,\u9e2d\u8089,891:1,duck_goose,medium,unspecified,
+189,needle mushroom,\u91d1\u9488\u83c7,575:1,fungi_algae,high,unspecified,
+190,pan fried bun,\u751f\u714e,1339:0.95;OIL:0.05,fried_dumpling,medium,fried_named,Shanghai pan-fried buns.
+191,pork floss,\u8089\u677e,811:1,pork_processed,high,na,
+192,chinese wolfberry,\u67b8\u675e,1571:1,dried_fruit,high,na,
+193,banana,\u9999\u8549,726:1,fruit_tropical,high,na,
+194,celery and smoked bean curd,\u82b9\u83dc\u9999\u5e72,480:0.60;346:0.35;OIL:0.05,soy_veg_stirfry,medium,fried_dish_type,
+195,fried rice,\u7092\u996d,1314:1,fried_rice_noodles,medium,fried_in_entry,Mixed fried rice; oil is already included in the source entry.
+196,shredded pork with green pepper and carrot,\u9752\u6912\u80e1\u535c\u8089\u4e1d,410:0.42;380:0.28;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+197,bean,\u8c46\u5b50,387:1,fruit_veg,low,unspecified,"Mixed generic bean, sword-bean, green-bean and pea labels; use green beans."
+198,pork stuffed green pepper,\u9752\u6912\u585e\u8089,410:0.55;789:0.20;779:0.20;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,Pork-filled green peppers are commonly pan-fried before braising.
+199,braised pork with radish,\u841d\u535c\u70e7\u8089,371:0.55;779:0.40;OIL:0.05,meat_veg_stirfry,medium,fried_named,Pork braised with radish.
+200,shredded chicken with green pepper and yam,\u9752\u6912\u5c71\u836f\u9e21\u4e1d,410:0.40;525:0.30;880:0.25;OIL:0.05,starchy_mixed_dish,medium,fried_dish_type,
+201,shredded pork with tomato and cabbage,\u756a\u8304\u5377\u5fc3\u83dc\u8089\u4e1d,405:0.35;463:0.35;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+202,minced pork with hangzhou cabbage,\u676d\u767d\u83dc\u8089\u7cdc,452:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+203,oats,\u71d5\u9ea6,1286:1,dry_cereal_powder,high,na,Dry oats.
+204,vegetable ball,\u852c\u83dc\u4e38\u5b50,452:0.35;380:0.20;259:0.15;978:0.10;320:0.10;W0:0.10,mixed_veg,low,unspecified,"Vegetable balls contain vegetables, flour, egg and starch; frying would lead to underestimation here."
+205,steamed chicken nuggets with mushrooms,\u9999\u83c7\u84b8\u9e21\u5757,876:0.65;584:0.35,meat_veg_steamed,medium,nonfried_named,
+206,steamed corn meatball,\u6e05\u84b8\u7389\u7c73\u8089\u5706,292:0.25;789:0.33;779:0.33;320:0.05;W0:0.04,meatball,medium,nonfried_named,
+207,tofu pudding,\u8c46\u82b1,336:1,tofu,medium,unspecified,Use glucono-delta-lactone tofu for tofu pudding; omit condiments or sugar.
+208,fried lettuce,\u7092\u751f\u83dc,483:0.95;OIL:0.05,leafy_veg_fried,high,fried_named,
+209,chocolate,\u5de7\u514b\u529b,1454:1,sugar_sweets,high,na,
+210,shredded pork with cucumber and carrot,\u9ec4\u74dc\u80e1\u535c\u8089\u4e1d,422:0.42;380:0.28;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+211,eel,\u9ec4\u9cdd,1008:1,fish,high,unspecified,
+212,luncheon meat,\u5348\u9910\u8089,807:1,pork_processed,high,na,
+213,red bean and red date soup,\u8d64\u8c46\u7ea2\u67a3\u6c64,351:0.06;675:0.04;W0:0.90,sweet_soup,medium,nonfried_named,Assume no added sugar.
+214,scrambled egg,\u7092\u9e21\u86cb,978:0.95;OIL:0.05,egg_fried,high,fried_named,
+215,green bean,\u56db\u5b63\u8c46,392:1,fruit_veg,high,unspecified,
+216,winter melon with scallion oil,\u8471\u6cb9\u51ac\u74dc,419:0.95;OIL:0.05,fruit_veg_fried,high,fried_named,
+217,lotus root,\u85d5,516:1,starchy_veg,high,unspecified,
+218,minced pork with cowpea,\u8089\u7cdc\u8c47\u8c46,397:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+219,chinese cabbage and carrot,\u5927\u767d\u83dc\u80e1\u535c,450:0.60;380:0.35;OIL:0.05,mixed_veg_fried,medium,fried_dish_type,
+220,coarase grain,\u6742\u7cae\u996d,@grain_rice:1,grain_rice,medium,na,Same recipe as mixed-grain rice.
+221,fermented bean curd,\u8150\u4e73,1545:0.5;1547:0.5,condiment,high,na,White and red fermented tofu.
+222,"lotus nut, red bean, poria cocos and orange peel",\u83b2\u5b50\u7ea2\u8c46\u832f\u82d3\u9648\u76ae,768:0.04;351:0.04;W0:0.92,sweet_soup,low,nonfried_named,"Lotus-seed, adzuki-bean, poria and dried-citrus-peel soup; no entries for poria or citrus peel."
+223,soymilk,\u8c46\u6d46,339:1,soy_milk,high,na,Same as item 20; use soy-milk entry 339.
+224,pork chop,\u5927\u6392,791:1,pork_rib,medium,unspecified,Pork loin chop; cooking unspecified.
+225,shepherd's purse and pork stuffed wonton,\u8360\u83dc\u8089\u9984\u9968,1330:1,filled_meat,medium,na,Approximate large shepherd's-purse-and-pork wontons with pork-and-cabbage dumplings.
+226,scallion pancake,\u8471\u6cb9\u997c,271:0.95;OIL:0.05,fried_wheat,medium,fried_named,Scallion pancake: flatbread plus oil.
+227,rice dumpling,\u7cbd\u5b50,W0:0.50;285:0.50,glutinous_ricecake,medium,na,"Plain glutinous-rice dumpling: rice and water in a 1:1 ratio after review, giving approximately 39 g carbohydrate/100 g cooked dumpling; filling unknown."
+228,hairy crab,\u5927\u95f8\u87f9,1103:1,crab,high,unspecified,Hairy crab is Chinese mitten crab.
+229,pickles,\u9171\u83dc,1555:1,pickled_veg,medium,na,Use the mixed-pickle entry.
+230,pork soup,\u8089\u6c64,789:0.06;779:0.04;W0:0.90,broth,low,nonfried_named,
+231,chicken soup,\u9e21\u6c64,876:0.10;W0:0.90,broth,low,nonfried_named,
+232,fried cabbage,\u7092\u767d\u83dc,450:0.95;OIL:0.05,leafy_veg_fried,high,fried_named,
+233,steamed chicken with mushroom,\u9999\u83c7\u84b8\u9e21,876:0.65;584:0.35,meat_veg_steamed,medium,nonfried_named,
+234,steamed stuffed bun,\u5305\u5b50,1339:1,filled_meat,medium,nonfried_named,Filling unspecified; assume pork filling.
+235,"cauliflower, fungus and shredded pork",\u82b1\u83dc\u6728\u8033\u8089\u4e1d,464:0.45;580:0.25;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+236,pigeon meat,\u9e3d\u5b50\u8089,912:1,chicken,high,unspecified,
+237,green pepper,\u9752\u6912,410:1,fruit_veg,high,unspecified,
+238,red wine,\u7ea2\u9152,1412:1,wine,high,na,Ethanol has been subtracted from carbohydrate.
+239,steamed chicken with mushrooms,\u9999\u83c7\u84b8\u9e21\u5757,876:0.65;584:0.35,meat_veg_steamed,medium,nonfried_named,
+240,fried celery with dried bean curd,\u82b9\u83dc\u9999\u5e72,480:0.60;346:0.35;OIL:0.05,soy_veg_stirfry,medium,fried_named,
+241,shredded cabbage and carrot,\u767d\u83dc\u80e1\u535c\u4e1d,450:0.60;380:0.35;OIL:0.05,mixed_veg_fried,medium,fried_dish_type,
+242,ginger,\u59dc,528:1,root_stem_veg,high,unspecified,
+243,tofu soup,\u8c46\u8150\u6c64,333:0.15;452:0.05;W0:0.80,veg_soup,medium,nonfried_named,
+244,steamed pomfret,\u6e05\u84b8\u5c0f\u9cb3\u9c7c,1056:1,fish,high,nonfried_named,
+245,shredded chicken,\u9e21\u4e1d,880:1,chicken,medium,unspecified,Use chicken breast for shredded chicken.
+246,mung bean soup,\u7eff\u8c46\u6c64,350:0.05;W0:0.95,sweet_soup,medium,nonfried_named,Assume no added sugar.
+247,scrambled egg with towel gourd,\u4e1d\u74dc\u7092\u86cb,429:0.55;978:0.40;OIL:0.05,egg_veg_stirfry,medium,fried_named,
+248,chicken nuggets with green pepper,\u9752\u6912\u9e21\u5757,876:0.55;410:0.40;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,Chicken pieces with green pepper; bone-in chicken.
+249,dried radish,\u841d\u535c\u5e72,1550:1,pickled_veg,high,na,
+250,boiled celery,\u767d\u707c\u897f\u82b9,480:1,root_stem_veg,high,nonfried_named,
+251,preserved egg,\u677e\u82b1\u86cb,994:1,egg,high,na,
+252,boiled  vegetable,\u6c34\u716e\u83dc,@leafy_veg:1,leafy_veg,high,nonfried_named,Same as boiled vegetables.
+253,black fungus,\u9ed1\u6728\u8033,580:1,fungi_algae,high,unspecified,Use rehydrated wood-ear mushrooms.
+254,braised pork chops with carrot,\u80e1\u535c\u70e9\u5c0f\u6392,380:0.40;794:0.55;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,Pork spare ribs stewed with carrot.
+255,minced pork with yam and corn,\u5c71\u836f\u7389\u7c73\u8089\u7cdc,525:0.40;292:0.30;789:0.125;779:0.125;OIL:0.05,starchy_mixed_dish,medium,fried_dish_type,
+256,laver soup,\u7d2b\u83dc\u6c64,611:0.01;978:0.03;W0:0.96,veg_soup,medium,nonfried_named,Laver and egg soup.
+257,fungus and yam porridge,\u94f6\u8033\u5c71\u836f\u7fb9,525:0.15;587:0.02;W0:0.83,sweet_soup,low,nonfried_named,White-fungus-and-yam soup; addition of rock sugar is unknown.
+258,garlic,\u5927\u849c,437:1,root_stem_veg,medium,unspecified,"The Shanghai vegetable term refers to green garlic, as reviewed; use green-garlic entry 437."
+259,fried egg with leek,\u97ed\u9ec4\u7092\u86cb,446:0.30;445:0.25;978:0.40;OIL:0.05,egg_veg_stirfry,medium,fried_named,
+260,cow tail soup,\u725b\u5c3e\u5df4\u6c64,823:0.15;W0:0.85,broth,low,nonfried_named,No oxtail entry in the source table.
+261,sliced lotus root,\u85d5\u7247,516:1,starchy_veg,high,unspecified,
+262,eggs,\u9e21\u86cb,978:1,egg,high,unspecified,
+263,pork stuffed mooncake,\u9c9c\u8089\u6708\u997c,1243:0.55;789:0.20;779:0.25,cake_pastry,low,na,Pork mooncake: flaky pastry with meat filling.
+264,medicago polymorpha,\u8349\u5934,564:1,leafy_veg,high,unspecified,Burr clover greens.
+265,duck soup,\u9e2d\u6c64,891:0.12;W0:0.88,broth,low,nonfried_named,
+266,minced pork and eggplant,\u8089\u7cdc\u8304\u5b50,402:0.70;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+267,instant noodles,\u65b9\u4fbf\u9762,1291:1,fried_wheat,medium,fried_in_entry,"Assume the dry instant-noodle cake, including oil; prepared recorded weight would cause overestimation."
+268,braised fish,\u7ea2\u70e7\u9c7c,@fish:0.95;OIL:0.05,fish_fried,high,fried_named,
+269,cabbage and carrot,\u5377\u5fc3\u83dc\u80e1\u841d\u535c,463:0.60;380:0.35;OIL:0.05,mixed_veg_fried,medium,fried_dish_type,
+270,vegetable and pork stuffed wonton,\u83dc\u8089\u9984\u9968,1330:1,filled_meat,medium,na,Large vegetable-and-pork wontons; the relatively large recorded portion may include broth.
+271,marinated egg,\u5364\u86cb,978:1,egg,high,nonfried_named,
+272,egg white,\u9e21\u86cb\u767d,982:1,egg,high,na,
+273,pork meatball,\u8089\u5706,@meatball:1,meatball,medium,unspecified,
+274,braised mutton,\u7ea2\u70e7\u7f8a\u8089,844:0.95;OIL:0.05,beef_mutton_fried,high,fried_named,
+275,sliced pork with asparagus and fungus,\u82a6\u7b0b\u6728\u8033\u8089\u7247,510:0.45;580:0.25;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+276,braised pork with tofu skin knot,\u767e\u53f6\u7ed3\u70e7\u8089,345:0.40;779:0.55;OIL:0.05,pork_belly_braised,medium,fried_named,
+277,towel gourd,\u4e1d\u74dc,429:1,fruit_veg,high,unspecified,
+278,shredded radish,\u841d\u535c\u4e1d,371:1,root_stem_veg,high,unspecified,
+279,kelp,\u6d77\u5e26,607:1,fungi_algae,high,unspecified,
+280,meat,\u8089,789:1,pork,medium,unspecified,
+281,melon,\u751c\u74dc,738:1,fruit_melon,high,na,
+282,shredded bamboo shoot,\u7b0b\u4e1d,499:0.6;491:0.4,root_stem_veg,medium,unspecified,Shredded bamboo shoots and stem lettuce.
+283,fruit,\u6c34\u679c,@fruit_temperate:1,fruit_temperate,low,na,Fruit type unspecified.
+284,fruit and vegetable,\u679c\u852c,@fruit_temperate:0.5;@mixed_veg:0.5,fruit_temperate,low,na,
+285,minced pork with celery and carrot,\u7f8e\u82b9\u80e1\u535c\u8089\u7cdc,480:0.42;380:0.28;789:0.125;779:0.125;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+286,sliced pork with snow pea and yam,\u8377\u5170\u8c46\u5c71\u836f\u8089\u7247,389:0.40;525:0.30;789:0.25;OIL:0.05,starchy_mixed_dish,medium,fried_dish_type,
+287,green soybean,\u6bdb\u8c46,391:1,fresh_legume,high,unspecified,
+288,pan-fried dumplings,\u9505\u8d34,1330:0.95;OIL:0.05,fried_dumpling,medium,fried_dish_type,Pan-fried dumplings.
+289,stewed pork with cauliflower,\u82b1\u83dc\u70e7\u8089,464:0.55;779:0.40;OIL:0.05,meat_veg_stirfry,medium,fried_named,Pork braised with cauliflower.
+290,red bean,\u7ea2\u8c46,351:0.40;W0:0.60,fresh_legume,low,unspecified,"Cooked adzuki beans, with dry beans and water in a 4:6 ratio."
+291,salted chicken,\u54b8\u9e21,876:1,chicken,medium,unspecified,Salted chicken.
+292,sliced beef,\u4e09\u7247\u725b\u8089,823:1,beef_mutton,medium,unspecified,
+293,fried rice with egg,\u86cb\u7092\u996d,1314:1,fried_rice_noodles,medium,fried_in_entry,
+294,seafood,\u6d77\u9c9c,@shellfish:0.5;@shrimp:0.5,shellfish,low,unspecified,
+295,steamed small meat dumpling in basket,\u5c0f\u7b3c\u5305,1339:1,filled_meat,high,nonfried_named,
+296,sticky rice cake,\u9ebb\u85af,1211:0.7;354:0.3,glutinous_sweet,low,na,Mochi-style glutinous-rice product with bean-paste filling.
+297,white fungus soup,\u94f6\u8033\u6c64,587:0.02;W0:0.98,sweet_soup,low,nonfried_named,White-fungus soup; addition of rock sugar is unknown.
+298,zucchini,\u897f\u846b\u82a6,431:1,fruit_veg,high,unspecified,
+299,sliced pork with lettuce and water bamboo,\u83b4\u7b0b\u832d\u767d\u8089\u7247,491:0.40;519:0.30;789:0.25;OIL:0.05,meat_veg_stirfry,medium,fried_dish_type,
+300,sugar,\u7cd6,1448:1,sugar_sweets,high,na,

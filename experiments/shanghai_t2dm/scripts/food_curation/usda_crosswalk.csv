@@ -1,232 +1,232 @@
 entry_id,cn_name,fdc_id,usda_description,scale_to_cn_water,fiber_fdc_id,fiber_usda_description,confidence,rationale
-259,小麦粉(标准粉),168936,"Wheat flour, white, all-purpose, enriched, unbleached",,,,medium,标准粉（出粉率约85%）介于白面粉与全麦粉之间，取通用白面粉
-261,挂面(均值),168908,"Noodles, japanese, somen, dry",,,,medium,挂面（干小麦面条）≈日式素面（干）
-264,面条(均值),168927,"Pasta, dry, unenriched",yes,,,medium,生鲜切面＝面粉加水；用干意面按含水量折算（无鸡蛋）
-269,花卷,168936,"Wheat flour, white, all-purpose, enriched, unbleached",yes,,,medium,花卷≈面粉加水蒸制；用面粉按含水量折算
-271,烙饼(标准粉),174915,"Bread, pita, white, enriched",,,,medium,烙饼与皮塔饼同为未油炸的发面/死面饼，含水相近
-272,馒头(均值),168936,"Wheat flour, white, all-purpose, enriched, unbleached",yes,,,medium,馒头＝面粉加水蒸制，USDA无馒头；用面粉按含水量折算
-273,馒头(标准粉),168936,"Wheat flour, white, all-purpose, enriched, unbleached",yes,,,medium,同馒头（标准粉）
-276,油饼,174990,"Doughnuts, cake-type, plain (includes unsugared, old-fashioned)",,,,low,油饼：USDA无，取未加糖的油炸面食（cake-type doughnut）
-277,油条,174990,"Doughnuts, cake-type, plain (includes unsugared, old-fashioned)",,,,low,油条：USDA无，取未加糖的油炸面食（cake-type doughnut）
-280,稻米(均值),168879,"Rice, white, medium-grain, raw, enriched",,,,high,生白米（中粒）
-285,糯米[江米](均值),168883,"Rice, white, glutinous, unenriched, uncooked",,,,high,糯米生米
-286,紫红糯米[血糯米],169706,"Rice, brown, medium-grain, raw (Includes foods for USDA's Food Distribution Program)",,,,low,血糯米（紫黑糯米）USDA无，取糙米（中粒，生）
-287,米饭(蒸)(均值),168880,"Rice, white, medium-grain, enriched, cooked",,,,high,熟白米饭，中粒（上海以粳米为主）
-288,粳米粥,173914,"Cereals, CREAM OF RICE, cooked with water, with salt",,,,medium,粳米粥≈米粉糊加水煮（Cream of rice，含水87.5%）
-290,籼米粉(干，细),169742,"Rice noodles, dry",,,,high,干米粉
-292,玉米(鲜),169998,"Corn, sweet, yellow, raw",,,,high,鲜甜玉米（黄），生
-296,玉米面(黄),169697,"Cornmeal, whole-grain, yellow",,,,high,全粒玉米面（黄）
-301,小米,169702,"Millet, raw",,,,high,小米，生
-303,小米粥,168871,"Millet, cooked",yes,,,medium,小米粥：用熟小米按含水量折算
-308,苦荞麦粉,170687,"Buckwheat flour, whole-groat",,,,high,全粒荞麦粉
-309,荞麦,170286,Buckwheat,,,,high,荞麦籽粒
-313,马铃薯[土豆，洋芋],170026,"Potatoes, flesh and skin, raw",,,,high,马铃薯（带皮），生
-316,甘薯(红心)[山芋，红薯],168482,"Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)",,,,high,甘薯，生
-320,玉米淀粉,169698,Cornstarch,,,,high,玉米淀粉
-323,魔芋精粉[鬼芋粉，南星粉],,,,,,none,魔芋精粉USDA无；数据库变体保留中国值
-324,粉丝,174258,"Noodles, chinese, cellophane or long rice (mung beans), dehydrated",,,,high,绿豆粉丝（干）
-333,豆腐(均值),172476,"Tofu, raw, regular, prepared with calcium sulfate",,,,high,普通豆腐（石膏）
-336,豆腐(内酯),172449,"Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",,,,medium,内酯豆腐≈嫩豆腐
-339,豆奶[豆乳],173768,"Soymilk, original and vanilla, light, unsweetened, with added calcium, vitamins A and D",,,,medium,豆奶≈低脂无糖豆奶
-343,油豆腐,172451,"Tofu, fried",,,,high,油炸豆腐
-345,千张[百页],172475,"Tofu, raw, firm, prepared with calcium sulfate",yes,,,low,千张USDA无，用老豆腐按含水量折算
-346,豆腐干(均值),172475,"Tofu, raw, firm, prepared with calcium sulfate",yes,,,low,豆腐干USDA无，用老豆腐按含水量折算
-347,素鸡,172475,"Tofu, raw, firm, prepared with calcium sulfate",,,,low,素鸡USDA无，取老豆腐
-349,烤麸,168147,Vital wheat gluten,yes,,,medium,烤麸为湿面筋，用谷朊粉按含水量折算
-350,绿豆(干),174256,"Mung beans, mature seeds, raw",,,,high,绿豆，生
-351,赤小豆[小豆，红小豆](干),173727,"Beans, adzuki, mature seeds, raw",,,,high,赤小豆，生
-354,红豆沙,173730,"Yokan, prepared from adzuki beans and sugar",,173728,"Beans, adzuki, mature seeds, cooked, boiled, without salt",medium,红豆沙≈羊羹（豆沙加糖）；USDA羊羹无纤维值，纤维取煮红小豆
-371,白萝卜[莱菔](鲜),168451,"Radishes, oriental, raw",,,,high,白萝卜（东方萝卜），生
-380,胡萝卜(红)[金笋，丁香萝卜],170393,"Carrots, raw",,,,high,胡萝卜，生
-386,刀豆(鲜),169961,"Beans, snap, green, raw",,,,medium,刀豆（鲜荚）USDA无，取青刀豆荚
-387,豆角,169961,"Beans, snap, green, raw",,,,high,豆角（鲜荚）
-389,荷兰豆,170010,"Peas, edible-podded, raw",,,,high,荷兰豆（食荚豌豆）
-391,毛豆[青豆，菜用大豆](鲜),169282,"Soybeans, green, raw",,,,high,毛豆（青大豆），生
-392,四季豆[菜豆],169961,"Beans, snap, green, raw",,,,high,四季豆（菜豆荚）
-393,"豌豆(带荚,鲜)[回回豆]",170419,"Peas, green, raw",,,,medium,鲜豌豆
-397,豇豆,169222,"Yardlong bean, raw",,169961,"Beans, snap, green, raw",medium,豇豆（长豇豆）；USDA豇豆无纤维值，纤维取四季豆
-399,黄豆芽,169284,"Soybeans, mature seeds, sprouted, raw",yes,,,medium,USDA大豆芽含水69%，远低于中国黄豆芽（89%），按含水量折算
-400,绿豆芽,169957,"Mung beans, mature seeds, sprouted, raw",,,,high,绿豆芽
-402,茄子(均值),169228,"Eggplant, raw",,,,high,茄子
-405,番茄[西红柿],170457,"Tomatoes, red, ripe, raw, year round average",,,,high,番茄
-410,甜椒[灯笼椒，柿子椒],170427,"Peppers, sweet, green, raw",,,,high,青甜椒
-419,冬瓜,170069,"Waxgourd, (chinese preserving melon), raw",,,,high,冬瓜
-422,黄瓜[胡瓜](鲜),168409,"Cucumber, with peel, raw",,,,high,黄瓜（带皮）
-425,苦瓜[凉瓜，癞瓜](鲜),168393,"Balsam-pear (bitter gourd), pods, raw",,,,high,苦瓜
-426,南瓜[倭瓜，番瓜](鲜),168448,"Pumpkin, raw",,,,high,南瓜
-429,丝瓜,168414,"Gourd, dishcloth (towelgourd), raw",,,,high,丝瓜
-431,西葫芦,169291,"Squash, summer, zucchini, includes skin, raw",,,,high,西葫芦（带皮）
-437,青蒜,169246,"Leeks, (bulb and lower leaf-portion), raw",,,,medium,青蒜USDA无，取韭葱（leeks）
-441,大葱,170007,"Onions, welsh, raw",,,,high,大葱（Welsh onion）
-444,洋葱[葱头](鲜),170000,"Onions, raw",,,,high,洋葱
-445,韭菜,169994,"Chives, raw",,,,medium,韭菜USDA无，取细香葱（chives）
-446,韭黄[韭芽],169994,"Chives, raw",,,,low,韭黄（软化韭菜）USDA无，取细香葱
-450,大白菜(均值),169979,"Cabbage, chinese (pe-tsai), raw",,,,high,大白菜（pe-tsai）
-452,小白菜,170390,"Cabbage, chinese (pak-choi), raw",,,,high,小白菜（pak-choi）
-457,油菜,170390,"Cabbage, chinese (pak-choi), raw",,,,high,油菜（上海青，pak-choi类）
-460,鸡毛菜,170390,"Cabbage, chinese (pak-choi), raw",,,,medium,鸡毛菜（小白菜幼苗）
-463,甘蓝[圆白菜，卷心菜],169975,"Cabbage, raw",,,,high,结球甘蓝
-464,菜花[花椰菜],169986,"Cauliflower, raw",,,,high,菜花
-465,西兰花[绿菜花],170379,"Broccoli, raw",,,,high,西兰花
-473,菠菜[赤根菜](鲜),168462,"Spinach, raw",,,,high,菠菜
-480,芹菜茎,169988,"Celery, raw",,,,high,芹菜
-482,生菜(牛俐)[油麦菜],169247,"Lettuce, cos or romaine, raw",,,,medium,油麦菜（长叶莴苣类）≈罗马生菜
-483,生菜(叶用莴苣),169249,"Lettuce, green leaf, raw",,,,high,叶用莴苣
-486,苋菜(绿，鲜),168385,"Amaranth leaves, raw",,168462,"Spinach, raw",medium,苋菜；USDA苋菜叶无纤维值，纤维取菠菜
-487,"苋菜(紫,鲜)[红苋]",168385,"Amaranth leaves, raw",,168462,"Spinach, raw",medium,红苋菜；纤维取菠菜
-488,茼蒿[蓬蒿菜，艾菜](鲜),169995,"Chrysanthemum, garland, raw",,,,high,茼蒿
-490,荠菜[蓟菜，菱角菜](鲜),169256,"Mustard greens, raw",,,,low,荠菜USDA无，取同科芥菜叶
-491,莴笋[莴苣](鲜),169990,"Celtuce, raw",,,,high,莴笋（celtuce）
-493,蕹菜[空心菜，藤藤菜],169301,"Water convolvulus,raw",,,,high,空心菜（water convolvulus）
-499,竹笋(鲜),169210,"Bamboo shoots, raw",,,,high,竹笋
-510,芦笋[石刁柏，龙须菜],168389,"Asparagus, raw",,,,high,芦笋
-513,慈菇[乌芋，白地果](鲜),169203,"Arrowhead, raw",,,,high,慈菇（arrowhead），生；USDA无纤维值
-516,藕[莲藕],169250,"Lotus root, raw",,,,high,藕
-518,水芹菜,169988,"Celery, raw",,,,medium,水芹USDA无，取芹菜
-519,茭白[茭笋，茭粑](鲜),169210,"Bamboo shoots, raw",,,,low,茭白USDA无，取质地与成分相近的竹笋
-525,山药[薯蓣，大薯](鲜),168432,"Mountain yam, hawaii, raw",,,,medium,山药（薯蓣属）≈夏威夷山药（mountain yam）
-526,芋头[芋艿，毛芋],169308,"Taro, raw",,,,high,芋头
-528,姜[黄姜](鲜),169231,"Ginger root, raw",,,,high,生姜
-536,白薯叶[甘薯叶](鲜),169303,"Sweet potato leaves, raw",,,,high,甘薯叶
-564,苜蓿[草头，金花菜],169244,"Lambsquarters, raw",,,,low,草头（南苜蓿）USDA无，取藜（lambsquarters）叶
-575,金针菇[智力菇](鲜),169382,"Mushrooms, enoki, raw",,,,high,金针菇
-577,蘑菇(鲜蘑),169251,"Mushrooms, white, raw",,,,high,白蘑菇
-580,木耳(水发)[黑木耳，云耳],168581,"Fungi, Cloud ears, dried",yes,,,medium,水发木耳：用干木耳（cloud ears）按含水量折算
-581,平菇[糙皮侧耳，青蘑],168580,"Mushrooms, oyster, raw",,,,high,平菇
-584,香菇[香蕈，冬菇](鲜),169242,"Mushrooms, shiitake, raw",,168435,"Mushrooms, shiitake, stir-fried",medium,鲜香菇；USDA生香菇无纤维值，纤维取炒香菇（未加油，含水相近）
-587,银耳(干)[白木耳],168581,"Fungi, Cloud ears, dried",,,,low,干银耳USDA无，取干木耳（同为胶质菌）
-602,杏鲍菇,168580,"Mushrooms, oyster, raw",,,,medium,杏鲍菇与平菇同属侧耳属
-607,海带(浸)[江白菜，昆布],168457,"Seaweed, kelp, raw",yes,,,medium,水发海带：用鲜海带按含水量折算
-611,紫菜(干),168458,"Seaweed, laver, raw",yes,167602,"Seaweed, Canadian Cultivated EMI-TSUNOMATA, dry",low,干紫菜：用鲜紫菜按含水量折算；USDA紫菜纤维值异常低（0.3），纤维取干红藻（EMI-TSUNOMATA）
-613,苹果(均值),171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",,,,high,苹果（带皮）
-630,梨(均值),168177,"Pears, asian, raw",,,,high,梨（亚洲梨）
-652,梨(鳄梨),171705,"Avocados, raw, all commercial varieties",,,,high,牛油果
-660,桃(均值),169928,"Peaches, yellow, raw",,,,high,桃
-666,李子,169949,"Plums, raw",,,,high,李子
-675,枣(干),168152,"Jujube, Chinese, fresh, dried",,,,high,干枣（中国枣）
-684,葡萄(均值),174683,"Grapes, red or green (European type, such as Thompson seedless), raw",,,,high,葡萄
-689,葡萄干,168165,"Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",,,,high,葡萄干
-700,中华猕猴桃[毛叶猕猴桃],168153,"Kiwifruit, green, raw",,,,high,猕猴桃
-701,草莓[洋莓，凤阳草莓],167762,"Strawberries, raw",,,,high,草莓
-704,橙,169097,"Oranges, raw, all commercial varieties",,,,high,橙
-705,柑桔(均值),169105,"Tangerines, (mandarin oranges), raw",,,,high,柑橘
-711,柚[文旦],167754,"Pummelo, raw",,,,high,柚
-716,菠萝[凤梨，地菠萝],169124,"Pineapple, raw, all varieties",,,,high,菠萝
-722,荔枝,169086,"Litchis, raw",,,,high,荔枝
-723,芒果[抹猛果，望果],169910,"Mangos, raw",,,,high,芒果
-726,香蕉[甘蕉],173944,"Bananas, raw",,,,high,香蕉
-734,火龙果[仙蜜果、红龙果],,,,,,none,火龙果USDA无；数据库变体保留中国值（纤维为成分表报告值）
-738,甜瓜[香瓜],169911,"Melons, honeydew, raw",,,,medium,甜瓜≈蜜瓜（honeydew）
-739,西瓜(均值),167765,"Watermelon, raw",,,,high,西瓜
-743,核桃(干)[胡桃],170187,"Nuts, walnuts, english",,,,high,核桃
-752,杏仁,170567,"Nuts, almonds",,,,medium,杏仁（中国杏仁可能为杏核仁），取扁桃仁
-756,腰果,170162,"Nuts, cashew nuts, raw",,,,high,腰果
-760,胡麻籽,169414,"Seeds, flaxseed",,,,high,胡麻籽即亚麻籽
-761,花生(鲜)[落花生，长生果],174260,"Peanuts, all types, cooked, boiled, with salt",,,,medium,鲜花生（盐水花生）≈煮花生（含盐）
-764,花生仁(炒),173806,"Peanuts, all types, dry-roasted, without salt",,,,high,花生仁（干炒）
-766,葵花子(炒),170563,"Seeds, sunflower seed kernels, dry roasted, without salt",,,,high,葵花子仁（干炒）
-768,莲子(干),170149,"Seeds, lotus seeds, dried",,,,medium,干莲子；USDA无纤维值，纤维按原比例法补
-774,芝麻籽(黑),170150,"Seeds, sesame seeds, whole, dried",,,,high,芝麻
-778,花生仁(油炸),175258,"Peanuts, all types, oil-roasted, without salt",,,,high,油炸花生
-779,猪肉(肥瘦)(均值),167812,"Pork, fresh, belly, raw",,,,low,肥瘦猪肉（脂肪37%）介于猪五花与猪绞肉之间，取五花肉
-789,猪肉(腿),168226,"Pork, fresh, leg (ham), shank half, separable lean and fat, raw",,,,high,猪腿肉（后腿下段，肥瘦）
-791,猪大排,168238,"Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw",,,,high,大排（带骨里脊排，肥瘦）
-794,猪小排,167853,"Pork, fresh, spareribs, separable lean and fat, raw",,,,high,小排（肋排）
-795,猪肚,167867,"Pork, fresh, variety meats and by-products, stomach, raw",,,,high,猪肚
-797,猪肝,167862,"Pork, fresh, variety meats and by-products, liver, raw",,,,high,猪肝
-803,猪血,,,,,,none,猪血USDA无；数据库变体保留中国值
-805,腊肉(培根),167869,"Canadian bacon, unprepared",,,,medium,中国“腊肉(培根)”条目脂肪仅9%，接近加拿大培根
-807,午餐肉,172951,"Luncheon meat, pork with ham, minced, canned, includes Spam (Hormel)",,,,low,午餐肉；中国午餐肉含淀粉（碳水12%），USDA为4.6%
-808,咸肉,168277,"Pork, cured, bacon, unprepared",,,,medium,咸肉≈未烹调培根（肥瘦相近）
-810,猪蹄(熟),168290,"Pork, fresh, variety meats and by-products, feet, cooked, simmered",,,,high,熟猪蹄
-811,猪肉松(均值),,,,,,none,肉松USDA无；数据库变体保留中国值
-815,火腿肠,169866,"Frankfurter, meat and poultry, low fat",,,,low,火腿肠含淀粉，取低脂肉禽混合法兰克福香肠（碳水8.4%）
-818,香肠,172938,"Salami, dry or hard, pork",,,,low,中式香肠（含糖、风干）≈干硬猪肉萨拉米
-823,牛肉(肥瘦)(均值),171777,"Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0"" fat, select, raw",,,,medium,牛肉（肥瘦）均值较瘦，取零修整零售切块组合（select）
-844,羊肉(肥瘦)(均值),172545,"Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8"" fat, choice, raw",,,,medium,羊肉（肥瘦）组合切块
-876,鸡(均值),171447,"Chicken, broilers or fryers, meat and skin, raw",,,,medium,鸡（均值）含皮；美国肉鸡脂肪较高
-880,鸡胸脯肉,171077,"Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",,,,high,鸡胸肉
-882,鸡腿,172378,"Chicken, broilers or fryers, leg, meat and skin, raw",,,,high,鸡腿（带皮）
-883,鸡爪,171119,"Chicken, feet, boiled",,,,high,鸡爪（煮）
-887,鸡肫[鸡胗],171456,"Chicken, gizzard, all classes, raw",,,,high,鸡胗
-891,鸭(均值),172408,"Duck, domesticated, meat and skin, raw",,,,low,鸭（均值）含皮；美国北京鸭脂肪（39%）远高于中国均值（20%）
-912,鸽,174475,"Squab, (pigeon), meat and skin, raw",,,,medium,鸽（带皮）
-917,牛乳(光明牌),171265,"Milk, whole, 3.25% milkfat, with added vitamin D",,,,high,全脂牛奶
-958,乳品（酸奶，均值),170888,"Yogurt, vanilla, low fat.",,,,medium,中国酸奶多加糖，取低脂香草酸奶
-978,蛋（鸡蛋，均值),171287,"Egg, whole, raw, fresh",,,,high,鸡蛋
-982,鸡蛋白,172183,"Egg, white, raw, fresh",,,,high,鸡蛋白
-989,荷包蛋(煮),172186,"Egg, whole, cooked, poached",,,,high,水煮荷包蛋（poached egg）
-990,蛋（鸭蛋）,172189,"Egg, duck, whole, fresh, raw",,,,high,鸭蛋
-994,蛋（松花蛋，鸭蛋)[皮蛋],172189,"Egg, duck, whole, fresh, raw",,,,low,皮蛋USDA无，取鸭蛋
-995,咸鸭蛋,172189,"Egg, duck, whole, fresh, raw",,,,low,咸鸭蛋USDA无，取鸭蛋
-1008,鱼（黄鳝）[鳝鱼],174193,"Fish, eel, mixed species, raw",,,,low,黄鳝（亚洲黄鳝很瘦）USDA仅有鳗鱼（脂肪12%）
-1014,青鱼[青皮鱼，青鳞鱼，青混],171952,"Fish, carp, raw",,,,medium,青鱼与鲤鱼同科
-1021,鲫鱼[喜头鱼，海附鱼],171952,"Fish, carp, raw",,,,medium,鲫鱼与鲤鱼同科
-1030,带鱼[白带鱼，刀鱼],174192,"Fish, croaker, Atlantic, raw",,,,low,带鱼USDA无，取脂肪相近的大西洋黄花鱼
-1038,黄鱼(小黄花鱼),174192,"Fish, croaker, Atlantic, raw",,,,high,小黄鱼（石首鱼科）≈大西洋黄花鱼
-1050,鲈鱼[鲈花],175142,"Fish, sea bass, mixed species, raw",,,,medium,鲈鱼（花鲈）≈海鲈
-1056,鲳鱼[平鱼，银鲳，刺鲳],171951,"Fish, butterfish, raw",,,,medium,鲳鱼与butterfish同属鲳科
-1067,鱼丸,173702,"Fish, surimi",,,,medium,鱼丸≈鱼糜（surimi）
-1092,虾（河虾）,175179,"Crustaceans, shrimp, raw",,,,medium,河虾，生
-1093,虾（基围虾）,175179,"Crustaceans, shrimp, raw",,,,high,基围虾，生
-1103,蟹（河蟹）,174204,"Crustaceans, crab, blue, raw",,,,medium,河蟹（大闸蟹）USDA无，取蓝蟹
-1106,鲍鱼[杂色鲍],174212,"Mollusks, abalone, mixed species, raw",,,,high,鲍鱼
-1108,蛏子,174214,"Mollusks, clam, mixed species, raw",,,,medium,蛏子≈蛤类
-1120,蛤蜊(均值),174214,"Mollusks, clam, mixed species, raw",,,,high,蛤蜊
-1123,海参,167618,"Sea cucumber, yane (Alaska Native)",,,,medium,海参（阿拉斯加原住民食物条目）
-1125,海蜇皮,168129,"Jellyfish, dried, salted",,,,medium,海蜇（干腌）
-1129,乌贼(鲜)[鱿鱼，台湾枪乌贼，枪,174223,"Mollusks, squid, mixed species, raw",,,,high,鱿鱼（乌贼）
-1182,豆奶粉,,,,,,none,豆奶粉（含糖）USDA无；数据库变体保留中国值，纤维按原比例法补
-1199,春卷,167667,"Restaurant, Chinese, egg rolls, assorted",,,,low,中式餐馆春卷/蛋卷；中国条目脂肪33.7%远高于USDA（11.9%）
-1211,年糕,168880,"Rice, white, medium-grain, enriched, cooked",yes,,,medium,上海年糕为粳米制品：用熟白米饭按含水量折算
-1220,黑芝麻汤圆,,,,,,none,黑芝麻汤圆USDA无；数据库变体保留中国值
-1221,醪糟,,,,,,none,醪糟USDA无；数据库变体保留中国值
-1224,蛋糕(均值),172706,"Cake, sponge, commercially prepared",,,,medium,蛋糕（均值）≈海绵蛋糕
-1227,月饼(豆沙),172721,"Cookies, fig bars",,,,low,豆沙月饼USDA无，取同为有馅烘焙点心的无花果夹心饼
-1243,酥皮糕点,174950,"Cookies, butter, commercially prepared, enriched",,,,low,酥皮糕点（含水10.7%，脂肪15.5%）≈黄油饼干
-1260,比萨饼(夹奶酪、肉和蔬菜),170715,"Pizza, meat and vegetable topping, regular crust, frozen, cooked",,,,high,肉菜比萨
-1261,三明治(夹火腿、干酪),,,,,,none,三明治（火腿干酪）USDA无对应；数据库变体保留中国值，纤维按原比例法补
-1271,汉堡包(普通型，夹肉饼，加调料酱和蔬菜),170694,"Fast foods, hamburger; single, regular patty; with condiments",,,,medium,汉堡（单层肉饼，含调味酱）
-1273,麦片,171661,"Cereals, oats, instant, fortified, plain, dry",,,,medium,麦片（原味）≈速溶燕麦片（原味，干）
-1281,八宝粥(无糖，娃哈哈牌),,,,,,none,无糖八宝粥USDA无；数据库变体保留中国值
-1283,黑芝麻糊粉,,,,,,none,黑芝麻糊粉（含糖）USDA无；数据库变体保留中国值
-1286,燕麦片,173904,"Cereals, oats, regular and quick, not fortified, dry",,,,high,燕麦片
-1288,苦荞麦片(无糖),170685,"Buckwheat groats, roasted, dry",,,,medium,苦荞麦片≈烤荞麦粒（干）
-1291,方便面,171177,"Soup, ramen noodle, any flavor, dry",,,,high,方便面（干面块，含调料）
-1311,冬菜虾仁馄饨,169773,"Potsticker or wonton, pork and vegetable, frozen, unprepared",,,,low,馄饨≈USDA锅贴/馄饨（猪肉蔬菜馅，冷冻未烹）
-1313,糯米饭团,,,,,,none,糯米饭团USDA无；数据库变体保留中国值
-1314,什锦炒饭,167668,"Restaurant, Chinese, fried rice, without meat",,,,medium,什锦炒饭≈中式餐馆炒饭（无肉）
-1316,面包(均值),174924,"Bread, white, commercially prepared (includes soft bread crumbs)",,,,high,白面包
-1322,饼干(均值),174973,"Cookies, vanilla wafers, lower fat",,,,medium,饼干（均值）≈香草威化饼干（低脂）
-1323,苏打饼干,172746,"Crackers, saltines (includes oyster, soda, soup)",,,,high,苏打饼干
-1330,水饺(猪肉白菜馅),169773,"Potsticker or wonton, pork and vegetable, frozen, unprepared",,,,low,水饺≈USDA锅贴/馄饨（猪肉蔬菜馅）；USDA碳水仅13%，中国26%
-1339,包子(猪肉馅),,,,,,none,猪肉包子USDA无；数据库变体保留中国值
-1353,薯片(烧烤味),169677,"Snacks, potato chips, plain, salted",,,,high,薯片
-1367,可口可乐,174852,"Beverages, carbonated, cola, regular",,,,high,可乐
-1369,苹果汁饮料(光明牌),173933,"Apple juice, canned or bottled, unsweetened, without added ascorbic acid",,,,medium,苹果汁饮料≈无糖苹果汁
-1376,椰子汁饮料,174831,"Beverages, Coconut water, ready-to-drink, unsweetened",,,,low,椰子汁饮料USDA无，取即饮椰子水（纤维0）
-1393,冰淇淋,167575,"Ice creams, vanilla",,,,high,香草冰淇淋
-1407,啤酒(4.3％，青岛牌),168746,"Alcoholic beverage, beer, regular, all",,,,high,啤酒；USDA碳水不含乙醇，能量含乙醇（乙醇3.9 g/100 g）
-1412,红葡萄酒,173190,"Alcoholic beverage, wine, table, red",,,,high,红葡萄酒；USDA碳水不含乙醇（乙醇10.6 g/100 g）
-1421,黄酒,167723,"Alcoholic beverage, rice (sake)",,,,low,黄酒USDA无，取清酒（米酒，乙醇16 g/100 g）
-1448,糖（白砂糖）,169655,"Sugars, granulated",,,,high,白砂糖
-1453,奶糖,167974,"Candies, caramels",,,,medium,奶糖≈焦糖奶糖
-1454,巧克力,167587,"Candies, milk chocolate",,,,high,牛奶巧克力
-1487,蜂蜜,169640,Honey,,,,high,蜂蜜
-1516,大豆色拉油,171411,"Oil, soybean, salad or cooking",,,,high,大豆色拉油
-1518,酱油(均值),174277,Soy sauce made from soy and wheat (shoyu),,,,high,酱油（大豆小麦酿造）
-1520,醋(均值),173469,"Vinegar, cider",,,,low,中国酿造醋（碳水4.9%）USDA无，取苹果醋
-1523,豆瓣酱,172442,Miso,,,,medium,豆瓣酱≈味噌（发酵豆酱）
-1527,甜面酱,172886,"Sauce, hoisin, ready-to-serve",,,,medium,甜面酱≈海鲜酱（hoisin）
-1536,沙拉酱,171009,"Salad dressing, mayonnaise, regular",,,,high,蛋黄沙拉酱
-1539,番茄酱,170459,"Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",,,,high,番茄酱（浓缩番茄膏）
-1545,腐乳(白)[酱豆腐],174305,"Tofu, salted and fermented (fuyu), prepared with calcium sulfate",,172476,"Tofu, raw, regular, prepared with calcium sulfate",medium,白腐乳≈fuyu；USDA无纤维值，纤维取普通豆腐
-1547,腐乳(红)[酱豆腐],174305,"Tofu, salted and fermented (fuyu), prepared with calcium sulfate",,172476,"Tofu, raw, regular, prepared with calcium sulfate",medium,红腐乳≈fuyu；纤维取普通豆腐
-1550,萝卜干,168453,"Radishes, oriental, dried",yes,,,low,萝卜干：用干萝卜按含水量折算（中国萝卜干含盐多，折算会高估）
-1551,榨菜,170392,"Cabbage, kimchi",,,,low,榨菜USDA无，取泡菜（kimchi）
-1553,腌雪里红,170392,"Cabbage, kimchi",,,,low,腌雪里红USDA无，取泡菜（kimchi）
-1555,酱八宝菜,169378,"Pickles, cucumber, sweet (includes bread and butter pickles)",,,,low,酱八宝菜（甜咸酱菜）≈甜腌黄瓜
-1571,枸杞子,173032,"Goji berries, dried",,,,high,枸杞干
-1576,橙汁饮料(光明牌),169044,"Beverages, Orange juice drink",,,,high,橙汁饮料
-U174276,大豆分离蛋白（USDA；成分表无条目）,174276,Soy protein isolate,,,,high,蛋白粉：成分表无条目，主分析与数据库变体均用USDA大豆分离蛋白（伪条目）
-W0,水（冲调/烹煮加水；非成分表条目）,173647,"Beverages, water, tap, drinking",,,,high,水
+259,\u5c0f\u9ea6\u7c89(\u6807\u51c6\u7c89),168936,"Wheat flour, white, all-purpose, enriched, unbleached",,,,medium,"Standard flour, approximately 85% extraction, lies between white and whole-wheat flour; use all-purpose white flour."
+261,\u6302\u9762(\u5747\u503c),168908,"Noodles, japanese, somen, dry",,,,medium,Dried wheat noodles approximated by dried Japanese somen.
+264,\u9762\u6761(\u5747\u503c),168927,"Pasta, dry, unenriched",yes,,,medium,Fresh cut noodles contain flour and water; moisture-adjust dried egg-free pasta.
+269,\u82b1\u5377,168936,"Wheat flour, white, all-purpose, enriched, unbleached",yes,,,medium,Steamed wheat rolls contain flour and water; moisture-adjust flour.
+271,\u70d9\u997c(\u6807\u51c6\u7c89),174915,"Bread, pita, white, enriched",,,,medium,Unfried wheat flatbread and pita have similar moisture and preparation characteristics.
+272,\u9992\u5934(\u5747\u503c),168936,"Wheat flour, white, all-purpose, enriched, unbleached",yes,,,medium,Steamed wheat bread contains flour and water but has no USDA counterpart; moisture-adjust flour.
+273,\u9992\u5934(\u6807\u51c6\u7c89),168936,"Wheat flour, white, all-purpose, enriched, unbleached",yes,,,medium,Same approximation as standard-flour steamed wheat bread.
+276,\u6cb9\u997c,174990,"Doughnuts, cake-type, plain (includes unsugared, old-fashioned)",,,,low,No USDA fried-flatbread counterpart; use an unsugared cake-type doughnut.
+277,\u6cb9\u6761,174990,"Doughnuts, cake-type, plain (includes unsugared, old-fashioned)",,,,low,No USDA fried-dough-stick counterpart; use an unsugared cake-type doughnut.
+280,\u7a3b\u7c73(\u5747\u503c),168879,"Rice, white, medium-grain, raw, enriched",,,,high,Raw medium-grain white rice.
+285,\u7cef\u7c73[\u6c5f\u7c73](\u5747\u503c),168883,"Rice, white, glutinous, unenriched, uncooked",,,,high,Raw glutinous rice.
+286,\u7d2b\u7ea2\u7cef\u7c73[\u8840\u7cef\u7c73],169706,"Rice, brown, medium-grain, raw (Includes foods for USDA's Food Distribution Program)",,,,low,No USDA dark glutinous-rice counterpart; use raw medium-grain brown rice.
+287,\u7c73\u996d(\u84b8)(\u5747\u503c),168880,"Rice, white, medium-grain, enriched, cooked",,,,high,"Cooked medium-grain white rice, approximating the japonica rice common in Shanghai."
+288,\u7cb3\u7c73\u7ca5,173914,"Cereals, CREAM OF RICE, cooked with water, with salt",,,,medium,Japonica rice porridge approximated by cooked cream of rice at 87.5% water.
+290,\u7c7c\u7c73\u7c89(\u5e72\uff0c\u7ec6),169742,"Rice noodles, dry",,,,high,Dry rice noodles.
+292,\u7389\u7c73(\u9c9c),169998,"Corn, sweet, yellow, raw",,,,high,Raw fresh yellow sweet maize.
+296,\u7389\u7c73\u9762(\u9ec4),169697,"Cornmeal, whole-grain, yellow",,,,high,Whole-grain yellow cornmeal.
+301,\u5c0f\u7c73,169702,"Millet, raw",,,,high,Raw millet.
+303,\u5c0f\u7c73\u7ca5,168871,"Millet, cooked",yes,,,medium,Millet porridge: moisture-adjust cooked millet.
+308,\u82e6\u835e\u9ea6\u7c89,170687,"Buckwheat flour, whole-groat",,,,high,Whole-grain buckwheat flour.
+309,\u835e\u9ea6,170286,Buckwheat,,,,high,Buckwheat groats.
+313,\u9a6c\u94c3\u85af[\u571f\u8c46\uff0c\u6d0b\u828b],170026,"Potatoes, flesh and skin, raw",,,,high,Raw potato with skin.
+316,\u7518\u85af(\u7ea2\u5fc3)[\u5c71\u828b\uff0c\u7ea2\u85af],168482,"Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)",,,,high,Raw sweet potato.
+320,\u7389\u7c73\u6dc0\u7c89,169698,Cornstarch,,,,high,Cornstarch.
+323,\u9b54\u828b\u7cbe\u7c89[\u9b3c\u828b\u7c89\uff0c\u5357\u661f\u7c89],,,,,,none,No USDA konjac-flour counterpart; retain the China CDC values in the database variant.
+324,\u7c89\u4e1d,174258,"Noodles, chinese, cellophane or long rice (mung beans), dehydrated",,,,high,Dry mung-bean starch noodles.
+333,\u8c46\u8150(\u5747\u503c),172476,"Tofu, raw, regular, prepared with calcium sulfate",,,,high,Regular calcium-set tofu.
+336,\u8c46\u8150(\u5185\u916f),172449,"Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",,,,medium,Glucono-delta-lactone tofu approximated by soft tofu.
+339,\u8c46\u5976[\u8c46\u4e73],173768,"Soymilk, original and vanilla, light, unsweetened, with added calcium, vitamins A and D",,,,medium,Soy milk approximated by low-fat unsweetened soy milk.
+343,\u6cb9\u8c46\u8150,172451,"Tofu, fried",,,,high,Fried tofu.
+345,\u5343\u5f20[\u767e\u9875],172475,"Tofu, raw, firm, prepared with calcium sulfate",yes,,,low,No USDA tofu-sheet counterpart; moisture-adjust firm tofu.
+346,\u8c46\u8150\u5e72(\u5747\u503c),172475,"Tofu, raw, firm, prepared with calcium sulfate",yes,,,low,No USDA dried-tofu counterpart; moisture-adjust firm tofu.
+347,\u7d20\u9e21,172475,"Tofu, raw, firm, prepared with calcium sulfate",,,,low,No USDA pressed-tofu-roll counterpart; use firm tofu.
+349,\u70e4\u9eb8,168147,Vital wheat gluten,yes,,,medium,Wheat gluten is a moist gluten product; moisture-adjust vital wheat gluten.
+350,\u7eff\u8c46(\u5e72),174256,"Mung beans, mature seeds, raw",,,,high,Raw mung beans.
+351,\u8d64\u5c0f\u8c46[\u5c0f\u8c46\uff0c\u7ea2\u5c0f\u8c46](\u5e72),173727,"Beans, adzuki, mature seeds, raw",,,,high,Raw adzuki beans.
+354,\u7ea2\u8c46\u6c99,173730,"Yokan, prepared from adzuki beans and sugar",,173728,"Beans, adzuki, mature seeds, cooked, boiled, without salt",medium,"Sweet red-bean paste approximated by yokan; USDA yokan lacks fiber, so use cooked adzuki beans for fiber."
+371,\u767d\u841d\u535c[\u83b1\u83d4](\u9c9c),168451,"Radishes, oriental, raw",,,,high,Raw oriental radish.
+380,\u80e1\u841d\u535c(\u7ea2)[\u91d1\u7b0b\uff0c\u4e01\u9999\u841d\u535c],170393,"Carrots, raw",,,,high,Raw carrot.
+386,\u5200\u8c46(\u9c9c),169961,"Beans, snap, green, raw",,,,medium,No USDA fresh sword-bean-pod entry; use green sword-bean pods.
+387,\u8c46\u89d2,169961,"Beans, snap, green, raw",,,,high,Fresh green-bean pods.
+389,\u8377\u5170\u8c46,170010,"Peas, edible-podded, raw",,,,high,Edible-podded peas.
+391,\u6bdb\u8c46[\u9752\u8c46\uff0c\u83dc\u7528\u5927\u8c46](\u9c9c),169282,"Soybeans, green, raw",,,,high,"Raw green soybeans, or edamame."
+392,\u56db\u5b63\u8c46[\u83dc\u8c46],169961,"Beans, snap, green, raw",,,,high,Snap-bean pods.
+393,"\u8c4c\u8c46(\u5e26\u835a,\u9c9c)[\u56de\u56de\u8c46]",170419,"Peas, green, raw",,,,medium,Fresh peas.
+397,\u8c47\u8c46,169222,"Yardlong bean, raw",,169961,"Beans, snap, green, raw",medium,Yardlong beans lack USDA fiber values; use snap beans for fiber.
+399,\u9ec4\u8c46\u82bd,169284,"Soybeans, mature seeds, sprouted, raw",yes,,,medium,USDA soybean sprouts contain 69% water versus 89% in the China CDC entry; adjust for moisture.
+400,\u7eff\u8c46\u82bd,169957,"Mung beans, mature seeds, sprouted, raw",,,,high,Mung-bean sprouts.
+402,\u8304\u5b50(\u5747\u503c),169228,"Eggplant, raw",,,,high,Eggplant.
+405,\u756a\u8304[\u897f\u7ea2\u67ff],170457,"Tomatoes, red, ripe, raw, year round average",,,,high,Tomato.
+410,\u751c\u6912[\u706f\u7b3c\u6912\uff0c\u67ff\u5b50\u6912],170427,"Peppers, sweet, green, raw",,,,high,Green sweet pepper.
+419,\u51ac\u74dc,170069,"Waxgourd, (chinese preserving melon), raw",,,,high,Winter melon.
+422,\u9ec4\u74dc[\u80e1\u74dc](\u9c9c),168409,"Cucumber, with peel, raw",,,,high,Cucumber with peel.
+425,\u82e6\u74dc[\u51c9\u74dc\uff0c\u765e\u74dc](\u9c9c),168393,"Balsam-pear (bitter gourd), pods, raw",,,,high,Bitter melon.
+426,\u5357\u74dc[\u502d\u74dc\uff0c\u756a\u74dc](\u9c9c),168448,"Pumpkin, raw",,,,high,Pumpkin.
+429,\u4e1d\u74dc,168414,"Gourd, dishcloth (towelgourd), raw",,,,high,Loofah.
+431,\u897f\u846b\u82a6,169291,"Squash, summer, zucchini, includes skin, raw",,,,high,Zucchini with skin.
+437,\u9752\u849c,169246,"Leeks, (bulb and lower leaf-portion), raw",,,,medium,No USDA green-garlic counterpart; use leeks.
+441,\u5927\u8471,170007,"Onions, welsh, raw",,,,high,Welsh onion.
+444,\u6d0b\u8471[\u8471\u5934](\u9c9c),170000,"Onions, raw",,,,high,Onion.
+445,\u97ed\u83dc,169994,"Chives, raw",,,,medium,No USDA Chinese-chive counterpart; use chives.
+446,\u97ed\u9ec4[\u97ed\u82bd],169994,"Chives, raw",,,,low,No USDA blanched Chinese-chive counterpart; use chives.
+450,\u5927\u767d\u83dc(\u5747\u503c),169979,"Cabbage, chinese (pe-tsai), raw",,,,high,"Chinese cabbage, pe-tsai."
+452,\u5c0f\u767d\u83dc,170390,"Cabbage, chinese (pak-choi), raw",,,,high,Pak choi.
+457,\u6cb9\u83dc,170390,"Cabbage, chinese (pak-choi), raw",,,,high,"Shanghai bok choy, within the pak-choi group."
+460,\u9e21\u6bdb\u83dc,170390,"Cabbage, chinese (pak-choi), raw",,,,medium,Young pak choi.
+463,\u7518\u84dd[\u5706\u767d\u83dc\uff0c\u5377\u5fc3\u83dc],169975,"Cabbage, raw",,,,high,Head cabbage.
+464,\u83dc\u82b1[\u82b1\u6930\u83dc],169986,"Cauliflower, raw",,,,high,Cauliflower.
+465,\u897f\u5170\u82b1[\u7eff\u83dc\u82b1],170379,"Broccoli, raw",,,,high,Broccoli.
+473,\u83e0\u83dc[\u8d64\u6839\u83dc](\u9c9c),168462,"Spinach, raw",,,,high,Spinach.
+480,\u82b9\u83dc\u830e,169988,"Celery, raw",,,,high,Celery.
+482,\u751f\u83dc(\u725b\u4fd0)[\u6cb9\u9ea6\u83dc],169247,"Lettuce, cos or romaine, raw",,,,medium,Long-leaf lettuce approximated by romaine lettuce.
+483,\u751f\u83dc(\u53f6\u7528\u83b4\u82e3),169249,"Lettuce, green leaf, raw",,,,high,Leaf lettuce.
+486,\u82cb\u83dc(\u7eff\uff0c\u9c9c),168385,"Amaranth leaves, raw",,168462,"Spinach, raw",medium,USDA amaranth leaves lack fiber values; use spinach for fiber.
+487,"\u82cb\u83dc(\u7d2b,\u9c9c)[\u7ea2\u82cb]",168385,"Amaranth leaves, raw",,168462,"Spinach, raw",medium,Red amaranth; use spinach for fiber.
+488,\u833c\u84bf[\u84ec\u84bf\u83dc\uff0c\u827e\u83dc](\u9c9c),169995,"Chrysanthemum, garland, raw",,,,high,Crown daisy.
+490,\u8360\u83dc[\u84df\u83dc\uff0c\u83f1\u89d2\u83dc](\u9c9c),169256,"Mustard greens, raw",,,,low,No USDA shepherd's-purse entry; use mustard greens from the same plant family.
+491,\u83b4\u7b0b[\u83b4\u82e3](\u9c9c),169990,"Celtuce, raw",,,,high,"Stem lettuce, or celtuce."
+493,\u8579\u83dc[\u7a7a\u5fc3\u83dc\uff0c\u85e4\u85e4\u83dc],169301,"Water convolvulus,raw",,,,high,"Water spinach, or water convolvulus."
+499,\u7af9\u7b0b(\u9c9c),169210,"Bamboo shoots, raw",,,,high,Bamboo shoots.
+510,\u82a6\u7b0b[\u77f3\u5201\u67cf\uff0c\u9f99\u987b\u83dc],168389,"Asparagus, raw",,,,high,Asparagus.
+513,\u6148\u83c7[\u4e4c\u828b\uff0c\u767d\u5730\u679c](\u9c9c),169203,"Arrowhead, raw",,,,high,Raw arrowhead; USDA fiber is unavailable.
+516,\u85d5[\u83b2\u85d5],169250,"Lotus root, raw",,,,high,Lotus root.
+518,\u6c34\u82b9\u83dc,169988,"Celery, raw",,,,medium,No USDA water-celery counterpart; use celery.
+519,\u832d\u767d[\u832d\u7b0b\uff0c\u832d\u7c91](\u9c9c),169210,"Bamboo shoots, raw",,,,low,No USDA water-bamboo counterpart; use bamboo shoots with similar texture and composition.
+525,\u5c71\u836f[\u85af\u84e3\uff0c\u5927\u85af](\u9c9c),168432,"Mountain yam, hawaii, raw",,,,medium,Chinese yam approximated by mountain yam.
+526,\u828b\u5934[\u828b\u827f\uff0c\u6bdb\u828b],169308,"Taro, raw",,,,high,Taro.
+528,\u59dc[\u9ec4\u59dc](\u9c9c),169231,"Ginger root, raw",,,,high,Ginger.
+536,\u767d\u85af\u53f6[\u7518\u85af\u53f6](\u9c9c),169303,"Sweet potato leaves, raw",,,,high,Sweet-potato leaves.
+564,\u82dc\u84ff[\u8349\u5934\uff0c\u91d1\u82b1\u83dc],169244,"Lambsquarters, raw",,,,low,No USDA burr-clover counterpart; use lambsquarters leaves.
+575,\u91d1\u9488\u83c7[\u667a\u529b\u83c7](\u9c9c),169382,"Mushrooms, enoki, raw",,,,high,Enoki mushrooms.
+577,\u8611\u83c7(\u9c9c\u8611),169251,"Mushrooms, white, raw",,,,high,White mushrooms.
+580,\u6728\u8033(\u6c34\u53d1)[\u9ed1\u6728\u8033\uff0c\u4e91\u8033],168581,"Fungi, Cloud ears, dried",yes,,,medium,Rehydrated wood-ear mushrooms: moisture-adjust dried cloud-ear mushrooms.
+581,\u5e73\u83c7[\u7cd9\u76ae\u4fa7\u8033\uff0c\u9752\u8611],168580,"Mushrooms, oyster, raw",,,,high,Oyster mushrooms.
+584,\u9999\u83c7[\u9999\u8548\uff0c\u51ac\u83c7](\u9c9c),169242,"Mushrooms, shiitake, raw",,168435,"Mushrooms, shiitake, stir-fried",medium,"Fresh shiitake: USDA raw shiitake lacks fiber; use stir-fried shiitake for fiber, prepared without oil and with similar moisture."
+587,\u94f6\u8033(\u5e72)[\u767d\u6728\u8033],168581,"Fungi, Cloud ears, dried",,,,low,"No USDA dried white-fungus counterpart; use dried wood-ear mushrooms, another gelatinous fungus."
+602,\u674f\u9c8d\u83c7,168580,"Mushrooms, oyster, raw",,,,medium,King oyster and oyster mushrooms belong to the same genus.
+607,\u6d77\u5e26(\u6d78)[\u6c5f\u767d\u83dc\uff0c\u6606\u5e03],168457,"Seaweed, kelp, raw",yes,,,medium,Rehydrated kelp: moisture-adjust fresh kelp.
+611,\u7d2b\u83dc(\u5e72),168458,"Seaweed, laver, raw",yes,167602,"Seaweed, Canadian Cultivated EMI-TSUNOMATA, dry",low,"Dried laver: moisture-adjust fresh laver. USDA laver fiber is unusually low at 0.3 g, so use dried red algae, EMI-TSUNOMATA, for fiber."
+613,\u82f9\u679c(\u5747\u503c),171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",,,,high,Apple with skin.
+630,\u68a8(\u5747\u503c),168177,"Pears, asian, raw",,,,high,Asian pear.
+652,\u68a8(\u9cc4\u68a8),171705,"Avocados, raw, all commercial varieties",,,,high,Avocado.
+660,\u6843(\u5747\u503c),169928,"Peaches, yellow, raw",,,,high,Peach.
+666,\u674e\u5b50,169949,"Plums, raw",,,,high,Plum.
+675,\u67a3(\u5e72),168152,"Jujube, Chinese, fresh, dried",,,,high,Dried Chinese red dates.
+684,\u8461\u8404(\u5747\u503c),174683,"Grapes, red or green (European type, such as Thompson seedless), raw",,,,high,Grapes.
+689,\u8461\u8404\u5e72,168165,"Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",,,,high,Raisins.
+700,\u4e2d\u534e\u7315\u7334\u6843[\u6bdb\u53f6\u7315\u7334\u6843],168153,"Kiwifruit, green, raw",,,,high,Kiwifruit.
+701,\u8349\u8393[\u6d0b\u8393\uff0c\u51e4\u9633\u8349\u8393],167762,"Strawberries, raw",,,,high,Strawberry.
+704,\u6a59,169097,"Oranges, raw, all commercial varieties",,,,high,Orange.
+705,\u67d1\u6854(\u5747\u503c),169105,"Tangerines, (mandarin oranges), raw",,,,high,Mandarin.
+711,\u67da[\u6587\u65e6],167754,"Pummelo, raw",,,,high,Pomelo.
+716,\u83e0\u841d[\u51e4\u68a8\uff0c\u5730\u83e0\u841d],169124,"Pineapple, raw, all varieties",,,,high,Pineapple.
+722,\u8354\u679d,169086,"Litchis, raw",,,,high,Lychee.
+723,\u8292\u679c[\u62b9\u731b\u679c\uff0c\u671b\u679c],169910,"Mangos, raw",,,,high,Mango.
+726,\u9999\u8549[\u7518\u8549],173944,"Bananas, raw",,,,high,Banana.
+734,\u706b\u9f99\u679c[\u4ed9\u871c\u679c\u3001\u7ea2\u9f99\u679c],,,,,,none,"No USDA dragon-fruit counterpart; retain China CDC values in the database variant, including reported fiber."
+738,\u751c\u74dc[\u9999\u74dc],169911,"Melons, honeydew, raw",,,,medium,Melon approximated by honeydew.
+739,\u897f\u74dc(\u5747\u503c),167765,"Watermelon, raw",,,,high,Watermelon.
+743,\u6838\u6843(\u5e72)[\u80e1\u6843],170187,"Nuts, walnuts, english",,,,high,Walnut.
+752,\u674f\u4ec1,170567,"Nuts, almonds",,,,medium,The source almond label may denote apricot kernels; use almonds.
+756,\u8170\u679c,170162,"Nuts, cashew nuts, raw",,,,high,Cashew.
+760,\u80e1\u9ebb\u7c7d,169414,"Seeds, flaxseed",,,,high,The source seed is flaxseed.
+761,\u82b1\u751f(\u9c9c)[\u843d\u82b1\u751f\uff0c\u957f\u751f\u679c],174260,"Peanuts, all types, cooked, boiled, with salt",,,,medium,"Fresh peanuts for salted boiled peanuts, approximated by boiled salted peanuts."
+764,\u82b1\u751f\u4ec1(\u7092),173806,"Peanuts, all types, dry-roasted, without salt",,,,high,Dry-roasted peanut kernels.
+766,\u8475\u82b1\u5b50(\u7092),170563,"Seeds, sunflower seed kernels, dry roasted, without salt",,,,high,Dry-roasted sunflower kernels.
+768,\u83b2\u5b50(\u5e72),170149,"Seeds, lotus seeds, dried",,,,medium,Dried lotus seeds lack USDA fiber; impute fiber using the original ratio method.
+774,\u829d\u9ebb\u7c7d(\u9ed1),170150,"Seeds, sesame seeds, whole, dried",,,,high,Sesame.
+778,\u82b1\u751f\u4ec1(\u6cb9\u70b8),175258,"Peanuts, all types, oil-roasted, without salt",,,,high,Fried peanuts.
+779,\u732a\u8089(\u80a5\u7626)(\u5747\u503c),167812,"Pork, fresh, belly, raw",,,,low,"The lean-and-fat pork entry contains 37% fat, between pork belly and ground pork; use pork belly."
+789,\u732a\u8089(\u817f),168226,"Pork, fresh, leg (ham), shank half, separable lean and fat, raw",,,,high,"Pork leg, lower hind-leg cut with lean and fat."
+791,\u732a\u5927\u6392,168238,"Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw",,,,high,"Pork loin chop with bone, lean and fat."
+794,\u732a\u5c0f\u6392,167853,"Pork, fresh, spareribs, separable lean and fat, raw",,,,high,Pork spare ribs.
+795,\u732a\u809a,167867,"Pork, fresh, variety meats and by-products, stomach, raw",,,,high,Pork stomach.
+797,\u732a\u809d,167862,"Pork, fresh, variety meats and by-products, liver, raw",,,,high,Pork liver.
+803,\u732a\u8840,,,,,,none,No USDA pork-blood counterpart; retain China CDC values in the database variant.
+805,\u814a\u8089(\u57f9\u6839),167869,"Canadian bacon, unprepared",,,,medium,"The China CDC cured-pork/bacon entry has only 9% fat, resembling Canadian bacon."
+807,\u5348\u9910\u8089,172951,"Luncheon meat, pork with ham, minced, canned, includes Spam (Hormel)",,,,low,"Chinese luncheon meat includes starch, with 12% carbohydrate versus 4.6% in the USDA entry."
+808,\u54b8\u8089,168277,"Pork, cured, bacon, unprepared",,,,medium,Salted pork approximated by uncooked bacon with similar lean-to-fat composition.
+810,\u732a\u8e44(\u719f),168290,"Pork, fresh, variety meats and by-products, feet, cooked, simmered",,,,high,Cooked pork feet.
+811,\u732a\u8089\u677e(\u5747\u503c),,,,,,none,No USDA pork-floss counterpart; retain China CDC values in the database variant.
+815,\u706b\u817f\u80a0,169866,"Frankfurter, meat and poultry, low fat",,,,low,Starch-containing frankfurters approximated by reduced-fat meat-and-poultry frankfurters with 8.4% carbohydrate.
+818,\u9999\u80a0,172938,"Salami, dry or hard, pork",,,,low,"Sweetened, air-dried Chinese sausage approximated by hard pork salami."
+823,\u725b\u8089(\u80a5\u7626)(\u5747\u503c),171777,"Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0"" fat, select, raw",,,,medium,The mean lean-and-fat beef entry is relatively lean; use a select-grade retail-cut composite trimmed to zero external fat.
+844,\u7f8a\u8089(\u80a5\u7626)(\u5747\u503c),172545,"Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8"" fat, choice, raw",,,,medium,Composite lean-and-fat mutton cuts.
+876,\u9e21(\u5747\u503c),171447,"Chicken, broilers or fryers, meat and skin, raw",,,,medium,Mean chicken entry includes skin; US broilers contain more fat.
+880,\u9e21\u80f8\u812f\u8089,171077,"Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",,,,high,Chicken breast.
+882,\u9e21\u817f,172378,"Chicken, broilers or fryers, leg, meat and skin, raw",,,,high,Chicken leg with skin.
+883,\u9e21\u722a,171119,"Chicken, feet, boiled",,,,high,Boiled chicken feet.
+887,\u9e21\u80ab[\u9e21\u80d7],171456,"Chicken, gizzard, all classes, raw",,,,high,Chicken gizzard.
+891,\u9e2d(\u5747\u503c),172408,"Duck, domesticated, meat and skin, raw",,,,low,Mean duck entry includes skin; US Pekin duck has 39% fat versus 20% in the China CDC mean entry.
+912,\u9e3d,174475,"Squab, (pigeon), meat and skin, raw",,,,medium,Pigeon with skin.
+917,\u725b\u4e73(\u5149\u660e\u724c),171265,"Milk, whole, 3.25% milkfat, with added vitamin D",,,,high,Whole milk.
+958,\u4e73\u54c1\uff08\u9178\u5976\uff0c\u5747\u503c),170888,"Yogurt, vanilla, low fat.",,,,medium,Chinese yogurt is commonly sweetened; use low-fat vanilla yogurt.
+978,\u86cb\uff08\u9e21\u86cb\uff0c\u5747\u503c),171287,"Egg, whole, raw, fresh",,,,high,Chicken egg.
+982,\u9e21\u86cb\u767d,172183,"Egg, white, raw, fresh",,,,high,Egg white.
+989,\u8377\u5305\u86cb(\u716e),172186,"Egg, whole, cooked, poached",,,,high,Poached egg.
+990,\u86cb\uff08\u9e2d\u86cb\uff09,172189,"Egg, duck, whole, fresh, raw",,,,high,Duck egg.
+994,\u86cb\uff08\u677e\u82b1\u86cb\uff0c\u9e2d\u86cb)[\u76ae\u86cb],172189,"Egg, duck, whole, fresh, raw",,,,low,No USDA preserved-egg counterpart; use duck egg.
+995,\u54b8\u9e2d\u86cb,172189,"Egg, duck, whole, fresh, raw",,,,low,No USDA salted-duck-egg counterpart; use duck egg.
+1008,\u9c7c\uff08\u9ec4\u9cdd\uff09[\u9cdd\u9c7c],174193,"Fish, eel, mixed species, raw",,,,low,Asian swamp eel is very lean; USDA only provides eel with approximately 12% fat.
+1014,\u9752\u9c7c[\u9752\u76ae\u9c7c\uff0c\u9752\u9cde\u9c7c\uff0c\u9752\u6df7],171952,"Fish, carp, raw",,,,medium,Black carp and common carp belong to the same family.
+1021,\u9cab\u9c7c[\u559c\u5934\u9c7c\uff0c\u6d77\u9644\u9c7c],171952,"Fish, carp, raw",,,,medium,Crucian carp and common carp belong to the same family.
+1030,\u5e26\u9c7c[\u767d\u5e26\u9c7c\uff0c\u5200\u9c7c],174192,"Fish, croaker, Atlantic, raw",,,,low,No USDA hairtail counterpart; use Atlantic croaker with similar fat content.
+1038,\u9ec4\u9c7c(\u5c0f\u9ec4\u82b1\u9c7c),174192,"Fish, croaker, Atlantic, raw",,,,high,"Small yellow croaker approximated by Atlantic croaker, both from the croaker family."
+1050,\u9c88\u9c7c[\u9c88\u82b1],175142,"Fish, sea bass, mixed species, raw",,,,medium,Spotted sea bass approximated by sea bass.
+1056,\u9cb3\u9c7c[\u5e73\u9c7c\uff0c\u94f6\u9cb3\uff0c\u523a\u9cb3],171951,"Fish, butterfish, raw",,,,medium,"Pomfret approximated by butterfish, based on the original same-family matching rationale."
+1067,\u9c7c\u4e38,173702,"Fish, surimi",,,,medium,Fish balls approximated by surimi.
+1092,\u867e\uff08\u6cb3\u867e\uff09,175179,"Crustaceans, shrimp, raw",,,,medium,Raw river shrimp.
+1093,\u867e\uff08\u57fa\u56f4\u867e\uff09,175179,"Crustaceans, shrimp, raw",,,,high,Raw greasyback shrimp.
+1103,\u87f9\uff08\u6cb3\u87f9\uff09,174204,"Crustaceans, crab, blue, raw",,,,medium,No USDA Chinese-mitten-crab counterpart; use blue crab.
+1106,\u9c8d\u9c7c[\u6742\u8272\u9c8d],174212,"Mollusks, abalone, mixed species, raw",,,,high,Abalone.
+1108,\u86cf\u5b50,174214,"Mollusks, clam, mixed species, raw",,,,medium,Razor clams approximated by clams.
+1120,\u86e4\u870a(\u5747\u503c),174214,"Mollusks, clam, mixed species, raw",,,,high,Clams.
+1123,\u6d77\u53c2,167618,"Sea cucumber, yane (Alaska Native)",,,,medium,"Sea cucumber, Alaska Native food entry."
+1125,\u6d77\u8707\u76ae,168129,"Jellyfish, dried, salted",,,,medium,Dried salted jellyfish.
+1129,\u4e4c\u8d3c(\u9c9c)[\u9c7f\u9c7c\uff0c\u53f0\u6e7e\u67aa\u4e4c\u8d3c\uff0c\u67aa,174223,"Mollusks, squid, mixed species, raw",,,,high,Squid or cuttlefish.
+1182,\u8c46\u5976\u7c89,,,,,,none,No USDA sweetened-soy-milk-powder counterpart; retain China CDC values in the database variant and impute fiber using the original ratio method.
+1199,\u6625\u5377,167667,"Restaurant, Chinese, egg rolls, assorted",,,,low,Chinese-restaurant spring rolls or egg rolls; the China CDC entry has 33.7% fat versus 11.9% in USDA.
+1211,\u5e74\u7cd5,168880,"Rice, white, medium-grain, enriched, cooked",yes,,,medium,Shanghai rice cake is made from japonica rice; moisture-adjust cooked white rice.
+1220,\u9ed1\u829d\u9ebb\u6c64\u5706,,,,,,none,No USDA black-sesame-glutinous-rice-ball counterpart; retain China CDC values in the database variant.
+1221,\u91aa\u7cdf,,,,,,none,No USDA fermented-glutinous-rice counterpart; retain China CDC values in the database variant.
+1224,\u86cb\u7cd5(\u5747\u503c),172706,"Cake, sponge, commercially prepared",,,,medium,Mean cake entry approximated by sponge cake.
+1227,\u6708\u997c(\u8c46\u6c99),172721,"Cookies, fig bars",,,,low,"No USDA bean-paste-mooncake counterpart; use a filled baked pastry, the fig bar."
+1243,\u9165\u76ae\u7cd5\u70b9,174950,"Cookies, butter, commercially prepared, enriched",,,,low,Flaky pastry with 10.7% water and 15.5% fat approximated by butter cookies.
+1260,\u6bd4\u8428\u997c(\u5939\u5976\u916a\u3001\u8089\u548c\u852c\u83dc),170715,"Pizza, meat and vegetable topping, regular crust, frozen, cooked",,,,high,Meat-and-vegetable pizza.
+1261,\u4e09\u660e\u6cbb(\u5939\u706b\u817f\u3001\u5e72\u916a),,,,,,none,No matching USDA ham-and-cheese sandwich; retain China CDC values in the database variant and impute fiber using the original ratio method.
+1271,\u6c49\u5821\u5305(\u666e\u901a\u578b\uff0c\u5939\u8089\u997c\uff0c\u52a0\u8c03\u6599\u9171\u548c\u852c\u83dc),170694,"Fast foods, hamburger; single, regular patty; with condiments",,,,medium,Single-patty hamburger with condiments.
+1273,\u9ea6\u7247,171661,"Cereals, oats, instant, fortified, plain, dry",,,,medium,Plain cereal flakes approximated by plain dry instant oatmeal.
+1281,\u516b\u5b9d\u7ca5(\u65e0\u7cd6\uff0c\u5a03\u54c8\u54c8\u724c),,,,,,none,No USDA unsweetened-mixed-grain-porridge counterpart; retain China CDC values in the database variant.
+1283,\u9ed1\u829d\u9ebb\u7cca\u7c89,,,,,,none,No USDA sweetened-black-sesame-paste-powder counterpart; retain China CDC values in the database variant.
+1286,\u71d5\u9ea6\u7247,173904,"Cereals, oats, regular and quick, not fortified, dry",,,,high,Oats.
+1288,\u82e6\u835e\u9ea6\u7247(\u65e0\u7cd6),170685,"Buckwheat groats, roasted, dry",,,,medium,Tartary-buckwheat flakes approximated by dry roasted buckwheat groats.
+1291,\u65b9\u4fbf\u9762,171177,"Soup, ramen noodle, any flavor, dry",,,,high,Dry instant-noodle cake with seasoning.
+1311,\u51ac\u83dc\u867e\u4ec1\u9984\u9968,169773,"Potsticker or wonton, pork and vegetable, frozen, unprepared",,,,low,Wontons approximated by frozen uncooked pork-and-vegetable potstickers or wontons.
+1313,\u7cef\u7c73\u996d\u56e2,,,,,,none,No USDA glutinous-rice-roll counterpart; retain China CDC values in the database variant.
+1314,\u4ec0\u9526\u7092\u996d,167668,"Restaurant, Chinese, fried rice, without meat",,,,medium,Mixed fried rice approximated by meat-free Chinese-restaurant fried rice.
+1316,\u9762\u5305(\u5747\u503c),174924,"Bread, white, commercially prepared (includes soft bread crumbs)",,,,high,White bread.
+1322,\u997c\u5e72(\u5747\u503c),174973,"Cookies, vanilla wafers, lower fat",,,,medium,Mean biscuit entry approximated by reduced-fat vanilla wafers.
+1323,\u82cf\u6253\u997c\u5e72,172746,"Crackers, saltines (includes oyster, soda, soup)",,,,high,Soda crackers.
+1330,\u6c34\u997a(\u732a\u8089\u767d\u83dc\u9985),169773,"Potsticker or wonton, pork and vegetable, frozen, unprepared",,,,low,Dumplings approximated by USDA pork-and-vegetable potstickers or wontons; USDA carbohydrate is 13% versus 26% in the China CDC entry.
+1339,\u5305\u5b50(\u732a\u8089\u9985),,,,,,none,No USDA pork-filled-steamed-bun counterpart; retain China CDC values in the database variant.
+1353,\u85af\u7247(\u70e7\u70e4\u5473),169677,"Snacks, potato chips, plain, salted",,,,high,Potato chips.
+1367,\u53ef\u53e3\u53ef\u4e50,174852,"Beverages, carbonated, cola, regular",,,,high,Cola.
+1369,\u82f9\u679c\u6c41\u996e\u6599(\u5149\u660e\u724c),173933,"Apple juice, canned or bottled, unsweetened, without added ascorbic acid",,,,medium,Apple-juice drink approximated by unsweetened apple juice.
+1376,\u6930\u5b50\u6c41\u996e\u6599,174831,"Beverages, Coconut water, ready-to-drink, unsweetened",,,,low,No USDA coconut-juice-drink counterpart; use ready-to-drink coconut water with zero fiber.
+1393,\u51b0\u6dc7\u6dcb,167575,"Ice creams, vanilla",,,,high,Vanilla ice cream.
+1407,\u5564\u9152(4.3\uff05\uff0c\u9752\u5c9b\u724c),168746,"Alcoholic beverage, beer, regular, all",,,,high,USDA beer carbohydrate excludes ethanol while energy includes it; ethanol is 3.9 g/100 g.
+1412,\u7ea2\u8461\u8404\u9152,173190,"Alcoholic beverage, wine, table, red",,,,high,USDA red-wine carbohydrate excludes ethanol; ethanol is 10.6 g/100 g.
+1421,\u9ec4\u9152,167723,"Alcoholic beverage, rice (sake)",,,,low,"No USDA yellow-rice-wine counterpart; use sake, a rice wine with 16 g ethanol/100 g."
+1448,\u7cd6\uff08\u767d\u7802\u7cd6\uff09,169655,"Sugars, granulated",,,,high,White sugar.
+1453,\u5976\u7cd6,167974,"Candies, caramels",,,,medium,Milk candy approximated by caramel candy.
+1454,\u5de7\u514b\u529b,167587,"Candies, milk chocolate",,,,high,Milk chocolate.
+1487,\u8702\u871c,169640,Honey,,,,high,Honey.
+1516,\u5927\u8c46\u8272\u62c9\u6cb9,171411,"Oil, soybean, salad or cooking",,,,high,Soybean salad oil.
+1518,\u9171\u6cb9(\u5747\u503c),174277,Soy sauce made from soy and wheat (shoyu),,,,high,Soy sauce brewed from soybeans and wheat.
+1520,\u918b(\u5747\u503c),173469,"Vinegar, cider",,,,low,No USDA counterpart for Chinese brewed vinegar with 4.9% carbohydrate; use cider vinegar.
+1523,\u8c46\u74e3\u9171,172442,Miso,,,,medium,Fermented bean paste approximated by miso.
+1527,\u751c\u9762\u9171,172886,"Sauce, hoisin, ready-to-serve",,,,medium,Sweet fermented flour sauce approximated by hoisin sauce.
+1536,\u6c99\u62c9\u9171,171009,"Salad dressing, mayonnaise, regular",,,,high,Egg-yolk salad dressing.
+1539,\u756a\u8304\u9171,170459,"Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",,,,high,Concentrated tomato paste.
+1545,\u8150\u4e73(\u767d)[\u9171\u8c46\u8150],174305,"Tofu, salted and fermented (fuyu), prepared with calcium sulfate",,172476,"Tofu, raw, regular, prepared with calcium sulfate",medium,"White fermented tofu approximated by fuyu; USDA fiber is unavailable, so use regular tofu for fiber."
+1547,\u8150\u4e73(\u7ea2)[\u9171\u8c46\u8150],174305,"Tofu, salted and fermented (fuyu), prepared with calcium sulfate",,172476,"Tofu, raw, regular, prepared with calcium sulfate",medium,Red fermented tofu approximated by fuyu; use regular tofu for fiber.
+1550,\u841d\u535c\u5e72,168453,"Radishes, oriental, dried",yes,,,low,Preserved radish: moisture-adjust dried radish; high salt in the China CDC product may cause overestimation after adjustment.
+1551,\u69a8\u83dc,170392,"Cabbage, kimchi",,,,low,No USDA pickled-mustard-stem counterpart; use kimchi.
+1553,\u814c\u96ea\u91cc\u7ea2,170392,"Cabbage, kimchi",,,,low,No USDA preserved-mustard-green counterpart; use kimchi.
+1555,\u9171\u516b\u5b9d\u83dc,169378,"Pickles, cucumber, sweet (includes bread and butter pickles)",,,,low,Sweet-and-salty mixed pickles approximated by sweet cucumber pickles.
+1571,\u67b8\u675e\u5b50,173032,"Goji berries, dried",,,,high,Dried goji berries.
+1576,\u6a59\u6c41\u996e\u6599(\u5149\u660e\u724c),169044,"Beverages, Orange juice drink",,,,high,Orange-juice drink.
+U174276,\u5927\u8c46\u5206\u79bb\u86cb\u767d\uff08USDA\uff1b\u6210\u5206\u8868\u65e0\u6761\u76ee\uff09,174276,Soy protein isolate,,,,high,No China CDC protein-powder entry; use a synthetic entry linked to USDA soy protein isolate for both primary and database-variant analyses.
+W0,\u6c34\uff08\u51b2\u8c03/\u70f9\u716e\u52a0\u6c34\uff1b\u975e\u6210\u5206\u8868\u6761\u76ee\uff09,173647,"Beverages, water, tap, drinking",,,,high,Water.

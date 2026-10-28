@@ -11,10 +11,12 @@ Checked on 28 October 2026 using Python 3.12.13 on macOS with the study package 
 5. Exercised patient-cluster bootstrapping with 20 draws. All 42 applicable headline intervals were defined, and the point estimates still matched the reference values.
 6. Recomputed the complete model group's validation point estimates using copies of the existing study fits in a separate local output directory. All 416 point estimates matched exactly; maximum absolute difference was 0.0. This check tested full-model evaluation, not a fresh fit of the complete model group.
 7. Ran the descriptive post hoc workflow with the complete evaluation outputs, including patient ranking, clinical associations, insulin subgroups, meal-period adjustment and monotonicity checks.
-8. Passed six implementation checks: positive-area units, baseline crossing, exclusion of negative area, patient averaging, repeated bootstrap clusters and training-only preprocessing.
+8. Passed seven implementation checks: positive-area units, baseline crossing, exclusion of negative area, patient averaging, repeated bootstrap clusters, training-only preprocessing and matching parsed source food names to the escaped curation rules.
 9. Queried the live Chinese food-composition endpoint successfully. The first page returned 8 rows and the service reported 170 pages.
 
 The original study model implementations, final configuration and saved scientific results were not modified by these checks. Fitted models and all individual data outputs remained local and are excluded from Git.
+
+English-language documentation and annotations were checked across all tracked files. Source-language matching keys are stored with Unicode escapes. Decoding preserved all 7,252 non-annotation curation cells, and rebuilding the preparation pipeline produced seven processed CSV files byte-for-byte identical to those before this presentation change.
 
 ## Not claimed by this check
 

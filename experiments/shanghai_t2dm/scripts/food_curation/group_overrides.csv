@@ -1,133 +1,133 @@
 rank,key,item_zh,group_id,recipe,cooking,confidence,notes
-304,stuffed sticky rice ball,粢饭糕,fried_wheat,,fried_in_entry,low,粢饭糕为油炸糯米糕，按油炸面食组近似
-307,lotus nut,粒莲心,dried_fruit,768:1,na,low,干莲子；“10粒莲心”逐行按约12 g计（重量修正），“莲心100g”行重量不可靠，判为不可用
-311,mapo tofu,麻婆豆腐,soy_fried,,fried_dish_type,medium,麻婆豆腐：豆腐、肉末、油
-314,staple food,主食,rice,,na,low,“主食”未注明种类，按米饭
-317,garlic and bean curd,,soy_veg_stirfry,,fried_dish_type,low,无中文名；蒜与豆制品合烧，按豆制品炒蔬菜
-319,shrimp fried with vegetable,三色虾仁,seafood_fried,,fried_dish_type,medium,三色虾仁：虾仁炒青豆、玉米、胡萝卜
-373,duck feet,鸭爪,chicken,,unspecified,low,禽爪按鸡组（鸭爪脂肪远低于鸭肉）
-415,glucose,葡萄糖,sugar_sweets,,na,medium,葡萄糖；组内含巧克力等，碳水约低估15%
-425,laver,紫菜,fungi_algae,,na,low,干紫菜（中位8 g）按鲜/水发菌藻组，营养素被低估
-452,"stir fried pork, bamboo shoot, peanut with sauce",炒酱,meat_veg_stirfry,,fried_named,medium,上海炒酱：肉丁、笋丁、花生、酱
-481,konjak cold noodles,面包,fungi_algae,W0:0.97;323:0.03,na,medium,魔芋凉皮/魔芋丝：约3%魔芋精粉加水（审核意见），近乎无碳水
-485,kung pao chicken,宫保鸡丁,chicken_fried,,fried_dish_type,medium,宫保鸡丁：鸡丁、花生、油炒
-491,"lotus nut, red bean, poria coco and orange peel",莲子红豆茯苓陈皮,sweet_soup,,nonfried_named,low,同第222项莲子红豆茯苓陈皮汤
-504,meat rice dumpling,肉粽,glutinous_ricecake,W0:0.50;285:0.50,na,medium,粽子：糯米与水1:1（审核意见，熟粽子碳水约39 g/100 g）；馅料未计
-507,shredded pork with chinese cabbage,黄芽菜和肉,meat_veg_stirfry,,fried_dish_type,medium,黄芽菜肉丝（炒）
-508,shredded pork with garlic sauce,鱼香肉丝,meat_veg_stirfry,,fried_dish_type,medium,鱼香肉丝：肉丝、木耳、胡萝卜、笋丝
-519,shrimp skin,虾皮,shrimp,,unspecified,low,虾皮为干制品，按鲜虾组蛋白被低估
-521,shepherd's purse pork stuffed dumpling,,filled_meat,,nonfried_named,medium,无中文名；荠菜肉饺子
-523,ginger soaked in sugar and vinegar,糖醋浸姜,pickled_veg,,na,medium,糖醋浸姜，按腌菜
-552,milk and egg,牛奶加鸡蛋,milk,,na,low,牛奶加鸡蛋；鸡蛋未单独计
-564,mixed fried vegetables,混合烩菜,mixed_veg_fried,,fried_dish_type,low,混合烩菜（英文为fried）
-565,6 red dates,红枣只,dried_fruit,675:1,na,medium,红枣6只：按每只5 g，共30 g（逐行重量修正）
-568,sour and spicy lemon chicken feet,酸辣柠檬凤爪,chicken,,nonfried_named,medium,酸辣柠檬凤爪（凉拌鸡爪）
-569,shepherd’s purse and minced pork stuffed tofu skin,荠菜肉糜百叶包,meat_veg_steamed,,unspecified,medium,荠菜肉糜百叶包，同第109项百叶包
-572,shrimp and vegetable,三色虾仁,seafood_fried,,fried_dish_type,medium,三色虾仁：虾仁炒青豆、玉米、胡萝卜
-591,buckwheat noodles with green vegetable,青菜荞麦面,noodle_meal,264:0.165;308:0.066;W0:0.619;452:0.15,unspecified,medium,青菜荞麦面：同第145项青菜汤面，面改为荞麦面；中文重量120 g
-599,braised pork with tofu skin,百叶结烧肉,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,百叶结烧肉：同第276项配方（审核意见）
-609,sweet and sour ginger,糖醋姜,pickled_veg,,na,medium,糖醋姜，按腌菜
-610,sweet and sour spare ribs,糖醋小排,pork_rib_fried,,fried_dish_type,medium,糖醋小排（先炸后烧），糖未计
-620,rye flour bread,黑麦蛋糕,bread_flatbread,,na,medium,黑麦面包
-665,pork stuffed tofu skin,豆腐衣包肉,meat_veg_steamed,,unspecified,medium,豆腐衣包肉，同百叶包
-683,wax gourd and egg roll,冬瓜蛋卷,egg_veg_stirfry,,fried_dish_type,low,冬瓜烧蛋卷（蛋皮卷肉）
-690,stewed pork with preserved bean curd,腐乳肉,pork_belly_braised,,fried_dish_type,medium,腐乳肉：腐乳烧五花肉
-712,scallion oil noodles,葱油拌面,fried_rice_noodles,,fried_in_entry,low,葱油拌面：面条加葱油，按炒面饭组（条目含油）
-716,egg dumpling,蛋饺,egg_fried,,fried_dish_type,medium,蛋饺：煎蛋皮包肉糜
-721,dried fruits and nuts,果干和坚果,dried_fruit,@dried_fruit:0.5;@nuts_seeds:0.5,na,medium,果干和坚果各半（审核意见）
-728,stir-fried pork with egg and fungus,木须肉,meat_veg_stirfry,,fried_dish_type,medium,木须肉：肉片、鸡蛋、木耳炒
-731,dried shrimp skin and cabbage,虾皮白菜,leafy_veg_fried,,fried_dish_type,medium,虾皮白菜：以白菜为主，少量虾皮
-738,cookie,饼,biscuit_snack,,na,medium,英文为cookie，中文“饼干/饼”
-791,shepherd's purse and pork in tofu skin 4,腐皮包荠菜肉,meat_veg_steamed,345:0.40;789:0.25;779:0.25;W0:0.10,unspecified,medium,腐皮包荠菜肉：同第109项百叶包配方；中文重量40 g
-807,salt and pepper shrimp,椒盐大虾,seafood_fried,,fried_dish_type,medium,椒盐大虾：油炸
-823,rice noodles in sour soup,酸汤米粉,noodle_meal,,nonfried_named,low,酸汤米粉，按汤面组
-824,rice roll,饭团,glutinous_ricecake,1313:1,na,high,饭团：直接用1313糯米饭团（审核意见）
-825,shanghai smoked pomfret,本帮熏鲳鱼,fish_fried,,fried_dish_type,medium,本帮熏鲳鱼：油炸后浸汁，同第181项熏鱼
-827,salted peanut,盐水花生,nuts_seeds,761:1,na,medium,盐水花生：鲜花生煮制，用761花生(鲜)（审核意见）；是否带壳称重未知，未乘可食部
-853,tofu skin wrap pork,豆腐衣包肉,meat_veg_steamed,,unspecified,medium,豆腐衣包肉，同百叶包
-854,tofu skin roll with minced pork,百叶包,meat_veg_steamed,,unspecified,medium,百叶包（含肉糜），同第109项
-855,tofu knot,豆腐结,soy_dried,,unspecified,medium,豆腐结即百叶结
-868,tomato and fish ball,番茄鱼丸,fish_processed,,unspecified,low,番茄鱼丸（汤汁烩），未加油
-896,stir-fried pork with tofu skin,百叶结烧肉,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,百叶结烧肉：同第276项配方（审核意见）
-917,sweet and sour pork rib,,pork_rib_fried,,fried_dish_type,medium,无中文名；糖醋排骨（先炸后烧），糖未计
-921,sugar-fried chestnuts,糖炒栗子,starchy_veg,,unspecified,low,糖炒栗子为砂炒，不加油；栗子碳水（约46 g/100 g）高于组均值，被低估
-925,shredded golden melon,黄金瓜丝,fruit_veg,,unspecified,low,黄金瓜丝（疑为金瓜丝，作蔬菜）
-956,yam and fungus porridge,山药木耳羹,sweet_soup,,nonfried_named,low,山药木耳羹，同第257项银耳山药羹
-967,"vegetable, fish, shrimp and vegetable",菜、鱼、虾、蔬菜,meat_veg_steamed,,unspecified,low,多种食物合计重量，按荤素（不加油）组
-1011,sliced pork with beijing sauce,京酱肉丝,pork_fried,,fried_dish_type,medium,京酱肉丝
-1026,soup of sea food,本帮三鲜,meat_veg_soup,,nonfried_named,low,本帮三鲜（汤）：肉圆、蛋饺、笋片等
-1031,smoked tofu,熏豆腐,soy_dried,,unspecified,medium,熏豆腐（干豆制品）
-1033,smoked pomfret,本帮熏鲳鱼,fish_fried,,fried_dish_type,medium,本帮熏鲳鱼：油炸后浸汁，同第181项熏鱼
-1039,skimmed milk,,milk,,na,medium,无中文名；脱脂奶按全脂牛奶组计，脂肪约高估3 g/100 ml
-1040,shrimp with pepper and salt,椒盐围基虾,seafood_fried,,fried_dish_type,medium,椒盐基围虾：油炸
-1064,shrimp fried with vegetables,三色虾仁,seafood_fried,,fried_dish_type,medium,三色虾仁
-1065,shrimp fired with vegetable,三色虾仁,seafood_fried,,fried_dish_type,medium,三色虾仁
-1120,"spinach, king oyster mushroom, pine nut",菠菜杏鲍菇松仁,mixed_veg_fried,,fried_dish_type,medium,菠菜、杏鲍菇炒松仁，以蔬菜为主
-1123,red bean rice dumpling,赤豆粽,glutinous_ricecake,W0:0.50;285:0.50,na,medium,粽子：糯米与水1:1（审核意见，熟粽子碳水约39 g/100 g）；馅料未计
-1156,"coix seed, red bean and lotus nut",薏仁、红豆、莲子,sweet_soup,,nonfried_named,low,薏仁红豆莲子（300 g），按甜汤
-1157,corase grain steamed bread,杂粮馒头,steamed_bread,273:0.70;296:0.09;308:0.09;W0:0.12,na,medium,杂粮馒头（中文有制表符导致未解析）：同第6项配方；中文重量140 g
-1161,colored bean rice dumpling,彩豆棕,glutinous_ricecake,W0:0.50;285:0.50,na,medium,粽子：糯米与水1:1（审核意见，熟粽子碳水约39 g/100 g）；馅料未计
-1164,coke,,sweet_drink,,na,high,无中文名；可乐
-1169,coffee 100 ml with 9 g sugar,咖啡加糖,sweet_drink,W0:0.917431;1448:0.082569,na,high,咖啡100 ml加糖9 g：共109 g
-1171,coconut,椰浆,unmappable,,,low,椰浆（高脂，约20 g/100 g）无合适组
-1187,crispy chicken,香酥鸡,chicken_fried,,fried_dish_type,medium,香酥鸡（油炸）
-1193,"corn, green bean, carrot, and pine nut",玉米青豆胡萝卜松仁,mixed_veg_fried,,fried_dish_type,medium,松仁玉米类素炒
-1199,coarse grain noodles,杂粮面,noodles,,na,medium,杂粮面，按熟面组
-1231,chinese herbal medicine,中药水,water_tea,,na,medium,中药水：按零营养素饮品计（审核意见），不再判为无法映射
-1238,chinese cabbage and sliced carrot,,mixed_veg_fried,,fried_dish_type,medium,无中文名；白菜胡萝卜片（素炒）
-1243,"egg yolk, chicken wing and fish",蛋黄鸡翅鱼,chicken,,unspecified,low,蛋黄、鸡翅、鱼合计重量，按鸡组
-1248,eight treasures in hot sauce,八宝辣酱,meat_veg_stirfry,,fried_dish_type,medium,上海八宝辣酱：肉丁、豆干、笋、花生、虾等炒制
-1275,fried asparagus,,root_stem_veg_fried,,fried_named,medium,无中文名；炒芦笋
-1292,double cooked pork,回锅肉,pork_belly_braised,,fried_dish_type,medium,回锅肉：五花肉煸炒
-1302,deep-fried spare ribs with spicy salt,椒盐排条,pork_rib_fried,,fried_dish_type,medium,椒盐排条（油炸）
-1315,dry-fried cauliflower,干锅花菜,leafy_veg_fried,,fried_dish_type,medium,干锅花菜（多油）
-1321,dried sweet potato,红薯干,dried_fruit,,na,low,红薯干（干制），按干果组碳水近似
-1323,dried shrimps with white gourd,冬瓜虾米,fruit_veg_fried,,fried_dish_type,medium,冬瓜虾米：以冬瓜为主
-1338,black carp,,fish,,unspecified,medium,无中文名；青鱼
-1351,boiled chicken and pumpkin pie,鸡肉南瓜派,meat_veg_steamed,,unspecified,low,鸡肉与南瓜派合计重量
-1353,braised beef noodles,红烧牛肉面,noodle_meal,,nonfried_named,medium,红烧牛肉面（汤面，红烧牛肉为浇头）
-1370,beef jerky,牛肉干,pork_processed,,na,low,牛肉干为干制品（蛋白约46 g/100 g），按加工肉组被低估
-1372,avocados,牛油果,fruit_tropical,652:1,na,high,牛油果：直接用652梨(鳄梨)（审核意见）
-1381,avocado,牛油果,fruit_tropical,652:1,na,high,牛油果：直接用652梨(鳄梨)（审核意见）
-1391,bamboo shoot soup with fresh and pickled streaky pork,腌笃鲜,meat_veg_soup,,nonfried_named,medium,腌笃鲜（汤）
-1392,basa fish in sour soup,酸汤巴沙鱼,fish,,nonfried_named,low,酸汤巴沙鱼，按鱼计
-1429,cabbage and radish and bean sprouts and chicken meatball,白菜、萝卜、豆芽、鸡肉圆子共,meat_veg_steamed,,unspecified,low,多种食物合计重量（以蔬菜为主）
-1431,cabbage and bacon,包菜培根,meat_veg_stirfry,,fried_dish_type,medium,包菜培根：中文重量50 g
-1438,cereal vegetable,麦片菜,leafy_veg,,unspecified,low,“麦片菜”疑为莜麦菜（油麦菜类叶菜），非麦片
-1458,braised meat with quail egg,鹌鹑蛋红烧肉,pork_belly_braised,,fried_named,medium,鹌鹑蛋红烧肉
-1461,braised pork in brown sauce  with quail egg,鹌鹑蛋红烧肉,pork_belly_braised,,fried_named,medium,鹌鹑蛋红烧肉
-1464,braised pork and tofu skin knot,百叶结烧肉,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,百叶结烧肉：同第276项配方（审核意见）
-1471,braised fish belly,红烧肚裆,fish_fried,,fried_named,medium,红烧肚裆（青鱼腹部）
-1496,braised pork with preserved vegetable in soya sauce,,pork_belly_braised,,fried_named,medium,无中文名；梅菜烧肉/扣肉类
-1514,"mung bean sprouts, egg dumpling, pork, pleurotus eryngii and shredded dry bean curd",绿豆芽、蛋饺、肉、杏鲍菇、烧干丝（合计）,meat_veg_stirfry,,fried_dish_type,low,多种菜合计重量（含烧干丝）
-1535,noodles with beef and scallion oil,牛肉粒葱油拌面,fried_rice_noodles,,fried_in_entry,low,葱油拌面加牛肉粒，按炒面饭组（条目含油）
-1536,noodles mixed with  butter,黄油拌面,fried_rice_noodles,,fried_in_entry,low,黄油拌面，按炒面饭组（条目含油）
-1546,milk cake,牛奶饼,cake_pastry,,na,medium,牛奶饼（糕点）
-1548,milk and bread,牛奶面包,bread_flatbread,,na,low,牛奶面包（面包）
-1565,milk pudding and strawberry jam,牛奶布丁草莓酱,ice_cream,,na,medium,牛奶布丁加草莓酱
-1566,milk sugar,牛奶糖,sugar_sweets,,na,medium,牛奶糖
-1578,minced garlic,蒜蓉,root_stem_veg,,unspecified,low,蒜蓉（记录50 g），按蒜类蔬菜
-1593,pork omelette,木须肉,meat_veg_stirfry,,fried_dish_type,medium,木须肉：肉片、鸡蛋、木耳炒
-1599,pork dumpling,,filled_meat,,nonfried_named,medium,无中文名；猪肉饺子
-1608,potato and green pepper,土豆青椒,starchy_veg_fried,,fried_dish_type,medium,土豆青椒：以土豆为主（审核意见）
-1611,raised pork with tofu skin knot,百叶结烧肉,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,百叶结烧肉：同第276项配方（审核意见）
-1614,radish and jellyfish,萝卜海蜇,root_stem_veg,371:0.5;1125:0.5,nonfried_named,medium,萝卜海蜇：萝卜与海蜇各半（审核意见），通常凉拌
-1623,protein,蛋白,egg,,unspecified,low,“蛋白”按鸡蛋组；若为蛋清则脂肪被高估
-1625,preserved egg and tofu,皮蛋豆腐,tofu,,nonfried_named,low,皮蛋豆腐（凉拌），按豆腐
-1641,orchid,兰花,unmappable,,,low,“兰花”含义不明（兰花豆、兰花干或花卉），无法判断
-1666,pickled and pork floss,酱菜肉松,pickled_veg,,na,low,酱菜肉松（佐餐小菜，5 g）
-1672,"fried chinese cabbage, black fungus and bean curd",,soy_veg_stirfry,,fried_named,medium,无中文名；白菜木耳豆腐（炒）
-1679,fried shredded pork,烂糊肉丝,meat_veg_stirfry,,fried_dish_type,medium,烂糊肉丝：黄芽菜、肉丝、勾芡
-1697,fried tasty snail,香螺,seafood_fried,,fried_named,medium,炒香螺（英文为fried）
-1721,fried egg-and starch coated chicken slices,芙蓉鸡块,chicken_fried,,fried_named,medium,芙蓉鸡块（蛋清裹粉油煎）
-1729,fried duck breast with chinese wolfberry,枸杞炒鸭脯肉,duck_fried,,fried_named,medium,枸杞炒鸭脯肉
-1740,fried pork rib in ketchup,茄汁排条,pork_rib_fried,,fried_dish_type,medium,茄汁排条（油炸后裹番茄酱）
-1741,fried pomfret,鲳鱼,fish_fried,,fried_named,medium,英文为fried，中文“鲳鱼”
-1749,fried mushroom and asparagus,,mixed_veg_fried,,fried_named,medium,无中文名；菌菇炒芦笋
-1760,latte 200ml with 7 g sugar,一杯加了糖的拿铁,milk_mixed,@milk_mixed:0.966184;1448:0.033816,na,high,拿铁200 ml加糖7 g：共207 g
-1761,latte 200ml with 6.5 g sugar,加糖的拿铁,milk_mixed,@milk_mixed:0.968523;1448:0.031477,na,high,拿铁200 ml加糖6.5 g：共206.5 g
-1763,konjak silk,魔芋丝,fungi_algae,W0:0.97;323:0.03,na,medium,魔芋凉皮/魔芋丝：约3%魔芋精粉加水（审核意见），近乎无碳水
-1764,konjak cold noodles mixed with peanut butter,花生酱拌魔芋凉皮,fungi_algae,W0:0.873;323:0.027;@nuts_seeds:0.10,na,low,花生酱拌魔芋凉皮：魔芋凉皮90%、花生酱约10%
-1776,homemade tofu,家常豆腐,soy_fried,,fried_dish_type,medium,家常豆腐（煎后烧）
-1804,goose feet,鹅掌,chicken,,unspecified,low,禽爪按鸡组
-1828,green vegetable and tofu skin knot and fungus,青菜、百叶、木耳,mixed_veg,,unspecified,low,青菜、百叶、木耳合计
+304,stuffed sticky rice ball,\u7ca2\u996d\u7cd5,fried_wheat,,fried_in_entry,low,Fried glutinous-rice cake; approximate using the fried-wheat-food group.
+307,lotus nut,\u7c92\u83b2\u5fc3,dried_fruit,768:1,na,low,Dried lotus seeds: ten seeds are corrected to approximately 12 g line by line; the 100 g lotus-seed line has unreliable weight and is unusable.
+311,mapo tofu,\u9ebb\u5a46\u8c46\u8150,soy_fried,,fried_dish_type,medium,"Mapo tofu: tofu, minced meat and oil."
+314,staple food,\u4e3b\u98df,rice,,na,low,Staple type unspecified; assume rice.
+317,garlic and bean curd,,soy_veg_stirfry,,fried_dish_type,low,"No source-language name; garlic and soy products braised together, approximated by the soy-and-vegetable stir-fry group."
+319,shrimp fried with vegetable,\u4e09\u8272\u867e\u4ec1,seafood_fried,,fried_dish_type,medium,"Three-color shrimp: shrimp stir-fried with peas, maize and carrot."
+373,duck feet,\u9e2d\u722a,chicken,,unspecified,low,Use the chicken group for poultry feet; duck feet contain much less fat than duck meat.
+415,glucose,\u8461\u8404\u7cd6,sugar_sweets,,na,medium,"Glucose; the sweets group also contains chocolate, underestimating carbohydrate by approximately 15%."
+425,laver,\u7d2b\u83dc,fungi_algae,,na,low,"Dry laver, median 8 g, is mapped to fresh or rehydrated fungi and algae, underestimating nutrients."
+452,"stir fried pork, bamboo shoot, peanut with sauce",\u7092\u9171,meat_veg_stirfry,,fried_named,medium,"Shanghai-style stir-fried sauce dish: diced pork, bamboo shoots, peanuts and sauce."
+481,konjak cold noodles,\u9762\u5305,fungi_algae,W0:0.97;323:0.03,na,medium,"Konjac cold noodles or strips: approximately 3% konjac flour plus water after review, with very little carbohydrate."
+485,kung pao chicken,\u5bab\u4fdd\u9e21\u4e01,chicken_fried,,fried_dish_type,medium,Kung pao chicken: chicken and peanuts stir-fried with oil.
+491,"lotus nut, red bean, poria coco and orange peel",\u83b2\u5b50\u7ea2\u8c46\u832f\u82d3\u9648\u76ae,sweet_soup,,nonfried_named,low,"Same as item 222, lotus-seed, adzuki-bean, poria and dried-citrus-peel soup."
+504,meat rice dumpling,\u8089\u7cbd,glutinous_ricecake,W0:0.50;285:0.50,na,medium,"Glutinous-rice dumpling: rice and water in a 1:1 ratio after review, approximately 39 g carbohydrate/100 g cooked dumpling; filling omitted."
+507,shredded pork with chinese cabbage,\u9ec4\u82bd\u83dc\u548c\u8089,meat_veg_stirfry,,fried_dish_type,medium,Stir-fried Chinese cabbage and shredded pork.
+508,shredded pork with garlic sauce,\u9c7c\u9999\u8089\u4e1d,meat_veg_stirfry,,fried_dish_type,medium,"Fish-fragrant shredded pork: pork, wood-ear mushrooms, carrot and bamboo shoots."
+519,shrimp skin,\u867e\u76ae,shrimp,,unspecified,low,"Dried shrimp skin is mapped to fresh shrimp, underestimating protein."
+521,shepherd's purse pork stuffed dumpling,,filled_meat,,nonfried_named,medium,No source-language name; shepherd's-purse-and-pork dumplings.
+523,ginger soaked in sugar and vinegar,\u7cd6\u918b\u6d78\u59dc,pickled_veg,,na,medium,Ginger soaked in sugar and vinegar; use the pickle group.
+552,milk and egg,\u725b\u5976\u52a0\u9e21\u86cb,milk,,na,low,Milk with egg; the egg is not counted separately.
+564,mixed fried vegetables,\u6df7\u5408\u70e9\u83dc,mixed_veg_fried,,fried_dish_type,low,Mixed stewed vegetables; the English description says fried.
+565,6 red dates,\u7ea2\u67a3\u53ea,dried_fruit,675:1,na,medium,"Six red dates, approximated as 5 g each and 30 g in total through a line-level portion correction."
+568,sour and spicy lemon chicken feet,\u9178\u8fa3\u67e0\u6aac\u51e4\u722a,chicken,,nonfried_named,medium,"Chicken feet with sour and spicy lemon dressing, served cold."
+569,shepherd\u2019s purse and minced pork stuffed tofu skin,\u8360\u83dc\u8089\u7cdc\u767e\u53f6\u5305,meat_veg_steamed,,unspecified,medium,Shepherd's-purse-and-minced-pork tofu-sheet rolls; same as item 109.
+572,shrimp and vegetable,\u4e09\u8272\u867e\u4ec1,seafood_fried,,fried_dish_type,medium,"Three-color shrimp: shrimp stir-fried with peas, maize and carrot."
+591,buckwheat noodles with green vegetable,\u9752\u83dc\u835e\u9ea6\u9762,noodle_meal,264:0.165;308:0.066;W0:0.619;452:0.15,unspecified,medium,"Leafy-vegetable buckwheat noodles: same as item 145 noodle soup, replacing wheat noodles with buckwheat noodles; source-language weight 120 g."
+599,braised pork with tofu skin,\u767e\u53f6\u7ed3\u70e7\u8089,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,Braised pork with tofu-sheet knots; reviewed recipe matches item 276.
+609,sweet and sour ginger,\u7cd6\u918b\u59dc,pickled_veg,,na,medium,Sweet-and-sour ginger; use the pickle group.
+610,sweet and sour spare ribs,\u7cd6\u918b\u5c0f\u6392,pork_rib_fried,,fried_dish_type,medium,"Sweet-and-sour spare ribs, fried before braising; sugar omitted."
+620,rye flour bread,\u9ed1\u9ea6\u86cb\u7cd5,bread_flatbread,,na,medium,Rye bread.
+665,pork stuffed tofu skin,\u8c46\u8150\u8863\u5305\u8089,meat_veg_steamed,,unspecified,medium,Pork wrapped in tofu sheets; same recipe as tofu-sheet pork rolls.
+683,wax gourd and egg roll,\u51ac\u74dc\u86cb\u5377,egg_veg_stirfry,,fried_dish_type,low,Winter melon with egg rolls containing minced meat.
+690,stewed pork with preserved bean curd,\u8150\u4e73\u8089,pork_belly_braised,,fried_dish_type,medium,Pork belly braised with fermented tofu.
+712,scallion oil noodles,\u8471\u6cb9\u62cc\u9762,fried_rice_noodles,,fried_in_entry,low,"Noodles with scallion oil; use the fried-rice-and-noodle group, whose source entry already includes oil."
+716,egg dumpling,\u86cb\u997a,egg_fried,,fried_dish_type,medium,Egg dumplings: minced pork wrapped in pan-fried egg sheets.
+721,dried fruits and nuts,\u679c\u5e72\u548c\u575a\u679c,dried_fruit,@dried_fruit:0.5;@nuts_seeds:0.5,na,medium,Equal parts dried fruit and nuts after review.
+728,stir-fried pork with egg and fungus,\u6728\u987b\u8089,meat_veg_stirfry,,fried_dish_type,medium,"Moo shu pork: sliced pork, egg and wood-ear mushrooms, stir-fried."
+731,dried shrimp skin and cabbage,\u867e\u76ae\u767d\u83dc,leafy_veg_fried,,fried_dish_type,medium,Mostly Chinese cabbage with a small amount of dried shrimp skin.
+738,cookie,\u997c,biscuit_snack,,na,medium,English description says cookie; source-language descriptions include biscuits and flat cakes.
+791,shepherd's purse and pork in tofu skin 4,\u8150\u76ae\u5305\u8360\u83dc\u8089,meat_veg_steamed,345:0.40;789:0.25;779:0.25;W0:0.10,unspecified,medium,"Shepherd's-purse-and-pork tofu-sheet rolls, using the item 109 recipe; source-language weight 40 g."
+807,salt and pepper shrimp,\u6912\u76d0\u5927\u867e,seafood_fried,,fried_dish_type,medium,Deep-fried salt-and-pepper shrimp.
+823,rice noodles in sour soup,\u9178\u6c64\u7c73\u7c89,noodle_meal,,nonfried_named,low,Rice noodles in sour broth; use the noodle-soup group.
+824,rice roll,\u996d\u56e2,glutinous_ricecake,1313:1,na,high,Rice roll: use glutinous-rice-roll entry 1313 directly after review.
+825,shanghai smoked pomfret,\u672c\u5e2e\u718f\u9cb3\u9c7c,fish_fried,,fried_dish_type,medium,"Shanghai-style smoked pomfret, fried then soaked in sauce; same as smoked-fish item 181."
+827,salted peanut,\u76d0\u6c34\u82b1\u751f,nuts_seeds,761:1,na,medium,Boiled salted fresh peanuts: use entry 761 after review; shell-in weighing is unknown and no edible-fraction adjustment is applied.
+853,tofu skin wrap pork,\u8c46\u8150\u8863\u5305\u8089,meat_veg_steamed,,unspecified,medium,Pork wrapped in tofu sheets; same as tofu-sheet pork rolls.
+854,tofu skin roll with minced pork,\u767e\u53f6\u5305,meat_veg_steamed,,unspecified,medium,Minced-pork tofu-sheet rolls; same as item 109.
+855,tofu knot,\u8c46\u8150\u7ed3,soy_dried,,unspecified,medium,Tofu knots are knotted tofu sheets.
+868,tomato and fish ball,\u756a\u8304\u9c7c\u4e38,fish_processed,,unspecified,low,Tomato and fish balls in broth; no added oil.
+896,stir-fried pork with tofu skin,\u767e\u53f6\u7ed3\u70e7\u8089,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,Braised pork with tofu-sheet knots; reviewed recipe matches item 276.
+917,sweet and sour pork rib,,pork_rib_fried,,fried_dish_type,medium,"No source-language name; sweet-and-sour spare ribs, fried before braising; sugar omitted."
+921,sugar-fried chestnuts,\u7cd6\u7092\u6817\u5b50,starchy_veg,,unspecified,low,Sugar-roasted chestnuts are sand-roasted without added oil; their approximately 46 g carbohydrate/100 g exceeds the group mean and is underestimated.
+925,shredded golden melon,\u9ec4\u91d1\u74dc\u4e1d,fruit_veg,,unspecified,low,"Shredded golden melon, probably spaghetti squash, used as a vegetable."
+956,yam and fungus porridge,\u5c71\u836f\u6728\u8033\u7fb9,sweet_soup,,nonfried_named,low,Yam-and-fungus soup; same as white-fungus-and-yam item 257.
+967,"vegetable, fish, shrimp and vegetable",\u83dc\u3001\u9c7c\u3001\u867e\u3001\u852c\u83dc,meat_veg_steamed,,unspecified,low,Combined weight of multiple foods; use the meat-and-vegetable group without added oil.
+1011,sliced pork with beijing sauce,\u4eac\u9171\u8089\u4e1d,pork_fried,,fried_dish_type,medium,Beijing-style shredded pork with sweet fermented sauce.
+1026,soup of sea food,\u672c\u5e2e\u4e09\u9c9c,meat_veg_soup,,nonfried_named,low,"Shanghai mixed soup containing meatballs, egg dumplings and bamboo shoots."
+1031,smoked tofu,\u718f\u8c46\u8150,soy_dried,,unspecified,medium,"Smoked tofu, a dried soy product."
+1033,smoked pomfret,\u672c\u5e2e\u718f\u9cb3\u9c7c,fish_fried,,fried_dish_type,medium,"Shanghai-style smoked pomfret, fried then soaked in sauce; same as smoked-fish item 181."
+1039,skimmed milk,,milk,,na,medium,"No source-language name; skimmed milk is mapped to whole milk, overestimating fat by approximately 3 g/100 ml."
+1040,shrimp with pepper and salt,\u6912\u76d0\u56f4\u57fa\u867e,seafood_fried,,fried_dish_type,medium,Deep-fried salt-and-pepper shrimp.
+1064,shrimp fried with vegetables,\u4e09\u8272\u867e\u4ec1,seafood_fried,,fried_dish_type,medium,Three-color shrimp with vegetables.
+1065,shrimp fired with vegetable,\u4e09\u8272\u867e\u4ec1,seafood_fried,,fried_dish_type,medium,Three-color shrimp with vegetables.
+1120,"spinach, king oyster mushroom, pine nut",\u83e0\u83dc\u674f\u9c8d\u83c7\u677e\u4ec1,mixed_veg_fried,,fried_dish_type,medium,Spinach and king oyster mushrooms stir-fried with pine nuts; predominantly vegetables.
+1123,red bean rice dumpling,\u8d64\u8c46\u7cbd,glutinous_ricecake,W0:0.50;285:0.50,na,medium,"Glutinous-rice dumpling: rice and water in a 1:1 ratio after review, approximately 39 g carbohydrate/100 g cooked dumpling; filling omitted."
+1156,"coix seed, red bean and lotus nut",\u858f\u4ec1\u3001\u7ea2\u8c46\u3001\u83b2\u5b50,sweet_soup,,nonfried_named,low,"Coix seed, adzuki beans and lotus seeds, 300 g; use the sweet-soup group."
+1157,corase grain steamed bread,\u6742\u7cae\u9992\u5934,steamed_bread,273:0.70;296:0.09;308:0.09;W0:0.12,na,medium,Mixed-grain steamed bread; a tab prevented parsing. Use the item 6 recipe and source-language weight of 140 g.
+1161,colored bean rice dumpling,\u5f69\u8c46\u68d5,glutinous_ricecake,W0:0.50;285:0.50,na,medium,"Glutinous-rice dumpling: rice and water in a 1:1 ratio after review, approximately 39 g carbohydrate/100 g cooked dumpling; filling omitted."
+1164,coke,,sweet_drink,,na,high,No source-language name; cola.
+1169,coffee 100 ml with 9 g sugar,\u5496\u5561\u52a0\u7cd6,sweet_drink,W0:0.917431;1448:0.082569,na,high,"Coffee, 100 ml, plus 9 g sugar; total 109 g."
+1171,coconut,\u6930\u6d46,unmappable,,,low,"Coconut milk has high fat, approximately 20 g/100 g; no suitable group."
+1187,crispy chicken,\u9999\u9165\u9e21,chicken_fried,,fried_dish_type,medium,Deep-fried crispy chicken.
+1193,"corn, green bean, carrot, and pine nut",\u7389\u7c73\u9752\u8c46\u80e1\u841d\u535c\u677e\u4ec1,mixed_veg_fried,,fried_dish_type,medium,"Vegetable stir-fry of maize, peas, carrot and pine nuts."
+1199,coarse grain noodles,\u6742\u7cae\u9762,noodles,,na,medium,Coarse-grain noodles; use the cooked-noodle group.
+1231,chinese herbal medicine,\u4e2d\u836f\u6c34,water_tea,,na,medium,"Herbal infusion is assigned zero nutrients after review, replacing the unmappable classification."
+1238,chinese cabbage and sliced carrot,,mixed_veg_fried,,fried_dish_type,medium,No source-language name; stir-fried cabbage and carrot slices.
+1243,"egg yolk, chicken wing and fish",\u86cb\u9ec4\u9e21\u7fc5\u9c7c,chicken,,unspecified,low,"Combined weight of egg yolk, chicken wings and fish; use the chicken group."
+1248,eight treasures in hot sauce,\u516b\u5b9d\u8fa3\u9171,meat_veg_stirfry,,fried_dish_type,medium,"Shanghai eight-treasure spicy sauce dish: stir-fried diced pork, dried tofu, bamboo shoots, peanuts and shrimp."
+1275,fried asparagus,,root_stem_veg_fried,,fried_named,medium,No source-language name; stir-fried asparagus.
+1292,double cooked pork,\u56de\u9505\u8089,pork_belly_braised,,fried_dish_type,medium,Twice-cooked pork: stir-fried pork belly.
+1302,deep-fried spare ribs with spicy salt,\u6912\u76d0\u6392\u6761,pork_rib_fried,,fried_dish_type,medium,Deep-fried salt-and-pepper spare-rib strips.
+1315,dry-fried cauliflower,\u5e72\u9505\u82b1\u83dc,leafy_veg_fried,,fried_dish_type,medium,"Dry-pot cauliflower, prepared with substantial oil."
+1321,dried sweet potato,\u7ea2\u85af\u5e72,dried_fruit,,na,low,Dried sweet potato; approximate carbohydrate with the dried-fruit group.
+1323,dried shrimps with white gourd,\u51ac\u74dc\u867e\u7c73,fruit_veg_fried,,fried_dish_type,medium,"Winter melon with dried shrimp, predominantly winter melon."
+1338,black carp,,fish,,unspecified,medium,No source-language name; black carp.
+1351,boiled chicken and pumpkin pie,\u9e21\u8089\u5357\u74dc\u6d3e,meat_veg_steamed,,unspecified,low,Combined weight of boiled chicken and pumpkin pie.
+1353,braised beef noodles,\u7ea2\u70e7\u725b\u8089\u9762,noodle_meal,,nonfried_named,medium,Braised-beef noodle soup with braised beef as topping.
+1370,beef jerky,\u725b\u8089\u5e72,pork_processed,,na,low,"Beef jerky is dried, approximately 46 g protein/100 g; the processed-meat group underestimates protein."
+1372,avocados,\u725b\u6cb9\u679c,fruit_tropical,652:1,na,high,Avocado: use entry 652 directly after review.
+1381,avocado,\u725b\u6cb9\u679c,fruit_tropical,652:1,na,high,Avocado: use entry 652 directly after review.
+1391,bamboo shoot soup with fresh and pickled streaky pork,\u814c\u7b03\u9c9c,meat_veg_soup,,nonfried_named,medium,"Shanghai soup with bamboo shoots, fresh pork and salted pork."
+1392,basa fish in sour soup,\u9178\u6c64\u5df4\u6c99\u9c7c,fish,,nonfried_named,low,Basa fish in sour broth; use fish.
+1429,cabbage and radish and bean sprouts and chicken meatball,\u767d\u83dc\u3001\u841d\u535c\u3001\u8c46\u82bd\u3001\u9e21\u8089\u5706\u5b50\u5171,meat_veg_steamed,,unspecified,low,"Combined weight of several foods, predominantly vegetables."
+1431,cabbage and bacon,\u5305\u83dc\u57f9\u6839,meat_veg_stirfry,,fried_dish_type,medium,Cabbage and bacon; source-language weight 50 g.
+1438,cereal vegetable,\u9ea6\u7247\u83dc,leafy_veg,,unspecified,low,The apparent cereal-vegetable label probably denotes a lettuce variety rather than cereal.
+1458,braised meat with quail egg,\u9e4c\u9e51\u86cb\u7ea2\u70e7\u8089,pork_belly_braised,,fried_named,medium,Braised pork with quail eggs.
+1461,braised pork in brown sauce  with quail egg,\u9e4c\u9e51\u86cb\u7ea2\u70e7\u8089,pork_belly_braised,,fried_named,medium,Braised pork with quail eggs.
+1464,braised pork and tofu skin knot,\u767e\u53f6\u7ed3\u70e7\u8089,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,Braised pork with tofu-sheet knots; reviewed recipe matches item 276.
+1471,braised fish belly,\u7ea2\u70e7\u809a\u88c6,fish_fried,,fried_named,medium,Braised fish belly from black carp.
+1496,braised pork with preserved vegetable in soya sauce,,pork_belly_braised,,fried_named,medium,No source-language name; pork braised with preserved vegetables or steamed pork belly.
+1514,"mung bean sprouts, egg dumpling, pork, pleurotus eryngii and shredded dry bean curd",\u7eff\u8c46\u82bd\u3001\u86cb\u997a\u3001\u8089\u3001\u674f\u9c8d\u83c7\u3001\u70e7\u5e72\u4e1d\uff08\u5408\u8ba1\uff09,meat_veg_stirfry,,fried_dish_type,low,"Combined weight of several dishes, including braised shredded tofu."
+1535,noodles with beef and scallion oil,\u725b\u8089\u7c92\u8471\u6cb9\u62cc\u9762,fried_rice_noodles,,fried_in_entry,low,"Noodles with scallion oil and diced beef; use the fried-rice-and-noodle group, whose source entry includes oil."
+1536,noodles mixed with  butter,\u9ec4\u6cb9\u62cc\u9762,fried_rice_noodles,,fried_in_entry,low,"Noodles mixed with butter; use the fried-rice-and-noodle group, whose source entry includes oil."
+1546,milk cake,\u725b\u5976\u997c,cake_pastry,,na,medium,"Milk cake, a pastry."
+1548,milk and bread,\u725b\u5976\u9762\u5305,bread_flatbread,,na,low,Milk bread; use bread.
+1565,milk pudding and strawberry jam,\u725b\u5976\u5e03\u4e01\u8349\u8393\u9171,ice_cream,,na,medium,Milk pudding with strawberry jam.
+1566,milk sugar,\u725b\u5976\u7cd6,sugar_sweets,,na,medium,Milk candy.
+1578,minced garlic,\u849c\u84c9,root_stem_veg,,unspecified,low,"Minced garlic, recorded as 50 g; use garlic vegetables."
+1593,pork omelette,\u6728\u987b\u8089,meat_veg_stirfry,,fried_dish_type,medium,"Moo shu pork: sliced pork, egg and wood-ear mushrooms, stir-fried."
+1599,pork dumpling,,filled_meat,,nonfried_named,medium,No source-language name; pork dumplings.
+1608,potato and green pepper,\u571f\u8c46\u9752\u6912,starchy_veg_fried,,fried_dish_type,medium,"Potato and green pepper, predominantly potato after review."
+1611,raised pork with tofu skin knot,\u767e\u53f6\u7ed3\u70e7\u8089,pork_belly_braised,779:0.55;345:0.40;OIL:0.05,fried_named,medium,Braised pork with tofu-sheet knots; reviewed recipe matches item 276.
+1614,radish and jellyfish,\u841d\u535c\u6d77\u8707,root_stem_veg,371:0.5;1125:0.5,nonfried_named,medium,"Radish and jellyfish in equal parts after review, usually served cold."
+1623,protein,\u86cb\u767d,egg,,unspecified,low,Use the egg group for the ambiguous protein/egg-white label; fat is overestimated if it denotes egg white.
+1625,preserved egg and tofu,\u76ae\u86cb\u8c46\u8150,tofu,,nonfried_named,low,"Preserved egg with tofu, served cold; use tofu."
+1641,orchid,\u5170\u82b1,unmappable,,,low,"The orchid label is ambiguous and could denote a broad-bean snack, tofu product or flower; cannot classify."
+1666,pickled and pork floss,\u9171\u83dc\u8089\u677e,pickled_veg,,na,low,"Pickled vegetables with pork floss, a 5 g side dish."
+1672,"fried chinese cabbage, black fungus and bean curd",,soy_veg_stirfry,,fried_named,medium,"No source-language name; stir-fried Chinese cabbage, wood-ear mushrooms and tofu."
+1679,fried shredded pork,\u70c2\u7cca\u8089\u4e1d,meat_veg_stirfry,,fried_dish_type,medium,Shanghai-style thickened shredded pork with Chinese cabbage and starch.
+1697,fried tasty snail,\u9999\u87ba,seafood_fried,,fried_named,medium,Stir-fried fragrant whelk; the English description says fried.
+1721,fried egg-and starch coated chicken slices,\u8299\u84c9\u9e21\u5757,chicken_fried,,fried_named,medium,"Chicken pieces coated with egg white and starch, then pan-fried."
+1729,fried duck breast with chinese wolfberry,\u67b8\u675e\u7092\u9e2d\u812f\u8089,duck_fried,,fried_named,medium,Duck breast stir-fried with goji berries.
+1740,fried pork rib in ketchup,\u8304\u6c41\u6392\u6761,pork_rib_fried,,fried_dish_type,medium,"Pork-rib strips, deep-fried then coated with tomato sauce."
+1741,fried pomfret,\u9cb3\u9c7c,fish_fried,,fried_named,medium,The English description says fried; the source-language text says pomfret.
+1749,fried mushroom and asparagus,,mixed_veg_fried,,fried_named,medium,No source-language name; mushrooms stir-fried with asparagus.
+1760,latte 200ml with 7 g sugar,\u4e00\u676f\u52a0\u4e86\u7cd6\u7684\u62ff\u94c1,milk_mixed,@milk_mixed:0.966184;1448:0.033816,na,high,"Latte, 200 ml, plus 7 g sugar; total 207 g."
+1761,latte 200ml with 6.5 g sugar,\u52a0\u7cd6\u7684\u62ff\u94c1,milk_mixed,@milk_mixed:0.968523;1448:0.031477,na,high,"Latte, 200 ml, plus 6.5 g sugar; total 206.5 g."
+1763,konjak silk,\u9b54\u828b\u4e1d,fungi_algae,W0:0.97;323:0.03,na,medium,"Konjac cold noodles or strips: approximately 3% konjac flour plus water after review, with very little carbohydrate."
+1764,konjak cold noodles mixed with peanut butter,\u82b1\u751f\u9171\u62cc\u9b54\u828b\u51c9\u76ae,fungi_algae,W0:0.873;323:0.027;@nuts_seeds:0.10,na,low,Konjac cold noodles with peanut butter: approximately 90% konjac noodles and 10% peanut butter.
+1776,homemade tofu,\u5bb6\u5e38\u8c46\u8150,soy_fried,,fried_dish_type,medium,"Homestyle tofu, pan-fried before braising."
+1804,goose feet,\u9e45\u638c,chicken,,unspecified,low,Use the chicken group for poultry feet.
+1828,green vegetable and tofu skin knot and fungus,\u9752\u83dc\u3001\u767e\u53f6\u3001\u6728\u8033,mixed_veg,,unspecified,low,"Combined weight of leafy greens, tofu sheets and wood-ear mushrooms."

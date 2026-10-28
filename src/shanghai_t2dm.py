@@ -38,9 +38,9 @@ DRUG_CLASSES = {
     'sglt2_inhibitor': r'gliflozin',
     'glp1_receptor_agonist': r'glutide|exenatide|lixisenatide',
 }
-NOT_RECORDED = {'data not available', '未记录'}
-ITEM_PATTERN = re.compile(r'^(?P<name>.*?)[\s,，:：]*(?P<amount>\d+(?:\.\d+)?)\s*(?P<unit>g|ml|克|毫升)[\s.。]*$', re.IGNORECASE)
-AMOUNT_PATTERN = re.compile(r'\d+(?:\.\d+)?\s*(?:g|ml|m|克|毫升)?', re.IGNORECASE)
+NOT_RECORDED = {'data not available', '\u672a\u8bb0\u5f55'}
+ITEM_PATTERN = re.compile('^(?P<name>.*?)[\\s,\uff0c:\uff1a]*(?P<amount>\\d+(?:\\.\\d+)?)\\s*(?P<unit>g|ml|\u514b|\u6beb\u5347)[\\s.\u3002]*$', re.IGNORECASE)
+AMOUNT_PATTERN = re.compile('\\d+(?:\\.\\d+)?\\s*(?:g|ml|m|\u514b|\u6beb\u5347)?', re.IGNORECASE)
 
 
 def drug_classes(text):
@@ -49,7 +49,7 @@ def drug_classes(text):
 
 
 def unmatched_agent_terms(text):
-    terms = [term.strip(' \xa0') for term in re.split(r'[,，;；]', str(text).lower())] if pd.notna(text) else []
+    terms = [term.strip(' \xa0') for term in re.split('[,\uff0c;\uff1b]', str(text).lower())] if pd.notna(text) else []
     return [term for term in terms if term and term != 'none' and not drug_classes(term)]
 
 
@@ -94,10 +94,10 @@ def parse_intake(english, chinese):
         text_zh = lines_zh[number] if paired else np.nan
         items.append({
             'line': number, 'text_en': line, 'text_zh': text_zh, 'zh_line_count_matches': paired,
-            'item_zh': AMOUNT_PATTERN.sub('', text_zh).strip().strip(',，.。').strip() if paired else np.nan,
+            'item_zh': AMOUNT_PATTERN.sub('', text_zh).strip().strip(',\uff0c.\u3002').strip() if paired else np.nan,
             'not_recorded': line.lower() in NOT_RECORDED, 'parsed': bool(match and match['name']),
             'item_en': match['name'].strip() if match else np.nan,
             'amount': float(match['amount']) if match else np.nan,
-            'unit': {'克': 'g', '毫升': 'ml'}.get(match['unit'], match['unit'].lower()) if match else np.nan,
+            'unit': {'\u514b': 'g', '\u6beb\u5347': 'ml'}.get(match['unit'], match['unit'].lower()) if match else np.nan,
         })
     return items

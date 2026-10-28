@@ -29,8 +29,8 @@ FRIED_COOKING = ('fried_named', 'fried_dish_type', 'fried_default')
 OIL_BASIS = {'fried_named': 'named', 'fried_dish_type': 'dish_type', 'fried_in_entry': 'in_entry', 'oil_in_recipe': 'in_recipe'}
 # Oil rules O1 (unspecified single vegetables) and O2 (dishes fried by default in Shanghai), from the mapping audit.
 O1_GROUPS = {'leafy_veg', 'fruit_veg', 'root_stem_veg', 'fungi_algae', 'fresh_legume', 'mixed_veg'}
-O1_EXCLUDE = r'黄瓜|青瓜|番茄|西红柿|圣女果|南瓜|^姜|^葱$|姜片|蒜蓉|紫菜|银耳|白木耳|魔芋|红豆|赤豆|绿豆(?!芽)|黄豆(?!芽)|鹰嘴豆|脱水|水果萝卜'
-O2_ITEMS = r'带鱼|大排|小黄鱼|牛排'
+O1_EXCLUDE = '\u9ec4\u74dc|\u9752\u74dc|\u756a\u8304|\u897f\u7ea2\u67ff|\u5723\u5973\u679c|\u5357\u74dc|^\u59dc|^\u8471$|\u59dc\u7247|\u849c\u84c9|\u7d2b\u83dc|\u94f6\u8033|\u767d\u6728\u8033|\u9b54\u828b|\u7ea2\u8c46|\u8d64\u8c46|\u7eff\u8c46(?!\u82bd)|\u9ec4\u8c46(?!\u82bd)|\u9e70\u5634\u8c46|\u8131\u6c34|\u6c34\u679c\u841d\u535c'
+O2_ITEMS = '\u5e26\u9c7c|\u5927\u6392|\u5c0f\u9ec4\u9c7c|\u725b\u6392'
 # Line-level weight states: raw staples in self-reported records, dry or soup noodles, wonton broth, prepared cereal and corn on the cob.
 RICE_KEYS = {'rice'}
 COARSE_KEYS = {'coarse grain', 'coarase grain', 'coarce grain', 'corase grain', 'coarse grain rice', 'coarse grain 13'}
@@ -45,89 +45,89 @@ NOT_A_DISH = {'rice', 'grain_rice', 'porridge', 'steamed_bread', 'bread_flatbrea
               'sugar_sweets', 'ice_cream', 'glutinous_sweet', 'water_tea', 'sweet_drink', 'beer', 'wine', 'rice_wine', 'condiment', 'pickled_veg', 'western_fastfood'}
 
 # Cooking-oil rule: these characters mark a fried dish unless they belong to one of the exempt words (ingredients or fixed names).
-OIL_TERMS = r'炒|煎|炸|爆|煸|溜|熘|烧|油|(?<!洋)葱烤'
-OIL_EXEMPT = r'油麦菜|酱油|蚝油|耗油|奶油|黄油|牛油果|麻油|油菜|油豆腐|油面筋|油条|油饼|油墩子|油浸|烧麦|烧卖|烧饼|烧鹅|叉烧'
-NONOIL_TERMS = r'蒸|煮|白灼|白切|白斩|汤|羹|拌|凉|炖|卤|盐水|醉|糟|白水|焯|色拉|沙拉|涮|烫|烤|(?<![京甜炒])酱(?=[牛鸭排猪羊鸡香])'
-AROMATIC = r'小葱|香葱|(?<![大京洋])葱(?:花|油|烤|爆|香)?(?!头)|姜|蒜蓉|蒜泥|蒜香|香菜|芫荽|剁椒|花椒|椒盐|黑椒|黑胡椒|胡椒|咖喱'
+OIL_TERMS = '\u7092|\u714e|\u70b8|\u7206|\u7178|\u6e9c|\u7198|\u70e7|\u6cb9|(?<!\u6d0b)\u8471\u70e4'
+OIL_EXEMPT = '\u6cb9\u9ea6\u83dc|\u9171\u6cb9|\u869d\u6cb9|\u8017\u6cb9|\u5976\u6cb9|\u9ec4\u6cb9|\u725b\u6cb9\u679c|\u9ebb\u6cb9|\u6cb9\u83dc|\u6cb9\u8c46\u8150|\u6cb9\u9762\u7b4b|\u6cb9\u6761|\u6cb9\u997c|\u6cb9\u58a9\u5b50|\u6cb9\u6d78|\u70e7\u9ea6|\u70e7\u5356|\u70e7\u997c|\u70e7\u9e45|\u53c9\u70e7'
+NONOIL_TERMS = '\u84b8|\u716e|\u767d\u707c|\u767d\u5207|\u767d\u65a9|\u6c64|\u7fb9|\u62cc|\u51c9|\u7096|\u5364|\u76d0\u6c34|\u9189|\u7cdf|\u767d\u6c34|\u712f|\u8272\u62c9|\u6c99\u62c9|\u6dae|\u70eb|\u70e4|(?<![\u4eac\u751c\u7092])\u9171(?=[\u725b\u9e2d\u6392\u732a\u7f8a\u9e21\u9999])'
+AROMATIC = '\u5c0f\u8471|\u9999\u8471|(?<![\u5927\u4eac\u6d0b])\u8471(?:\u82b1|\u6cb9|\u70e4|\u7206|\u9999)?(?!\u5934)|\u59dc|\u849c\u84c9|\u849c\u6ce5|\u849c\u9999|\u9999\u83dc|\u82ab\u837d|\u5241\u6912|\u82b1\u6912|\u6912\u76d0|\u9ed1\u6912|\u9ed1\u80e1\u6912|\u80e1\u6912|\u5496\u55b1'
 # Food components used to recognise composite dishes; matched in this order on the Chinese name, each match removed before the next kind.
 PROTEIN = {
-    'egg': r'(?<!无)(?:鸡|鸭|鹅|鹌鹑|咸|皮|松花|茶叶|卤|荷包|水煮|白煮)?蛋(?!糕|挞|黄酥|酥)(?:白|黄|清|皮)?',
-    'soy': r'豆腐(?:干|衣|皮|结)?|豆干|香干|干丝|百叶(?:结|丝)?|千张|素鸡|腐竹|豆皮|腐皮|烤麸|油?面筋|豆花|纳豆|马兰豆',
-    'processed': r'香肠|火腿(?:肠|片)?|午餐肉|咸肉|腊肉|培根|红肠|肉肠|肉松|腊肠|咸蹄|熏肉|(?:牛)?肉干',
-    'meatball': r'(?:鸡|牛)?肉(?:圆|丸)(?:子)?|(?<!蔬菜)丸子|狮子头|(?:牛)?肉饼|贡丸|肉卷|(?<!酒酿)圆子',
-    'offal': r'(?:猪|鸭|鸡|鹅|牛|羊)?(?:肝|肚(?!裆)|大肠|肥肠|胗|肫|肺)|(?:鸭|猪)血|血旺|猪耳|牛筋|蹄筋|牛舌|腰花|鱼肠|鸭头|鸭脖|鸭肠',
-    'shellfish': r'鲍鱼|鱿鱼|墨鱼仔?|乌贼|章鱼|目鱼|鱼翅|佛跳墙|海鲜(?!菇)|蛤蜊肉?|花蛤|文蛤|蛤|蛏子|蛏|扇贝|贝类|贝|田螺|香螺|螺|河蚌|蚌|生蚝|蚝|牡蛎|(?<!杏)鲍|海参|鱿|海蜇(?:皮|头|丝)?|花甲|三鲜',
-    'fish_processed': r'鱼丸|鱼圆|虾丸|虾滑|鱼排|蟹足棒|鱼片干|鱼豆腐',
-    'crab': r'(?:大闸|梭子|毛|河|海|膏|皇帝|红毛)?蟹(?!味菇)(?:肉|粉|黄)?',
-    'shrimp': r'(?:基围|围基|河|海|草|白米|甜|大|小龙)?虾(?:仁|肉|皮|米)?',
-    'fish': r'(?:鲫|鲈|鲳|鳊|鳝|鳗|鲑|鳕|鲢|鳙|鲤|三文|巴沙|泥鳅|昂刺|鳜)?鱼(?!香)(?:肉|片|块|头|尾|丝)?|鲫|鲈|鲳|鳊|鳝|鳗|鲑|鳕|鲢|鳙|鲤|三文|巴沙|泥鳅|昂刺|鳜',
-    'beef': r'牛(?!奶|油|心菜|肝菌|蛙|轧)(?:肉|腩|腱|排|尾)?(?:丝|片|粒|末|块)?',
-    'mutton': r'羊(?!角|奶)(?:肉|排|蝎子|骨棒?)?(?:丝|片|块)?',
-    'chicken': r'(?<!素)(?:鸡(?!蛋|毛菜|腿菇|精|枞)|鸽|鹌鹑(?!蛋)|牛蛙|雪蛤|凤爪)(?:子)?(?:胸|腿|中翅|翅|块|爪|排|柳)?(?:肉)?(?:丝|片|丁|块)?',
-    'duck': r'(?:鸭(?!蛋|血|梨|胗|肫|肠)|鹅(?!蛋|肝))(?:子)?(?:腿|翅|膀|掌|爪|胸|脯|块|片|丁)?(?:肉)?',
-    'pork': r'猪(?:肉|排|蹄|脚|爪)?|肉(?:丝|片|丁|末|沫|糜)?|排骨|大排|小排|排条|蹄髈|蹄膀|蹄|五花|里脊|肘|筒骨|骨头|骨',
+    'egg': '(?<!\u65e0)(?:\u9e21|\u9e2d|\u9e45|\u9e4c\u9e51|\u54b8|\u76ae|\u677e\u82b1|\u8336\u53f6|\u5364|\u8377\u5305|\u6c34\u716e|\u767d\u716e)?\u86cb(?!\u7cd5|\u631e|\u9ec4\u9165|\u9165)(?:\u767d|\u9ec4|\u6e05|\u76ae)?',
+    'soy': '\u8c46\u8150(?:\u5e72|\u8863|\u76ae|\u7ed3)?|\u8c46\u5e72|\u9999\u5e72|\u5e72\u4e1d|\u767e\u53f6(?:\u7ed3|\u4e1d)?|\u5343\u5f20|\u7d20\u9e21|\u8150\u7af9|\u8c46\u76ae|\u8150\u76ae|\u70e4\u9eb8|\u6cb9?\u9762\u7b4b|\u8c46\u82b1|\u7eb3\u8c46|\u9a6c\u5170\u8c46',
+    'processed': '\u9999\u80a0|\u706b\u817f(?:\u80a0|\u7247)?|\u5348\u9910\u8089|\u54b8\u8089|\u814a\u8089|\u57f9\u6839|\u7ea2\u80a0|\u8089\u80a0|\u8089\u677e|\u814a\u80a0|\u54b8\u8e44|\u718f\u8089|(?:\u725b)?\u8089\u5e72',
+    'meatball': '(?:\u9e21|\u725b)?\u8089(?:\u5706|\u4e38)(?:\u5b50)?|(?<!\u852c\u83dc)\u4e38\u5b50|\u72ee\u5b50\u5934|(?:\u725b)?\u8089\u997c|\u8d21\u4e38|\u8089\u5377|(?<!\u9152\u917f)\u5706\u5b50',
+    'offal': '(?:\u732a|\u9e2d|\u9e21|\u9e45|\u725b|\u7f8a)?(?:\u809d|\u809a(?!\u88c6)|\u5927\u80a0|\u80a5\u80a0|\u80d7|\u80ab|\u80ba)|(?:\u9e2d|\u732a)\u8840|\u8840\u65fa|\u732a\u8033|\u725b\u7b4b|\u8e44\u7b4b|\u725b\u820c|\u8170\u82b1|\u9c7c\u80a0|\u9e2d\u5934|\u9e2d\u8116|\u9e2d\u80a0',
+    'shellfish': '\u9c8d\u9c7c|\u9c7f\u9c7c|\u58a8\u9c7c\u4ed4?|\u4e4c\u8d3c|\u7ae0\u9c7c|\u76ee\u9c7c|\u9c7c\u7fc5|\u4f5b\u8df3\u5899|\u6d77\u9c9c(?!\u83c7)|\u86e4\u870a\u8089?|\u82b1\u86e4|\u6587\u86e4|\u86e4|\u86cf\u5b50|\u86cf|\u6247\u8d1d|\u8d1d\u7c7b|\u8d1d|\u7530\u87ba|\u9999\u87ba|\u87ba|\u6cb3\u868c|\u868c|\u751f\u869d|\u869d|\u7261\u86ce|(?<!\u674f)\u9c8d|\u6d77\u53c2|\u9c7f|\u6d77\u8707(?:\u76ae|\u5934|\u4e1d)?|\u82b1\u7532|\u4e09\u9c9c',
+    'fish_processed': '\u9c7c\u4e38|\u9c7c\u5706|\u867e\u4e38|\u867e\u6ed1|\u9c7c\u6392|\u87f9\u8db3\u68d2|\u9c7c\u7247\u5e72|\u9c7c\u8c46\u8150',
+    'crab': '(?:\u5927\u95f8|\u68ad\u5b50|\u6bdb|\u6cb3|\u6d77|\u818f|\u7687\u5e1d|\u7ea2\u6bdb)?\u87f9(?!\u5473\u83c7)(?:\u8089|\u7c89|\u9ec4)?',
+    'shrimp': '(?:\u57fa\u56f4|\u56f4\u57fa|\u6cb3|\u6d77|\u8349|\u767d\u7c73|\u751c|\u5927|\u5c0f\u9f99)?\u867e(?:\u4ec1|\u8089|\u76ae|\u7c73)?',
+    'fish': '(?:\u9cab|\u9c88|\u9cb3|\u9cca|\u9cdd|\u9cd7|\u9c91|\u9cd5|\u9ca2|\u9cd9|\u9ca4|\u4e09\u6587|\u5df4\u6c99|\u6ce5\u9cc5|\u6602\u523a|\u9cdc)?\u9c7c(?!\u9999)(?:\u8089|\u7247|\u5757|\u5934|\u5c3e|\u4e1d)?|\u9cab|\u9c88|\u9cb3|\u9cca|\u9cdd|\u9cd7|\u9c91|\u9cd5|\u9ca2|\u9cd9|\u9ca4|\u4e09\u6587|\u5df4\u6c99|\u6ce5\u9cc5|\u6602\u523a|\u9cdc',
+    'beef': '\u725b(?!\u5976|\u6cb9|\u5fc3\u83dc|\u809d\u83cc|\u86d9|\u8f67)(?:\u8089|\u8169|\u8171|\u6392|\u5c3e)?(?:\u4e1d|\u7247|\u7c92|\u672b|\u5757)?',
+    'mutton': '\u7f8a(?!\u89d2|\u5976)(?:\u8089|\u6392|\u874e\u5b50|\u9aa8\u68d2?)?(?:\u4e1d|\u7247|\u5757)?',
+    'chicken': '(?<!\u7d20)(?:\u9e21(?!\u86cb|\u6bdb\u83dc|\u817f\u83c7|\u7cbe|\u679e)|\u9e3d|\u9e4c\u9e51(?!\u86cb)|\u725b\u86d9|\u96ea\u86e4|\u51e4\u722a)(?:\u5b50)?(?:\u80f8|\u817f|\u4e2d\u7fc5|\u7fc5|\u5757|\u722a|\u6392|\u67f3)?(?:\u8089)?(?:\u4e1d|\u7247|\u4e01|\u5757)?',
+    'duck': '(?:\u9e2d(?!\u86cb|\u8840|\u68a8|\u80d7|\u80ab|\u80a0)|\u9e45(?!\u86cb|\u809d))(?:\u5b50)?(?:\u817f|\u7fc5|\u8180|\u638c|\u722a|\u80f8|\u812f|\u5757|\u7247|\u4e01)?(?:\u8089)?',
+    'pork': '\u732a(?:\u8089|\u6392|\u8e44|\u811a|\u722a)?|\u8089(?:\u4e1d|\u7247|\u4e01|\u672b|\u6cab|\u7cdc)?|\u6392\u9aa8|\u5927\u6392|\u5c0f\u6392|\u6392\u6761|\u8e44\u9ac8|\u8e44\u8180|\u8e44|\u4e94\u82b1|\u91cc\u810a|\u8098|\u7b52\u9aa8|\u9aa8\u5934|\u9aa8',
 }
 VEG = {
-    'pickle': r'榨菜|咸菜|酱菜|泡菜|酸菜|雪菜|梅干菜|梅菜|萝卜干|菜干|大头菜|酱萝卜|腌|辣白菜|橄榄菜|酸笋|干菜',
-    'special_leafy': r'地瓜叶|红薯叶|木耳菜|豌豆苗|豆苗|鸡毛菜|油麦菜',
-    'sprout': r'黄豆芽|绿豆芽|豆芽',
-    'fungi': r'(?<![茨慈])菇|蘑菇?|木耳|银耳|菌菇?|松茸|海带(?:结|丝)?|紫菜|苔条|裙带菜?|海苔|猴头|竹荪',
-    'starchy': r'土豆(?:丝|泥|片)?|马铃薯|红薯|山芋|地瓜|紫薯|(?<!魔)芋(?:艿|头|奶)?|山药|藕(?:片|丁)?|玉米(?:粒)?|栗子|板栗|菱角|木薯',
-    'legume': r'毛豆|蚕豆|豌豆|青豆|黄豆|红豆|赤豆|绿豆|鹰嘴豆|眉豆|豆子',
-    'root_stem': r'胡萝卜|白萝卜|萝卜|胡卜|莴笋|莴苣|茭白|西芹|水芹|芹菜|芹|芦笋|罗笋|冬笋|竹笋|笋|洋葱|大葱|京葱|蒜苗|蒜薹|蒜苔|蒜台|青蒜|大蒜|百合|茨菇|慈菇|荸荠|马蹄|黄花菜|黄花|金针菜|蕨菜',
-    'fruit_veg': r'黄瓜|青瓜|冬瓜|丝瓜|苦瓜|南瓜|西葫芦|夜开花|葫芦|瓠|佛手瓜|番茄|西红柿|茄子|茄|青椒|红椒|彩椒|辣椒|甜椒|豇豆|缸豆|四季豆|刀豆|豆角|荷兰豆|扁豆|甜豆|豆荚|秋葵|芸豆|龙豆|圣女果',
-    'leafy': r'小青菜|青菜|菠菜|波菜|生菜|小白菜|大白菜|白菜|卷心菜|卷芯菜|包菜|甘蓝|黄芽菜|黄牙菜|毛菜|菜心|塔菜|空心菜|空菜|蕹菜|茼蒿|蓬蒿|苋菜|米苋|苋|草头|荠菜|芥兰|芥蓝|菜薹|娃娃菜|韭菜|韭黄|韭芽|韭|杭白菜|牛心菜|花菜|菜花|花椰菜|西兰花|西蓝花|蔬菜叶|马兰|香椿|苦菊|油菜',
-    'generic': r'蔬菜|素菜|炒菜|什锦|荤素|果蔬|水煮菜|烩菜|三丝|炒素',
-    'starch_noodle': r'粉丝|粉皮|凉皮|魔芋|米线|米粉|宽粉|粉条|肠粉',
+    'pickle': '\u69a8\u83dc|\u54b8\u83dc|\u9171\u83dc|\u6ce1\u83dc|\u9178\u83dc|\u96ea\u83dc|\u6885\u5e72\u83dc|\u6885\u83dc|\u841d\u535c\u5e72|\u83dc\u5e72|\u5927\u5934\u83dc|\u9171\u841d\u535c|\u814c|\u8fa3\u767d\u83dc|\u6a44\u6984\u83dc|\u9178\u7b0b|\u5e72\u83dc',
+    'special_leafy': '\u5730\u74dc\u53f6|\u7ea2\u85af\u53f6|\u6728\u8033\u83dc|\u8c4c\u8c46\u82d7|\u8c46\u82d7|\u9e21\u6bdb\u83dc|\u6cb9\u9ea6\u83dc',
+    'sprout': '\u9ec4\u8c46\u82bd|\u7eff\u8c46\u82bd|\u8c46\u82bd',
+    'fungi': '(?<![\u8328\u6148])\u83c7|\u8611\u83c7?|\u6728\u8033|\u94f6\u8033|\u83cc\u83c7?|\u677e\u8338|\u6d77\u5e26(?:\u7ed3|\u4e1d)?|\u7d2b\u83dc|\u82d4\u6761|\u88d9\u5e26\u83dc?|\u6d77\u82d4|\u7334\u5934|\u7af9\u836a',
+    'starchy': '\u571f\u8c46(?:\u4e1d|\u6ce5|\u7247)?|\u9a6c\u94c3\u85af|\u7ea2\u85af|\u5c71\u828b|\u5730\u74dc|\u7d2b\u85af|(?<!\u9b54)\u828b(?:\u827f|\u5934|\u5976)?|\u5c71\u836f|\u85d5(?:\u7247|\u4e01)?|\u7389\u7c73(?:\u7c92)?|\u6817\u5b50|\u677f\u6817|\u83f1\u89d2|\u6728\u85af',
+    'legume': '\u6bdb\u8c46|\u8695\u8c46|\u8c4c\u8c46|\u9752\u8c46|\u9ec4\u8c46|\u7ea2\u8c46|\u8d64\u8c46|\u7eff\u8c46|\u9e70\u5634\u8c46|\u7709\u8c46|\u8c46\u5b50',
+    'root_stem': '\u80e1\u841d\u535c|\u767d\u841d\u535c|\u841d\u535c|\u80e1\u535c|\u83b4\u7b0b|\u83b4\u82e3|\u832d\u767d|\u897f\u82b9|\u6c34\u82b9|\u82b9\u83dc|\u82b9|\u82a6\u7b0b|\u7f57\u7b0b|\u51ac\u7b0b|\u7af9\u7b0b|\u7b0b|\u6d0b\u8471|\u5927\u8471|\u4eac\u8471|\u849c\u82d7|\u849c\u85b9|\u849c\u82d4|\u849c\u53f0|\u9752\u849c|\u5927\u849c|\u767e\u5408|\u8328\u83c7|\u6148\u83c7|\u8378\u8360|\u9a6c\u8e44|\u9ec4\u82b1\u83dc|\u9ec4\u82b1|\u91d1\u9488\u83dc|\u8568\u83dc',
+    'fruit_veg': '\u9ec4\u74dc|\u9752\u74dc|\u51ac\u74dc|\u4e1d\u74dc|\u82e6\u74dc|\u5357\u74dc|\u897f\u846b\u82a6|\u591c\u5f00\u82b1|\u846b\u82a6|\u74e0|\u4f5b\u624b\u74dc|\u756a\u8304|\u897f\u7ea2\u67ff|\u8304\u5b50|\u8304|\u9752\u6912|\u7ea2\u6912|\u5f69\u6912|\u8fa3\u6912|\u751c\u6912|\u8c47\u8c46|\u7f38\u8c46|\u56db\u5b63\u8c46|\u5200\u8c46|\u8c46\u89d2|\u8377\u5170\u8c46|\u6241\u8c46|\u751c\u8c46|\u8c46\u835a|\u79cb\u8475|\u82b8\u8c46|\u9f99\u8c46|\u5723\u5973\u679c',
+    'leafy': '\u5c0f\u9752\u83dc|\u9752\u83dc|\u83e0\u83dc|\u6ce2\u83dc|\u751f\u83dc|\u5c0f\u767d\u83dc|\u5927\u767d\u83dc|\u767d\u83dc|\u5377\u5fc3\u83dc|\u5377\u82af\u83dc|\u5305\u83dc|\u7518\u84dd|\u9ec4\u82bd\u83dc|\u9ec4\u7259\u83dc|\u6bdb\u83dc|\u83dc\u5fc3|\u5854\u83dc|\u7a7a\u5fc3\u83dc|\u7a7a\u83dc|\u8579\u83dc|\u833c\u84bf|\u84ec\u84bf|\u82cb\u83dc|\u7c73\u82cb|\u82cb|\u8349\u5934|\u8360\u83dc|\u82a5\u5170|\u82a5\u84dd|\u83dc\u85b9|\u5a03\u5a03\u83dc|\u97ed\u83dc|\u97ed\u9ec4|\u97ed\u82bd|\u97ed|\u676d\u767d\u83dc|\u725b\u5fc3\u83dc|\u82b1\u83dc|\u83dc\u82b1|\u82b1\u6930\u83dc|\u897f\u5170\u82b1|\u897f\u84dd\u82b1|\u852c\u83dc\u53f6|\u9a6c\u5170|\u9999\u693f|\u82e6\u83ca|\u6cb9\u83dc',
+    'generic': '\u852c\u83dc|\u7d20\u83dc|\u7092\u83dc|\u4ec0\u9526|\u8364\u7d20|\u679c\u852c|\u6c34\u716e\u83dc|\u70e9\u83dc|\u4e09\u4e1d|\u7092\u7d20',
+    'starch_noodle': '\u7c89\u4e1d|\u7c89\u76ae|\u51c9\u76ae|\u9b54\u828b|\u7c73\u7ebf|\u7c73\u7c89|\u5bbd\u7c89|\u7c89\u6761|\u80a0\u7c89',
 }
 # Dish or food identities that decide the group before component logic; first match wins.
 DIRECT = [
-    ('unmappable', r'空腹'), ('water_tea', r'中药'), ('protein_powder', r'蛋白粉'),
-    ('biscuit_snack', r'威化|饼干|苏打|燕麦棒|薯片|薯条|锅巴|膨化|零食|虾片|洋葱圈|兰花豆|脆片|米果|雪饼'),
-    ('beer', r'啤酒'), ('wine', r'葡萄酒|红酒|白酒|参酒'),
-    ('glutinous_sweet', r'酒酿|汤圆|麻薯|糍粑|青团|西米|米酒丸|丸子.*酒|酒.*丸子'),
-    ('rice_wine', r'黄酒|米酒|花雕'),
-    ('milk_mixed', r'奶茶|拿铁|咖啡.*奶|奶.*咖啡|奶咖|牛奶.*麦片|麦片.*牛奶|燕麦牛奶|牛奶加|牛奶.*蛋|牛奶.*面包'),
-    ('sweet_drink', r'可乐|果汁|橙汁|椰子汁|椰汁|椰浆|糖水|酸梅|柠檬茶|玉米汁|饮料|苹果醋|果蔬浆|雪碧'),
-    ('water_tea', r'^水$|咖啡|清咖|^茶$|绿茶|红茶|花茶|姜汁|姜汤|枫斗|煮水$|力度伸'),
-    ('yogurt', r'酸奶(?!油)|发酵乳'), ('soy_milk', r'豆浆|豆奶|咸浆'), ('milk', r'牛奶|鲜奶|^奶$|舒化'),
-    ('dry_cereal_powder', r'奶粉|代餐|营养粉|芝麻糊粉|薏米粉|麦片(?!粥|糊)|燕麦(?!粥|饭)'),
-    ('salad', r'色拉|沙拉(?!酱)'), ('mixed_veg', r'^菜$'),
-    ('meat_veg_stirfry', r'火锅|麻辣烫|冒菜|荤菜|^荤素$'),
-    ('meat_veg_steamed', r'大杂烩|关东煮'),
-    ('sweet_soup', r'桃胶|雪蛤'),
+    ('unmappable', '\u7a7a\u8179'), ('water_tea', '\u4e2d\u836f'), ('protein_powder', '\u86cb\u767d\u7c89'),
+    ('biscuit_snack', '\u5a01\u5316|\u997c\u5e72|\u82cf\u6253|\u71d5\u9ea6\u68d2|\u85af\u7247|\u85af\u6761|\u9505\u5df4|\u81a8\u5316|\u96f6\u98df|\u867e\u7247|\u6d0b\u8471\u5708|\u5170\u82b1\u8c46|\u8106\u7247|\u7c73\u679c|\u96ea\u997c'),
+    ('beer', '\u5564\u9152'), ('wine', '\u8461\u8404\u9152|\u7ea2\u9152|\u767d\u9152|\u53c2\u9152'),
+    ('glutinous_sweet', '\u9152\u917f|\u6c64\u5706|\u9ebb\u85af|\u7ccd\u7c91|\u9752\u56e2|\u897f\u7c73|\u7c73\u9152\u4e38|\u4e38\u5b50.*\u9152|\u9152.*\u4e38\u5b50'),
+    ('rice_wine', '\u9ec4\u9152|\u7c73\u9152|\u82b1\u96d5'),
+    ('milk_mixed', '\u5976\u8336|\u62ff\u94c1|\u5496\u5561.*\u5976|\u5976.*\u5496\u5561|\u5976\u5496|\u725b\u5976.*\u9ea6\u7247|\u9ea6\u7247.*\u725b\u5976|\u71d5\u9ea6\u725b\u5976|\u725b\u5976\u52a0|\u725b\u5976.*\u86cb|\u725b\u5976.*\u9762\u5305'),
+    ('sweet_drink', '\u53ef\u4e50|\u679c\u6c41|\u6a59\u6c41|\u6930\u5b50\u6c41|\u6930\u6c41|\u6930\u6d46|\u7cd6\u6c34|\u9178\u6885|\u67e0\u6aac\u8336|\u7389\u7c73\u6c41|\u996e\u6599|\u82f9\u679c\u918b|\u679c\u852c\u6d46|\u96ea\u78a7'),
+    ('water_tea', '^\u6c34$|\u5496\u5561|\u6e05\u5496|^\u8336$|\u7eff\u8336|\u7ea2\u8336|\u82b1\u8336|\u59dc\u6c41|\u59dc\u6c64|\u67ab\u6597|\u716e\u6c34$|\u529b\u5ea6\u4f38'),
+    ('yogurt', '\u9178\u5976(?!\u6cb9)|\u53d1\u9175\u4e73'), ('soy_milk', '\u8c46\u6d46|\u8c46\u5976|\u54b8\u6d46'), ('milk', '\u725b\u5976|\u9c9c\u5976|^\u5976$|\u8212\u5316'),
+    ('dry_cereal_powder', '\u5976\u7c89|\u4ee3\u9910|\u8425\u517b\u7c89|\u829d\u9ebb\u7cca\u7c89|\u858f\u7c73\u7c89|\u9ea6\u7247(?!\u7ca5|\u7cca)|\u71d5\u9ea6(?!\u7ca5|\u996d)'),
+    ('salad', '\u8272\u62c9|\u6c99\u62c9(?!\u9171)'), ('mixed_veg', '^\u83dc$'),
+    ('meat_veg_stirfry', '\u706b\u9505|\u9ebb\u8fa3\u70eb|\u5192\u83dc|\u8364\u83dc|^\u8364\u7d20$'),
+    ('meat_veg_steamed', '\u5927\u6742\u70e9|\u5173\u4e1c\u716e'),
+    ('sweet_soup', '\u6843\u80f6|\u96ea\u86e4'),
 ]
-SOUP = r'汤(?!圆|包|饭)|羹|(?<!烂)糊|罗宋'
-STARCHY_DISH = r'土豆|马铃薯|山药|藕|玉米|(?<!魔)芋|南瓜|粉丝|毛豆|栗子'
-LIST = r'[、，,]|和|加|及|与|共'
-SWEET_SOUP = r'赤豆|红豆|绿豆(?!芽)|银耳|白木耳|红枣|莲子|莲心|百合|桃胶|雪蛤|芝麻|核桃|南瓜糊|糖水|茯苓|山药羹|红薯汤'
-FILLED_VEG = r'素|菜包|豆沙|豆包|菜馒头|粉丝包|萝卜丝|胡萝卜包|梅干菜|香菇菜|香菇包|韭菜|青菜'
+SOUP = '\u6c64(?!\u5706|\u5305|\u996d)|\u7fb9|(?<!\u70c2)\u7cca|\u7f57\u5b8b'
+STARCHY_DISH = '\u571f\u8c46|\u9a6c\u94c3\u85af|\u5c71\u836f|\u85d5|\u7389\u7c73|(?<!\u9b54)\u828b|\u5357\u74dc|\u7c89\u4e1d|\u6bdb\u8c46|\u6817\u5b50'
+LIST = '[\u3001\uff0c,]|\u548c|\u52a0|\u53ca|\u4e0e|\u5171'
+SWEET_SOUP = '\u8d64\u8c46|\u7ea2\u8c46|\u7eff\u8c46(?!\u82bd)|\u94f6\u8033|\u767d\u6728\u8033|\u7ea2\u67a3|\u83b2\u5b50|\u83b2\u5fc3|\u767e\u5408|\u6843\u80f6|\u96ea\u86e4|\u829d\u9ebb|\u6838\u6843|\u5357\u74dc\u7cca|\u7cd6\u6c34|\u832f\u82d3|\u5c71\u836f\u7fb9|\u7ea2\u85af\u6c64'
+FILLED_VEG = '\u7d20|\u83dc\u5305|\u8c46\u6c99|\u8c46\u5305|\u83dc\u9992\u5934|\u7c89\u4e1d\u5305|\u841d\u535c\u4e1d|\u80e1\u841d\u535c\u5305|\u6885\u5e72\u83dc|\u9999\u83c7\u83dc|\u9999\u83c7\u5305|\u97ed\u83dc|\u9752\u83dc'
 STAPLE = [
-    ('porridge', r'粥|稀饭|泡饭|汤饭'),
-    ('fried_rice_noodles', r'炒饭|炒面|炒米粉|炒粉|炒年糕|炒米线|炒河粉|炒面片|炒意面'),
-    ('fried_wheat', r'方便面|泡面|油条|油饼|麻花|油墩子|春卷|葱油饼|千层饼|焦圈|手抓饼|煎饼|蛋饼|酱香饼|苔条饼|萝卜丝饼|盒子|合子'),
-    ('fried_dumpling', r'生煎|锅贴|煎饺|煎包|煎馄饨'),
-    ('filled', r'饺|馄饨|云吞|烧麦|烧卖|小笼|包子|肉包|菜包|豆包|豆沙包|素包|蒸包|小包|粉丝包|香菇包|梅干菜包|南瓜包|肉馒头|牛肉馒头|菜馒头'),
-    ('western_fastfood', r'汉堡|披萨|比萨|三明治|热狗'),
-    ('bread_flatbread', r'面包|吐司|土司|芝士包'),
-    ('steamed_bread', r'馒头|花卷|窝头|发糕|窝窝|杂粮包'),
-    ('cake_pastry', r'蛋糕|糕点|月饼|酥(?!鸡|鸭)|蛋挞|泡芙|瑞士卷|西点|点心|山楂糕|绿豆糕|豆糕|南瓜饼|牛奶饼|凤梨|蛋卷'),
-    ('meatball', r'^(牛)?肉饼$'),
-    ('flatbread', r'饼'),
-    ('rice_cake_dish', r'年糕(?=.)|.(?=.*年糕)'),
-    ('glutinous_ricecake', r'粽|棕|年糕|米糕|糯米|粢饭|饭团|酒酿糕|黑米糕'),
-    ('grain_rice', r'杂粮|糙米|黑米|红米|荞麦饭|荞麦米|荞麦红米|高粱|小米饭|藜麦|薏米.*饭|大米加小米|薏仁|五谷'),
-    ('rice', r'米饭|白饭|^饭|菜饭|拌饭|寿司|主食'),
-    ('noodles', r'面条|面$|拌面|汤面|面片|意面|意大利面|冷面|凉面|热干面|荞麦面|卷面|挂面|面疙瘩'),
-    ('sugar_sweets', r'巧克力|糖果|奶糖|太妃|芝麻糖|麻糖|葡萄糖|白糖|冰糖|红糖|蜂蜜|果酱|蓝莓酱|草莓酱|^糖$|牛轧'),
-    ('ice_cream', r'冰淇淋|雪糕|布丁|果冻|冰棍|冰激凌'),
-    ('dried_fruit', r'枣|葡萄干|枸杞|桂圆干|果干|干果|杏干'),
-    ('nuts_seeds', r'核桃|花生|瓜子|杏仁|腰果|松仁|松子|坚果|芝麻|榛子|开心果|南瓜子|南瓜籽|西瓜子|夏威夷|奇亚籽|亚奇籽|亚麻籽|巴旦木'),
-    ('fruit_citrus', r'橙|橘|桔|柑|柚|柠檬'),
-    ('fruit_melon', r'西瓜|甜瓜|哈密瓜|香瓜|白兰瓜|蜜瓜|黄金瓜'),
-    ('fruit_tropical', r'香蕉|芒果|荔枝|龙眼|桂圆|榴莲|菠萝|火龙果|山竹|椰子|牛油果|百香果|木瓜|杨桃'),
-    ('fruit_temperate', r'苹果|梨|(?<!核)桃(?!胶)|李子|杏(?!鲍)|樱桃|车厘子|葡萄|提子|猕猴桃|奇异果|草莓|蓝莓|(?<!西红)柿|枇杷|山楂|莲雾|人参果|人生果|石榴|无花果|^水果$'),
-    ('condiment', r'^(酱油|醋|辣酱|番茄酱|沙拉酱|色拉酱|腐乳|乳腐|红腐乳|芥末|蒜蓉|酸奶油|豆瓣酱|甜面酱|蚝油|酱)$'),
+    ('porridge', '\u7ca5|\u7a00\u996d|\u6ce1\u996d|\u6c64\u996d'),
+    ('fried_rice_noodles', '\u7092\u996d|\u7092\u9762|\u7092\u7c73\u7c89|\u7092\u7c89|\u7092\u5e74\u7cd5|\u7092\u7c73\u7ebf|\u7092\u6cb3\u7c89|\u7092\u9762\u7247|\u7092\u610f\u9762'),
+    ('fried_wheat', '\u65b9\u4fbf\u9762|\u6ce1\u9762|\u6cb9\u6761|\u6cb9\u997c|\u9ebb\u82b1|\u6cb9\u58a9\u5b50|\u6625\u5377|\u8471\u6cb9\u997c|\u5343\u5c42\u997c|\u7126\u5708|\u624b\u6293\u997c|\u714e\u997c|\u86cb\u997c|\u9171\u9999\u997c|\u82d4\u6761\u997c|\u841d\u535c\u4e1d\u997c|\u76d2\u5b50|\u5408\u5b50'),
+    ('fried_dumpling', '\u751f\u714e|\u9505\u8d34|\u714e\u997a|\u714e\u5305|\u714e\u9984\u9968'),
+    ('filled', '\u997a|\u9984\u9968|\u4e91\u541e|\u70e7\u9ea6|\u70e7\u5356|\u5c0f\u7b3c|\u5305\u5b50|\u8089\u5305|\u83dc\u5305|\u8c46\u5305|\u8c46\u6c99\u5305|\u7d20\u5305|\u84b8\u5305|\u5c0f\u5305|\u7c89\u4e1d\u5305|\u9999\u83c7\u5305|\u6885\u5e72\u83dc\u5305|\u5357\u74dc\u5305|\u8089\u9992\u5934|\u725b\u8089\u9992\u5934|\u83dc\u9992\u5934'),
+    ('western_fastfood', '\u6c49\u5821|\u62ab\u8428|\u6bd4\u8428|\u4e09\u660e\u6cbb|\u70ed\u72d7'),
+    ('bread_flatbread', '\u9762\u5305|\u5410\u53f8|\u571f\u53f8|\u829d\u58eb\u5305'),
+    ('steamed_bread', '\u9992\u5934|\u82b1\u5377|\u7a9d\u5934|\u53d1\u7cd5|\u7a9d\u7a9d|\u6742\u7cae\u5305'),
+    ('cake_pastry', '\u86cb\u7cd5|\u7cd5\u70b9|\u6708\u997c|\u9165(?!\u9e21|\u9e2d)|\u86cb\u631e|\u6ce1\u8299|\u745e\u58eb\u5377|\u897f\u70b9|\u70b9\u5fc3|\u5c71\u6942\u7cd5|\u7eff\u8c46\u7cd5|\u8c46\u7cd5|\u5357\u74dc\u997c|\u725b\u5976\u997c|\u51e4\u68a8|\u86cb\u5377'),
+    ('meatball', '^(\u725b)?\u8089\u997c$'),
+    ('flatbread', '\u997c'),
+    ('rice_cake_dish', '\u5e74\u7cd5(?=.)|.(?=.*\u5e74\u7cd5)'),
+    ('glutinous_ricecake', '\u7cbd|\u68d5|\u5e74\u7cd5|\u7c73\u7cd5|\u7cef\u7c73|\u7ca2\u996d|\u996d\u56e2|\u9152\u917f\u7cd5|\u9ed1\u7c73\u7cd5'),
+    ('grain_rice', '\u6742\u7cae|\u7cd9\u7c73|\u9ed1\u7c73|\u7ea2\u7c73|\u835e\u9ea6\u996d|\u835e\u9ea6\u7c73|\u835e\u9ea6\u7ea2\u7c73|\u9ad8\u7cb1|\u5c0f\u7c73\u996d|\u85dc\u9ea6|\u858f\u7c73.*\u996d|\u5927\u7c73\u52a0\u5c0f\u7c73|\u858f\u4ec1|\u4e94\u8c37'),
+    ('rice', '\u7c73\u996d|\u767d\u996d|^\u996d|\u83dc\u996d|\u62cc\u996d|\u5bff\u53f8|\u4e3b\u98df'),
+    ('noodles', '\u9762\u6761|\u9762$|\u62cc\u9762|\u6c64\u9762|\u9762\u7247|\u610f\u9762|\u610f\u5927\u5229\u9762|\u51b7\u9762|\u51c9\u9762|\u70ed\u5e72\u9762|\u835e\u9ea6\u9762|\u5377\u9762|\u6302\u9762|\u9762\u7599\u7629'),
+    ('sugar_sweets', '\u5de7\u514b\u529b|\u7cd6\u679c|\u5976\u7cd6|\u592a\u5983|\u829d\u9ebb\u7cd6|\u9ebb\u7cd6|\u8461\u8404\u7cd6|\u767d\u7cd6|\u51b0\u7cd6|\u7ea2\u7cd6|\u8702\u871c|\u679c\u9171|\u84dd\u8393\u9171|\u8349\u8393\u9171|^\u7cd6$|\u725b\u8f67'),
+    ('ice_cream', '\u51b0\u6dc7\u6dcb|\u96ea\u7cd5|\u5e03\u4e01|\u679c\u51bb|\u51b0\u68cd|\u51b0\u6fc0\u51cc'),
+    ('dried_fruit', '\u67a3|\u8461\u8404\u5e72|\u67b8\u675e|\u6842\u5706\u5e72|\u679c\u5e72|\u5e72\u679c|\u674f\u5e72'),
+    ('nuts_seeds', '\u6838\u6843|\u82b1\u751f|\u74dc\u5b50|\u674f\u4ec1|\u8170\u679c|\u677e\u4ec1|\u677e\u5b50|\u575a\u679c|\u829d\u9ebb|\u699b\u5b50|\u5f00\u5fc3\u679c|\u5357\u74dc\u5b50|\u5357\u74dc\u7c7d|\u897f\u74dc\u5b50|\u590f\u5a01\u5937|\u5947\u4e9a\u7c7d|\u4e9a\u5947\u7c7d|\u4e9a\u9ebb\u7c7d|\u5df4\u65e6\u6728'),
+    ('fruit_citrus', '\u6a59|\u6a58|\u6854|\u67d1|\u67da|\u67e0\u6aac'),
+    ('fruit_melon', '\u897f\u74dc|\u751c\u74dc|\u54c8\u5bc6\u74dc|\u9999\u74dc|\u767d\u5170\u74dc|\u871c\u74dc|\u9ec4\u91d1\u74dc'),
+    ('fruit_tropical', '\u9999\u8549|\u8292\u679c|\u8354\u679d|\u9f99\u773c|\u6842\u5706|\u69b4\u83b2|\u83e0\u841d|\u706b\u9f99\u679c|\u5c71\u7af9|\u6930\u5b50|\u725b\u6cb9\u679c|\u767e\u9999\u679c|\u6728\u74dc|\u6768\u6843'),
+    ('fruit_temperate', '\u82f9\u679c|\u68a8|(?<!\u6838)\u6843(?!\u80f6)|\u674e\u5b50|\u674f(?!\u9c8d)|\u6a31\u6843|\u8f66\u5398\u5b50|\u8461\u8404|\u63d0\u5b50|\u7315\u7334\u6843|\u5947\u5f02\u679c|\u8349\u8393|\u84dd\u8393|(?<!\u897f\u7ea2)\u67ff|\u6787\u6777|\u5c71\u6942|\u83b2\u96fe|\u4eba\u53c2\u679c|\u4eba\u751f\u679c|\u77f3\u69b4|\u65e0\u82b1\u679c|^\u6c34\u679c$'),
+    ('condiment', '^(\u9171\u6cb9|\u918b|\u8fa3\u9171|\u756a\u8304\u9171|\u6c99\u62c9\u9171|\u8272\u62c9\u9171|\u8150\u4e73|\u4e73\u8150|\u7ea2\u8150\u4e73|\u82a5\u672b|\u849c\u84c9|\u9178\u5976\u6cb9|\u8c46\u74e3\u9171|\u751c\u9762\u9171|\u869d\u6cb9|\u9171)$'),
 ]
 VEG_GROUP = {'leafy': 'leafy_veg', 'special_leafy': 'leafy_veg', 'sprout': 'fruit_veg', 'fruit_veg': 'fruit_veg', 'root_stem': 'root_stem_veg', 'starchy': 'starchy_veg', 'legume': 'fresh_legume',
              'fungi': 'fungi_algae', 'generic': 'mixed_veg', 'starch_noodle': 'starch_noodles'}
@@ -138,9 +138,21 @@ FRIED_VARIANT = {'leafy_veg': 'leafy_veg_fried', 'fruit_veg': 'fruit_veg_fried',
                  'soy_dried': 'soy_fried', 'egg': 'egg_fried', 'starch_noodles': 'mixed_veg_fried'}
 
 
+def read_curation(filename, **kwargs):
+    """Read curated rules, decoding escaped source-language matching keys."""
+    table = pd.read_csv(CURATION / filename, **kwargs)
+    for column in table.columns:
+        if pd.api.types.is_string_dtype(table[column]):
+            table[column] = table[column].map(
+                lambda value: re.sub(r'\\u([0-9a-fA-F]{4})', lambda match: chr(int(match[1], 16)), value)
+                if isinstance(value, str) else value
+            )
+    return table
+
+
 def number(text):
     text = str(text).strip()
-    if text in ('', '—'):
+    if text in ('', '\u2014'):
         return np.nan
     return 0.0 if text == 'Tr' else float(re.sub(r'[^\d.]', '', text))
 
@@ -157,13 +169,13 @@ def load_usda(fdc_ids):
 
 def load_entries():
     rows = cached_rows()
-    classes = pd.read_csv(CURATION / 'fiber_classes.csv', keep_default_na=False)
+    classes = read_curation('fiber_classes.csv', keep_default_na=False)
     ratios = {name: float(np.median([number(rows[int(i)]['fiber']) / number(rows[int(i)]['carbohydrate']) for i in ids.split(';')])) if ids else 0.0
               for name, ids in zip(classes.fiber_class, classes.proxy_entry_ids)}
-    crosswalk = pd.read_csv(CURATION / 'usda_crosswalk.csv', dtype=str, keep_default_na=False).set_index('entry_id')
+    crosswalk = read_curation('usda_crosswalk.csv', dtype=str, keep_default_na=False).set_index('entry_id')
     usda = load_usda({int(value) for value in pd.concat([crosswalk.fdc_id, crosswalk.fiber_fdc_id]) if value})
     records = []
-    for entry in pd.read_csv(CURATION / 'entries.csv', dtype=str, keep_default_na=False).itertuples(index=False):
+    for entry in read_curation('entries.csv', dtype=str, keep_default_na=False).itertuples(index=False):
         row = rows[int(entry.entry_id)]
         assert row['name'] == entry.name == crosswalk.at[entry.entry_id, 'cn_name'], (entry.entry_id, row['name'], entry.name)
         reported = {'edible_pct': number(row['edible']), 'water_g': number(row['water']), 'energy_kcal': number(row['energy']) / KJ_PER_KCAL,
@@ -195,13 +207,13 @@ def load_entries():
             used['fiber_g'], basis = ratios[entry.fiber_class] * used['carbohydrate_g'], f'imputed:{entry.fiber_class}'
         if used['fiber_g'] > used['carbohydrate_g']:
             used['fiber_g'] = used['carbohydrate_g']
-            note = (note + '；' if note else '') + '纤维高于碳水化合物，按碳水化合物封顶'
+            note = (note + '; ' if note else '') + 'Fiber exceeds carbohydrate; cap fiber at the carbohydrate value.'
         assert all(np.isfinite(value) for value in used.values()), (entry.entry_id, used)
         if fdc:
             usda_values['fiber_g'] = usda_fiber if np.isfinite(usda_fiber) else 0.0 if entry.fiber_class == 'zero' else used['fiber_g']
             if usda_values['fiber_g'] > usda_values['carbohydrate_g']:
                 usda_values['fiber_g'] = usda_values['carbohydrate_g']
-                note = (note + '；' if note else '') + 'USDA变体纤维高于碳水化合物，按碳水化合物封顶'
+                note = (note + '; ' if note else '') + 'USDA-variant fiber exceeds carbohydrate; cap fiber at the carbohydrate value.'
         else:
             usda_values = dict(used)
         cache = CACHE / f'search_ALL_p{row["page"]:03d}.json'
@@ -219,9 +231,9 @@ def load_entries():
                         'usda_fdc_id': int(link.fdc_id), 'usda_description': usda.at[int(link.fdc_id), 'description'], 'usda_scale': 1.0, 'usda_basis': 'usda',
                         'usda_confidence': link.confidence, **{f'{key}_usda': value for key, value in values.items()}})
     water = crosswalk.loc[WATER]
-    records.append({'entry_id': WATER, 'name': '水（冲调/烹煮加水；非成分表条目）', 'source': 'pseudo-entry', 'edible_pct': 100.0, 'water_g': 100.0,
+    records.append({'entry_id': WATER, 'name': 'Water added during preparation or cooking; not a source-table entry', 'source': 'pseudo-entry', 'edible_pct': 100.0, 'water_g': 100.0,
                     **{key: 0.0 for key in NUTRIENTS}, **{f'{key}_used': 0.0 for key in NUTRIENTS}, 'fiber_basis': 'zero',
-                    'adjustment_note': '用于米饭以外的熟制/冲调配方补水，所有营养素为0', 'usda_fdc_id': int(water.fdc_id),
+                    'adjustment_note': 'Water added to cooked or reconstituted recipes other than rice; all nutrients are zero.', 'usda_fdc_id': int(water.fdc_id),
                     'usda_description': usda.at[int(water.fdc_id), 'description'], 'usda_scale': 1.0, 'usda_basis': 'usda', 'usda_confidence': water.confidence,
                     **{f'{key}_usda': 0.0 for key in NUTRIENTS}})
     entries = pd.DataFrame(records).set_index('entry_id')
@@ -262,7 +274,7 @@ def describe(shares, entries):
 def method(name):
     if re.search(OIL_TERMS, re.sub(OIL_EXEMPT, '', name)):
         return 'fried_named'
-    return 'nonfried_named' if re.search(NONOIL_TERMS, name.replace('烤麸', '')) else 'unspecified'
+    return 'nonfried_named' if re.search(NONOIL_TERMS, name.replace('\u70e4\u9eb8', '')) else 'unspecified'
 
 
 def components(name):
@@ -278,25 +290,25 @@ def components(name):
 
 def classify(name):
     if not name:
-        return 'unmappable', 'unspecified', 'low', '无中文名，未自动归类'
+        return 'unmappable', 'unspecified', 'low', 'No source-language name; not classified automatically.'
     cook = method(name)
     for group, pattern in DIRECT:
         if re.search(pattern, name):
             return group, cook, 'medium', ''
-    if re.search(r'蛋', name) and re.search(r'蒸|炖|羹', name):
-        return 'egg_custard', 'nonfried_named', 'medium', '蒸蛋/炖蛋类'
+    if re.search('\u86cb', name) and re.search('\u84b8|\u7096|\u7fb9', name):
+        return 'egg_custard', 'nonfried_named', 'medium', 'Steamed egg custard.'
     if re.search(SOUP, name):
-        if re.search(r'面', name) and not re.search(r'面筋', name):
-            return 'noodle_meal', 'nonfried_named', 'medium', '汤面'
+        if re.search('\u9762', name) and not re.search('\u9762\u7b4b', name):
+            return 'noodle_meal', 'nonfried_named', 'medium', 'Noodle soup.'
         if re.search(SWEET_SOUP, name):
-            return 'sweet_soup', 'nonfried_named', 'medium', '按不加糖'
+            return 'sweet_soup', 'nonfried_named', 'medium', 'Assume no added sugar.'
         if re.search(STARCHY_DISH, name):
-            return 'starchy_soup', 'nonfried_named', 'medium', '含淀粉的汤'
+            return 'starchy_soup', 'nonfried_named', 'medium', 'Starchy soup.'
         found = components(name)
         meat = [kind for kind in PROTEIN if kind not in ('egg', 'soy') and kind in found]
         solids = [kind for kind in found if kind not in meat]
         if meat:
-            return ('meat_veg_soup' if solids else 'broth'), 'nonfried_named', 'low', '汤：固形物比例未知'
+            return ('meat_veg_soup' if solids else 'broth'), 'nonfried_named', 'low', 'Soup with unknown solid-food fraction.'
         return 'veg_soup', 'nonfried_named', 'medium', ''
     found = components(name)
     others = [kind for kind in found if kind not in ('generic',)]
@@ -304,7 +316,7 @@ def classify(name):
         if not re.search(pattern, name):
             continue
         if group == 'filled':
-            group = 'filled_veg' if re.search(FILLED_VEG, name) and not re.search(r'肉|虾|蟹|牛|鸡(?!蛋)', name) else 'filled_meat'
+            group = 'filled_veg' if re.search(FILLED_VEG, name) and not re.search('\u8089|\u867e|\u87f9|\u725b|\u9e21(?!\u86cb)', name) else 'filled_meat'
         elif group == 'flatbread':
             group = 'fried_wheat' if cook == 'fried_named' else 'bread_flatbread'
         elif group == 'rice_cake_dish':
@@ -323,10 +335,10 @@ def classify(name):
     meat = [kind for kind in ('processed', 'meatball', 'offal', 'beef', 'mutton', 'chicken', 'duck', 'pork') if kind in found]
     seafood = [kind for kind in ('fish_processed', 'crab', 'shrimp', 'shellfish', 'fish') if kind in found]
     if re.search(STARCHY_DISH, name) and n_parts >= 2 and 'egg' not in found and 'meatball' not in found:
-        return ('starchy_mixed_dish', cooking, 'medium', '含淀粉荤素菜') if oil else ('starchy_mixed_steamed', plain, 'medium', '含淀粉荤素菜')
+        return ('starchy_mixed_dish', cooking, 'medium', 'Starchy mixed meat-and-vegetable dish.') if oil else ('starchy_mixed_steamed', plain, 'medium', 'Starchy mixed meat-and-vegetable dish.')
     if 'egg' in found:
-        if re.search(r'蒸|炖|羹', name):
-            return 'egg_custard', 'nonfried_named', 'medium', '蒸蛋/炖蛋类'
+        if re.search('\u84b8|\u7096|\u7fb9', name):
+            return 'egg_custard', 'nonfried_named', 'medium', 'Steamed egg custard.'
         if veg or 'soy' in found:
             return ('egg_veg_stirfry', cooking, 'medium', '') if oil else ('egg', plain, 'medium', '')
         return ('egg_fried', cooking, 'medium', '') if oil else ('egg', plain, 'medium', '')
@@ -337,11 +349,11 @@ def classify(name):
         if kind in ('processed', 'offal'):
             if kind == 'offal':
                 return ('offal_fried', cooking, 'medium', '') if oil else ('offal', plain, 'medium', '')
-            return ('pork_fried', cooking, 'low', '油炸加工肉按猪肉（炒）组') if oil else ('pork_processed', plain, 'medium', '')
+            return ('pork_fried', cooking, 'low', 'Map fried processed meat to the stir-fried pork group.') if oil else ('pork_processed', plain, 'medium', '')
         if kind == 'pork':
-            if re.search(r'排|蹄|肘|髈|脚|爪', name):
+            if re.search('\u6392|\u8e44|\u8098|\u9ac8|\u811a|\u722a', name):
                 base = 'pork_rib'
-            elif oil and re.search(r'红烧肉|五花|烧肉|扣肉|回锅|东坡', name):
+            elif oil and re.search('\u7ea2\u70e7\u8089|\u4e94\u82b1|\u70e7\u8089|\u6263\u8089|\u56de\u9505|\u4e1c\u5761', name):
                 return 'pork_belly_braised', cooking, 'medium', ''
             else:
                 base = 'pork'
@@ -349,21 +361,21 @@ def classify(name):
             base = {'meatball': 'meatball', 'beef': 'beef_mutton', 'mutton': 'beef_mutton', 'chicken': 'chicken', 'duck': 'duck_goose'}[kind]
         return (FRIED_VARIANT[base], cooking, 'medium', '') if oil else (base, plain, 'medium', '')
     if 'meatball' in meat:
-        return ('meatball_fried', cooking, 'medium', '') if cook == 'fried_named' else ('meatball', plain, 'medium', '馅中蔬菜按肉圆计')
+        return ('meatball_fried', cooking, 'medium', '') if cook == 'fried_named' else ('meatball', plain, 'medium', 'Count vegetables in the filling within the meatball entry.')
     if 'soy' in found:
         if seafood:
             return ('seafood_fried', cooking, 'medium', '') if oil else ('tofu', plain, 'medium', '')
         if veg:
-            return ('soy_veg_stirfry', cooking, 'medium', '') if oil else ('tofu' if re.search(r'豆腐|豆花', name) else 'soy_dried', plain, 'medium', '')
-        base = 'tofu' if re.search(r'豆腐(?!干|衣|皮)|豆花', name) and not re.search(r'油豆腐', name) else 'soy_dried'
-        if re.search(r'油豆腐|油面筋', name):
-            return 'soy_fried', 'fried_in_entry', 'medium', '油炸豆制品'
+            return ('soy_veg_stirfry', cooking, 'medium', '') if oil else ('tofu' if re.search('\u8c46\u8150|\u8c46\u82b1', name) else 'soy_dried', plain, 'medium', '')
+        base = 'tofu' if re.search('\u8c46\u8150(?!\u5e72|\u8863|\u76ae)|\u8c46\u82b1', name) and not re.search('\u6cb9\u8c46\u8150', name) else 'soy_dried'
+        if re.search('\u6cb9\u8c46\u8150|\u6cb9\u9762\u7b4b', name):
+            return 'soy_fried', 'fried_in_entry', 'medium', 'Fried soy products.'
         return (FRIED_VARIANT[base], cooking, 'medium', '') if oil else (base, plain, 'medium', '')
     if seafood:
         kind = seafood[0]
         base = {'fish_processed': 'fish_processed', 'crab': 'crab', 'shrimp': 'shrimp', 'shellfish': 'shellfish', 'fish': 'fish'}[kind]
         if base in ('fish_processed', 'crab'):
-            return ('seafood_fried', cooking, 'low', '油炸蟹/鱼丸按虾贝（炒）组') if oil else (base, plain, 'medium', '')
+            return ('seafood_fried', cooking, 'low', 'Map fried crab or fish balls to the stir-fried shrimp-and-shellfish group.') if oil else (base, plain, 'medium', '')
         return (FRIED_VARIANT[base], cooking, 'medium', '') if oil else (base, plain, 'medium', '')
     if veg:
         if veg == ['pickle']:
@@ -375,8 +387,8 @@ def classify(name):
         confidence = 'low' if 'generic' in veg else 'medium'
         return (FRIED_VARIANT[base], cooking, confidence, '') if oil else (base, plain, confidence, '')
     if re.search(AROMATIC, name):
-        return 'root_stem_veg', plain, 'medium', '葱姜蒜类'
-    return 'unmappable', cook, 'low', '未能自动归类'
+        return 'root_stem_veg', plain, 'medium', 'Scallion, ginger and garlic vegetables.'
+    return 'unmappable', cook, 'low', 'Not classified automatically.'
 
 
 def key_mappings(frequency, specific, overrides, recipes, group_shares, keys_with_amount, entries):
@@ -395,11 +407,11 @@ def key_mappings(frequency, specific, overrides, recipes, group_shares, keys_wit
         else:
             group, cooking, confidence, notes, assignment = rule_group, rule_cooking, rule_confidence, rule_note, 'rule'
         if item.key not in keys_with_amount:
-            group, recipe, confidence, notes, assignment = 'unmappable', '', 'low', '记录无可解析重量；' + notes, 'no_weight'
+            group, recipe, confidence, notes, assignment = 'unmappable', '', 'low', 'No parseable recorded weight; ' + notes, 'no_weight'
         assert group in recipes, (item.key, group)
         oil_rule = ''
         if cooking == 'unspecified' and group != 'unmappable':
-            if (group in O1_GROUPS or (group == 'starchy_veg' and '土豆丝' in item.item_zh)) and not re.search(O1_EXCLUDE, item.item_zh):
+            if (group in O1_GROUPS or (group == 'starchy_veg' and '\u571f\u8c46\u4e1d' in item.item_zh)) and not re.search(O1_EXCLUDE, item.item_zh):
                 oil_rule = 'O1'
             elif re.search(O2_ITEMS, item.item_zh) and group in ('fish', 'pork_rib', 'beef_mutton'):
                 oil_rule = 'O2'
@@ -418,7 +430,7 @@ def key_mappings(frequency, specific, overrides, recipes, group_shares, keys_wit
         level = 'unmappable' if group == 'unmappable' else 'specific' if recipe else 'group'
         if level == 'specific' and cooking != 'oil_in_recipe':
             assert np.isclose(100 * shares.get(OIL, 0.0), 100 * OIL_SHARE * (cooking in FRIED_COOKING)), (item.key, cooking)
-        oil_rule = oil_rule or ('O4' if re.search(r'(?<!洋)葱烤', item.item_zh) else OIL_BASIS.get(cooking, 'none'))
+        oil_rule = oil_rule or ('O4' if re.search('(?<!\u6d0b)\u8471\u70e4', item.item_zh) else OIL_BASIS.get(cooking, 'none'))
         values = profile(shares, entries) if shares else {key: np.nan for key in NUTRIENT_COLUMNS}
         recipe_text, recipe_names = describe(shares, entries) if level == 'specific' else ('', '')
         info[item.key] = {'shares': shares, 'group': group, 'level': level}
@@ -429,7 +441,7 @@ def key_mappings(frequency, specific, overrides, recipes, group_shares, keys_wit
 
 
 def line_amounts(recorded):
-    overrides = pd.read_csv(CURATION / 'amount_overrides.csv', dtype={'amount_g': float}, keep_default_na=False, na_values={'amount_g': ['']})
+    overrides = read_curation('amount_overrides.csv', dtype={'amount_g': float}, keep_default_na=False, na_values={'amount_g': ['']})
     lines = recorded.merge(overrides[['record_id', 'time', 'line', 'amount_g', 'key_override', 'amount_source', 'reason']], on=['record_id', 'time', 'line'],
                            how='left', validate='one_to_one', indicator=True)
     assert (lines._merge == 'both').sum() == len(overrides)
@@ -447,7 +459,7 @@ def line_amounts(recorded):
 
 
 def line_nutrients(lines, info, recipes, group_shares, entries):
-    routes = pd.read_csv(CURATION / 'line_routes.csv', keep_default_na=False).set_index(['key', 'item_zh'])
+    routes = read_curation('line_routes.csv', keep_default_na=False).set_index(['key', 'item_zh'])
     states = {name: expand(recipe, recipes) for name, recipe in STATE_RECIPES.items()}
     cache = {}
 
@@ -474,15 +486,15 @@ def line_nutrients(lines, info, recipes, group_shares, entries):
             state = 'unmappable'
         elif row.record_self_reported and row.key in RICE_KEYS | COARSE_KEYS and key == row.key and amount % 5 == 0 and amount <= RAW_STAPLE_MAX:
             state, shares = 'raw_staple', states['raw_rice' if row.key in RICE_KEYS else 'raw_grain']
-        elif group == 'noodles' and (re.search(r'卷面|挂面', zh) or amount <= 60):
+        elif group == 'noodles' and (re.search('\u5377\u9762|\u6302\u9762', zh) or amount <= 60):
             state, shares = 'dry_noodle', states['dry_noodle']
         elif group in ('noodles', 'noodle_meal') and amount >= 300:
             state, shares = 'noodle_soup', states['noodle_soup']
-        elif group in ('filled_meat', 'filled_veg') and re.search(r'馄饨|云吞', zh) and amount >= (200 if '小馄饨' in zh else 250):
+        elif group in ('filled_meat', 'filled_veg') and re.search('\u9984\u9968|\u4e91\u541e', zh) and amount >= (200 if '\u5c0f\u9984\u9968' in zh else 250):
             state, shares = 'wonton_broth', states['wonton_broth']
-        elif group == 'dry_cereal_powder' and re.search(r'麦片|燕麦', zh) and (row.unit == 'ml' or amount >= 150):
+        elif group == 'dry_cereal_powder' and re.search('\u9ea6\u7247|\u71d5\u9ea6', zh) and (row.unit == 'ml' or amount >= 150):
             state, shares = 'prepared_cereal', states['prepared_cereal']
-        elif re.fullmatch(r'(煮)?玉米(棒)?|主食玉米', zh) and amount >= CORN_MIN:
+        elif re.fullmatch('(\u716e)?\u7389\u7c73(\u68d2)?|\u4e3b\u98df\u7389\u7c73', zh) and amount >= CORN_MIN:
             state, used = 'corn_on_cob', amount * CORN_EDIBLE
         reason = ('unmappable_item' if level == 'unmappable' else 'weight_unreliable' if row.amount_source == 'override' and np.isnan(amount)
                   else 'no_weight' if np.isnan(amount) else 'over_800g' if amount > MAX_LINE_G else '')
@@ -522,13 +534,13 @@ def summaries(lines):
 
 def main():
     entries, ratios = load_entries()
-    groups = pd.read_csv(CURATION / 'groups.csv', keep_default_na=False)
+    groups = read_curation('groups.csv', keep_default_na=False)
     recipes = dict(zip(groups.group_id, groups.recipe))
     group_shares = {group: expand(recipe, recipes) for group, recipe in recipes.items() if recipe}
     group_profiles = {group: profile(shares, entries) for group, shares in group_shares.items()}
     assert all(np.isclose(values['added_oil_g_per_100g'], [0, 100 * OIL_SHARE]).any() for values in group_profiles.values())
-    specific = pd.read_csv(CURATION / 'specific.csv', keep_default_na=False).set_index('key')
-    overrides = pd.read_csv(CURATION / 'group_overrides.csv', keep_default_na=False).set_index('key')
+    specific = read_curation('specific.csv', keep_default_na=False).set_index('key')
+    overrides = read_curation('group_overrides.csv', keep_default_na=False).set_index('key')
     frequency = pd.read_csv(INTERIM / 'food_item_frequency.csv', keep_default_na=False)
     items = pd.read_csv(INTERIM / 'intake_items.csv')
     recorded = items.loc[~items.not_recorded].assign(key=lambda frame: frame.item_en.fillna(frame.text_en).str.lower().str.strip())
@@ -566,7 +578,7 @@ def main():
                      'curated_recipe': group.recipe, 'rationale': group.rationale})
     pd.DataFrame(rows).to_csv(METADATA / 'shanghai_t2dm_food_groups.csv', index=False)
 
-    routes = pd.read_csv(CURATION / 'line_routes.csv', keep_default_na=False)
+    routes = read_curation('line_routes.csv', keep_default_na=False)
     used = ({entry for shares in group_shares.values() for entry in shares} | {entry for mapped in info.values() if mapped['shares'] for entry in mapped['shares']}
             | {entry for shares in states.values() for entry in shares} | {entry for recipe in routes.route_recipe if recipe for entry in expand(recipe, recipes)})
     assert used == set(entries.index), set(entries.index) ^ used
@@ -598,7 +610,7 @@ def main():
 
 def fiber_shares(table, info, recipes, entries, states):
     weights = {}
-    routes = pd.read_csv(CURATION / 'line_routes.csv', keep_default_na=False).set_index(['key', 'item_zh'])
+    routes = read_curation('line_routes.csv', keep_default_na=False).set_index(['key', 'item_zh'])
     for row in table.loc[table.usable].itertuples(index=False):
         shares = STATE_SHARES(row, info, recipes, routes, states)
         for entry, share in shares.items():
